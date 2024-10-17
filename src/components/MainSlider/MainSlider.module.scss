@@ -1,0 +1,45 @@
+.carouselContainer {
+    max-width: 1300px;        // Ограничиваем максимальную ширину слайдера
+    margin: 0 auto;          // Центрируем слайдер
+    overflow: hidden;
+    margin-top: 10px;         // Скрываем элементы, выходящие за пределы контейнера
+}
+
+.slide1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;  // На мобильных устройствах - колонки
+        align-items: center;
+    }
+}
+
+.textContainer {
+    flex: 1;                   // Текст занимает 1 часть флекс-контейнера
+    max-width: 600px;         // Максимальная ширина текстовой области
+}
+
+.slide1Img {
+    flex: 1;                   // Изображение занимает 1 часть флекс-контейнера
+    display: flex;
+    width: 500px;
+    height: 300px;
+}
+
+.image {
+    max-width: 100%;          // Ограничиваем максимальную ширину изображения
+    height: auto;             // Автоматическая высота для сохранения пропорций
+}
+
+.slide2 {
+    width: 100%;              // Слайд 2 растягивается на всю ширину
+}
+
+.video {
+    width: 100%;              // Видео занимает 100% ширины родительского контейнера
+    height: 1000px;            // Устанавливаем высоту для видео
+    max-width: 100%;          // Ограничиваем максимальную ширину
+}
