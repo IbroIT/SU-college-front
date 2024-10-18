@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search } from '@mui/icons-material';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import style from './Header.module.scss';
-
+import { Link } from 'react-router-dom';
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -43,15 +43,59 @@ export const Header = () => {
             </header>
 
             <nav className={style.headerNav}>
-                <ul className={style.headerUl}>
-                    <li className={style.navLi}>КОЛЛЕДЖ</li>
-                    <li className={style.navLi}>ПРОФЕССИИ</li>
-                    <li className={style.navLi}>ПОСТУПАЮЩИМ</li>
-                    <li className={style.navLi}>ВОПРОСЫ-ОТВЕТЫ</li>
-                    <li className={style.navLi}>КОНТАКТЫ</li>
-                </ul>
-            </nav>
-
+    <ul className={style.headerUl}>
+        <li className={style.navLi}>
+            КОЛЛЕДЖ
+            <div className={style.dropdownContent}>
+                <Link to="/college"><p>О колледже</p></Link>
+                <Link to="/mission"><p>Миссия</p></Link>
+                <Link to="/teachers"><p>Преподаватели</p></Link>
+                <Link to="/advice"><p>Наблюдательный совет</p></Link>
+                <Link to="/college"><p>Письмо Директора</p></Link>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            ПРОФЕССИИ
+            <div className={style.dropdownContent}>
+            <Link to="/college"><p>О колледже</p></Link>
+                <Link to="/college"><p>Миссия</p></Link>
+                <Link to="/college"><p>Преподаватели</p></Link>
+                <Link to="/college"><p>Наблюдательный совет</p></Link>
+                <Link to="/college"><p>Письмо Директора</p></Link>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            ПОСТУПАЮЩИМ
+            <div className={style.dropdownContent}>
+                <Link to="/college"><p>О колледже</p></Link>
+                <Link to="/college"><p>Миссия</p></Link>
+                <Link to="/college"><p>Преподаватели</p></Link>
+                <Link to="/college"><p>Наблюдательный совет</p></Link>
+                <Link to="/college"><p>Письмо Директора</p></Link>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            ВОПРОСЫ-ОТВЕТЫ
+            <div className={style.dropdownContent}>
+            <Link to="/college"><p>О колледже</p></Link>
+                <Link to="/college"><p>Миссия</p></Link>
+                <Link to="/college"><p>Преподаватели</p></Link>
+                <Link to="/college"><p>Наблюдательный совет</p></Link>
+                <Link to="/college"><p>Письмо Директора</p></Link>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            КОНТАКТЫ
+            <div className={style.dropdownContent}>
+            <Link to="/college"><p>О колледже</p></Link>
+                <Link to="/college"><p>Миссия</p></Link>
+                <Link to="/college"><p>Преподаватели</p></Link>
+                <Link to="/college"><p>Наблюдательный совет</p></Link>
+                <Link to="/college"><p>Письмо Директора</p></Link>
+            </div>
+        </li>
+    </ul>
+</nav>
             {isMenuOpen && (
                 <div className={style.mobileMenu}>
                     <div className={style.mobileMenuHeader}>
@@ -61,11 +105,47 @@ export const Header = () => {
                         />
                     </div>
                     <ul className={style.mobileMenuNav}>
-                        <li>КОЛЛЕДЖ</li>
-                        <li>ПРОФЕССИИ</li>
-                        <li>ПОСТУПАЮЩИМ</li>
-                        <li>ВОПРОСЫ-ОТВЕТЫ</li>
-                        <li>КОНТАКТЫ</li>
+            <li className={style.navLi}>
+            КОЛЛЕДЖ
+            <div className={style.dropdownContent}>
+                <Link to="/college" className={style.link}><p>О колледже</p></Link>
+                <Link to="/mission" className={style.link}><p>Миссия</p></Link>
+                <Link to="/teachers" className={style.link}><p>Преподаватели</p></Link>
+                <Link to="/advice" className={style.link}><p>Наблюдательный совет</p></Link>
+                <Link to="/college" className={style.link}><p>Письмо Директора</p></Link>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            ПРОФЕССИИ
+            <div className={style.dropdownContent}>
+                <p>Программист</p>
+                <p>Дизайнер</p>
+                <p>Инженер</p>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            ПОСТУПАЮЩИМ
+            <div className={style.dropdownContent}>
+                <p>Условия поступления</p>
+                <p>Документы</p>
+                <p>Экзамены</p>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            ВОПРОСЫ-ОТВЕТЫ
+            <div className={style.dropdownContent}>
+                <p>Частые вопросы</p>
+                <p>Ответы на них</p>
+            </div>
+        </li>
+        <li className={style.navLi}>
+            КОНТАКТЫ
+            <div className={style.dropdownContent}>
+                <p>Телефон</p>
+                <p>Email</p>
+                <p>Адрес</p>
+            </div>
+        </li>
                     </ul>
                     <ul className={style.mobileLanguages}>
                         <li>EN</li>

@@ -11,7 +11,7 @@ export const MainSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 100000,
+        autoplaySpeed: 3000,
         swipe: true,
         draggable: true,
     };
@@ -21,7 +21,12 @@ export const MainSlider = () => {
             <div className={styles.carouselContainer}>
                 <Slider {...settings}>
                     <div className={styles.slide1}>
-                        <Box textAlign="left" p={2} className={styles.textContainer}>
+                    <iframe width="100%" height="1000" src="https://www.youtube.com/embed/W2whiny-HTY?si=OKVax6tVVHXAJz_n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                       
+                    </div>
+
+                    <div className={styles.slide2}>
+                    <Box textAlign="left" p={2} className={styles.textContainer}>
                             <Typography variant="h2">Почему именно <br /> этот колледж?</Typography>
                             <Typography variant="body1">
                                 Здесь вы найдете все необходимые <br />
@@ -33,20 +38,6 @@ export const MainSlider = () => {
                         <div className={styles.slide1Img}>
                             <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b3685.jpg" alt="College" className={styles.image} />
                         </div>
-                    </div>
-
-                    <div className={styles.slide2}>
-                        <iframe
-                            className={styles.video}
-                            width="100%"
-                            height="1000"
-                            src="https://www.youtube.com/embed/-hz9TMFEE94?si=_NFeK-wlWg_P8Z5l"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        />
                     </div>
                 </Slider>
             </div>

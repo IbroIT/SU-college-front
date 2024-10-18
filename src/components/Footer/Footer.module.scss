@@ -1,21 +1,27 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .footerContainer {
     background-color: #2c3e50;
     color: white;
-    padding: 0;
+    padding: 20px;
     margin: 0;
+    transition: background-color 0.3s ease;
 }
 
 .socialNetworksSection {
     text-align: center;
-    margin: 0 auto;
     max-width: 1400px;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 35px;
 }
 
 .title {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 40px; /* Default title size */
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease;
 }
 
 .icons {
@@ -26,13 +32,14 @@
 
 .icon {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 30px; /* Default icon size */
     transition: transform 0.3s, color 0.3s;
-}
-
-.icon:hover {
-    transform: scale(1.15);
-    color: #1abc9c;
+    cursor: pointer;
+    
+    &:hover {
+        transform: scale(1.15);
+        color: #1abc9c;
+    }
 }
 
 .infoSection {
@@ -45,19 +52,23 @@
 }
 
 .sectionTitle {
-    font-size: 20px;
+    font-size: 20px; /* Default section title size */
     margin-bottom: 5px;
 }
 
 .contactInfo, .aboutUs, .faq {
-    flex: 1;
-    min-width: 200px;
     margin: 5px;
+    animation: fadeIn 0.5s ease;
 }
 
 .contactItem, .aboutText, .faqItem {
-    font-size: 12px;
+    font-size: 14px; /* Increased base font size for better readability */
     color: #bdc3c7;
+    transition: color 0.3s;
+    
+    &:hover {
+        color: #1abc9c;
+    }
 }
 
 .footerBottom {
@@ -68,25 +79,24 @@
     text-align: center;
     margin: 0;
     padding: 10px 0;
+    height: 75px;
+    animation: fadeIn 0.5s ease;
 }
 
-.copyRight {
-    font-size: 12px;
+.copyRight, .developerText {
+    font-size: 14px; /* Increased base font size */
     color: #bdc3c7;
+    margin: 0 10px;
 }
 
-.developerText {
-    font-size: 12px;
-    color: #bdc3c7;
-}
-
+/* Mobile Styles */
 @media (max-width: 768px) {
     .socialNetworksSection {
         padding: 10px;
     }
 
     .title {
-        font-size: 20px;
+        font-size: 36px;  /* Adjusted size for mobile */
     }
 
     .icons {
@@ -94,19 +104,40 @@
     }
 
     .icon {
-        font-size: 25px;
-    }
-
-    .infoSection {
-        flex-direction: column;
-        align-items: center;
+        font-size: 25px;  /* Slightly smaller icons for mobile */
     }
 
     .sectionTitle {
-        font-size: 18px;
+        font-size: 18px;  /* Adjusted title size for mobile */
+    }
+
+    .contactItem, .aboutText, .faqItem {
+        font-size: 14px;  /* Increased text size for better readability */
+        text-align: center;  /* Centered text for better alignment */
+    }
+
+    .footerBottom {
+        flex-direction: column;  /* Stack items vertically */
+        padding: 5px;  /* Reduced padding */
     }
 
     .copyRight, .developerText {
-        font-size: 10px;
+        font-size: 12px;  /* Increased text size for mobile */
+    }
+
+    h3 {
+        font-size: 16px; /* Adjusted h3 size for mobile */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

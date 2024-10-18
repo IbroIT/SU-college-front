@@ -5,17 +5,18 @@
     width: 100%; 
     height: 400px; 
     position: relative; 
+
 }
 
 .imagesSection {
     display: flex; 
-    height: 100%; 
+    height: 80%; 
     column-gap: 10px;
     overflow-x: auto; 
 }
 
 .imagesSection img {
-    height: 100%; 
+    height: 90%; 
     width: auto; 
     object-fit: cover; 
     border-radius: 8px; 
