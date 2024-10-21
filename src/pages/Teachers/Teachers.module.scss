@@ -33,6 +33,14 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+    opacity: 0.5;
+}
+
+.teacherImage:hover {
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .teacherName {

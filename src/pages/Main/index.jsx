@@ -1,16 +1,13 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { Box, Typography, Button } from '@mui/material';
-import styles from './Main.module.scss'; 
-import { ImageSection } from '../../components/ImageSection';
-import { MainSlider } from '../../components/MainSlider';
-import { Choices } from '../../components/Choices';
+import React from 'react'
+import { Choices } from '../../components/Choices'
+import { ImageSection } from '../../components/ImageSection'
+import { About } from '../../components/AboutCollege'
 export const Main = () => {
-    return (
+    return(
         <>
-        <MainSlider/>    
+        <About/>
         <Choices/>
         <ImageSection/>
-            </>
-    );
-};
+        </>
+    )
+}

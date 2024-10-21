@@ -1,0 +1,52 @@
+// Нежно-голубой цвет и стиль для всего контейнера
+.About {
+    background-color: #e0f7fa; // Нежно-голубой фон
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  
+    .AboutContainer {
+      max-width: 1200px; // Максимальная ширина
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      animation: fadeIn 1s ease-in-out;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.02); // Небольшое увеличение при наведении
+      }
+  
+      .MainText {
+        text-align: center;
+        margin-bottom: 20px;
+  
+        h1 {
+          font-size: 2.5rem;
+          color: #00796b; // Тёмный оттенок зеленого
+        }
+  
+        p {
+          font-size: 1.2rem;
+          color: #004d40; // Тёмный оттенок зеленого
+        }
+      }
+  
+      .AboutText {
+        p {
+          font-size: 1rem;
+          line-height: 1.8;
+          color: #333;
+          text-align: justify;
+          margin: 20px 0;
+          animation: fadeInText 2s ease-in-out;
+  
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,383 @@
+{
+  "header": {
+    "search": "Search",
+    "college": "COLLEGE",
+    "aboutCollege": "About College",
+    "mission": "Mission",
+    "teachers": "Teachers",
+    "board": "Advisory Board",
+    "letterFromDirector": "Letter from the Director",
+    "professions": "PROFESSIONS",
+    "computerScience": "Computer Science",
+    "multimediaPrograms": "Multimedia Programs",
+    "mobileApps": "Mobile Apps",
+    "admissions": "ADMISSIONS",
+    "afterNinthGrade": "After 9th Grade",
+    "afterEleventhGrade": "After 11th Grade",
+    "faqs": "QUESTIONS & ANSWERS",
+    "contacts": "CONTACTS",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "footer": {
+    "title": "Salymbekov College",
+    "contactUs": "Contact Us",
+    "phone": "Phone: +123 456 7890",
+    "email": "Email: info@salymbekov.edu",
+    "aboutUs": "About Us",
+    "aboutText": "Salymbekov College is committed to quality education and leadership skills.",
+    "faq": "FAQ",
+    "faqItems": [
+      "1. What programs do you offer?",
+      "2. How can I apply for admission?",
+      "3. What are the tuition fees?"
+    ],
+    "copyRight": "© {{year}} Salymbekov College. All rights reserved.",
+    "developer": "Developed by M205"
+  },
+    "choices": {
+      "multimediaApplications": "Multimedia Applications",
+      "computerScience": "Computer Science",
+      "multimediaPrograms": "Multimedia Programs"
+    },
+
+      "about": {
+        "title": "Salymbekov University",
+        "subtitle": "Computer Science & Multimedia",
+        "description": "Salymbekov University and Lincoln University of Malaysia invite applicants to the International College of IT and Business to gain programming knowledge. The International College of IT and Business 'Salymbekov University' is a new college with a modern material and technical base, aimed at training specialists based on the latest educational programs in Russian and English. Students will be taught by the best specialists from the International College of IT and Business 'Salymbekov University' and 'Lincoln University'. Upon completion of their studies, students will acquire internationally recognized knowledge, two diplomas of Kyrgyz and international standards, and will possess English proficiency at the TOEFL/IELTS level."
+      },
+      
+        "slider": {
+          "title": "Why this college?",
+          "description": "Here you will find all the necessary resources for achieving success and developing your skills.",
+          "button": "Learn more"
+        }
+      ,
+      
+        "teachers": {
+            "title": "Our Teachers",
+            "alya": "Aliya",
+            "intro_cs_ai_ml": "Introduction to CS, AI, ML",
+            "mirlan": "Nurbekov Mirlan",
+            "oop_database": "OOP, Database",
+            "kunduz": "Kunduz",
+            "web_development": "Web Development",
+            "aidai": "Aidai",
+            "zubov": "Zubov Vlad",
+            "web_development_react": "Web Development, React",
+            "nurgul": "Nurgul Toktosheva",
+            "russian_language": "Russian Language",
+            "moloshev": "Moloshev",
+            "history": "History",
+            "gulina": "Gulina Ebishovna",
+            "chemistry": "Chemistry",
+            "nur": "Nur",
+            "physics": "Physics"
+        },
+        "notFound": {
+        "title": "Sorry, this page does not exist",
+        "message": "Check the URL or go back to the homepage.",
+        "link": "Go to homepage"
+    }
+    
+    
+      ,
+      "computerscience": {
+    "header": {
+      "title": "Computer Science",
+      "description": "Explore the exciting world of computer science by studying programming, artificial intelligence, databases, and much more."
+    },
+    "about": {
+      "title": "About the Program",
+      "description": "The 'Computer Science' program offers students an in-depth study of the theory and practice required to create innovative software solutions. Our goal is to prepare specialists capable of solving complex problems, developing software, and working in interdisciplinary teams."
+    },
+    "courses": {
+      "title": "Courses",
+      "list": [
+        {
+          "name": "Programming Fundamentals",
+          "description": "Master the basic concepts of programming such as syntax, logic, and algorithms. Ideal for beginners."
+        },
+        {
+          "name": "Artificial Intelligence",
+          "description": "Dive into AI and machine learning technologies. Learn how to create intelligent systems and applications."
+        },
+        {
+          "name": "Web Application Development",
+          "description": "Learn how to create dynamic websites and applications using popular programming languages and frameworks."
+        },
+        {
+          "name": "Mobile Applications",
+          "description": "Master application development for iOS and Android using modern technologies and methodologies."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Student Projects",
+      "list": [
+        {
+          "name": "Project: Smart Assistant",
+          "description": "Students developed a smart assistant that uses AI to process requests and perform tasks."
+        },
+        {
+          "name": "Project: Task Management Web Application",
+          "description": "A web application that helps users manage their tasks and projects with an intuitive interface."
+        },
+        {
+          "name": "Project: Fitness Mobile Application",
+          "description": "A mobile application that helps users track their workouts and achievements."
+        }
+      ]
+    },
+    "admission": {
+      "title": "How to Apply",
+      "description": "To apply for the 'Computer Science' program, submit your application through our online portal. We welcome students of all backgrounds.",
+      "applyButton": "Apply Now"
+    }
+  }
+    ,
+    "mobileDevelopment": {
+      "header": {
+        "title": "Mobile Development",
+        "description": "Learn how to create mobile applications for iOS and Android using the latest technologies."
+      },
+      "about": {
+        "title": "About the Profession",
+        "description": "Mobile development is one of the most in-demand and rapidly growing fields in IT. With the rise in popularity of smartphones, tablets, and other mobile devices, the ability to create applications for iOS and Android becomes an essential skill for IT specialists."
+      },
+      "courses": {
+        "title": "Courses",
+        "list": [
+          {
+            "name": "Basics of Mobile Development",
+            "description": "Learn the fundamental principles of mobile development for iOS and Android, and get acquainted with the tools needed to get started."
+          },
+          {
+            "name": "React Native Development",
+            "description": "Master cross-platform mobile application development using the React Native framework."
+          },
+          {
+            "name": "iOS Development with Swift",
+            "description": "Learn the Swift programming language and how to create native applications for iPhone and iPad."
+          },
+          {
+            "name": "Android Development with Kotlin",
+            "description": "Learn Kotlin — the primary language for Android application development, and start creating your own projects."
+          }
+        ]
+      },
+      "projects": {
+        "title": "Student Projects",
+        "list": [
+          {
+            "name": "Delivery Mobile Application",
+            "description": "An application that helps users order food and goods with real-time delivery."
+          },
+          {
+            "name": "Fitness Tracker Application",
+            "description": "A mobile application that tracks users' fitness activities and helps them achieve their sports goals."
+          },
+          {
+            "name": "Travel Application",
+            "description": "A convenient application for planning trips and booking tickets."
+          }
+        ]
+      },
+      "admission": {
+        "title": "How to Apply",
+        "description": "Join our mobile development program and start your career in a high-tech and promising field. Apply online and start learning today!",
+        "applyButton": "Apply Now"
+      }
+    },
+  "multimediaprograms": {
+    "header": {
+      "title": "Multimedia Programs",
+      "description": "Explore the world of multimedia technologies! Programs that combine art and technology to create incredible visual and audiovisual projects."
+    },
+    "about": {
+      "title": "About the Program",
+      "description1": "Our multimedia technologies program offers an in-depth immersion into creating audiovisual materials, 3D modeling, animation, and more. The program enables students to master the tools that modern designers and animators use to create interactive media products.",
+      "description2": "You will learn: the basics of design, working with video and audio, creating interactive applications, and using virtual and augmented reality technologies."
+    },
+    "courses": {
+      "title": "Courses",
+      "list": [
+        {
+          "name": "Design and Animation",
+          "description": "Master the basics of graphic design and animation. Learn to create amazing 2D and 3D animations that capture attention."
+        },
+        {
+          "name": "Video Editing and Post-production",
+          "description": "Learn how to edit videos, add visual effects, and work with editing software. Become a professional in creating videos for film and television."
+        },
+        {
+          "name": "Virtual Reality",
+          "description": "Discover how to create content for virtual reality. Work with technologies that create a fully immersive experience."
+        },
+        {
+          "name": "Augmented Reality",
+          "description": "Learn the principles of augmented reality and how to embed digital objects into the real world using modern tools."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Student Projects",
+      "list": [
+        {
+          "image": "https://chisellabs.com/blog/wp-content/uploads/2020/12/What-Is-Information-Technology-Project-Management.png",
+          "name": "Project: Virtual Tour",
+          "description": "Students created a virtual tour of famous museums around the world using VR technology and interactive design."
+        },
+        {
+          "image": "https://kantata.marketing/wp-content/uploads/2022/07/man-on-tablet-with-graphs-and-numbers-floating-above-the-tablet.jpg",
+          "name": "Project: Animated Short Film",
+          "description": "A creative team of students developed an animated film using 3D modeling and modern animation tools."
+        },
+        {
+          "image": "https://www.argentinaproduct.com/ckfinder/userfiles/files/blog/projectmanagement.jpg",
+          "name": "Project: Interactive Application",
+          "description": "An application created by students uses augmented reality to enhance the learning process in schools."
+        }
+      ]
+    },
+    "admission": {
+      "title": "How to Apply",
+      "description": "To apply for the multimedia technologies program, submit your application through our online portal. We will review your creative works and conduct an interview.",
+      "applyButton": "Apply Now"
+    }
+  },
+  "afterNinthGrade": {
+    "header": {
+      "title": "HOW TO ENROLL IN IT and Business College AFTER 9TH GRADE?"
+    },
+    "steps": [
+      {
+        "step": "Step 1. Document Submission",
+        "description": "To enroll in Salymbekov University after 9th or 10th grade, the applicant must submit the following documents:",
+        "documents": [
+          "birth certificate or passport;",
+          "original or duplicate certificate of secondary general education and accompanying documents;",
+          "color photo 3x4 cm;",
+          "completed application form for admission to Salymbekov University;",
+          "medical certificate 086-u;",
+          "military registration certificate (for males)."
+        ]
+      },
+      {
+        "step": "Step 2. Signing the Contract",
+        "description": "After document submission, once registered on the KR Ministry of Education portal, we will send an admission confirmation and invite you to the college to sign the contract."
+      },
+      {
+        "step": "Step 3. Payment for Education Contract",
+        "description": "After the contract is signed, payment of the initial tuition fee or the total contract amount is required within 3 days."
+      }
+    ],
+    "cost": {
+      "title": "COST OF EDUCATION",
+      "description": "The cost of education for students admitted to Salymbekov University in the 2024-25 academic year is $3500 per year and will not change throughout the entire period of study."
+    },
+    "contact": {
+      "description": "For more information about payment deadlines and forms, as well as possible discounts, please contact +996 (558) 658 518."
+    }
+  },
+  "afterEleventhGrade": {
+    "header": {
+      "title": "HOW TO ENROLL IN IT and Business College AFTER 11TH GRADE?"
+    },
+    "steps": [
+      {
+        "step": "Step 1. Document Submission",
+        "description": "To enroll in Salymbekov University after 9th or 10th grade, the applicant must submit the following documents:",
+        "documents": [
+          "birth certificate or passport;",
+          "original or duplicate certificate of secondary general education and accompanying documents;",
+          "color photo 3x4 cm;",
+          "completed application form for admission to Salymbekov University;",
+          "medical certificate 086-u;",
+          "military registration certificate (for males)."
+        ]
+      },
+      {
+        "step": "Step 2. Signing the Contract",
+        "description": "After document submission, once registered on the KR Ministry of Education portal, we will send an admission confirmation and invite you to the college to sign the contract."
+      },
+      {
+        "step": "Step 3. Payment for Education Contract",
+        "description": "After the contract is signed, payment of the initial tuition fee or the total contract amount is required within 3 days."
+      }
+    ],
+    "cost": {
+      "title": "COST OF EDUCATION",
+      "description": "The cost of education for students admitted to Salymbekov University in the 2024-25 academic year is $3500 per year and will not change throughout the entire period of study."
+    },
+    "contact": {
+      "description": "For more information about payment deadlines and forms, as well as possible discounts, please contact +996 (558) 658 518."
+    }
+  },
+  "FAQ": {
+  "Header": "Frequently asked questions",
+  "Questions": [
+        {
+            "question": "1. What specialties does the college offer?",
+            "answer": "Our college offers a variety of specialties, including information technology, business administration, engineering sciences, and humanities. We strive to provide students with the knowledge and skills needed for a successful career."
+        },
+        {
+            "question": "2. How can I go through the registration process?",
+            "answer": "The registration process includes filling out an online application, providing the necessary documents, and going through an interview. You can find all the details on our official website in the 'Admission' section."
+        },
+        {
+            "question": "3. Are there opportunities for scholarships?",
+            "answer": "Yes, our college offers various scholarships for students who demonstrate high academic achievement or participate in the college's social life. Additional information can be obtained from the financial department."
+        },
+        {
+            "question": "4. What are the living conditions in the dormitory?",
+            "answer": "We have comfortable dormitories where students can live in single or double rooms. The dormitory provides all necessary amenities, including kitchens, laundry facilities, and recreation areas. We strive to create a safe and friendly atmosphere."
+        },
+        {
+            "question": "5. What employment opportunities does the college provide?",
+            "answer": "We actively cooperate with local businesses and organizations, offering students internships and employment opportunities. We also have a career center that helps students find jobs after graduation."
+        },
+        {
+            "question": "6. What is the cost of tuition at the college?",
+            "answer": "Tuition costs depend on the chosen specialty and format. We recommend checking the latest information on our website in the 'Payments' section."
+        },
+        {
+            "question": "7. What additional services does the college offer?",
+            "answer": "Our college offers various additional services, including career counseling, psychological support, and medical care. We strive to take care of our students' well-being."
+        },
+        {
+            "question": "8. How does the college support the educational process?",
+            "answer": "We use modern technologies and teaching methods, allowing our students to receive a quality education. Regular seminars and practical classes help deepen knowledge."
+        },
+        {
+            "question": "9. Is it possible to study abroad?",
+            "answer": "Yes, our college has partnerships with international educational institutions, allowing students to participate in exchange programs and internships abroad."
+        },
+        {
+            "question": "10. How are students evaluated?",
+            "answer": "Students are evaluated based on exams, tests, and practical assignments. We apply various assessment methods for an objective analysis of knowledge."
+        },
+        {
+            "question": "11. What languages can be studied at the college?",
+            "answer": "Our college offers courses in English, German, and French. We also organize language clubs for communication practice."
+        },
+        {
+            "question": "12. What is the college's policy on inclusion?",
+            "answer": "We strive to create an inclusive environment for all students, regardless of their individual needs. We have special programs and resources to support students with disabilities."
+        },
+        {
+            "question": "13. How can students participate in college life?",
+            "answer": "Students can join various clubs and organizations, as well as participate in events and volunteer projects taking place at the college."
+        },
+        {
+            "question": "14. How does the college help students develop leadership skills?",
+            "answer": "We conduct training and workshops on leadership and provide students with opportunities to participate in college governance and event organization."
+        },
+        {
+            "question": "15. What are the core values of the college?",
+            "answer": "Our college is focused on the quality of education, inclusivity, and student support. We strive to create conditions for the personal and professional growth of every student."
+        }
+    ]
+  }
+}

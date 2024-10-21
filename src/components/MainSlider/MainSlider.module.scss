@@ -1,45 +1,77 @@
-.carouselContainer {
-    max-width: 1300px;        // Ограничиваем максимальную ширину слайдера
-    margin: 0 auto;          // Центрируем слайдер
+.sliderContainer {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
     overflow: hidden;
-    margin-top: 10px;         // Скрываем элементы, выходящие за пределы контейнера
 }
 
-.slide1 {
+.slide {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
-
-    @media (max-width: 768px) {
-        flex-direction: column;  // На мобильных устройствах - колонки
-        align-items: center;
-    }
-}
-
-.textContainer {
-    flex: 1;                   // Текст занимает 1 часть флекс-контейнера
-    max-width: 600px;         // Максимальная ширина текстовой области
-}
-
-.slide1Img {
-    flex: 1;                   // Изображение занимает 1 часть флекс-контейнера
-    display: flex;
-    width: 500px;
-    height: 300px;
-}
-
-.image {
-    max-width: 100%;          // Ограничиваем максимальную ширину изображения
-    height: auto;             // Автоматическая высота для сохранения пропорций
-}
-
-.slide2 {
-    width: 100%;              // Слайд 2 растягивается на всю ширину
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
 }
 
 .video {
-    width: 100%;              // Видео занимает 100% ширины родительского контейнера
-    height: 1000px;            // Устанавливаем высоту для видео
-    max-width: 100%;          // Ограничиваем максимальную ширину
+    width: 100%;
+    height: 700px;
+}
+
+.slide2Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+}
+
+.textContainer {
+    flex: 1;
+    max-width: 600px;
+}
+
+.slide2Img {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .video {
+        height: 50vh; /* Reduce video height on smaller screens */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Smaller title for mobile */
+    }
+
+    .description {
+        font-size: 1rem; /* Smaller description for mobile */
+    }
+
+    .textContainer {
+        padding: 0 10px; /* Reduce padding for mobile */
+    }
+
+    .button {
+        width: 100%; /* Make button full-width on mobile */
+        font-size: 0.9rem; /* Smaller button text */
+    }
 }

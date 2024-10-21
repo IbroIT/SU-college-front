@@ -1,13 +1,12 @@
-.computerScience {
+.mobileDevelopment {
     font-family: 'Arial', sans-serif;
     color: #333;
-
+  
     .headerSection {
-      background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+      background: linear-gradient(135deg, #32a852, #58d68d);
       color: white;
       padding: 50px 0;
       text-align: center;
-  
       h1 {
         font-size: 3rem;
       }
@@ -18,10 +17,7 @@
       }
     }
   
-    .aboutSection,
-    .coursesSection,
-    .projectsSection,
-    .admissionSection {
+    .aboutSection, .coursesSection, .projectsSection, .admissionSection {
       padding: 50px 20px;
   
       .container {
@@ -42,16 +38,13 @@
       }
     }
   
-    .coursesList,
-    .projectsList {
+    .coursesList, .projectsList {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
   
-      .courseItem,
-      .projectItem {
-        flex: 0 1 calc(50% - 20px); // Adjust for mobile view
-        max-width: calc(50% - 20px); // Set a max-width to ensure consistent sizing
+      .courseItem, .projectItem {
+        flex: 0 1 calc(50% - 20px);
         background: #f9f9f9;
         margin-bottom: 20px;
         padding: 20px;
@@ -60,22 +53,17 @@
         transition: transform 0.2s;
   
         &:hover {
-          transform: scale(1.02); // Add a hover effect
+          transform: scale(1.02);
         }
   
         h3 {
-            
           margin-bottom: 15px;
-        }
-  
-        p {
-          font-size: 1rem;
         }
   
         img {
           width: 100%;
-          height: 200px; // Set a fixed height to ensure images are uniform
-          object-fit: cover; // This will cover the area without distorting the image
+          height: 200px;
+          object-fit: cover;
           border-radius: 10px;
           margin-top: 15px;
         }
@@ -85,7 +73,7 @@
     .applyButton {
       display: inline-block;
       padding: 15px 30px;
-      background-color: #6a82fb;
+      background-color: #32a852;
       color: white;
       border: none;
       border-radius: 5px;
@@ -94,36 +82,15 @@
       transition: background-color 0.3s;
   
       &:hover {
-        background-color: #fc5c7d;
+        background-color: #58d68d;
       }
     }
   
-    .footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-  
-    // Mobile Styles
     @media (max-width: 768px) {
-      .coursesList,
-      .projectsList {
-        .courseItem,
-        .projectItem {
-          flex: 0 1 calc(100% - 20px); // Full width on mobile
-          max-width: calc(100% - 20px);
+      .coursesList, .projectsList {
+        .courseItem, .projectItem {
+          flex: 0 1 calc(100% - 20px);
         }
-      }
-      h3{
-        font-size: 20px;
-      }
-      h1 {
-        font-size: 2.5rem; // Responsive font size for mobile
-      }
-  
-      p {
-        font-size: 1rem; // Smaller paragraph font size for mobile
       }
     }
   }

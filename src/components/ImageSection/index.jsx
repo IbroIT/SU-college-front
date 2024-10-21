@@ -1,22 +1,24 @@
 import React, { useRef } from 'react';
 import styles from './Image.module.scss';
+import AnimatedScrollComponent from '../AnimatedComponents';
 
 export const ImageSection = () => {
     const carouselRef = useRef(null);
 
     const scrollLeft = () => {
         const carousel = carouselRef.current;
-        const scrollAmount = 300; 
+        const scrollAmount = 600; 
         carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     };
 
     const scrollRight = () => {
         const carousel = carouselRef.current;
-        const scrollAmount = 300;
+        const scrollAmount = 600;
         carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     };
 
     return (
+        <AnimatedScrollComponent>
         <div className={styles.carouselContainer}>
             <button className={styles.scrollButton} onClick={scrollLeft}>←</button>
             <div className={styles.imagesSection} ref={carouselRef}>
@@ -31,5 +33,6 @@ export const ImageSection = () => {
             </div>
             <button className={styles.scrollButton} onClick={scrollRight}>→</button>
         </div>
+        </AnimatedScrollComponent>
     );
 };

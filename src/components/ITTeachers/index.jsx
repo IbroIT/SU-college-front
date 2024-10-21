@@ -2,6 +2,7 @@ import React from "react";
 import styles from './ITTeachers.module.scss';
 import { Choices } from "../../components/Choices";
 import { ImageSection } from "../../components/ImageSection";
+import Mirlan from '../images/WhatsApp Image 2024-10-18 at 16.19.20.jpeg'
 export const ITteachers = () => {
     const teachers = [
         {
@@ -12,7 +13,7 @@ export const ITteachers = () => {
         {
             name: "Нурбеков Мирлан",
             subject: "OOP, DataBase",
-            image: "https://via.placeholder.com/150"
+            image: Mirlan
         },
         {
             name: "Кундуз",
@@ -25,7 +26,7 @@ export const ITteachers = () => {
             image: "https://via.placeholder.com/150"
         },
         {
-            name: "Агай",
+            name: "Зубов Влад",
             subject: "Web developement, React",
             image: "https://via.placeholder.com/150" // замените на URL изображений учителей
         },
