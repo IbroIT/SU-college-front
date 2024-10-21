@@ -12,6 +12,8 @@ import { Main } from './pages/Main';
 import { AfterNinthGrade } from './pages/AftrerNinthGrade';
 import { FAQ } from './pages/FAQ';
 import {AfterEleventhGrade} from './pages/AfterEleventhGrade'
+import Contacts from './pages/Contacts';
+
 function App() {
 
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path='/college' element={<Main/>}></Route>
         <Route path='/teachers' element={<Teachers/>}></Route>
         <Route path='/faq' element={<FAQ/>}></Route>
+        <Route path='/contacts' element={<Contacts/>}></Route>
 
         <Route path='/multimediaprograms' element={<MultimediaPrograms/>}></Route>
         <Route path='/mobile' element={<MobileDevelopment/>}></Route>

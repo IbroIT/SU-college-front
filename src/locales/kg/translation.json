@@ -99,19 +99,27 @@
       "list": [
         {
           "name": "Программалоонун негиздери",
-          "description": "Программалоонун негизги концепцияларын, мисалы, синтаксисти, логиканы жана алгоритмдерди үйрөнүңүз. Жаңы баштагандар үчүн идеалдуу."
+          "description": "Программалоонун негизги концепцияларын, мисалы, синтаксисти, логиканы жана алгоритмдерди үйрөнүңүз. Жаңы баштагандар үчүн идеалдуу.",
+          "image": "https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+
         },
         {
           "name": "Жасалма интеллект",
-          "description": "AI жана машиналык үйрөнүү технологияларына киришүү. Интеллектуалдуу системаларды жана колдонмолорду түзүүнү үйрөнүңүз."
+          "description": "AI жана машиналык үйрөнүү технологияларына киришүү. Интеллектуалдуу системаларды жана колдонмолорду түзүүнү үйрөнүңүз.",
+          "image": "https://www.advgazeta.ru/upload/iblock/174/edtlpxlu6bbj0h0k9s0ia7085si4sufv/iskusstvennyy_intellekt_pomogaet_predprinimatelyam_i_tvortsam.jpg"
+
         },
         {
           "name": "Веб колдонмолорду иштеп чыгуу",
-          "description": "Популярдуу программалоо тилдерин жана фреймворктарды колдонуп динамикалык веб-сайттарды жана колдонмолорду түзүүнү үйрөнүңүз."
+          "description": "Популярдуу программалоо тилдерин жана фреймворктарды колдонуп динамикалык веб-сайттарды жана колдонмолорду түзүүнү үйрөнүңүз.",
+          "image": "https://miro.medium.com/v2/resize:fit:1400/0*7VyEZgzwUhQMeBqb"
+
         },
         {
           "name": "Мобильдик колдонмолор",
-          "description": "iOS жана Android үчүн колдонмолорду түзүүнү заманбап технологияларды жана методологияларды колдонуп үйрөнүңүз."
+          "description": "iOS жана Android үчүн колдонмолорду түзүүнү заманбап технологияларды жана методологияларды колдонуп үйрөнүңүз.",
+          "image": "https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg"
+
         }
       ]
     },
@@ -152,19 +160,27 @@
       "list": [
         {
           "name": "Мобилдик өнүктүрүүнүн негиздери",
-          "description": "iOS жана Android үчүн мобилдик өнүктүрүүнүн негизги принциптерин үйрөнүңүз жана ишке киришүү үчүн зарыл болгон куралдар менен таанышылыңыз."
+          "description": "iOS жана Android үчүн мобилдик өнүктүрүүнүн негизги принциптерин үйрөнүңүз жана ишке киришүү үчүн зарыл болгон куралдар менен таанышылыңыз.",
+          "image": "https://netgate.kiev.ua/wp-content/uploads/2024/01/2694-razrabotka-mobilnyh-prilozhenij-osnovy-kotorye-nuzhno-znat-zakazchiku.jpg"
+
         },
         {
           "name": "React Native менен өнүктүрүү",
-          "description": "React Native фреймворкун колдонуп кросс-платформалуу мобилдик колдонмолорду түзүүнү үйрөнүңүз."
+          "description": "React Native фреймворкун колдонуп кросс-платформалуу мобилдик колдонмолорду түзүүнү үйрөнүңүз.",
+          "image": "https://miro.medium.com/v2/resize:fit:1024/0*74NwxNdMYcbJ6RPL.png"
+
         },
         {
           "name": "Swift менен iOS өнүктүрүү",
-          "description": "Swift программалоо тилин үйрөнүп, iPhone жана iPad үчүн нативдик колдонмолорду түзүүнү үйрөнүңүз."
+          "description": "Swift программалоо тилин үйрөнүп, iPhone жана iPad үчүн нативдик колдонмолорду түзүүнү үйрөнүңүз.",
+          "image": "https://cdn.prod.website-files.com/63fda77e5fd49598bbf00892/6416e5ccdbc0d68da0d7727d_swift.jpg"
+
         },
         {
           "name": "Kotlin менен Android өнүктүрүү",
-          "description": "Android колдонмолорун түзүү үчүн негизги тил болгон Kotlinди үйрөнүп, өз долбоорлоруңузду түзүүнү баштаңыз."
+          "description": "Android колдонмолорун түзүү үчүн негизги тил болгон Kotlinди үйрөнүп, өз долбоорлоруңузду түзүүнү баштаңыз.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGeyRWIrFlmmtuAzjub6qNKOx9Ub3jESPG9w&s"
+
         }
       ]
     },

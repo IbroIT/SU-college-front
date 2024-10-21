@@ -97,19 +97,26 @@
       "list": [
         {
           "name": "Programming Fundamentals",
-          "description": "Master the basic concepts of programming such as syntax, logic, and algorithms. Ideal for beginners."
+          "description": "Master the basic concepts of programming such as syntax, logic, and algorithms. Ideal for beginners.",
+          "image": "https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
         },
         {
           "name": "Artificial Intelligence",
-          "description": "Dive into AI and machine learning technologies. Learn how to create intelligent systems and applications."
+          "description": "Dive into AI and machine learning technologies. Learn how to create intelligent systems and applications.",
+          "image": "https://www.advgazeta.ru/upload/iblock/174/edtlpxlu6bbj0h0k9s0ia7085si4sufv/iskusstvennyy_intellekt_pomogaet_predprinimatelyam_i_tvortsam.jpg"
+
         },
         {
           "name": "Web Application Development",
-          "description": "Learn how to create dynamic websites and applications using popular programming languages and frameworks."
+          "description": "Learn how to create dynamic websites and applications using popular programming languages and frameworks.",
+          "image": "https://miro.medium.com/v2/resize:fit:1400/0*7VyEZgzwUhQMeBqb"
+
         },
         {
           "name": "Mobile Applications",
-          "description": "Master application development for iOS and Android using modern technologies and methodologies."
+          "description": "Master application development for iOS and Android using modern technologies and methodologies.",
+          "image": "https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg"
+
         }
       ]
     },
@@ -151,19 +158,27 @@
         "list": [
           {
             "name": "Basics of Mobile Development",
-            "description": "Learn the fundamental principles of mobile development for iOS and Android, and get acquainted with the tools needed to get started."
+            "description": "Learn the fundamental principles of mobile development for iOS and Android, and get acquainted with the tools needed to get started.",
+            "image": "https://netgate.kiev.ua/wp-content/uploads/2024/01/2694-razrabotka-mobilnyh-prilozhenij-osnovy-kotorye-nuzhno-znat-zakazchiku.jpg"
+
           },
           {
             "name": "React Native Development",
-            "description": "Master cross-platform mobile application development using the React Native framework."
+            "description": "Master cross-platform mobile application development using the React Native framework.",
+            "image": "https://miro.medium.com/v2/resize:fit:1024/0*74NwxNdMYcbJ6RPL.png"
+
           },
           {
             "name": "iOS Development with Swift",
-            "description": "Learn the Swift programming language and how to create native applications for iPhone and iPad."
+            "description": "Learn the Swift programming language and how to create native applications for iPhone and iPad.",
+            "image": "https://cdn.prod.website-files.com/63fda77e5fd49598bbf00892/6416e5ccdbc0d68da0d7727d_swift.jpg"
+
           },
           {
             "name": "Android Development with Kotlin",
-            "description": "Learn Kotlin — the primary language for Android application development, and start creating your own projects."
+            "description": "Learn Kotlin — the primary language for Android application development, and start creating your own projects.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGeyRWIrFlmmtuAzjub6qNKOx9Ub3jESPG9w&s"
+
           }
         ]
       },

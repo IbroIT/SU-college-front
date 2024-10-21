@@ -98,19 +98,27 @@
       "list": [
         {
           "name": "Основы программирования",
-          "description": "Освойте базовые концепции программирования, такие как синтаксис, логика и алгоритмы. Идеально подходит для начинающих."
+          "description": "Освойте базовые концепции программирования, такие как синтаксис, логика и алгоритмы. Идеально подходит для начинающих.",
+          "image": "https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067"
+
         },
         {
           "name": "Искусственный интеллект",
-          "description": "Погружение в технологии AI и машинного обучения. Узнайте, как создавать интеллектуальные системы и приложения."
+          "description": "Погружение в технологии AI и машинного обучения. Узнайте, как создавать интеллектуальные системы и приложения.",
+          "image": "https://www.advgazeta.ru/upload/iblock/174/edtlpxlu6bbj0h0k9s0ia7085si4sufv/iskusstvennyy_intellekt_pomogaet_predprinimatelyam_i_tvortsam.jpg"
+
         },
         {
           "name": "Разработка веб-приложений",
-          "description": "Научитесь создавать динамические веб-сайты и приложения с использованием популярных языков программирования и фреймворков."
+          "description": "Научитесь создавать динамические веб-сайты и приложения с использованием популярных языков программирования и фреймворков.",
+          "image": "https://miro.medium.com/v2/resize:fit:1400/0*7VyEZgzwUhQMeBqb"
+
         },
         {
           "name": "Мобильные приложения",
-          "description": "Освойте разработку приложений для iOS и Android, используя современные технологии и методологии."
+          "description": "Освойте разработку приложений для iOS и Android, используя современные технологии и методологии.",
+          "image": "https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg"
+
         }
       ]
     },
@@ -152,19 +160,27 @@
       "list": [
         {
           "name": "Основы мобильной разработки",
-          "description": "Изучите основные принципы мобильной разработки для iOS и Android, а также познакомьтесь с инструментами, необходимыми для начала работы."
+          "description": "Изучите основные принципы мобильной разработки для iOS и Android, а также познакомьтесь с инструментами, необходимыми для начала работы.",
+          "image": "https://netgate.kiev.ua/wp-content/uploads/2024/01/2694-razrabotka-mobilnyh-prilozhenij-osnovy-kotorye-nuzhno-znat-zakazchiku.jpg"
+
         },
         {
           "name": "Разработка на React Native",
-          "description": "Освойте кросс-платформенную разработку мобильных приложений с использованием фреймворка React Native."
+          "description": "Освойте кросс-платформенную разработку мобильных приложений с использованием фреймворка React Native.",
+          "image": "https://miro.medium.com/v2/resize:fit:1024/0*74NwxNdMYcbJ6RPL.png"
+
         },
         {
           "name": "iOS-разработка на Swift",
-          "description": "Изучите язык программирования Swift и научитесь создавать нативные приложения для iPhone и iPad."
+          "description": "Изучите язык программирования Swift и научитесь создавать нативные приложения для iPhone и iPad.",
+          "image": "https://cdn.prod.website-files.com/63fda77e5fd49598bbf00892/6416e5ccdbc0d68da0d7727d_swift.jpg"
+
         },
         {
           "name": "Android-разработка на Kotlin",
-          "description": "Изучите Kotlin — основной язык для разработки Android-приложений, и начните создавать собственные проекты."
+          "description": "Изучите Kotlin — основной язык для разработки Android-приложений, и начните создавать собственные проекты.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGeyRWIrFlmmtuAzjub6qNKOx9Ub3jESPG9w&s"
+
         }
       ]
     },
@@ -319,6 +335,7 @@
     ,
     "FAQ": {
     "Header": "Most often asked questions",
+
     "Questions": [
         {
             "question": "1. Какие специальности предлагает колледж?",

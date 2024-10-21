@@ -75,16 +75,11 @@ export const Header = () => {
                         {t('header.faqs')}
                     </li>
                     </Link>
+                    <Link to="/contacts">
                     <li className={style.navLi}>
                         {t('header.contacts')}
-                        <div className={style.dropdownContent}>
-                            <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
-                            <Link to="/college"><p>{t('header.mission')}</p></Link>
-                            <Link to="/college"><p>{t('header.teachers')}</p></Link>
-                            <Link to="/college"><p>{t('header.board')}</p></Link>
-                            <Link to="/college"><p>{t('header.letterFromDirector')}</p></Link>
-                        </div>
                     </li>
+                    </Link>
                 </ul>
             </nav>
             {isMenuOpen && (
@@ -126,16 +121,11 @@ export const Header = () => {
                         {t('header.faqs')}
                     </li>
                     </Link>
+                    <Link to="/contacts">
                         <li className={style.navLi}>
                             {t('header.contacts')}
-                            <div className={style.dropdownContent}>
-                                <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
-                                <Link to="/college"><p>{t('header.mission')}</p></Link>
-                                <Link to="/college"><p>{t('header.teachers')}</p></Link>
-                                <Link to="/college"><p>{t('header.board')}</p></Link>
-                                <Link to="/college"><p>{t('header.letterFromDirector')}</p></Link>
-                            </div>
                         </li>
+                    </Link>
                     </ul>
                     <LanguageSwitcher /> 
                 </div>
