@@ -24,7 +24,6 @@
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    height: 700px;
 }
 
 .textContainer {
@@ -55,17 +54,25 @@
 }
 @media (max-width: 768px) {
     .video {
-        height: 50vh; /* Reduce video height on smaller screens */
+        height: 70vh; /* Reduce video height on smaller screens */
     }
-
-    .title {
-        font-size: 1.5rem; /* Smaller title for mobile */
+    .slide{
+        display: block;
     }
-
+    .slide2Container{
+        display: block;
+    }
+    .slide .title {
+        font-size: 35px; /* Smaller title for mobile */
+    }
+    
     .description {
         font-size: 1rem; /* Smaller description for mobile */
     }
-
+    .slide img{
+        width: 450px;
+        height: 300px;;
+    }
     .textContainer {
         padding: 0 10px; /* Reduce padding for mobile */
     }
