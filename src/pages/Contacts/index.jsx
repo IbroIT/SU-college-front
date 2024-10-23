@@ -1,21 +1,23 @@
-// Contacts.jsx
-
 import React from "react";
 import styles from './Contacts.module.scss';
-
-const Contacts = () => {
+import { useTranslation } from 'react-i18next';
+import AnimatedScrollComponent from '../../components/AnimatedComponents'
+export const Contacts = () => {
+    const { t } = useTranslation();
+    
     return (
+        <AnimatedScrollComponent>
         <div className={styles.contacts}>
             <div className={styles.contactInfo}>
-                <h1 className={styles.contactTitle}>Контактная информация</h1>
+                <h1 className={styles.contactTitle}>{t('contacts.contactTitle')}</h1>
                 <div className={styles.contactDetails}>
-                    <p><strong>Адрес:</strong> ул. Примерная, д. 123, г. Примерный</p>
-                    <p><strong>Телефон:</strong> +7 (123) 456-7890</p>
-                    <p><strong>Email:</strong> info@example.com</p>
+                    <p><strong>{t('contacts.address')}</strong> {t('contacts.addressDetails')}</p>
+                    <p><strong>{t('contacts.phone')}</strong> {t('contacts.phoneDetails')}</p>
+                    <p><strong>{t('contacts.email')}</strong> {t('contacts.emailDetails')}</p>
                 </div>
             </div>
             <div className={styles.mapContainer}>
-                {/* Replace with an embedded map or any other desired content */}
+                {/* Замените на встроенную карту или любой другой желаемый контент */}
                 <iframe
                     title="location"
                     className={styles.map}
@@ -25,7 +27,7 @@ const Contacts = () => {
                 ></iframe>
             </div>
         </div>
+        </AnimatedScrollComponent>
     );
 };
 
-export default Contacts;

@@ -157,7 +157,6 @@
         color: #3a4d96;
     }
 
-    /* Показываем выпадающее меню при наведении */
     &:hover .dropdownContent {
         display: block;
     }
@@ -168,7 +167,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff; /* Changed to white for better contrast */
+    background-color: #ffffff; 
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 10px;

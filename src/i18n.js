@@ -11,12 +11,12 @@ i18next
       ru: {
         translation: require('./locales/ru/translation.json')
       },
-      ky: {
+      kg: {
         translation: require('./locales/kg/translation.json')
       }
     },
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: 'kg',
+    fallbackLng: 'kg',
     interpolation: {
       escapeValue: false 
     }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './FAQ.module.scss';
 import { useTranslation } from 'react-i18next';
-
+import AnimatedScrollComponent from "../../components/AnimatedComponents";
 export const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const { t } = useTranslation();
@@ -13,6 +13,7 @@ export const FAQ = () => {
     };
 
     return (
+        <AnimatedScrollComponent>
         <div className={styles.faqContainer}>
             <h1 className={styles.title}>{t('FAQ.Header')}</h1>
 
@@ -34,6 +35,7 @@ export const FAQ = () => {
                 </div>
             ))}
         </div>
+        </AnimatedScrollComponent>
     );
 };
 

@@ -23,8 +23,8 @@
   "footer": {
     "title": "Salymbekov College",
     "contactUs": "Contact Us",
-    "phone": "Phone: +123 456 7890",
-    "email": "Email: info@salymbekov.edu",
+    "phone": "Phone: +996 (312) 658538",
+    "email": "Email: info@salymbekov.com",
     "aboutUs": "About Us",
     "aboutText": "Salymbekov College is committed to quality education and leadership skills.",
     "faq": "FAQ",
@@ -394,5 +394,14 @@
             "answer": "Our college is focused on the quality of education, inclusivity, and student support. We strive to create conditions for the personal and professional growth of every student."
         }
     ]
-  }
+  },
+  "contacts": {
+      "contactTitle": "Contact Information",
+      "address": "Address:",
+      "addressDetails": "Fuchika St. 3, Bishkek",
+      "phone": "Phone:",
+      "phoneDetails": "+996 (312) 658-538",
+      "email": "Email:",
+      "emailDetails": "info@salymbekov.com"
+    }
 }

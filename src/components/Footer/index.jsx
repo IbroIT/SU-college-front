@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import { useTranslation } from 'react-i18next';
-
+import { Link } from 'react-router-dom';
 export const Footer = () => {
     const { t } = useTranslation();
 
@@ -17,24 +17,33 @@ export const Footer = () => {
                         <i className={`fab fa-linkedin-in ${styles.icon}`} />
                     </div>
                 </div>
+                
                 <div className={styles.infoSection}>
+                    <Link to='/contacts' className={styles.linkCustom}>
                     <div className={styles.contactInfo}>
                         <h4 className={styles.sectionTitle}>{t('footer.contactUs')}</h4>
                         <p className={styles.contactItem}>{t('footer.phone')}</p>
                         <p className={styles.contactItem}>{t('footer.email')}</p>
                     </div>
+                    </Link>
+                    <Link to='/college' className={styles.linkCustom}>
                     <div className={styles.aboutUs}>
-                        <h4 className={styles.sectionTitle}>{t('footer.aboutUs')}</h4>
-                        <p className={styles.aboutText}>
-                            {t('footer.aboutText')}
-                        </p>
+                      <h4 className={styles.sectionTitle}>{t('footer.aboutUs')}</h4>
+                      <p className={styles.aboutText}>
+                        {t('footer.aboutText')}
+                      </p>
                     </div>
+                  </Link>
+                  
+                  <Link to="/faq" className={styles.linkCustom}>
                     <div className={styles.faq}>
-                        <h4 className={styles.sectionTitle}>{t('footer.faq')}</h4>
-                        {t('footer.faqItems', { returnObjects: true }).map((item, index) => (
-                            <p key={index} className={styles.faqItem}>{item}</p>
-                        ))}
+                      <h4 className={styles.sectionTitle}>{t('footer.faq')}</h4>
+                      {t('footer.faqItems', { returnObjects: true }).map((item, index) => (
+                        <p key={index} className={styles.faqItem}>{item}</p>
+                      ))}
                     </div>
+                  </Link>
+
                 </div>
             </div>
             <div className={styles.footerBottom}>

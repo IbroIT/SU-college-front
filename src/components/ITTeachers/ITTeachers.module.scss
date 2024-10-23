@@ -43,3 +43,16 @@
 .teacherSubject {
     color: #666;
 }
+.teacherImage {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+    opacity: 0.5;
+}
+
+.teacherImage:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}

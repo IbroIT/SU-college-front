@@ -1,10 +1,13 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import ScrollToTop from './components/ScrollToTop'
+
 import { Teachers } from './pages/Teachers';
 import { AboutCollege } from './pages/AboutCollege';
-import NotFound from './pages/NotFound';
+import { NotFound } from './pages/NotFound';
 import { MultimediaPrograms } from './pages/MultimediaPrograms';
 import { ComputerScience } from './pages/ComputerScience';
 import { MobileDevelopment } from './pages/MobileDevelopment';
@@ -12,13 +15,14 @@ import { Main } from './pages/Main';
 import { AfterNinthGrade } from './pages/AftrerNinthGrade';
 import { FAQ } from './pages/FAQ';
 import {AfterEleventhGrade} from './pages/AfterEleventhGrade'
-import Contacts from './pages/Contacts';
+import { Contacts } from './pages/Contacts';
 
 function App() {
 
   return (
     <Router>
     <div className="App">
+      <ScrollToTop/>
       <Header/>
       <Routes>
         <Route path='/' element={<AboutCollege/>}></Route>
@@ -37,6 +41,7 @@ function App() {
 
 
         <Route path="*" element={<NotFound/>} /> 
+        
       </Routes>
       <Footer/>
     </div>
