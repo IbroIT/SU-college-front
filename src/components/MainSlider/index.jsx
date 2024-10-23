@@ -49,7 +49,7 @@ export const MainSlider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 5000);
+        }, 4000);
 
         return () => clearInterval(interval); 
     }, []);
