@@ -143,6 +143,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .navLi {
@@ -157,84 +158,107 @@
         color: #3a4d96;
     }
 
+    /* Показываем выпадающее меню при наведении */
     &:hover .dropdownContent {
         display: block;
     }
 }
-.searchForm {
-    display: flex;
-    align-items: center;
-}
-
-.searchInput {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 8px;
-    width: 200px; /* Adjust as needed */
-}
-
-.searchButton {
-    background-color: #007bff; /* Example button color */
-    color: white;
-    &:hover {
-        background-color: #0056b3; /* Example hover color */
-    }
-}
 
 .dropdownContent {
-    display: none;
+    display: none; /* Скрываем по умолчанию */
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff; 
+    background-color: #ffffff; /* Цвет фона */
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 10px;
     z-index: 1;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Добавлено для анимации */
     opacity: 0;
     visibility: hidden;
-    border-radius: 8px; /* Added rounded corners */
-
-    /* Анимация появления */
-    &:hover {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /* Стили для параграфов внутри */
-    p {
-        list-style-type: none;
-        text-decoration: none;
-        margin: 8px 0;
-        padding: 8px;
-        font-size: 14px;
-        color: #333;
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for animation */
-
-        &:hover {
-            background-color: #e3e3e3;
-            border-radius: 5px;
-            transform: scale(1.05); /* Added scale effect on hover */
-        }
-    }
+    border-radius: 8px; /* Скругленные углы */
+    transform: translateY(-10px); /* Начальное положение для анимации */
 }
 
-/* При наведении делаем выпадающее меню видимым */
+/* Анимация появления */
 .navLi:hover .dropdownContent {
-    display: block;
+    display: block; /* Показываем меню при наведении */
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
 }
 
+/* Стили для параграфов внутри */
+.dropdownContent p {
+    list-style-type: none;
+    text-decoration: none;  
+    margin: 8px 0;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Анимация фона и трансформации */
+}
 
+/* Эффект при наведении на элементы выпадающего меню */
+.dropdownContent p:hover {
+    background-color: #e3e3e3; /* Цвет фона при наведении */
+    border-radius: 5px;
+    transform: scale(1.05); /* Эффект масштабирования при наведении */
+}
+
+/* Улучшение стилей для элементов списка */
+.dropdownContent p {
+    padding: 10px 15px; /* Улучшенное выравнивание */
+    border-radius: 4px; /* Скругленные углы */
+    cursor: pointer; /* Курсор указывает на кликабельность */
+}
+
+/* Эффект затемнения для родительского элемента при наведении */
+.navLi:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Легкое затемнение фона родительского элемента */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+}
+
+/* Добавление стилей для улучшения визуального восприятия */
+.dropdownContent p {
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-weight: 500; /* Увеличенная жирность текста */
+}
+
+.link {
+    color: #000; /* Замените на желаемый цвет */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+.link:hover {
+    color: #555; /* Цвет при наведении */
+}
 
 @media (max-width: 768px) {
+    .dropdownContent {
+        min-width: 100%; 
+        left: 0; 
+    }
+
+    .navLi:hover .dropdownContent {
+        position: relative; 
+        top: 0; 
+    }
     .actions {
         display: none;
     }
-
+    .headerUl{
+        list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+    }
     .title{
         margin-right: 150px;
     }
@@ -332,7 +356,29 @@
     .mobileMenuNav li:hover {
         color: #3a4d96;
     }
+    .mobileMenuNav li {
+        font-size: 15.5px;
+        color: #333;
+        margin: 15px 0;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease;
+        position: relative;
+        animation: fadeInUp 0.4s ease;
+        font-family: 'Arial', sans-serif;
 
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #cecece;
+            margin-top: 5px;
+        }
+
+        &:hover {
+            color: #3a4d96;
+        }
+    }
     .mobileLanguages {
         display: flex;
         justify-content: space-between;
@@ -362,6 +408,10 @@
         margin-top: 5px;
     }
 
+    .mobileActions{
+        margin-top: 50px;
+        margin-left: 15px;
+    }
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -391,8 +441,3 @@
         }
     }
 }
-#google_translate_element {
-    display: none;
-  }
-  
-  
