@@ -4,14 +4,17 @@ import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import style from './Header.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import axios from 'axios';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { t } = useTranslation();
-
+    const navigate = useNavigate();
+    const [query, setQuery] = useState('');
+    const [language, setLanguage] = useState('en'); // язык по умолчанию
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -20,6 +23,20 @@ export const Header = () => {
         setIsMenuOpen(false);
     };
 
+    const handleSearch = async () => {
+        try {
+            const response = await axios.post('http://localhost:5000/search', {
+                searchTerm: query,
+                lang: language,
+            });
+
+            if (response.data.length > 0) {
+                navigate('/search-results', { state: { results: response.data } });
+            }
+        } catch (error) {
+            console.error('Search error:', error);
+        }
+    };
     return (
         <>
             <div className={style.blueLine}></div>
@@ -33,11 +50,19 @@ export const Header = () => {
                     </div>
 
                     <div className={style.actions}>
-                        <h1 className={style.searchText}>{t('header.search')}</h1>
-                        <Button fontSize='small'>
-                            <Search fontSize='small' />
-                        </Button>
-                        <LanguageSwitcher /> 
+                        <div className={style.search}>
+                            <input
+                                type="text"
+                                value={query}
+                                onChange={(e) => setQuery(e.target.value)}
+                                placeholder={t('header.search')}
+                                className={style.searchInput}
+                            />
+                            <Button onClick={handleSearch} fontSize='small'>
+                                <Search fontSize='small' />
+                            </Button>
+                        </div>
+                        <LanguageSwitcher setLanguage={setLanguage} />
                     </div>
 
                     <div className={style.burgerMenu} onClick={toggleMenu}>
@@ -51,29 +76,29 @@ export const Header = () => {
                     <li className={style.navLi}>
                         {t('header.college')}
                         <div className={style.dropdownContent}>
-                            <Link to="/college" ><p>{t('header.aboutCollege')}</p></Link>
-                            <Link to="/mission" ><p>{t('header.mission')}</p></Link>
+                            <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
+                            <Link to="/mission"><p>{t('header.mission')}</p></Link>
                             <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
-                            <Link to="/advice" ><p>{t('header.board')}</p></Link>
+                            <Link to="/advice"><p>{t('header.board')}</p></Link>
                             <Link to="/college"><p>{t('header.letterFromDirector')}</p></Link>
                         </div>
                     </li>
                     <li className={style.navLi}>
                         {t('header.professions')}
                         <div className={style.dropdownContent}>
-                            <Link to="/computerscience" ><p>{t('header.computerScience')}</p></Link>
-                            <Link to="/multimediaprograms" ><p>{t('header.multimediaPrograms')}</p></Link>
+                            <Link to="/computerscience"><p>{t('header.computerScience')}</p></Link>
+                            <Link to="/multimediaprograms"><p>{t('header.multimediaPrograms')}</p></Link>
                             <Link to="/mobile"><p>{t('header.mobileApps')}</p></Link>
                         </div>
                     </li>
                     <li className={style.navLi}>
                         {t('header.admissions')}
                         <div className={style.dropdownContent}>
-                            <Link to="/afterninthgrade" ><p>{t('header.afterNinthGrade')}</p></Link>
-                            <Link to="/aftereleventhgrade" ><p>{t('header.afterEleventhGrade')}</p></Link>
+                            <Link to="/afterninthgrade"><p>{t('header.afterNinthGrade')}</p></Link>
+                            <Link to="/aftereleventhgrade"><p>{t('header.afterEleventhGrade')}</p></Link>
                         </div>
                     </li>
-                    <Link to="/faq" >
+                    <Link to="/faq">
                         <li className={style.navLi}>{t('header.faqs')}</li>
                     </Link>
                     <Link to="/contacts">
@@ -89,10 +114,11 @@ export const Header = () => {
                             <img
                                 src='https://salymbekov.com/wp-content/uploads/2023/02/logo-salymbekov-university-site.png'
                                 alt='Salymbekov College Logo'
+                                className={style.mobileLogo}
                             />
                         </Link>
                     </div>
-                    <ul className={style.mobileMenuNav}>
+                    <ul className={style.headerUl}>
                         <li className={style.navLi}>
                             {t('header.college')}
                             <div className={style.dropdownContent}>
@@ -125,7 +151,6 @@ export const Header = () => {
                             <li className={style.navLi}>{t('header.contacts')}</li>
                         </Link>
                     </ul>
-                    <LanguageSwitcher />
                 </div>
             )}
         </>

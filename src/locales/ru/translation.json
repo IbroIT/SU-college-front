@@ -407,5 +407,9 @@
     "phoneDetails": "+996 (312) 658-538",
     "email": "Электронная почта:",
     "emailDetails": "info@salymbekov.com"
+  },
+  "searchResults": {
+      "noResults": "Результатов не найдено для",
+      "resultsFor": "Результаты для"
   }
 }

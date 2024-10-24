@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './Mobile.module.scss';
 import { Choices } from '../../components/Choices';
 import { ITteachers } from '../../components/ITTeachers';
 import { ImageSection } from '../../components/ImageSection';
 import AnimatedScrollComponent from '../../components/AnimatedComponents';
 import { useTranslation } from 'react-i18next';
+import ClassModal from '../../components/Modal';
 
 export const MobileDevelopment = () => {
   const { t } = useTranslation();
+  const [isModalOpen, setModalOpen] = useState(false); // Состояние для управления модальным окном
 
+  const handleOpenModal = () => setModalOpen(true); // Функция для открытия модального окна
+  const handleCloseModal = () => setModalOpen(false); 
   return (
     <>
       <AnimatedScrollComponent>
@@ -69,14 +73,19 @@ export const MobileDevelopment = () => {
             <div className={styles.container}>
               <h2>{t('mobileDevelopment.admission.title')}</h2>
               <p>{t('mobileDevelopment.admission.description')}</p>
-              <button className={styles.applyButton}>{t('mobileDevelopment.admission.applyButton')}</button>
-            </div>
+              <button className={styles.applyButton} onClick={handleOpenModal}>
+                {t('mobileDevelopment.admission.applyButton')}
+              </button>               
+              </div>
           </section>
         </div>
       </AnimatedScrollComponent>
       <Choices />
       <ITteachers />
       <ImageSection />
+
+      {isModalOpen && <ClassModal onClose={handleCloseModal} />}
+
     </>
   );
 };

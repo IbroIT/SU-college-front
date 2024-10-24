@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './ComputerScience.module.scss';
 import { Choices } from '../../components/Choices';
 import { ITteachers } from '../../components/ITTeachers';
 import { ImageSection } from '../../components/ImageSection';
 import AnimatedScrollComponent from '../../components/AnimatedComponents';
 import { useTranslation } from 'react-i18next';
+import ClassModal from '../../components/Modal';
 
 export const ComputerScience = () => {
   const { t } = useTranslation();
+  const [isModalOpen, setModalOpen] = useState(false); // Состояние для управления модальным окном
 
+  const handleOpenModal = () => setModalOpen(true); // Функция для открытия модального окна
+  const handleCloseModal = () => setModalOpen(false); 
   return (
     <>
       <AnimatedScrollComponent>
@@ -64,14 +68,18 @@ export const ComputerScience = () => {
             <div className={styles.container}>
               <h2>{t('computerscience.admission.title')}</h2>
               <p>{t('computerscience.admission.description')}</p>
-              <button className={styles.applyButton}>{t('computerscience.admission.applyButton')}</button>
-            </div>
+              <button className={styles.applyButton} onClick={handleOpenModal}>
+                {t('computerscience.admission.applyButton')}
+              </button>               </div>
           </section>
         </div>
       </AnimatedScrollComponent>
       <Choices />
       <ITteachers />
       <ImageSection />
+
+      {isModalOpen && <ClassModal onClose={handleCloseModal} />}
+
     </>
   );
 };

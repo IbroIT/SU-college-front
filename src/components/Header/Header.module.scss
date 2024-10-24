@@ -161,6 +161,26 @@
         display: block;
     }
 }
+.searchForm {
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    width: 200px; /* Adjust as needed */
+}
+
+.searchButton {
+    background-color: #007bff; /* Example button color */
+    color: white;
+    &:hover {
+        background-color: #0056b3; /* Example hover color */
+    }
+}
 
 .dropdownContent {
     display: none;

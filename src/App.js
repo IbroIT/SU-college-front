@@ -16,6 +16,7 @@ import { AfterNinthGrade } from './pages/AftrerNinthGrade';
 import { FAQ } from './pages/FAQ';
 import {AfterEleventhGrade} from './pages/AfterEleventhGrade'
 import { Contacts } from './pages/Contacts';
+import SearchResults from './components/SearchBar/Search';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
       <Routes>
         <Route path='/' element={<AboutCollege/>}></Route>
         
+        <Route path="/search-results" element={<SearchResults />} />
+
         <Route path='/college' element={<Main/>}></Route>
         <Route path='/teachers' element={<Teachers/>}></Route>
         <Route path='/faq' element={<FAQ/>}></Route>
