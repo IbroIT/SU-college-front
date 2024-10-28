@@ -426,5 +426,43 @@
     "searchResults": {
         "noResults": "No results found for",
         "resultsFor": "Results for"
+    },
+     "aboutCollege": {
+    "header": {
+      "title": "Welcome to Salymbekov College",
+      "subtitle": "Empowering Tomorrow's Leaders in IT and Business"
+    },
+    "intro": {
+      "title": "About Salymbekov College",
+      "description": "Our college is dedicated to providing a world-class education in IT and Business. We believe in the power of knowledge to shape the future."
+    },
+    "mission": {
+      "title": "Our Mission & Values",
+      "description": "Education is not just about academic success, it’s about empowering individuals to innovate and make a difference. We aim to have a positive impact on society through knowledge."
+    },
+    "publicMission": {
+      "title": "Public Mission",
+      "description": "Salymbekov College was founded with a mission to make education accessible for everyone, combining knowledge with community values and public service."
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "cards": [
+        {
+          "title": "Top IT College",
+          "description": "Awarded one of the top IT colleges in the region."
+        },
+        {
+          "title": "Innovative Programs",
+          "description": "Programs designed to prepare students for the future."
+        },
+        {
+          "title": "Community Impact",
+          "description": "Making a positive impact through community involvement."
+        }
+      ]
+    },
+    "videoSection": {
+      "title": "Discover the magic of Salymbekov College!"
     }
+  }
 }

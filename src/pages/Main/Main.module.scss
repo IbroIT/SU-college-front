@@ -1,7 +1,24 @@
 .Main {
-  padding: 50px 0;
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+
+  .Header {
+    text-align: center;
+    padding: 30px;
+    background-color: #00274d;
+    color: #ffffff;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  }
 
   .MainContainer {
     width: 90%;
@@ -11,97 +28,88 @@
     .intro {
       position: relative;
       background-image: url('https://salymbekov.com/wp-content/uploads/2022/07/bc0b2745-1024x683.jpg');
-      background-size: cover; /* Изменено на cover для полного заполнения */
-      background-repeat: no-repeat;
-      z-index: 0;
-      padding: 60px 20px; /* Добавлено внутреннее отступы */
-      color: white; /* Белый цвет текста для контраста */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-align: center;
 
-      h1 {
-        color: #00274d;
+      .textOverlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
 
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 15px;
-      }
+        h2 {
+          font-size: 2.5rem;
+        }
 
-      p {
-        color: #00274d;
-        font-size: 1.2rem;
-        line-height: 1.6;
+        p {
+          font-size: 1.2rem;
+        }
       }
     }
 
     .section {
-      margin-bottom: 40px;
-
+      padding: 30px 0;
       h2 {
-        color: #00274d;
-        font-weight: bold;
         font-size: 2rem;
-        margin-bottom: 10px;
+        font-weight: bold;
+        color: #00274d;
       }
-
       p {
-        font-size: 1rem;
-        color: #444;
-        line-height: 1.6;
-        margin: 0 auto;
+        font-size: 1.1rem;
+        color: #555;
       }
     }
 
     .stats {
       text-align: center;
-      margin-bottom: 60px;
+      padding: 50px 0;
 
       h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
       }
 
       .cards {
         display: flex;
-        flex-wrap: wrap; /* Позволяет карточкам оборачиваться */
-        justify-content: center; /* Центрирует карточки */
-        gap: 20px; /* Пробел между карточками */
-      }
-
-      .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        gap: 20px;
         justify-content: center;
-        width: 250px;
-        padding: 20px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex-wrap: wrap;
 
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        img {
-          width: 100%;
-          border-radius: 8px;
-          margin-bottom: 15px;
-          object-fit: cover;
-        }
-
-        h3 {
-          font-size: 1.4rem;
-          color: #333;
-          margin-bottom: 10px;
-          font-weight: 600;
-        }
-
-        p {
-          font-size: 0.9rem;
-          color: #666;
-          line-height: 1.5;
+        .card {
+          background-color: #f8f8f8;
+          width: 260px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
           text-align: center;
+          padding: 20px;
+
+          &:hover {
+            transform: translateY(-10px);
+          }
+
+          img {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 15px;
+          }
+
+          h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 10px;
+          }
+
+          p {
+            color: #666;
+          }
         }
       }
     }
@@ -117,13 +125,13 @@
         max-width: 800px;
         height: 450px;
         border-radius: 8px;
-        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
 
       h3 {
         font-size: 1.5rem;
-        font-weight: bold;
         color: #00274d;
+        margin-top: 20px;
         text-align: center;
         max-width: 600px;
       }
