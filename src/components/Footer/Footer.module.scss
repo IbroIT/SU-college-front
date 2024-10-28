@@ -3,6 +3,7 @@
     color: white;
     padding: 15px;
     margin: 0;
+
     transition: background-color 0.3s ease;
 }
 
@@ -144,4 +145,8 @@
     color: inherit; /* Унаследовать цвет текста */
     text-decoration: none; /* Убираем подчеркивание */
   }
-  
+
+  @keyframes highlight {
+    0% { background-color: yellow; }
+    100% { background-color: transparent; }
+}

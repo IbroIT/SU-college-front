@@ -1,5 +1,11 @@
 {
   "header": {
+    "students": "Students",
+    "staff": "Staff",
+    "parents": "Parents",
+    "map": "Map",
+    "director": "Director",
+    "news": "News",
     "search": "Search",
     "college": "COLLEGE",
     "aboutCollege": "About College",
@@ -18,8 +24,20 @@
     "contacts": "CONTACTS",
     "phone": "Phone",
     "email": "Email",
-    "address": "Address"
+    "address": "Address",
+    "searchPlaceholder": "Search"
+    
   },
+  "news": {
+    "newLibrary": {
+        "title": "New Library",
+        "description": "Our college has opened a new library with modern design."
+    },
+    "collegeAthletes": {
+        "title": "College Athletes",
+        "description": "Our athletes won medals at the regional competitions."
+    }
+}, 
   "footer": {
     "title": "Salymbekov College",
     "contactUs": "Contact Us",
@@ -45,7 +63,8 @@
       "about": {
         "title": "Salymbekov University",
         "subtitle": "Computer Science & Multimedia",
-        "description": "Salymbekov University and Lincoln University of Malaysia invite applicants to the International College of IT and Business to gain programming knowledge. The International College of IT and Business 'Salymbekov University' is a new college with a modern material and technical base, aimed at training specialists based on the latest educational programs in Russian and English. Students will be taught by the best specialists from the International College of IT and Business 'Salymbekov University' and 'Lincoln University'. Upon completion of their studies, students will acquire internationally recognized knowledge, two diplomas of Kyrgyz and international standards, and will possess English proficiency at the TOEFL/IELTS level."
+        "description": "Salymbekov University and Lincoln University of Malaysia invite applicants to the International College of IT and Business to gain programming knowledge. The International College of IT and Business 'Salymbekov University' is a new college with a modern material and technical base, aimed at training specialists based on the latest educational programs in Russian and English. Students will be taught by the best specialists from the International College of IT and Business 'Salymbekov University' and 'Lincoln University'. Upon completion of their studies, students will acquire internationally recognized knowledge, two diplomas of Kyrgyz and international standards, and will possess English proficiency at the TOEFL/IELTS level.",
+        "newsTitle": "Last News"
       },
       
         "slider": {

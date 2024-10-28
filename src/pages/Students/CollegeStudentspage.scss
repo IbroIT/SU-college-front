@@ -1,0 +1,51 @@
+.students-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+  
+    section {
+      margin-bottom: 40px;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #007acc;
+        border-bottom: 2px solid #007acc;
+        padding-bottom: 5px;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+  
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+  
+        li {
+          margin: 5px 0;
+        }
+      }
+  
+      blockquote {
+        border-left: 4px solid #007acc;
+        padding-left: 10px;
+        margin: 15px 0;
+        font-style: italic;
+        color: #555;
+  
+        footer {
+          text-align: right;
+          font-weight: bold;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+.students-container{}

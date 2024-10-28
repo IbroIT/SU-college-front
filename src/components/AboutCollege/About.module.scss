@@ -1,74 +1,178 @@
 .About {
-  background-color: #e0f7fa; // Нежно-голубой фон
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
+    background-color: #fff; // Белый фон
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 
-  .AboutContainer {
-      max-width: 1200px; // Максимальная ширина
-      width: 100%;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      animation: fadeIn 1s ease-in-out;
-      transition: all 0.3s ease;
+    .AboutContainer {
+        max-width: 1200px;
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        border: 1px solid #ddd; // Граница вокруг контейнера
+        animation: fadeIn 1s ease-in-out;
+        transition: all 0.3s ease;
 
-      &:hover {
-          transform: scale(1.02); // Небольшое увеличение при наведении
-      }
+        &:hover {
+            transform: scale(1.02);
+        }
 
-      .MainText {
-          text-align: center;
-          margin-bottom: 20px;
+        .MainText {
+            text-align: center;
+            margin-bottom: 20px;
 
-          h1 {
-              font-size: 2.5rem; // Размер шрифта для десктопа
-              color: #00796b; // Тёмный оттенок зеленого
-          }
+            h1 {
+                font-size: 2.5rem;
+                color: #00796b;
+            }
 
-          p {
-              font-size: 1.2rem; // Размер шрифта для десктопа
-              color: #004d40; // Тёмный оттенок зеленого
-          }
-      }
+            p {
+                font-size: 1.2rem;
+                color: #004d40;
+            }
+        }
 
-      .AboutText {
-          p {
-              font-size: 1rem; // Размер шрифта для десктопа
-              line-height: 1.8;
-              color: #333;
-              text-align: justify;
-              margin: 20px 0;
-              animation: fadeInText 2s ease-in-out;
+        .AboutText {
+            p {
+                font-size: 1rem;
+                line-height: 1.8;
+                color: #333;
+                text-align: justify;
+                margin: 20px 0;
+                animation: fadeInText 2s ease-in-out;
 
-              &:first-child {
-                  font-weight: bold;
-              }
-          }
-      }
-  }
+                &:first-child {
+                    font-weight: bold;
+                }
+            }
+        }
 
-  // Медиазапрос для мобильных устройств
-  @media (max-width: 768px) {
-      .AboutContainer {
-          padding: 10px;
+        .InfoSection {
+            margin: 20px 0;
+            h2 {
+                font-size: 2rem;
+                color: #00796b;
+                margin-bottom: 10px;
+            }
 
-          .MainText {
-              h1 {
-                  font-size: 1.8rem; // Уменьшенный размер шрифта для мобильных
-              }
+            .InfoImage {
+                width: 30%; 
+                height: auto; 
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
 
-              p {
-                  font-size: 1rem; // Уменьшенный размер шрифта для мобильных
-              }
-          }
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #333;
+                text-align: justify;
+            }
+        }
+    }
 
-          .AboutText {
-              p {
-                  font-size: 0.9rem; // Уменьшенный размер шрифта для мобильных
-              }
-          }
-      }
-  }
+    @media (max-width: 768px) {
+        padding: 20px 0;
+        display: block; // Убираем flex на мобильных устройствах
+
+        .AboutContainer {
+            padding: 10px;
+
+            .MainText {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .AboutText {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .InfoSection {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                .InfoImage {
+                    width: 100%; // Увеличиваем ширину изображений на мобильных устройствах
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+.NewsSection {
+    margin-top: 40px; 
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        color: #00796b; 
+        margin-bottom: 20px;
+    }
+
+    .NewsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; 
+
+        .NewsItem {
+            background: #f9f9f9; 
+            border: 1px solid #ddd; 
+            border-radius: 10px;
+            padding: 10px;
+            width: 300px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: translateY(-5px); 
+            }
+
+            .NewsImage {
+                width: 100%;
+                height: auto;
+                border-radius: 10px 10px 0 0; 
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                color: #004d40; 
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #333;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.5rem; 
+        }
+
+        .NewsContainer {
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        .NewsItem {
+            width: 90%; 
+        }
+    }
 }

@@ -77,8 +77,17 @@ body {
     }
 }
 
-@media (max-width: 768px){
-    .not-found-title{
+.not-foundImg {
+    width: 50%;  /* Изображение адаптивное */
+    height: auto;     /* Сохраняем соотношение сторон */
+}
+
+@media (max-width: 768px) {
+    .not-found-title {
         font-size: 35px;
+    }
+    .not-foundImg {
+        width: 100%;  /* Уменьшаем ширину для мобильных устройств */
+        height: auto; /* Сохраняем соотношение сторон */
     }
 }

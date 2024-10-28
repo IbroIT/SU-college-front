@@ -1,0 +1,132 @@
+.Main {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+
+  .MainContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .intro {
+      position: relative;
+      background-image: url('https://salymbekov.com/wp-content/uploads/2022/07/bc0b2745-1024x683.jpg');
+      background-size: cover; /* Изменено на cover для полного заполнения */
+      background-repeat: no-repeat;
+      z-index: 0;
+      padding: 60px 20px; /* Добавлено внутреннее отступы */
+      color: white; /* Белый цвет текста для контраста */
+
+      h1 {
+        color: #00274d;
+
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #00274d;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+    }
+
+    .section {
+      margin-bottom: 40px;
+
+      h2 {
+        color: #00274d;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.6;
+        margin: 0 auto;
+      }
+    }
+
+    .stats {
+      text-align: center;
+      margin-bottom: 60px;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap; /* Позволяет карточкам оборачиваться */
+        justify-content: center; /* Центрирует карточки */
+        gap: 20px; /* Пробел между карточками */
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 15px;
+          object-fit: cover;
+        }
+
+        h3 {
+          font-size: 1.4rem;
+          color: #333;
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #666;
+          line-height: 1.5;
+          text-align: center;
+        }
+      }
+    }
+
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+
+      .video {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #00274d;
+        text-align: center;
+        max-width: 600px;
+      }
+    }
+  }
+}

@@ -2,9 +2,8 @@
 .languages {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 0px;
     cursor: pointer;
-
     li {
         padding: 5px 10px;
         transition: background-color 0.3s;
@@ -14,4 +13,9 @@
             border-radius: 5px;
         }
     }
+}
+.languages img{
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
 }

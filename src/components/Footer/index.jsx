@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './Footer.module.scss';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';

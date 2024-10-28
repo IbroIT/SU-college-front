@@ -17,7 +17,7 @@ import { FAQ } from './pages/FAQ';
 import {AfterEleventhGrade} from './pages/AfterEleventhGrade'
 import { Contacts } from './pages/Contacts';
 import SearchResults from './components/SearchBar/Search';
-
+import CollegeStudentsPage from './pages/Students/Students';
 function App() {
 
   return (
@@ -28,8 +28,9 @@ function App() {
       <Routes>
         <Route path='/' element={<AboutCollege/>}></Route>
         
-        <Route path="/search-results" element={<SearchResults />} />
+        <Route path="/search" element={<SearchResults />} />
 
+<Route path='/students' element={<CollegeStudentsPage/>}></Route>
         <Route path='/college' element={<Main/>}></Route>
         <Route path='/teachers' element={<Teachers/>}></Route>
         <Route path='/faq' element={<FAQ/>}></Route>

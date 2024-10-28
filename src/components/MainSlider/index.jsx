@@ -8,6 +8,7 @@ export const MainSlider = () => {
     const { t } = useTranslation();
     const [currentSlide, setCurrentSlide] = useState(0);
 
+    // Определяем слайды
     const slides = [
         {
             content: (
@@ -27,29 +28,33 @@ export const MainSlider = () => {
                 <div className={styles.slide2Container}>
                     <Box textAlign="left" p={2} className={styles.textContainer}>
                         <Typography variant="h2" className={styles.title}>{t('slider.title')}</Typography>
-                        <Typography variant="body1" className={styles.description}>
-                            {t('slider.description')}
-                        </Typography>
                         <Button variant="contained" color="primary" className={styles.button}>
                             {t('slider.button')}
                         </Button>
                     </Box>
-                    <div className={styles.slide2Img}>
-                        <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b3685.jpg" alt="College" className={styles.image} />
-                    </div>
                 </div>
             ),
         },
     ];
 
     const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % slides.length);
+        // Проверяем ширину экрана
+        const isMobile = window.innerWidth < 768;
+
+        // Изменяем логику переключения слайдов в зависимости от устройства
+        if (isMobile) {
+            // На мобильных устройствах только первый слайд
+            setCurrentSlide(0);
+        } else {
+            // На десктопе переключаем слайды
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        }
     };
 
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 4000);
+        }, 6000);
 
         return () => clearInterval(interval); 
     }, []);
