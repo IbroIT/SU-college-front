@@ -3,7 +3,7 @@ import styles from './About.module.scss';
 import AnimatedScrollComponent from "../AnimatedComponents";
 import { useTranslation } from 'react-i18next';
 import News from '../News';
-
+import { ITteachers } from "../ITTeachers";
 export const About = () => {
     const { t } = useTranslation();
 
@@ -18,6 +18,7 @@ export const About = () => {
                     <div className={styles.AboutText}>
                         <p>{t('about.description')}</p>
                     </div>
+                    <ITteachers/>
                 </div>
 
                 {/* Remove newsData prop */}

@@ -1,7 +1,7 @@
 {
   "header": {
     "students": "Students",
-    "staff": "Staff",
+    "owner": "Askar Salymbekov",
     "parents": "Parents",
     "map": "Map",
     "director": "Director",
@@ -25,8 +25,10 @@
     "phone": "Phone",
     "email": "Email",
     "address": "Address",
-    "searchPlaceholder": "Search"
-    
+    "searchPlaceholder": "Search",
+    "collegeInfo": "International College of IT and Business “Salymbekov University” is a new college with modern facilities, aimed at training specialists in the latest training programs in Russian and English.",
+    "admissionsDetails": "Our college accepts applicants from the 9th and 11th grades. Based on the 9th grade, you will study in Kyrgyzstan for 2 years and 1.5 years in Malaysia. Based on the 11th grade, you will study in Kyrgyzstan for 1 year and 1.5 years in Malaysia.",
+    "professionsInfo": "Our college offers a total of 3 IT specialties! In each of them, you will be taught by professional teachers and mentors. You will already be studying in your 1st year!"
   },
   "news": {
     "newLibrary": {
@@ -68,7 +70,7 @@
       },
       
         "slider": {
-          "title": "Why this college?",
+          "title": "Salymbekov College",
           "description": "Here you will find all the necessary resources for achieving success and developing your skills.",
           "button": "Learn more"
         }
@@ -464,5 +466,38 @@
     "videoSection": {
       "title": "Discover the magic of Salymbekov College!"
     }
-  }
+  },
+  "students": {
+    "title": "College Students of Salymbekov IT and Business",
+    "ourStudents": "Our Students",
+    "studentsOverview": "At Salymbekov IT and Business College, talented and ambitious students strive for high achievements in IT and business.",
+    "achievements": "Student Achievements",
+    "achievementList": [
+      "Wins at international programming competitions",
+      "Internships at major IT companies",
+      "Organization of student conferences and events",
+      "Development of projects recognized at exhibitions"
+    ],
+    "community": "Student Community",
+    "communityDescription": "Our students actively participate in college life, creating various clubs and initiative groups.",
+    "experiences": "Student Experiences",
+    "feedback": "Student Feedback",
+    "quote1": "\"Studying at Salymbekov College opened many opportunities for me.\" - Anna, 2nd year student",
+    "quote2": "\"I am grateful for the support and development of my skills.\" - Sergey, 3rd year student"
+  },
+  "owner": {
+    "title": "Askar Salymbekov",
+    "bio1": "Askar Salymbekov is an outstanding educator, entrepreneur, and founder of Salymbekov College, one of the leading educational institutions in Kyrgyzstan. His career in education began over 15 years ago when he realized the need for quality training and specialists who meet modern market demands.",
+    "bio2": "In 2010, Askar Salymbekov founded Salymbekov College, which offers a variety of training programs in information technology, business, medicine, and humanities. The college has become known for its innovative teaching methods and high educational standards. Under Askar's leadership, the college constantly improves the learning process by attracting experienced teachers and implementing modern technologies.",
+    "bio3": "Askar actively supports initiatives to develop the educational system of Kyrgyzstan. He organizes various seminars and training sessions for educators, sharing his experience and knowledge. His vision and approach to education inspire students to succeed in their professional activities and contribute to the formation of a new generation of highly qualified specialists.",
+    "bio4": "In addition to educational activities, Askar Salymbekov is engaged in entrepreneurship and invests in social projects aimed at improving the quality of life in Kyrgyzstan. His multifaceted activities make him a significant figure not only in education but also in the country's business community.",
+    "subtitle": "Images of the College and Projects"
+},
+"director": {
+  "title": "Zhunushalieva Nurzat Manasovna",
+  "bio1": "Zhunushalieva Nurzat Manasovna is the director of the College of Innovative Technologies and Economics, a recognized expert in the field of education, with over 27 years of experience in educational activities.",
+  "bio2": "She is an honor graduate in education of the Kyrgyz Republic and has extensive experience in leadership positions in secondary vocational and higher education.",
+  "bio3": "Under her leadership, the college actively develops educational programs and organizes various cultural events that contribute to the comprehensive development of students.",
+  "bio4": "College students have the opportunity to participate in theatrical performances, exhibitions, and sports competitions, helping them develop their talents and skills."
+}
 }

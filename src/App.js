@@ -18,6 +18,9 @@ import {AfterEleventhGrade} from './pages/AfterEleventhGrade'
 import { Contacts } from './pages/Contacts';
 import SearchResults from './components/SearchBar/Search';
 import CollegeStudentsPage from './pages/Students/Students';
+import { Owner } from './pages/Owner';
+import { Director } from './pages/Director';
+import { Mission } from './pages/Mission';
 function App() {
 
   return (
@@ -27,10 +30,13 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<AboutCollege/>}></Route>
-        
-        <Route path="/search" element={<SearchResults />} />
 
-<Route path='/students' element={<CollegeStudentsPage/>}></Route>
+        <Route path='/director' element={<Director/>}></Route>
+        <Route path="/search" element={<SearchResults />} />
+        <Route path='/owner' element={<Owner/>}></Route>
+       <Route path='/students' element={<CollegeStudentsPage/>}></Route>
+
+        <Route path='/mission' element={<Mission/>}></Route>
         <Route path='/college' element={<Main/>}></Route>
         <Route path='/teachers' element={<Teachers/>}></Route>
         <Route path='/faq' element={<FAQ/>}></Route>

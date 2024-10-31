@@ -34,7 +34,7 @@ const SearchResults = () => {
                             if (value.toLowerCase().includes(query.toLowerCase())) {
                                 results.push({
                                     text: value,
-                                    link: routeMap[key] || '/',
+                                    link: routeMap[key],
                                     id: `${key}-result` // Добавляем идентификатор
                                 });
                             }

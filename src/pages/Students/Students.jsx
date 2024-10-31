@@ -1,67 +1,71 @@
 import React from 'react';
 import './CollegeStudentspage.scss';
-
+import { ImageSection } from '../../components/ImageSection';
+import { useTranslation } from 'react-i18next';
+import AnimatedScrollComponent from '../../components/AnimatedComponents';
 const CollegeStudentsPage = () => {
+  const { t } = useTranslation();
+  
   return (
-    <div className="students-page">
-      <div className='students-container'>
-      <h1>Студенты колледжа Салымбеков IT и бизнеса</h1>
-      
-      <section className="students-overview">
-        <h2>Наши студенты</h2>
-        <p>
-          В колледже Салымбеков IT и бизнеса обучаются талантливые и амбициозные студенты, 
-          стремящиеся к высоким достижениям в области информационных технологий и бизнеса. 
-          Наши студенты отличаются разнообразием интересов и способностей, что создает 
-          уникальную атмосферу для обучения и роста.
-        </p>
-      </section>
+    <>
+    <AnimatedScrollComponent>
+      <div className="students-page">
+        <div className='students-container'>
+          <h1>{t('students.title')}</h1>
 
-      <section className="students-achievements">
-        <h2>Достижения студентов</h2>
-        <ul>
-          <li>Победы на международных конкурсах по программированию</li>
-          <li>Участие в стажировках в крупных IT-компаниях</li>
-          <li>Организация студенческих конференций и мероприятий</li>
-          <li>Разработка проектов, получивших признание на выставках</li>
-        </ul>
-      </section>
+          <section className="students-overview">
+            <h2>{t('students.ourStudents')}</h2>
+            <p>{t('students.studentsOverview')}</p>
+            <img 
+              src="https://the-tech.kz/wp-content/uploads/2024/06/bc0b6261-scaled.jpg" 
+              alt="Студенты колледжа" 
+              className="student-image" 
+            />
+          </section>
 
-      <section className="students-community">
-        <h2>Студенческое сообщество</h2>
-        <p>
-          Наши студенты активно участвуют в жизни колледжа, создавая различные 
-          кружки и инициативные группы. Они организуют спортивные мероприятия, 
-          творческие вечера и волонтерские акции, что способствует развитию 
-          командного духа и лидерских качеств.
-        </p>
-      </section>
+          <section className="students-achievements">
+            <h2>{t('students.achievements')}</h2>
+            <ul>
+              {t('students.achievementList', { returnObjects: true }).map((achievement, index) => (
+                <li key={index}>{achievement}</li>
+              ))}
+            </ul>
+            <img 
+              src="https://the-tech.kz/wp-content/uploads/2024/06/bc0b2372-1024x683.jpg" 
+              alt="Достижения студентов" 
+              className="achievement-image" 
+            />
+          </section>
 
-      <section className="student-experiences">
-        <h2>Опыт студентов</h2>
-        <p>
-          Многие студенты делятся положительным опытом обучения в колледже. 
-          Они отмечают высокое качество преподавания, доступность ресурсов и 
-          поддержку со стороны преподавателей. Студенты также получают возможность 
-          практического обучения через стажировки и проекты в реальных компаниях.
-        </p>
-      </section>
+          <section className="students-community">
+            <h2>{t('students.community')}</h2>
+            <p>{t('students.communityDescription')}</p>
+            <img 
+              src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b2014-1920x1008.jpg" 
+              alt="Студенческое сообщество" 
+              className="community-image" 
+            />
+          </section>
 
-      <section className="student-feedback">
-        <h2>Отзывы студентов</h2>
-        <blockquote>
-          "Обучение в колледже Салымбеков открыло для меня множество возможностей. 
-          Я смог не только получить теоретические знания, но и применить их на практике." 
-          <footer>— Анна, студентка 2 курса</footer>
-        </blockquote>
-        <blockquote>
-          "Я благодарен колледжу за поддержку и развитие моих навыков. Здесь я нашел 
-          настоящих друзей и единомышленников." 
-          <footer>— Сергей, студент 3 курса</footer>
-        </blockquote>
-      </section>
+          <section className="student-experiences">
+            <h2>{t('students.experiences')}</h2>
+            <p>{t('students.experiences')}</p>
+          </section>
+
+          <section className="student-feedback">
+            <h2>{t('students.feedback')}</h2>
+            <blockquote>
+              {t('students.quote1')}
+            </blockquote>
+            <blockquote>
+              {t('students.quote2')}
+            </blockquote>
+          </section>
+        </div>
       </div>
-    </div>
+      </AnimatedScrollComponent>
+      <ImageSection />
+    </>
   );
 };
 

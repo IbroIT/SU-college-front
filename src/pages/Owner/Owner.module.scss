@@ -1,0 +1,60 @@
+.ownerContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.biography {
+    display: flex;
+    align-items: flex-start; /* Выровнять элементы по верхнему краю */
+    margin-bottom: 30px;
+
+    .mainImage {
+        width: 200px; /* Установить ширину изображения */
+        height: auto;
+        border-radius: 8px;
+        margin-right: 20px; /* Отступ справа от изображения */
+    }
+
+    .textContainer {
+        flex: 1; /* Заполнить оставшееся пространство */
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #555;
+
+        .bio {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.imageGallery {
+    margin-top: 20px;
+
+    .subTitle {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .additionalImages {
+        display: flex;
+        justify-content: space-between;
+
+        .galleryImage {
+            width: 32%; /* Установить ширину изображений */
+            border-radius: 8px;
+            height: auto;
+        }
+    }
+}

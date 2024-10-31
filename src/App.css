@@ -1,29 +1,3 @@
-/* Скрыть баннер в верхней части страницы */
-.goog-te-banner-frame {
-    display: none !important;
-  }
-  
-  /* Скрыть select (выпадающий список языков) */
-  .goog-te-combo {
-    display: none !important;
-  }
-  
-  /* Скрыть значок в правом нижнем углу (если он появляется) */
-  .goog-logo-link {
-    display: none !important;
-  }
-  
-  /* Скрыть весь контейнер перевода */
-  .goog-te-gadget {
-    display: none !important;
-  }
-  
-  /* Если появляется нижний баннер перевода */
-  .goog-te-balloon-frame {
-    display: none !important;
-  }
-  
-  /* Скрыть значок и ссылку Google, если они появляются в углу */
-  .goog-te-gadget-simple {
-    display: none !important;
-  }
+.App{
+  background-color: #f7f9fc; 
+}

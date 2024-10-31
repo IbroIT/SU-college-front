@@ -3,6 +3,9 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background-image: url('https://data.kaktus.media/image/big/2023-08-02_16-11-54_204758.jpg'); /* Global background */
+    background-size: cover;
+    background-position: center;
 }
 
 .slide {
@@ -10,12 +13,12 @@
     justify-content: center;
     align-items: center;
     transition: transform 0.5s ease-in-out;
-    height: 700px; /* Устанавливаем одинаковую высоту для всех слайдов */
+    height: 700px; /* Set consistent height for all slides */
 }
 
 .video {
     width: 100%;
-    height: 100%; /* Видео растягивается на всю высоту контейнера */
+    height: 100%; /* Video stretches to full height */
 }
 
 .slide2Container {
@@ -24,48 +27,64 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url('https://data.kaktus.media/image/big/2023-08-02_16-11-54_204758.jpg');
-    background-size: cover;
-    background-position: center;
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
 }
 
 .textContainer {
-    background-color: rgba(0, 0, 255, 0.7); /* Синий фон с прозрачностью */
-    padding: 20px;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.85); /* Light background with transparency */
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    text-align: center; /* Center text */
 }
 
 .title {
-    color: #fff; /* Белый цвет текста */
+    color: #333; /* Darker text color for title */
     margin-bottom: 16px;
+    font-weight: bold; /* Bold title */
+    font-size: 2.5rem; /* Larger font size for title */
+}
+
+.description {
+    color: #555; /* Medium text color for description */
+    margin-bottom: 24px; /* Spacing between description and button */
+    font-size: 1.1rem; /* Slightly larger font size for description */
 }
 
 .button {
-    background-color: #0056b3; /* Синий фон кнопки */
-    color: #fff;
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+    padding: 12px 24px; /* Button padding */
+    border-radius: 30px; /* Rounded button */
+    transition: background-color 0.3s; /* Smooth background change */
+    font-size: 1rem; /* Button font size */
+    
+    &:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
 }
 
 @media (max-width: 768px) {
     .video {
-        height: 70vh; /* Высота видео на мобильных устройствах */
+        height: 70vh; /* Height for mobile devices */
     }
 
     .slide {
         display: block;
-        height: auto; /* Автоматическая высота для маленьких экранов */
+        height: auto; /* Automatic height for small screens */
     }
 
     .slide2Container {
         display: block;
-        height: auto; /* Автоматическая высота для маленьких экранов */
+        height: auto; /* Automatic height for small screens */
     }
 
     .textContainer {
-        padding: 0 10px;
+        padding: 20px; /* Reduced padding on mobile */
     }
 
     .button {
         width: 100%;
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Button size on mobile */
     }
 }

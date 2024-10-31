@@ -1,6 +1,7 @@
+// src/components/ClassModal.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Modal.module.scss'; 
+import styles from './Modal.module.scss';
 
 const ClassModal = ({ onClose }) => {
   return (

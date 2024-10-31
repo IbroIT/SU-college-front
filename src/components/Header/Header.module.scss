@@ -8,9 +8,8 @@ li{
 }
 
 .mainNav {
-    background: #002676;
+    background-color: #f7f7f7; // Светлый фон
     color: #fff;
-    
     width: 100%;
 }
 
@@ -36,30 +35,33 @@ li{
     margin: 0 10px;
     font-weight: 600;
     list-style: none;
+    transition: color 0.3s ease;
+
 }
-.leftSide li:hover{
-    color: orange;
+
+.leftSide li:hover, .rightSide li:hover {
+    color: #d18b47; // Теплый оттенок при наведении
 }
-.rightSide li:hover{
-    color: orange;
-}
-/* Стили для кнопки и поискового поля */
 .rightSide button {
     background: none;
     border: none;
-    color: #fff;
+    color: #333;
     cursor: pointer;
     margin-right: 10px;
 }
 
 input[type="text"] {
-    padding: 10px 10px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
     font-size: 1.0em;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #fff;
     outline: none;
+
+    &::placeholder {
+        color: #aaa;
+    }
 }
 input[type="text"]::placeholder {
     color: #888;
@@ -83,7 +85,7 @@ input[type="text"]::placeholder {
     background-color: blue;
 }
 .header {
-    background-color: #fff;
+    background-color: #f7f7f7; // Светлый фон
     box-shadow: 0 2px 15px rgba(0, 76, 255, 0.1);
     padding: 40px;
     width: 100%;
@@ -185,14 +187,13 @@ input[type="text"]::placeholder {
 /* Навигация */
 .headerNav {
     position: relative;
-
+    background-color: #f7f7f7; // Изменение: светлый фон для навигации
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px;
     margin: 0 auto;
     height: 70px;
-    max-width: 1300px;
     box-shadow: 0 2px 15px rgba(0, 76, 255, 0.1);
 }
 
@@ -213,10 +214,18 @@ input[type="text"]::placeholder {
 
 /* Общие стили для навигации */
 .headerNav {
-    background-color: #ffffff;
+    background-color: #ffffff; // Изменение: светлый фон для выпадающего меню
     padding: 15px 0;
+    width: 100%; /* Занимает всю ширину экрана */
 }
-
+.navContainer {
+    max-width: 1300px; /* Ограничение максимальной ширины */
+    margin: 0 auto; /* Центрирует контейнер */
+    padding: 0 20px; /* Добавляет отступы по бокам */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .headerUl {
     list-style-type: none;
     padding: 0;
@@ -224,29 +233,33 @@ input[type="text"]::placeholder {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    position: relative;
+    column-gap: 150px;
 }
 
 .navLi {
-    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 0px;
     transition: color 0.3s ease-in-out;
     font-size: 18px;
     font-weight: 600;
-    color: #3a4d96;
+    transition: color 0.3s ease;
+
     &:hover .dropdownContent {
         display: block;
     }
 }
+.navLi:hover{
+    color: orange;
 
+}
 .dropdownContent {
     display: none; 
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff; /* Цвет фона */
+    background-color: #ffffff; // Изменение: светлый фон для выпадающего меню
     width: 100%; /* Меню занимает полную ширину родителя */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -257,7 +270,7 @@ input[type="text"]::placeholder {
     border-radius: 8px; /* Скругленные углы */
     transform: translateY(-10px); /* Начальное положение для анимации */
     height: 200px;
-    width: 1200px;
+    width: 1260px;
     overflow: hidden; /* Прячем лишний текст */
 
 }
@@ -276,7 +289,9 @@ input[type="text"]::placeholder {
     max-width: 700px; /* Ограничение ширины для первого блока */
     overflow-wrap: break-word; /* Перенос длинного текста */
 }
-
+.dropdownContentFirstDiv h1{
+    color: black;
+}
 .dropdownContentSecondDiv {
     display: grid; // Use grid layout for items
     grid-template-columns: repeat(3, 1fr); // 3 columns
@@ -289,7 +304,7 @@ input[type="text"]::placeholder {
 // Styles for items in the second dropdown
 .dropdownContentSecondDiv p {
     font-size: 21px; // Larger font size
-    color: #002676;
+    color: #000000;
     width: 150px;
     height: 60px;
     transition: background-color 0.3s ease, transform 0.3s ease; // Transition effects
@@ -303,7 +318,7 @@ input[type="text"]::placeholder {
     margin: 8px 0;
     padding: 8px;
     font-size: 14px;
-    color: #333;
+    color: #000000;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Анимация фона и трансформации */
 }
 .dropdownContent h1{
@@ -352,7 +367,9 @@ input[type="text"]::placeholder {
 .link:hover {
     color: #555; /* Цвет при наведении */
 }
-
+li{
+    color: black;
+}
 @media (max-width: 768px) {
     .mainNav{
         display: none;

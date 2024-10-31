@@ -13,7 +13,7 @@
             <>
             <MainSlider/>
             <AnimatedScrollComponent>
-                <div className={styles.About}>
+                {/* <div className={styles.About}>
                     <div className={styles.AboutContainer}>
                         <div className={styles.AboutContainerLeftSide}>
                         <h1>{t('about.title')}</h1>
@@ -23,7 +23,7 @@
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 </AnimatedScrollComponent>
                 <Choices />
                 <About/>

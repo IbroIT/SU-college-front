@@ -8,7 +8,7 @@ export const MainSlider = () => {
     const { t } = useTranslation();
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    // Определяем слайды
+    // Define slides
     const slides = [
         {
             content: (
@@ -26,9 +26,10 @@ export const MainSlider = () => {
         {
             content: (
                 <div className={styles.slide2Container}>
-                    <Box textAlign="left" p={2} className={styles.textContainer}>
+                    <Box textAlign="center" p={2} className={styles.textContainer}>
                         <Typography variant="h2" className={styles.title}>{t('slider.title')}</Typography>
-                        <Button variant="contained" color="primary" className={styles.button}>
+                        <Typography variant="body1" className={styles.description}>{t('slider.description')}</Typography>
+                        <Button variant="contained" className={styles.button}>
                             {t('slider.button')}
                         </Button>
                     </Box>
@@ -38,15 +39,10 @@ export const MainSlider = () => {
     ];
 
     const nextSlide = () => {
-        // Проверяем ширину экрана
         const isMobile = window.innerWidth < 768;
-
-        // Изменяем логику переключения слайдов в зависимости от устройства
         if (isMobile) {
-            // На мобильных устройствах только первый слайд
             setCurrentSlide(0);
         } else {
-            // На десктопе переключаем слайды
             setCurrentSlide((prev) => (prev + 1) % slides.length);
         }
     };
@@ -55,7 +51,6 @@ export const MainSlider = () => {
         const interval = setInterval(() => {
             nextSlide();
         }, 6000);
-
         return () => clearInterval(interval); 
     }, []);
 
