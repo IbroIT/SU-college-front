@@ -78,23 +78,32 @@
       
         "teachers": {
             "title": "Our Teachers",
-            "alya": "Aliya",
+            "alya": "Beishenalieva Aliya",
             "intro_cs_ai_ml": "Introduction to CS, AI, ML",
             "mirlan": "Nurbekov Mirlan",
             "oop_database": "OOP, Database",
-            "kunduz": "Kunduz",
+            "kunduz": "Mukanbetova Kunduz",
             "web_development": "Web Development",
-            "aidai": "Aidai",
+            "aidai": "Mamatkerimova Aidai",
             "zubov": "Zubov Vlad",
             "web_development_react": "Web Development, React",
             "nurgul": "Nurgul Toktosheva",
             "russian_language": "Russian Language",
-            "moloshev": "Moloshev",
+            "moloshev": "Moloshev A.I",
             "history": "History",
             "gulina": "Gulina Ebishovna",
             "chemistry": "Chemistry",
-            "nur": "Nur",
-            "physics": "Physics"
+            "kuzubakova": "Kuzubakova B.Y",
+            "physics": "Physics",
+            "eldiyar": "Keldibekov Eldiyar",
+            "training": "Training",
+            "ulukbek": "Osmonaliev Ulukbek",
+            "english": "English",
+            "chynara": "Kalbaeva Chynara",
+            "seitbekova": "Seitbekova Beishegul",
+            "komarzhova": "Komarzhova Elena",
+            "algebra": "Algebra",
+            "rima": "Kaiupbekova Rima"
         },
         "notFound": {
         "title": "Sorry, this page does not exist",
@@ -324,7 +333,7 @@
     "steps": [
       {
         "step": "Step 1. Document Submission",
-        "description": "To enroll in Salymbekov University after 9th or 10th grade, the applicant must submit the following documents:",
+        "description": "To enroll in Salymbekov University after 11th grade, the applicant must submit the following documents:",
         "documents": [
           "birth certificate or passport;",
           "original or duplicate certificate of secondary general education and accompanying documents;",

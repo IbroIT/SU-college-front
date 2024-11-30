@@ -2,72 +2,111 @@ import React from "react";
 import styles from './Teachers.module.scss';
 import { Choices } from "../../components/Choices";
 import { ImageSection } from "../../components/ImageSection";
-import Mirlan from '../../components/images/WhatsApp Image 2024-10-18 at 16.19.20.jpeg'
+import Mirlan from '../../components/images/WhatsApp Image 2024-10-18 at 16.19.20.jpeg';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
+import './Example.css'
 export const Teachers = () => {
+    const { t } = useTranslation(); // Initialize translation hook
+
     const teachers = [
         {
-            name: "Алия",
-            subject: "Introduction to CS, AI, ML",
+            name: t("teachers.alya"), // Translation key for teacher's name
+            subject: t("teachers.intro_cs_ai_ml"), // Translation key for subject
             image: "https://via.placeholder.com/150"
         },
         {
-            name: "Нурбеков Мирлан",
-            subject: "OOP, DataBase",
+            name: t("teachers.mirlan"),
+            subject: t("teachers.oop_database"), // Translation key for subject
             image: Mirlan
         },
         {
-            name: "Кундуз",
-            subject: "Web development",
+            name: t("teachers.kunduz"), // Translation key for teacher's name
+            subject: t("teachers.web_development"), // Translation key for subject
             image: "https://via.placeholder.com/150"
         },
         {
-            name: "Айдай",
-            subject: "Web development",
+            name: t("teachers.aidai"), // Translation key for teacher's name
+            subject: t("teachers.web_development"), // Translation key for subject
             image: "https://via.placeholder.com/150"
         },
         {
-            name: "Агай",
-            subject: "Web developement, React",
+            name: t("teachers.zubov"), // Translation key for teacher's name
+            subject: t("teachers.web_development_react"), // Translation key for subject
             image: "https://via.placeholder.com/150" 
         },
         {
-            name: "Мария Петрова",
-            subject: "Физика",
+            name: t("teachers.nurgul"), // Translation key for teacher's name
+            subject: t("teachers.russian_language"), // Translation key for subject
             image: "https://via.placeholder.com/150"
         },
         {
-            name: "Сергей Смирнов",
-            subject: "История",
+            name: t("teachers.moloshev"), // Translation key for teacher's name
+            subject: t("teachers.history"), // Translation key for subject
             image: "https://via.placeholder.com/150"
         },
         {
-            name: "Елена Кузнецова",
-            subject: "Химия",
+            name: t("teachers.gulina"), // Translation key for teacher's name
+            subject: t("teachers.chemistry"), // Translation key for subject
             image: "https://via.placeholder.com/150"
         },
         {
-            name: "Мария Петрова",
-            subject: "Физика",
+            name: t("teachers.kuzubakova"), // Translation key for teacher's name
+            subject: t("teachers.physics"), // Translation key for subject
+            image: "https://via.placeholder.com/150"
+        },
+        {
+            name: t("teachers.eldiyar"), // Translation key for teacher's name
+            subject: t("teachers.training"), // Translation key for subject
+            image: "https://via.placeholder.com/150"
+        },
+        {
+            name: t("teachers.ulukbek"), // Translation key for teacher's name
+            subject: t("teachers.english"), // Translation key for subject
+            image: "https://via.placeholder.com/150"
+        },
+        {
+            name: t("teachers.chynara"), // Translation key for teacher's name
+            subject: t("teachers.algebra"), // Translation key for subject
+            image: "https://via.placeholder.com/150"
+        },
+        {
+            name: t("teachers.seitbekova"), // Translation key for teacher's name
+            subject: t("teachers.english"), // Translation key for subject
+            image: "https://via.placeholder.com/150"
+        },
+        {
+            name: t("teachers.rima"), // Translation key for teacher's name
+            subject: t("teachers.english"), // Translation key for subject
+            image: "https://via.placeholder.com/150"
+        },
+        {
+            name: t("teachers.komarzhova"), // Translation key for teacher's name
+            subject: t("teachers.algebra"), // Translation key for subject
+            image: "https://via.placeholder.com/150"
+        },
+        {
+            name: t("teachers.seitbekova"), // Translation key for teacher's name
+            subject: t("teachers.english"), // Translation key for subject
             image: "https://via.placeholder.com/150"
         },
     ];
 
     return (
         <>
-        <h1 style={{textAlign: 'center', marginTop: '25px'}}>Наши преподователи</h1>
-        <div className={styles.teachersContainer}>
-            <div className={styles.teachersList}>
-                {teachers.map((teacher, index) => (
-                    <div key={index} className={styles.teacherCard}>
-                        <img src={teacher.image} alt={teacher.name} className={styles.teacherImage} />
-                        <h2 className={styles.teacherName}>{teacher.name}</h2>
-                        <p className={styles.teacherSubject}>{teacher.subject}</p>
-                    </div>
-                ))}
+            <h1 style={{ textAlign: 'center', marginTop: '25px' }}>{t("teachers.title")}</h1>
+            <div className={styles.teachersContainer}>
+                <div className={styles.teachersList}>
+                    {teachers.map((teacher, index) => (
+                        <div key={index} className={styles.teacherCard}>
+                            <img src={teacher.image} alt={teacher.name} className={styles.teacherImage} />
+                            <h2 className={styles.teacherName}>{teacher.name}</h2>
+                            <p className={styles.teacherSubject}>{teacher.subject}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
-        <Choices/>
-        <ImageSection/>
+            <Choices />
+            <ImageSection />
         </>
     );
 };

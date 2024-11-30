@@ -96,9 +96,7 @@ export const Header = () => {
                                 </div>
                                 <div className={style.dropdownContentSecondDiv}>
                                 <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
-                                <Link to="/mission"><p>{t('header.mission')}</p></Link>
                                 <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
-                                <Link to="/advice"><p>{t('header.board')}</p></Link>
                                 <Link to="/letter"><p>{t('header.letterFromDirector')}</p></Link>
                                 </div>
                             </div>
