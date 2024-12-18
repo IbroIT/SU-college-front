@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "D:/IT-Projects/Fullstack/CryptoCurrency"
+		},
+		{
+			"path": "../../../../../NodeJS Projects/QR Code Generator"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "QR Code Generator"
+	}
+}

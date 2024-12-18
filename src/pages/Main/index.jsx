@@ -11,13 +11,11 @@ export const Main = () => {
   return (
     <AnimatedScrollComponent>
       <div className={styles.Main}>
-        {/* Header Section */}
         <header className={styles.Header}>
           <h1>{t('aboutCollege.header.title')}</h1>
           <p>{t('aboutCollege.header.subtitle')}</p>
         </header>
 
-        {/* Intro Section */}
         <div className={styles.MainContainer}>
           <section className={styles.intro}>
             <div className={styles.textOverlay}>
@@ -26,12 +24,11 @@ export const Main = () => {
             </div>
           </section>
 
-          {/* Mission Section */}
           <section className={styles.section}>
             <h2>{t('aboutCollege.mission.title')}</h2>
             <p>{t('aboutCollege.mission.description')}</p>
           </section>
-          {/* Video Section */}
+
           <section className={styles.videoContainer}>
             <iframe
               className={styles.video}
@@ -45,8 +42,7 @@ export const Main = () => {
           </section>
         </div>
 
-        {/* Additional Components */}
-        <Choices />
+          <Choices />
         <ImageSection />
       </div>
     </AnimatedScrollComponent>

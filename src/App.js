@@ -1,10 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
-
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import ScrollToTop from './components/ScrollToTop'
-
 import { Teachers } from './pages/Teachers';
 import { AboutCollege } from './pages/AboutCollege';
 import { NotFound } from './pages/NotFound';
@@ -21,6 +19,8 @@ import CollegeStudentsPage from './pages/Students/Students';
 import { Owner } from './pages/Owner';
 import { Director } from './pages/Director';
 import { Mission } from './pages/Mission';
+import { News } from './pages/News';
+
 function App() {
 
   return (
@@ -41,6 +41,7 @@ function App() {
         <Route path='/teachers' element={<Teachers/>}></Route>
         <Route path='/faq' element={<FAQ/>}></Route>
         <Route path='/contacts' element={<Contacts/>}></Route>
+        <Route path='/news' element={<News/>}></Route>
 
         <Route path='/multimediaprograms' element={<MultimediaPrograms/>}></Route>
         <Route path='/mobile' element={<MobileDevelopment/>}></Route>

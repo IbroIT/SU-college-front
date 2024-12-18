@@ -47,7 +47,9 @@ export const Header = () => {
                     </Link>
                 </ul>
                 <ul className={style.rightSide}>
+                    <Link className={style.linkNav} to="/news">
                     <li>{t('header.map')}</li>
+                    </Link>
                     <Link className={style.linkNav} to="/director">
                     <li>{t('header.director')}</li>
                     </Link>
@@ -89,13 +91,15 @@ export const Header = () => {
                             {t('header.college')}
                             <div className={style.dropdownContent}>
                                 <div className={style.dropdownContentFirstDiv}>
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShqaNZi8HVY6Son_GDGLzVfzPoaCfvTaACRmRzZ4Xup7dnGiN3uR2lryOr6AVzJGcQuCE&usqp=CAU" alt="" />
+                                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShqaNZi8HVY6Son_GDGLzVfzPoaCfvTaACRmRzZ4Xup7dnGiN3uR2lryOr6AVzJGcQuCE&usqp=CAU" alt="" />
                                 <h1>
                                 {t('header.collegeInfo')}
-                                </h1>
+                                </h1> */}
                                 </div>
                                 <div className={style.dropdownContentSecondDiv}>
                                 <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
+                                <Link to="/history"><p>{t('header.history')}</p></Link>
+                                <Link to="/mission"><p>{t('header.missionGoals')}</p></Link>
                                 <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
                                 <Link to="/letter"><p>{t('header.letterFromDirector')}</p></Link>
                                 </div>
@@ -105,10 +109,10 @@ export const Header = () => {
                             {t('header.professions')}
                             <div className={style.dropdownContent}>
                             <div className={style.dropdownContentFirstDiv}>
-                                <img src="https://eu-images.contentstack.com/v3/assets/blt07f68461ccd75245/blt09a2ac83e51a0e06/661ce198092eb8747525079e/programming_20evolution.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale" alt="" />
+                                {/* <img src="https://eu-images.contentstack.com/v3/assets/blt07f68461ccd75245/blt09a2ac83e51a0e06/661ce198092eb8747525079e/programming_20evolution.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale" alt="" />
                                 <h1>
                                 {t('header.professionsInfo')}
-                                </h1>
+                                </h1> */}
                                 </div>
                                 <div className={style.dropdownContentSecondDiv}>
                                 <Link to="/computerscience"><p>{t('header.computerScience')}</p></Link>
@@ -121,24 +125,69 @@ export const Header = () => {
                 {t('header.admissions')}
                 <div className={`${style.dropdownContent} ${isOpen ? style.show : ''}`}>
                     <div className={style.dropdownContentFirstDiv}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtpElHNnP195I8dD2coxQZIKf4-SiakpYRrQ&s" alt="" />
+                        {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtpElHNnP195I8dD2coxQZIKf4-SiakpYRrQ&s" alt="" />
                         <h1>
                         {t('header.admissionsDetails')}
 
-                        </h1>
+                        </h1> */}
                     </div>
                     <div className={style.dropdownContentSecondDiv}>
                         <Link to="/afterninthgrade"><p>{t('header.afterNinthGrade')}</p></Link>
                         <Link to="/aftereleventhgrade"><p>{t('header.afterEleventhGrade')}</p></Link>
+                        <Link to="/faq">
+                            <p>{t('header.faqs')}</p>
+                        </Link>
+                        <Link to="/contacts">
+                            <p>{t('header.contacts')}</p>
+                        </Link>
                     </div>
                 </div>
             </li>
-                        <Link to="/faq">
-                            <li className={style.navLi}>{t('header.faqs')}</li>
-                        </Link>
-                        <Link to="/contacts">
-                            <li className={style.navLi}>{t('header.contacts')}</li>
-                        </Link>
+            <li className={style.navLi}>
+    {t('header.students')}
+    <div className={style.dropdownContent}>
+            <h1>Студенческие сообщества</h1>
+            <Link to="/student-council"><p>Студенческий совет</p></Link>
+            <Link to="/scientific-association"><p>Студенческое научное объединение</p></Link>
+            <Link to="/debate-club"><p>Дебатный клуб</p></Link>
+            <Link to="/tutors-movement"><p>Тьюторское движение</p></Link>
+            <Link to="/creative-groups"><p>Творческие коллективы и кружки</p></Link>
+
+            <h1>Ресурсная база</h1>
+            <Link to="/instructions"><p>Инструкция и положения</p></Link>
+            <Link to="/information-system"><p>Информационная система</p></Link>
+            <Link to="/library"><p>Электронная библиотека</p></Link>
+            <Link to="/resources"><p>Образовательные ресурсы</p></Link>
+
+            <h1>Учебные графики</h1>
+            <Link to="/study-schedule"><p>График учебного процесса</p></Link>
+            <Link to="/modules-exams"><p>Графики модулей и экзаменов</p></Link>
+            <Link to="/practice-schedule"><p>Графики производственной практики</p></Link>
+            <Link to="/mfm-schedule"><p>Расписание МФМ</p></Link>
+            <Link to="/college-schedule"><p>Расписание колледжа</p></Link>
+
+            <h1 >Условия и возможности</h1>
+            <Link to="/medical-center"><p>Медицинский центр</p></Link>
+            <Link to="/dormitory"><p>Общежитие</p></Link>
+            <Link to="/social-support"><p>Социальная поддержка студентов</p></Link>
+            <Link to="/optional-courses"><p>Курсы по выбору</p></Link>
+            <Link to="/academic-mobility"><p>Академическая мобильность</p></Link>
+            <Link to="/psychological-support"><p>Психологическая поддержка</p></Link>
+            <Link to="/student-service-center"><p>Центр обслуживания студентов</p></Link>
+            <Link to="/adaptation-programs"><p>Адаптационные программы</p></Link>
+    </div>
+</li>
+
+
+<li className={style.navLi}>
+    {t('header.applicants')}
+    <div className={style.dropdownContent}>
+        <div className={style.dropdownContentSecondDiv}>
+            <Link to="/admission-process"><p>{t('header.admissionProcess')}</p></Link>
+            <Link to="/documents"><p>{t('header.requiredDocuments')}</p></Link>
+        </div>
+    </div>
+</li>   
                     </ul>
                     </div>
                 </nav>

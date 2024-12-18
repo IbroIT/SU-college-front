@@ -195,6 +195,9 @@ input[type="text"]::placeholder {
     margin: 0 auto;
     height: 70px;
     box-shadow: 0 2px 15px rgba(0, 76, 255, 0.1);
+    // position: sticky;
+    // top: 0;
+    // z-index:    0;
 }
 
 .headerUl {
@@ -244,44 +247,65 @@ input[type="text"]::placeholder {
     transition: color 0.3s ease-in-out;
     font-size: 18px;
     font-weight: 600;
-    transition: color 0.3s ease;
 
     &:hover .dropdownContent {
         display: block;
     }
 }
-.navLi:hover{
-    color: orange;
 
+.navLi:hover {
+    color: orange;
 }
+
 .dropdownContent {
-    display: none; 
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff; // Изменение: светлый фон для выпадающего меню
+    background-color: #ffffff;
     width: 100%; /* Меню занимает полную ширину родителя */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 20px; /* Отступы вокруг текста */
     z-index: 1;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Добавлено для анимации */
     opacity: 0;
     visibility: hidden;
-    border-radius: 8px; /* Скругленные углы */
-    transform: translateY(-10px); /* Начальное положение для анимации */
-    height: 200px;
-    width: 1260px;
-    overflow: hidden; /* Прячем лишний текст */
-
+    border-radius: 8px;
+    transform: translateY(-10px);
+    height: auto; /* Высота подстраивается под контент */
+    max-height: 450px; /* Максимальная высота */
+    overflow-y: auto; /* Прокрутка, если контент не помещается */
+    display: flex;
+    flex-wrap: wrap; /* Перенос элементов на новую строку */
+    gap: 15px; /* Расстояние между элементами */
+    box-sizing: border-box; /* Учитываем padding в размере блока */
 }
 
 /* Анимация появления */
 .navLi:hover .dropdownContent {
-    display: flex; /* Показываем меню при наведении */
+    display: flex;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
+
+.dropdownContent h1 {
+    width: 100%; /* Заголовок на всю ширину */
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333; /* Цвет текста */
+}
+
+.dropdownContent a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.dropdownContent a:hover {
+    color: orange; /* Изменение цвета ссылок при наведении */
+}
+
 .dropdownContentFirstDiv {
     display: flex;
     column-gap: 25px;
@@ -317,7 +341,7 @@ input[type="text"]::placeholder {
     text-decoration: none;  
     margin: 8px 0;
     padding: 8px;
-    font-size: 14px;
+    font-size: 17px;
     color: #000000;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Анимация фона и трансформации */
 }
@@ -591,3 +615,5 @@ li{
         }
     }
 }
+
+
