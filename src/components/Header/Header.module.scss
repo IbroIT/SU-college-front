@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.startOfLine{
+    width:100%;
+    height: 15px;
+    background-color: #004cff;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+}
 li{
     list-style-type: none;
 }
@@ -54,7 +62,8 @@ input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    font-size: 1.0em;
+    font-size: 1em;
+    width: 150px;
     color: #333;
     background-color: #fff;
     outline: none;
@@ -85,20 +94,22 @@ input[type="text"]::placeholder {
     background-color: blue;
 }
 .header {
-    background-color: #f7f7f7; // Светлый фон
+    background-color: #f7f7f7; /* Светлый фон */
     box-shadow: 0 2px 15px rgba(0, 76, 255, 0.1);
-    padding: 40px;
+    padding: 30px;
     width: 100%;
     position: sticky;
-    top: 0; 
-    z-index: 1000; 
-}
-
+    top: 0;
+    z-index: 1000;
+    transition: margin-bottom 0.3s ease;
+  }
+  
+  
 .headerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0 auto;
     width: 100%;
 }
@@ -187,14 +198,11 @@ input[type="text"]::placeholder {
 /* Навигация */
 .headerNav {
     position: relative;
-    background-color: #f7f7f7; // Изменение: светлый фон для навигации
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
     margin: 0 auto;
-    height: 70px;
-    box-shadow: 0 2px 15px rgba(0, 76, 255, 0.1);
+    height: 75px;
     // position: sticky;
     // top: 0;
     // z-index:    0;
@@ -205,30 +213,15 @@ input[type="text"]::placeholder {
     justify-content: space-between;
     width: 100%;
     position: relative;
-
+    column-gap: 50px;
 }
 .searchText {
-    font-size: 24px; 
+    font-size: 18px; 
     color: #5d5fe1; 
     font-family: 'Arial', sans-serif;
     margin-right: 10px; 
 }
 
-
-/* Общие стили для навигации */
-.headerNav {
-    background-color: #ffffff; // Изменение: светлый фон для выпадающего меню
-    padding: 15px 0;
-    width: 100%; /* Занимает всю ширину экрана */
-}
-.navContainer {
-    max-width: 1300px; /* Ограничение максимальной ширины */
-    margin: 0 auto; /* Центрирует контейнер */
-    padding: 0 20px; /* Добавляет отступы по бокам */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .headerUl {
     list-style-type: none;
     padding: 0;
@@ -237,22 +230,78 @@ input[type="text"]::placeholder {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    column-gap: 150px;
+    column-gap: 180px;
 }
 
 .navLi {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inherit;
     cursor: pointer;
     padding: 10px 0px;
     transition: color 0.3s ease-in-out;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
 
     &:hover .dropdownContent {
         display: block;
     }
 }
-
+.dropdownItem {
+    margin-left: 20px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Анимация выпадания меню */
+  @keyframes dropdownAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdownMenu {
+    animation: dropdownAppear 0.3s ease-out forwards;
+    margin-top: 10px; /* Сдвигаем меню */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .dropdownTitle {
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /* Стрелка, которая будет поворачиваться при открытии меню */
+  .dropdownTitle::after {
+    content: '▼'; /* Стрелка вниз */
+    margin-left: 8px;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdownTitle.open::after {
+    transform: rotate(180deg); /* Поворот стрелки при открытом меню */
+  }
+  
 .navLi:hover {
     color: orange;
 }
@@ -263,90 +312,119 @@ input[type="text"]::placeholder {
     top: 100%;
     left: 0;
     background-color: #ffffff;
-    width: 100%; /* Меню занимает полную ширину родителя */
+    width: 100.5%; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px; /* Отступы вокруг текста */
+    padding: 20px; /* Внутренние отступы */
     z-index: 1;
     opacity: 0;
     visibility: hidden;
     border-radius: 8px;
     transform: translateY(-10px);
-    height: auto; /* Высота подстраивается под контент */
-    max-height: 450px; /* Максимальная высота */
-    overflow-y: auto; /* Прокрутка, если контент не помещается */
+    height: auto; /* Высота адаптируется */
+    max-height: 750px; /* Ограничение высоты */
+    overflow-y: auto; /* Прокрутка при превышении высоты */
     display: flex;
-    flex-wrap: wrap; /* Перенос элементов на новую строку */
+    flex-wrap: wrap; /* Перенос строк */
     gap: 15px; /* Расстояние между элементами */
-    box-sizing: border-box; /* Учитываем padding в размере блока */
+    box-sizing: border-box; /* Учет padding в размерах блока */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Анимация появления */
+.pdfContainer {
+    position: fixed;  /* Закрепляем элемент на экране */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;  /* Занимает всю высоту экрана */
+    z-index: 9999;  /* Помещаем контейнер поверх других элементов */
+    background-color: rgba(0, 0, 0, 0.5);  /* Полупрозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10000;
+}
+
+.closeButton:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Появление меню */
 .navLi:hover .dropdownContent {
     display: flex;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-
+/* Заголовки */
 .dropdownContent h1 {
-    width: 100%; /* Заголовок на всю ширину */
+    width: 100%;
     margin-bottom: 10px;
-    font-size: 20px;
-    color: #333; /* Цвет текста */
+    margin-left: 13px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    font-weight: bold; /* Жирный текст */
+    position: relative; /* Относительное позиционирование для псевдоэлемента */
 }
 
+/* Линия под заголовком */
+.dropdownContent h1::after {
+    content: ""; /* Пустое содержимое для линии */
+    display: block;
+    width: 100%; /* Линия под всю ширину заголовка */
+    height: 2px; /* Высота линии */
+    background-color: #ccc; /* Цвет линии */
+    margin-top: 5px; /* Отступ от текста */
+    border-radius: 2px; /* Скругленные края линии */
+    font-weight: 900;
+}
+
+
+/* Ссылки */
 .dropdownContent a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease;
 }
 
 .dropdownContent a:hover {
-    color: orange; /* Изменение цвета ссылок при наведении */
+    color: orange;
 }
 
-.dropdownContentFirstDiv {
-    display: flex;
-    column-gap: 25px;
-    padding: 8px;
-    max-width: 700px; /* Ограничение ширины для первого блока */
-    overflow-wrap: break-word; /* Перенос длинного текста */
-}
-.dropdownContentFirstDiv h1{
-    color: black;
-}
-.dropdownContentSecondDiv {
-    display: grid; // Use grid layout for items
-    grid-template-columns: repeat(3, 1fr); // 3 columns
-    gap: 15px; // Space between items
-    // padding: 20px; // Padding around
-    border-left: 1px solid #ddd;
-    padding-left: 10px;
-}
-
-// Styles for items in the second dropdown
-.dropdownContentSecondDiv p {
-    font-size: 21px; // Larger font size
-    color: #000000;
-    width: 150px;
-    height: 60px;
-    transition: background-color 0.3s ease, transform 0.3s ease; // Transition effects
-}
-
-
-/* Стили для параграфов внутри */
+/* Параграфы */
 .dropdownContent p {
-    list-style-type: none;
-    text-decoration: none;  
     margin: 8px 0;
     padding: 8px;
-    font-size: 17px;
-    color: #000000;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Анимация фона и трансформации */
+    font-size: 16px;
+    color: #000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
 }
+
+/* Эффект при наведении */
+.dropdownContent p:hover {
+    background-color: rgba(255, 165, 0, 0.1);
+    transform: scale(1.02);
+}
+
 .dropdownContent h1{
     font-size: 18px;
+    margin-bottom: 15px;
+    &:hover{
+        color: grey;
+    }
 }
 
 
@@ -394,10 +472,25 @@ input[type="text"]::placeholder {
 li{
     color: black;
 }
+@media(max-width:1200px){
+    .headerNav {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+
+    .actions {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .mainNav{
         display: none;
     }
+
     .dropdownContent {
         min-width: 100%; 
         left: 0; 
@@ -413,9 +506,6 @@ li{
         position: relative; 
         top: 0; 
     }
-    .actions {
-        display: none;
-    }
     .headerUl{
         list-style-type: none;
     padding: 0;
@@ -429,9 +519,6 @@ li{
     }
     .title{
         margin-right: 150px;
-    }
-    .burgerMenu {
-        display: block;
     }
 
     .header {
@@ -451,16 +538,12 @@ li{
         transition: left 0.3s ease-in-out;
         overflow-y: auto;
     }
-    .searchMenu{
-        display: flex;
-        text-align: center;
-        margin-top: 10px;
-        margin-left: -10px;
-    }
     .mobileMenuOpen {
         left: 0;
     }
-
+    .searchMenu{
+        display: none;
+    }
     .mobileMenuHeader {
         text-align: center;
         border-bottom: 1px solid #b5b7bc;
@@ -483,11 +566,6 @@ li{
         margin-bottom: 20px;
         animation: fadeIn 0.6s ease;
     }
-
-    .headerNav {
-        display: none;
-    }
-
     .logo img {
         display: block;
     }

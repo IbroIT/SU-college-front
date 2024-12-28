@@ -10,13 +10,13 @@ const LanguageSwitcher = () => {
     return (
         <ul className={style.languages}>
             <li onClick={() => changeLanguage('en')} className={style.languageOption}>
-                <p>Eng</p> 
+                <p>EN</p> 
             </li>
             <li onClick={() => changeLanguage('ru')} className={style.languageOption}>
-                <p>Рус</p> 
+                <p>RU</p> 
             </li>
             <li onClick={() => changeLanguage('ky')} className={style.languageOption}>
-                <p>Кырг</p> 
+                <p>KG</p> 
             </li>
         </ul>
     );

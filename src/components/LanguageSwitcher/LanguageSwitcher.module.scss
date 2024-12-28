@@ -16,16 +16,31 @@
         font-family: Arial, sans-serif;
         font-size: 14px;
         font-weight: 500;
-        color: #333;
+        color: #161eb5;
         background-color: #f9f9f9;
-
-        &:hover {
-            background-color: #e0e0e0;
-            border-color: #c5c5c5;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            color: #000;
+        font-family: inherit;
+        cursor: pointer;
+        padding: 10px 0px;
+        transition: color 0.3s ease-in-out;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px; /* Толщина линии */
+            background-color: #161eb5; /* Цвет линии */
+            transition: width 0.3s ease; /* Плавный эффект */
         }
-
+        
+        &:hover::after {
+            width: 100%; /* Линия заполняет весь текст */
+        }
         img {
             height: 24px;
             width: 32px;

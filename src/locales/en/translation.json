@@ -1,6 +1,8 @@
 {
   "header": {
-    "students": "Students",
+    "itcollege": "International College of IT and Business",
+    "students": "For students",
+    "malaysia": "Malaysia",
     "owner": "Askar Salymbekov",
     "parents": "Parents",
     "map": "News",
@@ -26,12 +28,84 @@
     "applicants": "Admission",
     "history": "History",
     "missionGoals": "Mission and Goals",
+    "admissionCommittee": "Admission Committee",
+    "admissionRules": "Admission Rules and Plan",
+    "trainingDirections": "Training Directions",
+    "admissionOrt": "Admission via ORT",
+    "tuitionFees": "Tuition Fees",
+    "mainsite": "Our main website",
+    "careerGuidance": "Career Guidance",
+    "admissionProcedure": "Admission Procedure",
+    "requiredDocumentsTitle": "Required Documents",
+    "requiredDocuments": "Required Documents",
+    "admissionRegulation": "Admission Regulation",
+    "selectionSchedule": "Selection and Enrollment Schedule",
+    "transferProcedure": "Transfer Procedure",
+    "requiredTransferDocuments": "Required Documents",
+    "transferRegulation": "Transfer Regulation",
+    "transferSchedule": "Transfer Schedule",
+    "scholarshipsBenefits": "Scholarships and Benefits",
+    "studentScholarships": "Student Scholarships",
+    "officialDealers": "Official Dealers",
+    "adaptationProgram": "Adaptation Program",
+    "universityInfrastructure": "University Infrastructure",
+    "teachingCouncil": "Pedagogical Council",
     "email": "Email",
     "address": "Address",
+    "departments": "Отделение",
+    "generalEducation": "Отделение общеобразовательных дисциплин",
+    "informationTechnology": "Информационных технологий",
     "searchPlaceholder": "Search",
     "collegeInfo": "International College of IT and Business “Salymbekov University” is a new college with modern facilities, aimed at training specialists in the latest training programs in Russian and English.",
     "admissionsDetails": "Our college accepts applicants from the 9th and 11th grades. Based on the 9th grade, you will study in Kyrgyzstan for 2 years and 1.5 years in Malaysia. Based on the 11th grade, you will study in Kyrgyzstan for 1 year and 1.5 years in Malaysia.",
     "professionsInfo": "Our college offers a total of 3 IT specialties! In each of them, you will be taught by professional teachers and mentors. You will already be studying in your 1st year!"
+  },
+  "forstudents": {
+    "ebilim": {
+      "title": "Ebilim"
+    },
+    "studentCommunities": {
+      "title": "Student Communities",
+      "links": {
+        "studentCouncil": "Student Council",
+        "scientificAssociation": "Student Scientific Association",
+        "debateClub": "Debate Club",
+        "tutorsMovement": "Tutors' Movement",
+        "creativeGroups": "Creative Groups and Clubs"
+      }
+    },
+    "resourceBase": {
+      "title": "Resource Base",
+      "links": {
+        "instructions": "Instructions and Regulations",
+        "informationSystem": "Information System",
+        "library": "Electronic Library",
+        "resources": "Educational Resources"
+      }
+    },
+    "studySchedules": {
+      "title": "Study Schedules",
+      "links": {
+        "studySchedule": "Study Process Schedule",
+        "modulesExams": "Modules and Exams Schedule",
+        "practiceSchedule": "Practical Training Schedule",
+        "mfmSchedule": "MFM Schedule",
+        "collegeSchedule": "College Schedule"
+      }
+    },
+    "conditionsOpportunities": {
+      "title": "Conditions and Opportunities",
+      "links": {
+        "medicalCenter": "Medical Center",
+        "dormitory": "Dormitory",
+        "socialSupport": "Social Support for Students",
+        "optionalCourses": "Optional Courses",
+        "academicMobility": "Academic Mobility",
+        "psychologicalSupport": "Psychological Support",
+        "studentServiceCenter": "Student Service Center",
+        "adaptationPrograms": "Adaptation Programs"
+      }
+    }
   },
   "news": {
     "newLibrary": {
@@ -430,15 +504,18 @@
         }
     ]
   },
-  "contacts": {
-      "contactTitle": "Contact Information",
-      "address": "Address:",
-      "addressDetails": "Ahunbaev/Maldubaev Bishkek",
-      "phone": "Phone:",
-      "phoneDetails": "+996 (312) 658-538",
-      "email": "Email:",
-      "emailDetails": "info@salymbekov.com"
-    },
+  "Contacts": {
+    "Introduce": "Our contacts",
+    "WelcomeMessage": "Welcome to our university's website. Below are the contact details; we look forward to answering your questions.",
+    "AddressTitle": "Address",
+    "LegalAddress": "Legal address: Bishkek, Ibraimova St., 115A",
+    "FactualAddress": "Factual address: Bishkek, Maldybaeva St., 24b",
+    "PhoneTitle": "Phone",
+    "PhoneNumber": "+996 (701) 71-71-99",
+    "EmailTitle": "Email",
+    "Email": "salymbekov.kg@gmail.com",
+    "MapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..."
+  },
     "searchResults": {
         "noResults": "No results found for",
         "resultsFor": "Results for"
@@ -509,9 +586,35 @@
 },
 "director": {
   "title": "Zhunushalieva Nurzat Manasovna",
-  "bio1": "Zhunushalieva Nurzat Manasovna is the director of the College of Innovative Technologies and Economics, a recognized expert in the field of education, with over 27 years of experience in educational activities.",
-  "bio2": "She is an honor graduate in education of the Kyrgyz Republic and has extensive experience in leadership positions in secondary vocational and higher education.",
-  "bio3": "Under her leadership, the college actively develops educational programs and organizes various cultural events that contribute to the comprehensive development of students.",
-  "bio4": "College students have the opportunity to participate in theatrical performances, exhibitions, and sports competitions, helping them develop their talents and skills."
+    "bio1": "Welcome to our new college, the International College of IT and Business!",
+    "bio2": "Transitions are never easy, whether it’s school, college, university, or any other practical stage of life.",
+    "bio3": "As a teacher and a parent, I understand that these years are a very exciting time of the year when children enter new life paths, explore themselves, their talents, and their profession.",
+    "bio4": "I believe in practicality, not rote memorization. I believe in people, not machines. I believe in learning, not grades. Since our university has met the expectations of students and parents in a short time, I assure you it will continue to do so in the future.",
+    "bio5": "Our college trains IT specialists through a unique program in collaboration with Lincoln University Malaysia. We place special emphasis on advanced English language studies.",
+    "bio6": "Only in our college can you earn a dual diploma: Kyrgyz and international standards.",
+    "bio7": "It is a great honor for me to be part of this team. We are a family. We need to work as one team. It’s either us or no one. It’s all for one and one for all.",
+    "bio8": "If you have ideas, suggestions, or problems, please come and discuss them. Communication is the key to any successful relationship, whether professional or personal. Please don’t hesitate to come up with new ideas, innovative methods, new societies, new programs, and new talents.",
+    "bio9": "Above all, we are a team. We must do everything as a family. We want a safe future for OUR children. OUR children are OUR priority. We will make the impossible possible. We will see the invisible together. Welcome to our college!",
+    "bio10": "Thank you!"
+},
+"student_council": {
+  "title": "Student Council of Salymbekov University",
+  "about_title": "About the Student Council",
+  "about_paragraph": "The Student Council of the institution 'Salymbekov University' is a permanent student self-governance body. In its work, the Student Council is guided by the principles of democracy, voluntariness, equality, and legality. All students of 'Salymbekov University' have the right to elect and be elected to the Student Council and participate in its activities.",
+  "goals_title": "Main Goals and Objectives of Student Self-Governance",
+  "goals_paragraph": "The goal of the Student Council is to create conditions for:",
+  "goal_1": "Optimizing the process of professional education for students of the University;",
+  "goal_2": "The comprehensive development of a student's personality, with physical and moral-psychological health;",
+  "goal_3": "Ensuring the implementation of students' rights to participate in the management of the educational process and solving important issues of student life.",
+  "tasks_title": "Tasks of the Student Council",
+  "task_1": "Involving students in solving all issues related to the training of highly qualified specialists;",
+  "task_2": "Developing proposals to improve the quality of the educational process, taking into account the scientific and professional interests of students;",
+  "task_3": "Defending and representing the rights and interests of students;",
+  "task_4": "Assisting in solving educational, socio-economic, and other issues affecting the interests of the University;",
+  "task_5": "Supporting the University’s management bodies in solving educational and scientific tasks, organizing student leisure, and promoting a healthy lifestyle;",
+  "task_6": "Assisting the University’s structural units in conducting events within the educational process;",
+  "task_7": "Carrying out work aimed at raising students' awareness and their demands for the level of their knowledge, cultivating a respectful attitude toward the property complex, and fostering patriotism and respect for the spirit and traditions of the University;",
+  "task_8": "Informing students about the activities of the University;",
+  "task_9": "Supporting the implementation of socially significant youth initiatives."
 }
 }

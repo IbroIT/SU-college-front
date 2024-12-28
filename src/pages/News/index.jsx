@@ -2,12 +2,12 @@ import React from 'react';
 import { Container, Grid, Typography, Card, CardContent, CardMedia, Button, Box } from '@mui/material';
 import './News.module.scss';
 import AnimatedScrollComponent from '../../components/AnimatedComponents';
-
+import aucameeting from '../../components/images/aucameeting.jpg'
 const newsData = [
   {
     id: 1,
     title: 'Открытие нового корпуса',
-    image: 'https://via.placeholder.com/300',
+    image: aucameeting,
     description:
       'Наш колледж торжественно открыл новый корпус, оснащённый современными аудиториями и лабораториями.',
     date: '14 декабря 2024',
@@ -95,7 +95,7 @@ export const News = () => {
               >
                 <CardMedia
                   component="img"
-                  height="300"
+                  height="400"
                   image={news.image}
                   alt={news.title}
                   sx={{ objectFit: 'cover' }}
