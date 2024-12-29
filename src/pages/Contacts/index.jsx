@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import AnimatedScrollComponent from "../../components/AnimatedComponents";
 
+
 const MapContainer = styled(motion.div)({
     width: "100%",
     height: "300px",
@@ -47,7 +48,6 @@ export const Contacts = () => {
     return (
         <>
         <AnimatedScrollComponent>
-            {/* Page Header */}
             <Box
                 sx={{
                     backgroundColor: "#5a738f",
@@ -75,7 +75,6 @@ export const Contacts = () => {
                 </motion.div>
             </Box>
 
-            {/* Page Content */}
             <Container
                 maxWidth="md"
                 sx={{ mt: 4 }}

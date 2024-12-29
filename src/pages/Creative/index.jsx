@@ -1,14 +1,11 @@
 import React from "react";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Container,
-  Box,
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, Container, Box } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const CreativeTeams = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <AppBar position="static">
@@ -34,25 +31,30 @@ export const CreativeTeams = () => {
                 fontSize: { xs: "1.8rem", sm: "2.5rem" },
               }}
             >
-              Творческие коллективы и кружки Салымбеков Университет
+              {t("creativeterms.title")}
             </Typography>
           </motion.div>
         </Box>
       </AppBar>
 
       <Container sx={{ mt: 4 }}>
-        <Typography variant="h4" gutterBottom sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}>
-          О ТВОРОЧЕСКИХ КОЛЛЕКТИВАХ И КРУЖКАХ
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}
+        >
+          {t("creativeterms.about")}
         </Typography>
         <Typography paragraph sx={{ fontSize: { xs: "0.9rem", sm: "1rem" } }}>
-          Для укрепления учебно-воспитательной, образовательной и научной
-          деятельности Салымбеков университет предоставляет своим студентам
-          возможность участия в творческих коллективах, кружках в соответствии
-          с их интересами и желаниями.
+          {t("creativeterms.description")}
         </Typography>
 
-        <Typography variant="h5" gutterBottom sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" } }}>
-          Доступные кружки:
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" } }}
+        >
+          {t("creativeterms.available_clubs")}
         </Typography>
 
         <Box
@@ -63,31 +65,21 @@ export const CreativeTeams = () => {
             mb: 3,
           }}
         >
-          <Box sx={{ textAlign: "center", p: 2, border: "1px solid #ccc", borderRadius: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
-              Танцы
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: "center", p: 2, border: "1px solid #ccc", borderRadius: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
-              Клуб разговорного английского языка (english talking club)
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: "center", p: 2, border: "1px solid #ccc", borderRadius: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
-              Дебаты и лидерские качества
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: "center", p: 2, border: "1px solid #ccc", borderRadius: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
-              Киберспорт
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: "center", p: 2, border: "1px solid #ccc", borderRadius: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
-              Спорт и шахматы
-            </Typography>
-          </Box>
+          {["dance", "english_club", "debates", "esports", "sports"].map((club) => (
+            <Box
+              key={club}
+              sx={{
+                textAlign: "center",
+                p: 2,
+                border: "1px solid #ccc",
+                borderRadius: 2,
+              }}
+            >
+              <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
+                {t(`creativeterms.clubs.${club}`)}
+              </Typography>
+            </Box>
+          ))}
         </Box>
       </Container>
     </>

@@ -1,8 +1,11 @@
 import React from "react";
 import { AppBar, Box, Container, Typography, Grid, Card, CardContent, CardMedia } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 export const StudentService = () => {
+  const { t } = useTranslation(); // Initialize useTranslation hook
+
   return (
     <>
       <AppBar position="static">
@@ -28,7 +31,7 @@ export const StudentService = () => {
                 fontSize: { xs: "1.8rem", sm: "2.5rem" },
               }}
             >
-              Комиссия по социальной поддержке студентов
+              {t("studentservice.title")} {/* Translated title */}
             </Typography>
           </motion.div>
         </Box>
@@ -54,7 +57,7 @@ export const StudentService = () => {
             marginBottom: "1.5rem",
           }}
         >
-          Основной целью Центра обслуживания студентов является предоставление информации, касательно результатов обучения (справки, трансрипты). Вся информация надежно хранится в ИС Ebilim, по запросу студента заведующий студенческим отделом кадров предоставляет информацию по требованиям студентов.
+          {t("studentservice.content")} {/* Translated content */}
         </Typography>
 
         {/* Teacher's Image and Name */}
@@ -64,16 +67,16 @@ export const StudentService = () => {
               <CardMedia
                 component="img"
                 height="300"
-                image="https://salymbekov.com/wp-content/uploads/2022/05/bopushova-asina-toktosunovna-300x200.jpg" // Add the URL of the teacher's image here
-                alt="Бопушева Асина Токтосуновна"
+                image={t("studentservice.teacher.image")} // Dynamic image URL
+                alt={t("studentservice.teacher.name")} // Dynamic alt text
                 sx={{ borderRadius: "8px 8px 0 0" }}
               />
               <CardContent sx={{ textAlign: "center" }}>
                 <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
-                  Бопушева Асина Токтосуновна
+                  {t("studentservice.teacher.name")} {/* Translated teacher name */}
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
-                  Заведующий Студенческим отделом кадров (СОК)
+                  {t("studentservice.teacher.position")} {/* Translated teacher position */}
                 </Typography>
               </CardContent>
             </Card>

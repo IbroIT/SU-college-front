@@ -1,8 +1,11 @@
 import React from "react";
 import { AppBar, Box, Container, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 export const AdaptationPrograms = () => {
+  const { t } = useTranslation(); // Initialize useTranslation hook
+
   return (
     <>
       <AppBar position="static">
@@ -28,7 +31,7 @@ export const AdaptationPrograms = () => {
                 fontSize: { xs: "1.8rem", sm: "2.5rem" },
               }}
             >
-              Адаптационные программы
+              {t("adaptationprograms.title")} {/* Translated title */}
             </Typography>
           </motion.div>
         </Box>
@@ -36,7 +39,7 @@ export const AdaptationPrograms = () => {
 
       <Container
         sx={{
-          textAlign: "center", // Центрирование текста
+          textAlign: "center", // Center text
           marginTop: "2rem",
         }}
       >
@@ -48,21 +51,21 @@ export const AdaptationPrograms = () => {
             fontWeight: "bold",
           }}
         >
-          Ознакомьтесь с адаптационной программой:
+          {t("adaptationprograms.content.heading")} {/* Translated heading */}
         </Typography>
 
-        <h1 style={{height: "250px"}}>
+        <h1 style={{ height: "250px" }}>
           <a
-            href="https://salymbekov.com/wp-content/uploads/2024/06/adobe-scan-12-ijunja-2024-g.-1.html"
+            href={t("adaptationprograms.content.linkUrl")} // Dynamic link URL
             style={{
-              color: "#5a738f", // Цвет ссылки
-              textDecoration: "none", // Убираем подчеркивание
-              fontWeight: "bold", // Сделать текст жирным
+              color: "#5a738f", // Link color
+              textDecoration: "none", // Remove underline
+              fontWeight: "bold", // Bold text
             }}
-            target="_blank" // Открыть ссылку в новой вкладке
+            target="_blank" // Open link in new tab
             rel="noopener noreferrer"
           >
-            Адаптационная программа 2023-2024 г.
+            {t("adaptationprograms.content.linkText")} {/* Translated link text */}
           </a>
         </h1>
       </Container>

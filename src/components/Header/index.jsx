@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { Menu as MenuIcon, School as SchoolIcon, Group as GroupIcon, Article as ArticleIcon, FileCopy as FileCopyIcon } from '@mui/icons-material';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import axios from 'axios';
-
+import { Typography } from '@mui/material';
 export const Header = ({pdfFiles, pdfFilesForStudents}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { t } = useTranslation();
@@ -104,7 +104,9 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
     {t('header.college')}
     <div className={style.dropdownContent}>
     <div>
-  <h1>{t('header.itcollege')}</h1>
+  <h1>
+    {t('header.itcollege')}
+    </h1>
   <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
   <Link to="/mission"><p>{t('header.missionGoals')}</p></Link>
   <Link to="/director"><p>{t('header.letterFromDirector')}</p></Link>
@@ -115,25 +117,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
     {t('header.mainsite')}
   </a>
   </p>
-  {/* <Link to="/owner"><p>{t('header.owner')}</p></Link>
-  <Link to="/history"><p>{t('header.history')}</p></Link>
-  <Link to="/teaching-council"><p>{t('header.teachingCouncil')}</p></Link>
-  <Link to="/faq"><p>{t('header.faqs')}</p></Link>
-  <div className={style.dropdown}>
-    <p className={`${style.dropdownTitle} ${isDropdownOpen2 ? style.open : ''}`} onClick={toggleDropdown2}>
-      {t('header.departments')}
-    </p>
-    {isDropdownOpen2 && (
-      <div className={style.dropdownContent}>
-        <Link to="/departments/general-education">
-          <p className={style.dropdownItem}>{t('header.generalEducation')}</p>
-        </Link>
-        <Link to="/departments/information-technology">
-          <p className={style.dropdownItem}>{t('header.informationTechnology')}</p>
-        </Link>
-      </div>
-    )}
-  </div> */}
 </div>
     <div>
     <h1>{t('header.malaysia')}</h1>
@@ -156,57 +139,38 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
     {t('header.applicants')}
     <div className={style.dropdownContent} style={{height:"450px", columnGap: "150px"}}>
 
-        <div>    
-            <Link to="/admissionCommittee"><h1 className={style.applicantsText}>{t('header.admissionCommittee')}</h1></Link>
-            <Link to="/napravlenija-podgotovki"><h1 className={style.applicantsText}>Направления подготовки</h1></Link>
-            <h1 className={style.applicantsText}>{t('header.professions')}</h1>
-            <Link to="/computerscience"><p>{t('header.computerScience')}</p></Link>
-            <Link to="/multimediaprograms"><p>{t('header.multimediaPrograms')}</p></Link>
-            <Link to="/mobile"><p>{t('header.mobileApps')}</p></Link>
-            <Link to="/stipendii-i-lgoty"><h1>Стипендии и льготы</h1></Link>
-        </div>
+    <div>    
+    <Link to="/admissionCommittee"><h1 className={style.applicantsText}>{t('header.admissionCommittee')}</h1></Link>
+    <Link to="/napravlenija-podgotovki"><h1 className={style.applicantsText}>{t('header.areasoftraining')}</h1></Link>
+    <h1 className={style.applicantsText}>{t('header.professions')}</h1>
+    <Link to="/computerscience"><p>{t('header.computerScience')}</p></Link>
+    <Link to="/multimediaprograms"><p>{t('header.multimediaPrograms')}</p></Link>
+    <Link to="/mobile"><p>{t('header.mobileApps')}</p></Link>
+    <Link to="/stipendii-i-lgoty"><h1>{t('header.scholarships')}</h1></Link>
+</div>
 
-        <div>
-            <Link to="/price"><h1>Стоимость обучения</h1></Link>
-            <Link to="/pravila-i-plan-priema"><h1>Правила и план приема</h1></Link>
-            <h1>Порядок приема</h1>
-            <Link to="/requiredDocuments"><p>Необходимые документы</p></Link>
-            <Link to="/admissionRegulations"><p>Положение приема</p></Link>
-            <Link to="/selectionSchedule"><p>График отбора и зачисления</p></Link>
-            <Link to="/adaptacionnaja-programma"><h1>Адаптационная программа</h1></Link>
-        </div>
+<div>
+    <Link to="/price"><h1>{t('header.price')}</h1></Link>
+    <Link to="/pravila-i-plan-priema"><h1>{t('header.admissionRulesAndPlan')}</h1></Link>
+    <h1>{t('header.admissionProcedure')}</h1>
+    <Link to="/requiredDocuments"><p>{t('header.requiredDocuments')}</p></Link>
+    <Link to="/admissionRegulations"><p>{t('header.admissionRegulations')}</p></Link>
+    <Link to="/selectionSchedule"><p>{t('header.selectionSchedule')}</p></Link>
+    <Link to="/adaptacionnaja-programma"><h1>{t('header.adaptationProgram')}</h1></Link>
+</div>
 
-        <div>
-            <h1>Профориентация</h1>
-            <h1>Официальные дилеры</h1>
-            <h1>Порядок перевода</h1>
-            <Link to="/requiredDocuments"><p>Необходимые документы</p></Link>
-            <Link to="/transferRegulations"><p>Положение приема</p></Link>
-            <Link to="/transferSchedule"><p>График перевода</p></Link>
-            <h1>Инфраструктура колледжа</h1>
-        </div>
+<div>
+    <h1>{t('header.careerOrientation')}</h1>
+    <h1>{t('header.officialDealers')}</h1>
+    <h1>{t('header.transferProcedure')}</h1>
+    <Link to="/requiredDocuments"><p>{t('header.requiredDocuments')}</p></Link>
+    <Link to="/transferRegulations"><p>{t('header.transferRegulations')}</p></Link>
+    <Link to="/transferSchedule"><p>{t('header.transferSchedule')}</p></Link>
+    <h1>{t('header.collegeInfrastructure')}</h1>
+</div>
+
     </div>
 </li>
-
-
-                    {/* <li className={style.navLi} onClick={toggleDropdown}>
-                        
-                {t('header.admissions')}
-                <div className={`${style.dropdownContent} ${isOpen ? style.show : ''}`}>
-                    <div className={style.dropdownContentFirstDiv}>
-                    </div>
-                    <div className={style.dropdownContentSecondDiv}>
-                        <Link to="/afterninthgrade"><p>{t('header.afterNinthGrade')}</p></Link>
-                        <Link to="/aftereleventhgrade"><p>{t('header.afterEleventhGrade')}</p></Link>
-                        <Link to="/faq">
-                            <p>{t('header.faqs')}</p>
-                        </Link>
-                        <Link to="/contacts">
-                            <p>{t('header.contacts')}</p>
-                        </Link>
-                    </div>
-                </div>
-            </li> */}
             <li className={style.navLi}>
 
     {t('header.students')}
@@ -265,8 +229,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
 </li>
 
 <li className={style.navLi}>
-                Документы
-                <div className={style.dropdownContent}>
+{t('header.documents')}
+<div className={style.dropdownContent}>
                     {pdfFiles.map((file, index) => (
                         <Link key={index} to={`/documents/${index}`}>
                             <p>{file.title}</p>
@@ -278,8 +242,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
 <Link to="/faq">
                             <li className={style.navLi}>{t('header.faqs')}</li>
                         </Link>
-
-
                     </ul>
                     </div>
                 </nav>
@@ -311,34 +273,121 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
             <li className={style.navLi}>
                 {t('header.college')}
                 <div className={`${style.dropdownContent} ${isMenuOpen ? style.show : ''}`}>
-                <Link to="/college" onClick={closeMenu}><p>{t('header.aboutCollege')}</p></Link>
-                    <Link to="/mission" onClick={closeMenu}><p>{t('header.mission')}</p></Link>
-                    <Link to="/teachers" onClick={closeMenu}><p>{t('header.teachers')}</p></Link>
-                    <Link to="/advice" onClick={closeMenu}><p>{t('header.board')}</p></Link>
-                    <Link to="/college" onClick={closeMenu}><p>{t('header.letterFromDirector')}</p></Link>
+                    <Link to="/college" onClick={closeMenu}><p>{t('header.aboutCollege')}</p></Link>
+  <Link to="/mission"onClick={closeMenu}><p>{t('header.missionGoals')}</p></Link>
+  <Link to="/director"onClick={closeMenu}><p>{t('header.letterFromDirector')}</p></Link>
+  <Link to="/teachers"onClick={closeMenu}><p>{t('header.teachers')}</p></Link>
+  <Link to="/contacts"onClick={closeMenu}><p>{t('header.contacts')}</p></Link>
+  <p>
+  <a href='https://salymbekov.com/en/' target="_blank" rel="noopener noreferrer">
+    {t('header.mainsite')}
+  </a>
+  </p>
                 </div>
             </li>
             <li className={style.navLi}>
-                {t('header.professions')}
+                {t('header.applicants')}
                 <div className={style.dropdownContent}>
-                    <Link to="/computerscience" onClick={closeMenu}><p>{t('header.computerScience')}</p></Link>
-                    <Link to="/multimediaprograms" onClick={closeMenu}><p>{t('header.multimediaPrograms')}</p></Link>
-                    <Link to="/mobile" onClick={closeMenu}><p>{t('header.mobileApps')}</p></Link>
+                <div>    
+    <Link to="/admissionCommittee"onClick={closeMenu}><h1 className={style.applicantsText}>{t('header.admissionCommittee')}</h1></Link>
+    <Link to="/napravlenija-podgotovki"onClick={closeMenu}><h1 className={style.applicantsText}>{t('header.areasoftraining')}</h1></Link>
+    <h1 className={style.applicantsText}>{t('header.professions')}</h1>
+    <Link to="/computerscience"onClick={closeMenu}><p>{t('header.computerScience')}</p></Link>
+    <Link to="/multimediaprograms"onClick={closeMenu}><p>{t('header.multimediaPrograms')}</p></Link>
+    <Link to="/mobile"onClick={closeMenu}><p>{t('header.mobileApps')}</p></Link>
+    <Link to="/stipendii-i-lgoty"onClick={closeMenu}><h1>{t('header.scholarships')}</h1></Link>
+</div>
+
+<div>
+    <Link to="/price"onClick={closeMenu}><h1>{t('header.price')}</h1></Link>
+    <Link to="/pravila-i-plan-priema"onClick={closeMenu}><h1>{t('header.admissionRulesAndPlan')}</h1></Link>
+    <h1>{t('header.admissionProcedure')}</h1>
+    <Link to="/requiredDocuments"onClick={closeMenu}><p>{t('header.requiredDocuments')}</p></Link>
+    <Link to="/admissionRegulations"onClick={closeMenu}><p>{t('header.admissionRegulations')}</p></Link>
+    <Link to="/selectionSchedule"onClick={closeMenu}><p>{t('header.selectionSchedule')}</p></Link>
+    <Link to="/adaptacionnaja-programma"onClick={closeMenu}><h1>{t('header.adaptationProgram')}</h1></Link>
+</div>
+
+<div>
+    <h1>{t('header.careerOrientation')}</h1>
+    <h1>{t('header.officialDealers')}</h1>
+    <h1>{t('header.transferProcedure')}</h1>
+    <Link to="/requiredDocuments"onClick={closeMenu}><p>{t('header.requiredDocuments')}</p></Link>
+    <Link to="/transferRegulations"onClick={closeMenu}><p>{t('header.transferRegulations')}</p></Link>
+    <Link to="/transferSchedule"onClick={closeMenu}><p>{t('header.transferSchedule')}</p></Link>
+    <h1>{t('header.collegeInfrastructure')}</h1>
+</div>
                 </div>
             </li>
             <li className={style.navLi}>
-                {t('header.admissions')}
+            {t('header.students')}
+            <div className={style.dropdownContent}>
+        <div>
+        <h1>{t('forstudents.ebilim.title')}</h1>
+        <p>
+        <a href='https://ebilim.salymbekov.com/Account/Login?ReturnUrl=%2F' target="_blank" rel="noopener noreferrer">
+    {t('forstudents.ebilim.title')}
+  </a>        </p>
+        </div>
+    <div>
+        <h1>{t('forstudents.studentCommunities.title')}</h1>
+        <Link to="/student-council"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.studentCouncil')}</p></Link>
+        <Link to="/debate-club"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.debateClub')}</p></Link>
+        <Link to="/tutors-movement"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.tutorsMovement')}</p></Link>
+        <Link to="/creative-groups"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.creativeGroups')}</p></Link>
+      </div>
+
+      {/* Ресурсная база */}
+      <div>
+        <h1>{t('forstudents.resourceBase.title')}</h1>
+        <Link to="/instructions"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.instructions')}</p></Link>
+        <Link to="/information-system"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.informationSystem')}</p></Link>
+        <Link to="https://lib.salymbekov.com"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.library')}</p></Link>
+        <Link to="/resources"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.resources')}</p></Link>
+      </div>
+
+      <div>
+        <h1>{t('forstudents.studySchedules.title')}</h1>
+        <Link to="/modules-exams"onClick={closeMenu}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
+        <p>
+  <a 
+    href="https://docs.google.com/spreadsheets/d/1SZxYMnyEgPgMIyFvcisNarYN0pZjZxQ4/edit?hl=ru&pli=1&gid=331563060#gid=331563060" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    {t('forstudents.studySchedules.links.collegeSchedule')}
+  </a>
+</p>
+        {pdfFilesForStudents.map((file, index) => (
+            <Link key={index} to={`/documents/${index}`}>
+            <p>{file.title}</p>
+        </Link>
+        ))}
+      </div>
+
+      <div>
+        <h1>{t('forstudents.conditionsOpportunities.title')}</h1>
+        <Link to="/social-support"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.socialSupport')}</p></Link>
+        <Link to="/psychological-support"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.psychologicalSupport')}</p></Link>
+        <Link to="/student-service-center"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.studentServiceCenter')}</p></Link>
+        <Link to="/adaptation-programs"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.adaptationPrograms')}</p></Link>
+      </div>
+    </div>
+            </li>
+            <li className={style.navLi}>
+
+                {t('header.documents')}
                 <div className={style.dropdownContent}>
-                    <Link to="/afterninthgrade" onClick={closeMenu}><p>{t('header.afterNinthGrade')}</p></Link>
-                    <Link to="/aftereleventhgrade" onClick={closeMenu}><p>{t('header.afterEleventhGrade')}</p></Link>
+                    {pdfFiles.map((file, index) => (
+                        <Link key={index} to={`/documents/${index}`}>
+                            <p>{file.title}</p>
+                        </Link>
+                    ))}
                 </div>
             </li>
-            <Link className={style.link} to="/faq"  onClick={closeMenu}>
-                <li className={style.navLi}>{t('header.faqs')}</li>
-            </Link>
-            <Link className={style.link} to="/contacts" onClick={closeMenu}>
-                <li className={style.navLi}>{t('header.contacts')}</li>
-            </Link>
+            <Link to="/faq"onClick={closeMenu}>
+                            <li className={style.navLi}>{t('header.faqs')}</li>
+                        </Link>
             <div className={style.mobileActions}>
                 <LanguageSwitcher />
             </div>

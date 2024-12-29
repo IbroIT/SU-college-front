@@ -1,8 +1,11 @@
 import React from "react";
 import { AppBar, Box, Container, Typography, Divider } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Scholarships = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <AppBar position="static">
@@ -29,7 +32,7 @@ export const Scholarships = () => {
                 fontSize: { xs: "2.5rem", sm: "3rem" },
               }}
             >
-              Стипендии и льготы
+              {t('scholarships.scholarships_and_benefits')}
             </Typography>
           </motion.div>
         </Box>
@@ -45,7 +48,7 @@ export const Scholarships = () => {
             fontSize: { xs: "1.6rem", sm: "2rem" },
           }}
         >
-          Льготная политика
+          {t('scholarships.benefits_policy')}
         </Typography>
 
         <Typography
@@ -57,14 +60,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          Социальная поддержка студентов университета представляет собой
-          предоставление льгот студентам в виде снижения стоимости оплаты за
-          обучение на сумму, выраженную в процентном соотношении к установленной
-          стоимости обучения. Льготы по социальной поддержке могут быть
-          предоставлены в виде: бесплатное проживание в общежитии, льготное
-          питание и др. Льготы могут быть предоставлены в виде исключений в
-          других особых случаях при наличии веских оснований, которые комиссией
-          посчитаются достаточными.
+          {t('scholarships.social_support_description')}
         </Typography>
 
         <Typography
@@ -76,13 +72,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          Непременным условием социальной поддержки студентов является отличная
-          и хорошая успеваемость, учебная дисциплина и активное участие в
-          научно-исследовательской, культурно-массовой, спортивной и общественной
-          работе Университета. Право на получение льготы имеют студенты
-          Университета очной формы обучения, имеющие по результатам предыдущего
-          учебного года только отличные оценки по всем дисциплинам, а также не
-          имеющие академической задолженности.
+          {t('scholarships.social_support_condition')}
         </Typography>
 
         <Typography
@@ -94,7 +84,7 @@ export const Scholarships = () => {
             fontSize: { xs: "1.2rem", sm: "1.5rem" },
           }}
         >
-          Категории студентов для получения льгот
+          {t('scholarships.student_categories_for_benefits')}
         </Typography>
 
         <Typography
@@ -106,8 +96,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          <strong>I категория:</strong> Студенты очной формы обучения, закончившие
-          учебный год по всем дисциплинам только на «отлично».
+          <strong>{t('scholarships.category_i')}:</strong> {t('scholarships.category_i_description')}
         </Typography>
 
         <Typography
@@ -119,8 +108,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          <strong>II категория:</strong> Студенты, потерявшие кормильца, круглые
-          сироты, инвалиды I и II группы.
+          <strong>{t('scholarships.category_ii')}:</strong> {t('scholarships.category_ii_description')}
         </Typography>
 
         <Typography
@@ -132,11 +120,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          <strong>III категория:</strong> Студенты, родители которых являются
-          штатными сотрудниками Университета, внесших значительный вклад в
-          повышение качества подготовки специалистов, научно-исследовательской
-          работе, а также принимающих активное участие в общественной жизни
-          университета.
+          <strong>{t('scholarships.category_iii')}:</strong> {t('scholarships.category_iii_description')}
         </Typography>
 
         <Typography
@@ -148,9 +132,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          <strong>IV категория:</strong> Студенты, регулярно представляющие
-          Университет на соревнованиях и конкурсах республиканского, межрегионального
-          и международного уровня.
+          <strong>{t('scholarships.category_iv')}:</strong> {t('scholarships.category_iv_description')}
         </Typography>
 
         <Typography
@@ -162,10 +144,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          <strong>V категория:</strong> Студенты, поступающие на первый курс и
-          особо отличившиеся в процессе обучения в школах, средних профессиональных
-          учебных заведениях и в различных образовательных, спортивных и культурных
-          соревнованиях республиканского и международного уровня.
+          <strong>{t('scholarships.category_v')}:</strong> {t('scholarships.category_v_description')}
         </Typography>
 
         <Typography
@@ -177,8 +156,7 @@ export const Scholarships = () => {
             fontSize: { xs: "1.2rem", sm: "1.5rem" },
           }}
         >
-          Состав комиссии по социальной поддержке студентов Международного
-          факультета медицины «Салымбеков Университет»
+          {t('scholarships.commission_composition')}
         </Typography>
 
         <Typography
@@ -190,19 +168,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          Уметалиева М.Н. – декан, председатель комиссии.
-          <br />
-          Арзиева Н.Н. – заместитель декана, член комиссии.
-          <br />
-          Акматова А.Т. – заведующая УМО, член комиссии.
-          <br />
-          Шерали уулу Ж. – экономист, член комиссии.
-          <br />
-          Бопушева А.Т. – заведующая СОК, член комиссии.
-          <br />
-          Пиримбаева Ж.Ж. – руководитель департамента HR и делопроизводства, член комиссии.
-          <br />
-          Алиярова М.Ю. – преподаватель кафедры ЕГД, старший куратор, член комиссии.
+          {t('scholarships.commission_members')}
         </Typography>
 
         <Typography
@@ -214,7 +180,7 @@ export const Scholarships = () => {
             color: "#333",
           }}
         >
-          Основание: решение ученого совета от 30 августа 2022 года.
+          {t('scholarships.basis_resolution')}
         </Typography>
       </Container>
     </>

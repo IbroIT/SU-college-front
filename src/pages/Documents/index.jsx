@@ -1,8 +1,11 @@
 import React from "react";
-import { AppBar, Box, Container, Typography, Divider, Paper, Grid } from "@mui/material";
+import { AppBar, Box, Container, Typography, Divider, Paper } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Documents = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <AppBar position="static">
@@ -29,7 +32,7 @@ export const Documents = () => {
                                 fontSize: { xs: "2.5rem", sm: "3rem" },
                             }}
                         >
-                            Необходимые документы для поступления
+                            {t('documents.title')}
                         </Typography>
                     </motion.div>
                 </Box>
@@ -38,33 +41,33 @@ export const Documents = () => {
             <Container sx={{ padding: { xs: "20px", sm: "40px" }, marginTop: "40px" }}>
                 <Paper sx={{ padding: "20px", borderRadius: "8px", boxShadow: 3 }}>
                     <Typography variant="h5" component="h2" sx={{ marginBottom: "20px", fontWeight: "bold" }}>
-                        Для граждан Кыргызской Республики:
+                        {t('documents.citizensKG')}
                     </Typography>
                     <Typography variant="body1" sx={{ marginBottom: "20px", lineHeight: "1.6" }}>
                         <ul>
-                            <li>Заявление на имя ректора Учреждения «Салымбеков Университет» (образец);</li>
-                            <li>Документ государственного образца о среднем общем или среднем профессиональном образовании (аттестат или диплом);</li>
-                            <li>Копия паспорта;</li>
-                            <li>2 фото (4×6 см), 4 фото (3×4 см);</li>
-                            <li>Медицинская справка 086-У;</li>
-                            <li>Военный билет или приписное свидетельство;</li>
+                            <li>{t('documents.application')}</li>
+                            <li>{t('documents.educationDocument')}</li>
+                            <li>{t('documents.passportCopy')}</li>
+                            <li>{t('documents.photos')}</li>
+                            <li>{t('documents.medicalCertificate')}</li>
+                            <li>{t('documents.militaryBook')}</li>
                         </ul>
                     </Typography>
 
                     <Divider sx={{ marginBottom: "20px" }} />
 
                     <Typography variant="h5" component="h2" sx={{ marginBottom: "20px", fontWeight: "bold" }}>
-                        Для граждан стран ближнего и дальнего зарубежья:
+                        {t('documents.citizensForeign')}
                     </Typography>
                     <Typography variant="body1" sx={{ marginBottom: "20px", lineHeight: "1.6" }}>
                         <ul>
-                            <li>Заявление на имя ректора Учреждения «Салымбеков Университет» (образец);</li>
-                            <li>Паспорт с въездной визой, соответствующей требованиям законодательства КР и его копию;</li>
-                            <li>Оригинал документа о полном среднем образовании с указанием изучаемых предметов и оценок (баллов) и нотариально заверенную копию;</li>
-                            <li>Нотариально заверенный перевод документа о полном среднем образовании на официальный язык КР;</li>
-                            <li>Справку из Министерства Образования и Науки КР об эквивалентности полного среднего образования;</li>
-                            <li>2 фото (4×6 см), 4 фото (3×4 см);</li>
-                            <li>Результаты мед обследования;</li>
+                            <li>{t('documents.application')}</li>
+                            <li>{t('documents.passportWithVisa')}</li>
+                            <li>{t('documents.originalEducationDocument')}</li>
+                            <li>{t('documents.notarizedTranslation')}</li>
+                            <li>{t('documents.educationEquivalence')}</li>
+                            <li>{t('documents.photos')}</li>
+                            <li>{t('documents.medicalResults')}</li>
                         </ul>
                     </Typography>
                 </Paper>

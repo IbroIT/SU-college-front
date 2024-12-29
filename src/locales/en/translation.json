@@ -10,6 +10,7 @@
     "news": "News",
     "search": "Search",
     "college": "College",
+    "documents": "Documents",
     "aboutCollege": "About College",
     "mission": "Mission",
     "teachers": "Teachers",
@@ -35,27 +36,35 @@
     "tuitionFees": "Tuition Fees",
     "mainsite": "Our main website",
     "careerGuidance": "Career Guidance",
-    "admissionProcedure": "Admission Procedure",
     "requiredDocumentsTitle": "Required Documents",
-    "requiredDocuments": "Required Documents",
     "admissionRegulation": "Admission Regulation",
-    "selectionSchedule": "Selection and Enrollment Schedule",
-    "transferProcedure": "Transfer Procedure",
     "requiredTransferDocuments": "Required Documents",
     "transferRegulation": "Transfer Regulation",
-    "transferSchedule": "Transfer Schedule",
     "scholarshipsBenefits": "Scholarships and Benefits",
+    "areasoftraining": "Areas of Training",
     "studentScholarships": "Student Scholarships",
-    "officialDealers": "Official Dealers",
-    "adaptationProgram": "Adaptation Program",
     "universityInfrastructure": "University Infrastructure",
     "teachingCouncil": "Pedagogical Council",
     "email": "Email",
     "address": "Address",
+    "price": "Tuition Fees",
+    "scholarships": "Scholarships and benefits",
     "departments": "Отделение",
     "generalEducation": "Отделение общеобразовательных дисциплин",
     "informationTechnology": "Информационных технологий",
     "searchPlaceholder": "Search",
+    "admissionRulesAndPlan": "Admission Rules and Plan",
+    "admissionProcedure": "Admission Procedure",
+    "requiredDocuments": "Required Documents",
+    "admissionRegulations": "Admission Regulations",
+    "selectionSchedule": "Selection Schedule",
+    "adaptationProgram": "Adaptation Program",
+    "careerOrientation": "Career Orientation",
+    "officialDealers": "Official Dealers",
+    "transferProcedure": "Transfer Procedure",
+    "transferRegulations": "Transfer Regulations",
+    "transferSchedule": "Transfer Schedule",
+    "collegeInfrastructure": "College Infrastructure",
     "collegeInfo": "International College of IT and Business “Salymbekov University” is a new college with modern facilities, aimed at training specialists in the latest training programs in Russian and English.",
     "admissionsDetails": "Our college accepts applicants from the 9th and 11th grades. Based on the 9th grade, you will study in Kyrgyzstan for 2 years and 1.5 years in Malaysia. Based on the 11th grade, you will study in Kyrgyzstan for 1 year and 1.5 years in Malaysia.",
     "professionsInfo": "Our college offers a total of 3 IT specialties! In each of them, you will be taught by professional teachers and mentors. You will already be studying in your 1st year!"
@@ -616,5 +625,262 @@
   "task_7": "Carrying out work aimed at raising students' awareness and their demands for the level of their knowledge, cultivating a respectful attitude toward the property complex, and fostering patriotism and respect for the spirit and traditions of the University;",
   "task_8": "Informing students about the activities of the University;",
   "task_9": "Supporting the implementation of socially significant youth initiatives."
-}
+},
+"admissioncommittee": {
+    "title": "Admission Committee",
+    "contactTitle": "Admission Committee Contacts",
+    "address": "Address: Maldybaev St., 24b / Akhunbaev St., 125 (International College of IT and Business) / American Institute of Technology 'AIT'",
+    "phones": [
+      "+996 778 99 88 89 (International College of IT and Business)",
+      "+996 706 99 88 89 (International College of IT and Business)"
+    ],
+    "email": "Email: info@salymbekov.com",
+    "welcomeTitle": "Dear Applicants!",
+    "welcomeMessage": "Salymbekov University is delighted to welcome you to the new academic year and is excited to open its doors for you. The university is a modern, innovative educational institution.",
+    "aboutMessage": "Founded in 2019 as a continuation of the educational activities of the Askar Salymbekov Foundation, Salymbekov University is fully equipped to prepare qualified specialists.",
+    "extracurricularMessage": "The university pays great attention to students' extracurricular activities. Students actively participate in the ENACTUS project, IT events, and Business School training sessions.",
+    "finalMessage": "Welcome to Salymbekov University!"
+  },
+  "direction": {
+    "heading": "Training Directions",
+    "contacts": "Admission Office Contacts",
+    "address": {
+      "label": "Address:",
+      "value": "24b Maldybaeva St. / 125 Akhunbaeva St. (International College of IT and Business)"
+    },
+    "phones": {
+      "label": "Phones:",
+      "value1": "+996 778 99 88 89 (International College of IT and Business)",
+      "value2": "+996 706 99 88 89 (International College of IT and Business)"
+    },
+    "email": {
+      "label": "Email:",
+      "value": "info@salymbekov.com"
+    },
+    "programs": "Training Directions",
+    "college": "International College of IT and Business",
+    "program1": "Computer Science",
+    "program1.details": "(Duration: 1 year 10 months, 2 years 10 months) Experimental Curriculum",
+    "program2": "Multimedia Programs",
+    "program2.details": "(Duration: 1 year 10 months, 2 years 10 months) Experimental Curriculum",
+    "program3": "Mobile Computing",
+    "program3.details": "(Duration: 1 year 10 months, 2 years 10 months) Experimental Curriculum"
+  },
+"scholarships": {
+  "scholarships_and_benefits": "Scholarships and Benefits",
+  "benefits_policy": "Benefits Policy",
+  "social_support_description": "Social support for university students is the provision of benefits in the form of reduced tuition fees, expressed as a percentage of the established tuition cost. Social support benefits may include: free dormitory accommodation, subsidized meals, etc. Benefits may also be provided as exceptions in other special cases, provided there are valid grounds deemed sufficient by the committee.",
+  "social_support_condition": "A mandatory condition for receiving social support is excellent or good academic performance, discipline, and active participation in scientific research, cultural, sports, and social activities at the university. Students of the full-time form of study who have achieved excellent grades in all subjects for the previous academic year and have no academic debts are eligible for benefits.",
+  "student_categories_for_benefits": "Student Categories for Benefits",
+  "category_i": "Category I",
+  "category_i_description": "Full-time students who have completed the academic year with excellent grades in all subjects.",
+  "category_ii": "Category II",
+  "category_ii_description": "Students who have lost their breadwinner, orphans, and persons with disabilities of groups I and II.",
+  "category_iii": "Category III",
+  "category_iii_description": "Students whose parents are full-time employees of the University and have made a significant contribution to the improvement of the quality of education, scientific research, and who actively participate in the university's public life.",
+  "category_iv": "Category IV",
+  "category_iv_description": "Students who regularly represent the University in competitions and contests at the national, interregional, and international levels.",
+  "category_v": "Category V",
+  "category_v_description": "Students entering the first year who have distinguished themselves in their studies at schools, vocational schools, and in various educational, sports, and cultural competitions at the national and international levels.",
+  "commission_composition": "Composition of the Commission for Student Social Support at the International Faculty of Medicine, 'Salymbekov University'",
+  "commission_members": "Umetalieva M.N. – Dean, Chair of the Commission.\nArzieva N.N. – Deputy Dean, Commission Member.\nAkmatova A.T. – Head of UMO, Commission Member.\nSherali uulu Zh. – Economist, Commission Member.\nBopusheva A.T. – Head of the SOC, Commission Member.\nPirimbaeva Zh.Zh. – Head of the HR and Administrative Department, Commission Member.\nAliyarova M.Yu. – Lecturer at the EGD Department, Senior Curator, Commission Member.",
+  "basis_resolution": "Basis: Decision of the Academic Council dated August 30, 2022."
+},
+"price": {
+  "tuition_fees": "Tuition Fees",
+  "contact_info": {
+    "title": "Admissions Office Contact Information",
+    "address": "Malybaeva St. 24b / Akhunbaeva St. 125 (International College of IT and Business)",
+    "phones": {
+      "title": "Phones",
+      "phone1": "+996 778 99 88 89 (International College of IT and Business)",
+      "phone2": "+996 706 99 88 89 (International College of IT and Business)"
+    },
+    "email": "info@salymbekov.com"
+  },
+  "tuition_info": {
+    "title": "Tuition Fees at Salymbekov University",
+    "description": "Tuition fees at Salymbekov University are determined in accordance with the Charter, Strategic Goals and Objectives, Accounting Policy, internal documents, as well as the laws and regulations of the Kyrgyz Republic. In accordance with the decrees of higher state bodies, students of the university have the right to pay tuition fees in equal installments throughout the academic year."
+  },
+  "courses": {
+    "title": "International College of IT and Business",
+    "software_development": {
+      "title": "Software Development",
+      "price": "302,000 KGS (3,500 USD)"
+    },
+    "mobile_app_development": {
+      "title": "Mobile App Development",
+      "price": "302,000 KGS (3,500 USD)"
+    },
+    "multimedia_app_development": {
+      "title": "Multimedia Application Development",
+      "price": "302,000 KGS (3,500 USD)"
+    }
+  }
+},
+"documents": {
+  "title": "Required Documents for Admission",
+  "citizensKG": "For citizens of the Kyrgyz Republic:",
+  "citizensForeign": "For citizens of foreign countries:",
+  "application": "Application addressed to the rector of the institution 'Salymbekov University' (sample)",
+  "educationDocument": "State document of general secondary or vocational education (certificate or diploma)",
+  "passportCopy": "Copy of passport",
+  "photos": "2 photos (4×6 cm), 4 photos (3×4 cm)",
+  "medicalCertificate": "Medical certificate 086-U",
+  "militaryBook": "Military ID or registration certificate",
+  "passportWithVisa": "Passport with an entry visa in accordance with the legislation of the Kyrgyz Republic and its copy",
+  "originalEducationDocument": "Original document of complete secondary education with subjects and grades (points) and notarized copy",
+  "notarizedTranslation": "Notarized translation of the complete secondary education document into the official language of the Kyrgyz Republic",
+  "educationEquivalence": "Certificate from the Ministry of Education and Science of the Kyrgyz Republic on the equivalence of complete secondary education",
+  "medicalResults": "Medical examination results"
+},
+"admissionsRegulations": {
+  "header": "Admissions Regulations",
+  "ixInfo": "IX Information for Applicants",
+  "xDocuments": "X. Document Submission",
+  "section1": "Before the start of document submission, the admissions committee announces the following:",
+  "section2": "The main documents for admission for citizens of the Kyrgyz Republic are:",
+  "section3": "The main documents for admission for foreign citizens are:"
+},
+"debateclub": "Debate Club",
+"university": "Salymbekov University",
+"about_debateclub": "About the Debate Club",
+"goal_debateclub": "The goal of the debate club is to develop critical thinking in students of Salymbekov University to solve various problems in professional activities and practical life situations. These are the skills that traditional educational programs cannot fully provide.",
+"tasks_debateclub": "Tasks of the Debate Club",
+"task_1": "Educational, as they contribute to the consolidation, actualization of previously acquired knowledge, and the acquisition of new knowledge, skills, and abilities.",
+"task_2": "Developing, as they help develop intellectual, linguistic qualities, and creative abilities. Debates develop logic, critical thinking, and help form a systemic vision of the problem, the interconnection of events and phenomena, and various aspects of their consideration.",
+"task_3": "Educational, as they help form a culture of debate, tolerance, and recognition of the multiplicity of approaches to problem-solving.",
+"task_4": "Communicative, as the educational process takes place in interpersonal communication, and learning occurs through joint activities.",
+"debate_technology_advantages": "Advantages of the Debate Technology",
+"advantage_1": "Forming critical speech thinking in learners.",
+"advantage_2": "Differentiation of the content of the educational material.",
+"advantage_3": "Ensuring individualization of educational activities.",
+"advantage_4": "Variety of teaching forms and methods.",
+"advantage_5": "Forming generalized practical skills in learners.",
+
+ "tutor": {
+  "tutor": "Tutor Movement",
+  "aboutTutorMovement": "About Tutor Movement",
+  "description": "Salymbekov University constantly supports mutual assistance and mutual help among students, especially senior students, ready to assist first-year students and younger students. The tutor movement is under the responsibility of the Student Council and is an important part of the educational and upbringing processes.",
+  "tutorLeader": "Leader of the Tutor Movement",
+  "leaderName": "Rahmankulova Minura - Chairwoman of the Student Council, Head of the Tutor Movement."
+},
+"creativeterms": {
+  "title": "Creative Teams and Clubs at Salymbekov University",
+  "about": "ABOUT CREATIVE TEAMS AND CLUBS",
+  "description": "To strengthen educational, educational, and scientific activities, Salymbekov University offers students the opportunity to participate in creative teams and clubs according to their interests and desires.",
+  "available_clubs": "Available Clubs:",
+  "clubs": {
+    "dance": "Dance",
+    "english_club": "English Talking Club",
+    "debates": "Debates and Leadership",
+    "esports": "Esports",
+    "sports": "Sports and Chess"
+  }
+},
+"instructions": {
+  "title": "Instructions and Regulations",
+  "header": "Salymbekov University's resource bases and resources follow the instructions and regulations below in conducting educational and academic activities.",
+  "description": "These regulations help ensure the efficiency of the educational process, improve educational standards, and maintain high-quality education. Taking into account changes in legislation and recommendations from the Ministry of Education, Salymbekov University continuously updates and adapts its methodological materials and instructions to provide students with up-to-date information."
+},
+"informationSystem": {
+  "title": "Information System",
+  "sections": [
+    {
+      "title": "eBilim Information System",
+      "description": "The eBilim Information System is an educational platform for students of the International Faculty of Medicine to fully manage the educational process, conduct modules, and exams online. The portal allows adding workload, editing, adding, and deleting students and teachers, electronic gradebooks, schedules, and an electronic library. All interface elements are translated into three languages: Kyrgyz, Russian, and English.",
+      "link": "eBilim.salymbekov.com"
+    },
+    {
+      "title": "Edu.salymbekov.com Information System",
+      "description": "The Edu.salymbekov.com Information System is an educational platform for students of the International College of IT and Business, adapted for the college's educational process and activities, enabling the full conduct of modules, exams, and the placement of information about educational activities.",
+      "link": "edu.salymbekov.com"
+    },
+    {
+      "title": "Lincoln University College Information System",
+      "description": "The Lincoln University College Information System is an educational portal of the partner university Lincoln University College, providing students of the college the opportunity to participate in a joint educational process, access the electronic library, and resources.",
+      "link": "online.collaborative.lincoln.edu.my"
+    }
+  ]
+},
+"educationalResources": {
+    "title": "Educational Resources",
+    "intro": "The Salymbekov University scientific library includes comprehensive paper and electronic resources, catalogs, electronic journals, and databases to support the development and provision of educational, training, and research resources for students and faculty through all forms and methods of library and information activities. The library is one of the significant structural divisions of the university, responsible for educational and research processes and offering the following resources:",
+    "resources": [
+      {
+        "title": "KNOX",
+        "description": "Students also have access to the KNOX educational portal, which offers a wide range of educational and research resources in the fields of medicine, IT, and business.",
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-047-300x172.png"
+      },
+      {
+        "title": "Research4Life Portal",
+        "description": "The Research4Life portal from the World Health Organization provides full access to electronic publications, journals, and libraries in medicine, IT, architecture, and agriculture for training well-rounded specialists.",
+        "image": "https://salymbekov.com/wp-content/uploads/2021/02/snimok-300x108.jpg"
+      },
+      {
+        "title": "SAGE Publishing Portal",
+        "description": "The SAGE Publishing portal is one of the world's largest publishers, releasing over 1,000 journals and books monthly on medical, humanitarian, and natural science topics.",
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/sage-publishing.png"
+      },
+      {
+        "title": "DeGruyter Portal",
+        "description": "The DeGruyter portal, one of the largest European publishers, includes a database of 210 journals on academic and humanities topics.",
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/de-gruyter-300x168.png"
+      },
+      {
+        "title": "Lincoln University College Portal",
+        "description": "The Lincoln University College portal, one of the top universities in Malaysia and a partner of our university, provides access to its databases (books, journals, monographs) in key areas such as medicine, business, IT, and healthcare.",
+        "image": "https://salymbekov.com/wp-content/uploads/2022/07/lincoln.jpg"
+      },
+      {
+        "title": "EBSCO Publishing Portal",
+        "description": "The EBSCO Publishing portal is the largest provider of scientific resources from leading global publishers, offering access to 15 thematic databases in medicine, IT, business, and management.",
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-046.png"
+      }
+    ]
+  },
+  "socialsupport": {
+    "title": "Student Social Support Commission",
+    "general_provisions": "General Provisions",
+    "description": "The regulation is developed based on the Charter of the institution 'Salymbekov University' (hereinafter referred to as the University), the Kyrgyz Republic Law 'On Education', and other regulatory legal acts governing the activities of higher professional educational institutions.",
+    "purpose": "This regulation is developed for the purpose of providing social support to students and strengthening their motivation to achieve high educational results.",
+    "benefits": "Student social support represents the provision of benefits to students in the form of a reduction in tuition fees, expressed as a percentage of the established tuition fee.",
+    "types_of_benefits": "Social support benefits can be provided in the form of: free accommodation in the dormitory, discounted meals, and others.",
+    "support_decision": "The University provides social support to students and grants them benefits for tuition fees based on the decision of a special commission created and headed by the president of the University.",
+    "approval_process": "All forms of social support, including benefits for tuition fees, are reviewed by a special commission and presented for approval by the founders of the University.",
+    "financial_criteria": "The procedure, types, and amounts of social support provided to students of the University are determined independently based on the financial capabilities of the University.",
+    "deferral_option": "Social support may be provided to students of the University in the form of a deferral or installment plan for tuition payments based on the recommendations of department heads and the absence of academic or financial arrears from previous semesters."
+  },
+  "physchohelp": {
+    "title": "Psychological Support for Students",
+    "content": "In order to create a favorable and comfortable atmosphere in the educational institution for students, Salymbekov University provides support and assistance to students at all levels: educational work, mentorship, guidance, psychological and social support. To adapt to new socio-cultural conditions when enrolling and studying at the university, a specially designed adaptation program exists. Within the framework of this adaptation program, qualified psychological assistance is provided by the following specialists:",
+    "teachers": [
+      {
+        "name": "Anna Anastasiadi",
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/bc0b6445-300x200.jpg"
+      },
+      {
+        "name": "Assol Moldoshova",
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/bc0b6449-300x200.jpg"
+      }
+    ]
+  },
+  "studentservice": {
+    "title": "Student Social Support Commission",
+    "content": "The main goal of the Student Service Center is to provide information regarding academic results (certificates, transcripts). All information is securely stored in the Ebilim Information System, and upon request, the head of the student department provides information according to the students' requirements.",
+    "teacher": {
+      "name": "Asina Toktosunovna Bopushova",
+      "position": "Head of the Student Personnel Department (SPD)",
+      "image": "https://salymbekov.com/wp-content/uploads/2022/05/bopushova-asina-toktosunovna-300x200.jpg"
+    }
+  },
+  "adaptationprograms": {
+    "title": "Adaptation Programs",
+    "content": {
+      "heading": "Get familiar with the adaptation program:",
+      "linkText": "Adaptation Program 2023-2024",
+      "linkUrl": "https://salymbekov.com/wp-content/uploads/2024/06/adobe-scan-12-ijunja-2024-g.-1.html"
+    }
+  }
+
 }

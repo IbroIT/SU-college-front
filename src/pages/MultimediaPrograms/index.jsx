@@ -6,7 +6,7 @@ import AnimatedScrollComponent from '../../components/AnimatedComponents';
 import { useTranslation } from 'react-i18next';
 import ClassModal from '../../components/Modal';
 export const MultimediaPrograms = () => {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
   const [isModalOpen, setModalOpen] = useState(false); // Состояние для управления модальным окном
 
   const handleOpenModal = () => setModalOpen(true); // Функция для открытия модального окна

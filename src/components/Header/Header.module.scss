@@ -314,7 +314,7 @@ input[type="text"]::placeholder {
     background-color: #ffffff;
     width: 100.5%; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 20px; /* Внутренние отступы */
+    padding: 15px; /* Внутренние отступы */
     z-index: 1;
     opacity: 0;
     visibility: hidden;
@@ -529,7 +529,7 @@ li{
         position: fixed;
         top: 0;
         left: 0;
-        width: 70%;
+        width: 85%;
         height: 100%;
         background-color: #fff;
         box-shadow: 0 2px 15px rgba(0, 76, 255, 0.1);

@@ -40,7 +40,7 @@ export const DebateClub = () => {
                 fontSize: { xs: "1.8rem", sm: "2.5rem" },
               }}
             >
-              Дебатный клуб Салымбеков Университет
+              {t("debateclub")} {t("university")}
             </Typography>
           </motion.div>
         </Box>
@@ -48,37 +48,32 @@ export const DebateClub = () => {
 
       <Container sx={{ mt: 4 }}>
         <Typography variant="h4" gutterBottom>
-          О ДЕБАТНОМ КЛУБЕ
+          {t("about_debateclub")}
         </Typography>
         <Typography paragraph>
-          Цель дебатного клуба – развитие у студентов Салымбеков Университет
-          критического мышления для решения различных проблем в профессиональной
-          деятельности и в практических жизненных ситуациях, т.е. тех навыков,
-          которые не могут дать или дают в недостаточной степени традиционные
-          образовательные программы.
+          {t("goal_debateclub")}
         </Typography>
 
         <Typography variant="h5" gutterBottom>
-          ЗАДАЧИ ДЕБАТНОГО КЛУБА
+          {t("tasks_debateclub")}
         </Typography>
         <Typography component="ul">
-          <li style={{listStyleType:'inherit'}}>обучающие, так как это способствуют закреплению, актуализации полученных ранее знаний, овладению новыми знаниями, умениями и навыками;</li>
-          <li style={{listStyleType:'inherit'}}>развивающие, так как это способствует развитию интеллектуальных, лингвистических качеств, творческих способностей. Дебаты развивают логику, критическое мышление, позволяют сформировать системное видение проблемы, наличие взаимосвязей событий и явлений, различных аспектов их рассмотрения;</li>
-          <li style={{listStyleType:'inherit'}}>воспитательные, так как это способствует формированию культуры спора, терпимости, признанию множественности подходов к решению проблемы;</li>
-          <li style={{listStyleType:'inherit'}}>коммуникативные, так как учебная деятельность осуществляется в межличностном общении, обучение происходит в процессе совместной деятельности.</li>
+          <li style={{ listStyleType: "inherit" }}>{t("task_1")}</li>
+          <li style={{ listStyleType: "inherit" }}>{t("task_2")}</li>
+          <li style={{ listStyleType: "inherit" }}>{t("task_3")}</li>
+          <li style={{ listStyleType: "inherit" }}>{t("task_4")}</li>
         </Typography>
 
         <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
-          ПРЕИМУЩЕСТВА ТЕХНОЛОГИИ ДЕБАТА
+          {t("debate_technology_advantages")}
         </Typography>
         <Typography component="ul">
-          <li style={{listStyleType:'inherit'}}>формирование речевого критического мышления обучаемых;</li>
-          <li style={{listStyleType:'inherit'}}>дифференциация содержания учебного материала;</li>
-          <li style={{listStyleType:'inherit'}}>обеспечение индивидуализации учебной деятельности;</li>
-          <li style={{listStyleType:'inherit'}}>разнообразие форм и методов обучения;</li>
-          <li style={{listStyleType:'inherit'}}>формирование обобщенных практических умений обучаемых.</li>
+          <li style={{ listStyleType: "inherit" }}>{t("advantage_1")}</li>
+          <li style={{ listStyleType: "inherit" }}>{t("advantage_2")}</li>
+          <li style={{ listStyleType: "inherit" }}>{t("advantage_3")}</li>
+          <li style={{ listStyleType: "inherit" }}>{t("advantage_4")}</li>
+          <li style={{ listStyleType: "inherit" }}>{t("advantage_5")}</li>
         </Typography>
-
       </Container>
     </>
   );

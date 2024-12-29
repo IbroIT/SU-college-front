@@ -1,8 +1,11 @@
 import React from "react";
 import { AppBar, Box, Container, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Instructions = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <AppBar position="static">
@@ -28,7 +31,7 @@ export const Instructions = () => {
                 fontSize: { xs: "1.8rem", sm: "2.5rem" },
               }}
             >
-              Инструкция и положения
+              {t("instructions.title")}
             </Typography>
           </motion.div>
         </Box>
@@ -51,11 +54,9 @@ export const Instructions = () => {
             fontSize: { xs: "1.2rem", sm: "1.5rem" },
           }}
         >
-          Ресурсные базы и ресурсы Салымбеков университет руководствуются
-          следующими инструкциями и положениями при ведении образовательной и
-          учебно-воспитательной деятельности.
+          {t("instructions.header")}
         </Typography>
-        
+
         <Typography
           variant="body1"
           sx={{
@@ -65,12 +66,7 @@ export const Instructions = () => {
             textAlign: "justify",
           }}
         >
-          Эти положения помогают обеспечить эффективность учебного процесса, способствуют
-          улучшению образовательных стандартов и направлены на поддержание высокого
-          качества образования. С учетом изменений в законодательстве, а также
-          рекомендаций Министерства образования, Салымбеков университет постоянно
-          обновляет и адаптирует свои методические материалы и инструкции для
-          обеспечения студентов актуальной информацией.
+          {t("instructions.description")}
         </Typography>
       </Container>
     </>

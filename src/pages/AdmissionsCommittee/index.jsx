@@ -1,8 +1,11 @@
 import React from "react";
 import { AppBar, Box, Container, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 export const AdmissionCommittee = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <AppBar position="static">
@@ -28,7 +31,7 @@ export const AdmissionCommittee = () => {
                 fontSize: { xs: "1.8rem", sm: "2.5rem" },
               }}
             >
-              Приемная комиссия
+              {t('admissioncommittee.title')}
             </Typography>
           </motion.div>
         </Box>
@@ -50,7 +53,6 @@ export const AdmissionCommittee = () => {
             color: "#333",
           }}
         >
-          Контакты приемной комиссии
         </Typography>
 
         <Typography
@@ -63,9 +65,7 @@ export const AdmissionCommittee = () => {
             marginBottom: "1.5rem",
           }}
         >
-          <strong>Адрес:</strong> ул. Малдыбаева, 24б / Ахунбаева, 125 (Международный колледж IT и бизнеса) / Американский институт технологий “AIT”
-          <br />
-
+       {t('admissioncommittee.address')}
         </Typography>
 
         <Typography
@@ -78,10 +78,10 @@ export const AdmissionCommittee = () => {
             marginBottom: "1.5rem",
           }}
         >
-          <strong>Телефоны:</strong>
           <ul>
-            <li>+996 778 99 88 89 (Международный колледж IT и бизнеса)</li>
-            <li>+996 706 99 88 89 (Международный колледж IT и бизнеса)</li>
+            {t('admissioncommittee.phones', { returnObjects: true }).map((phone, index) => (
+              <li key={index}>{phone}</li>
+            ))}
           </ul>
         </Typography>
 
@@ -95,7 +95,7 @@ export const AdmissionCommittee = () => {
             marginBottom: "1.5rem",
           }}
         >
-          <strong>Email:</strong> info@salymbekov.com
+           {t('admissioncommittee.email')}
         </Typography>
 
         <Typography
@@ -107,7 +107,7 @@ export const AdmissionCommittee = () => {
             color: "#333",
           }}
         >
-          Дорогие Абитуриенты!
+          {t('admissioncommittee.welcomeTitle')}
         </Typography>
 
         <Typography
@@ -120,7 +120,7 @@ export const AdmissionCommittee = () => {
             marginTop: "1rem",
           }}
         >
-          Салымбеков Университет рад приветствовать Вас в новом учебном году и с радостью открывает для Вас свои двери. Университет является современным инновационным образовательным учреждением, аккредитованным в соответствии с международными стандартами образования, и предоставляющим качественное и передовое высшее образование в сфере IT, медицины, бизнеса, развития личностного роста и лидерских качеств.
+          {t('admissioncommittee.welcomeMessage')}
         </Typography>
 
         <Typography
@@ -133,7 +133,7 @@ export const AdmissionCommittee = () => {
             marginTop: "1rem",
           }}
         >
-          Основанный в 2019 году, как продолжение образовательной деятельности Фонда Аскара Салымбекова, Салымбеков университет имеет все материальные, технические и человеческие ресурсы для подготовки квалифицированных специалистов в сфере IT, бизнеса и медицины. На базе Салымбеков университет успешно функционируют Международный факультет медицины и Международный колледж IT и бизнеса, Бизнес школа Салымбекова с региональными филиалами по всей республике.
+          {t('admissioncommittee.aboutMessage')}
         </Typography>
 
         <Typography
@@ -146,7 +146,7 @@ export const AdmissionCommittee = () => {
             marginTop: "1rem",
           }}
         >
-          Университет уделяет огромное внимание внеучебной деятельности студентов. Так, студенты активно участвуют в ведении проекта ENACTUS, различных IT мероприятиях совместно с другими студентами, ежедневно ведутся тренинги Бизнес школы по развитию лидерских качеств, личностного роста и интеллектуального развития. Для укрепления здоровья студенты могут играть футбол, посещать тренажерные залы на базе спорткомплекса «Дордой спорт», регулярно проводятся неформальные встречи на природе для обеспечения культурного отдыха студентов.
+          {t('admissioncommittee.extracurricularMessage')}
         </Typography>
 
         <Typography
@@ -159,7 +159,7 @@ export const AdmissionCommittee = () => {
             marginTop: "1rem",
           }}
         >
-          Добро пожаловать в Салымбеков университет!
+          {t('admissioncommittee.finalMessage')}
         </Typography>
       </Container>
     </>

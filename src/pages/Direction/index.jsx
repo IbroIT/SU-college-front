@@ -1,8 +1,11 @@
 import React from "react";
 import { AppBar, Box, Container, Typography, Divider } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Direction = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <AppBar position="static">
@@ -29,7 +32,7 @@ export const Direction = () => {
                 fontSize: { xs: "2.5rem", sm: "3rem" },
               }}
             >
-              Направления подготовки
+              {t("direction.heading")}
             </Typography>
           </motion.div>
         </Box>
@@ -45,28 +48,28 @@ export const Direction = () => {
             fontSize: { xs: "1.6rem", sm: "2rem" },
           }}
         >
-          КОНТАКТЫ ПРИЕМНОЙ КОМИССИИ
+          {t("direction.contacts")}
         </Typography>
 
         <Divider sx={{ marginBottom: "20px" }} />
 
         <Typography variant="body1" sx={{ marginBottom: "20px", lineHeight: 1.8 }}>
-          <strong>Адрес:</strong>
+          <strong>{t("direction.address.label")}</strong>
           <br />
-          ул. Малдыбаева, 24б / Ахунбаева, 125 (Международный колледж IT и бизнеса)
-          <br />
+          {t("direction.address.value")}
         </Typography>
 
         <Typography variant="body1" sx={{ marginBottom: "20px", lineHeight: 1.8 }}>
-          <strong>Телефоны:</strong>
+          <strong>{t("direction.phones.label")}</strong>
           <br />
-          <strong>+996 778 99 88 89</strong> (Международный колледж IT и бизнеса)
+          <strong>{t("direction.phones.value1")}</strong>
           <br />
-          <strong>+996 706 99 88 89</strong> (Международный колледж IT и бизнеса)
+          <strong>{t("direction.phones.value2")}</strong>
         </Typography>
 
         <Typography variant="body1" sx={{ marginBottom: "40px", lineHeight: 1.8 }}>
-          <strong>Email:</strong> <a href="mailto:info@salymbekov.com">info@salymbekov.com</a>
+          <strong>{t("direction.email.label")}</strong>{" "}
+          <a href="mailto:info@salymbekov.com">{t("direction.email.value")}</a>
         </Typography>
 
         <Typography
@@ -78,9 +81,8 @@ export const Direction = () => {
             fontSize: { xs: "1.6rem", sm: "2rem" },
           }}
         >
-          Направления подготовки
+          {t("direction.programs")}
         </Typography>
-
 
         <Typography
           variant="h6"
@@ -91,7 +93,7 @@ export const Direction = () => {
             fontSize: { xs: "1.2rem", sm: "1.5rem" },
           }}
         >
-          Международный колледж IT и бизнеса
+          {t("direction.college")}
         </Typography>
 
         <Typography
@@ -103,11 +105,11 @@ export const Direction = () => {
             color: "#333",
           }}
         >
-          <strong>Компьютерная наука (Computer Science)</strong> (срок обучения: 1 год 10 мес., 2 года 10 мес.) Экспериментальный учебный план
+          <strong>{t("direction.program1")}</strong> {t("direction.program1.details")}
           <br />
-          <strong>Мультимедийные программы (Multimedia programs)</strong> (срок обучения: 1 год 10 мес., 2 года 10 мес.) Экспериментальный учебный план
+          <strong>{t("direction.program2")}</strong> {t("direction.program2.details")}
           <br />
-          <strong>Мобильные вычисления (Mobile Computing)</strong> (срок обучения: 1 год 10 мес., 2 года 10 мес.) Экспериментальный учебный план
+          <strong>{t("direction.program3")}</strong> {t("direction.program3.details")}
         </Typography>
       </Container>
     </>

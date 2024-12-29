@@ -11,8 +11,11 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const InformationSystem = () => {
+  const { t } = useTranslation();
+  
   return (
     <>
       <AppBar position="static">
@@ -38,64 +41,28 @@ export const InformationSystem = () => {
                 fontSize: { xs: "1.8rem", sm: "2.5rem" },
               }}
             >
-              Информационная система
+              {t("informationSystem.title")}
             </Typography>
           </motion.div>
         </Box>
       </AppBar>
 
       <Container sx={{ marginTop: "20px" }}>
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="h6">Информационная система eBilim</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Информационная система eBilim – образовательная платформа для студентов
-              Международного факультета медицины для полноценного ведения учебного процесса, 
-              проведения модулей и экзаменов в онлайн-режиме. Портал предоставляет возможность 
-              добавлять нагрузку, редактировать, добавлять и удалять студентов, преподавателей, 
-              функции электронных ведомостей, расписания и электронная библиотека. Все элементы 
-              интерфейса переведены на три языка: кыргызский, русский и английский. 
-              <a href="https://eBilim.salymbekov.com" target="_blank" rel="noopener noreferrer">
-                eBilim.salymbekov.com
-              </a>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="h6">Информационная система Edu.salymbekov.com</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Информационная система Edu.salymbekov.com – образовательная платформа для студентов 
-              Международного колледжа IT и бизнеса, адаптированный под учебный процесс и образовательную 
-              деятельность колледжа и предоставляющий возможность полноценного проведения модулей, экзаменов 
-              и размещения информации об учебной деятельности. 
-              <a href="https://edu.salymbekov.com" target="_blank" rel="noopener noreferrer">
-                edu.salymbekov.com
-              </a>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography variant="h6">Информационная система Lincoln University College</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Информационная система Lincoln University College – образовательный портал партнерского университета 
-              Lincoln University College, предоставляющий возможность для студентов колледжа участвовать в совместном 
-              учебном процессе, доступ к электронной библиотеке и ресурсам. 
-              <a href="http://online.collaborative.lincoln.edu.my/" target="_blank" rel="noopener noreferrer">
-                online.collaborative.lincoln.edu.my
-              </a>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
+        {t("informationSystem.sections", { returnObjects: true }).map((section, index) => (
+          <Accordion key={index}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography variant="h6">{section.title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                {section.description}{" "}
+                <a href={`https://${section.link}`} target="_blank" rel="noopener noreferrer">
+                  {section.link}
+                </a>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </Container>
     </>
   );
