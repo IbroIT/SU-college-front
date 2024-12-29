@@ -70,7 +70,6 @@ function App() {
       <ScrollToTop/>
       <Header pdfFiles={pdfFiles} pdfFilesForStudents={pdfFilesForStudents}/>
       <Routes>
-        <Route path='/' element={<AboutCollege/>}></Route>
 
         <Route path='/director' element={<Director/>}></Route>
         <Route path="/search" element={<SearchResults />} />
@@ -91,7 +90,9 @@ function App() {
        <Route path="/documents/:documentId" element={<DocumentViewer pdfFiles={pdfFiles} />} />
 
         <Route path='/mission' element={<Mission/>}></Route>
+        <Route path='/' element={<Main/>}></Route>
         <Route path='/college' element={<Main/>}></Route>
+
         <Route path='/teachers' element={<Teachers/>}></Route>
         <Route path='/faq' element={<FAQ/>}></Route>
         <Route path='/contacts' element={<Contacts/>}></Route>

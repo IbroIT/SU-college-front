@@ -1,4 +1,35 @@
 {
+  "welcome_message": "Welcome, Applicant-2023!",
+  "choose_best_education": "By choosing us, you are choosing the best quality of education!",
+  "applicant_online": "Applicant online",
+  "best_teachers": "Best Teachers",
+  "best_teachers_description": "The university employs the most qualified teachers.",
+  "modern_university": "Modern University",
+  "modern_university_description": "The university is equipped with the most advanced equipment to consolidate study materials.",
+  "international_college": "International IT and Business College",
+  "international_college_description": "The International IT and Business College of 'Salymbekov University' is a new college with a modern infrastructure, aimed at training specialists with the latest curriculum in Russian and English.",
+ "rector": {
+    "image": {
+        "src": "https://salymbekov.com/wp-content/uploads/2022/07/bc0b3839-768x512.jpg",
+        "alt": "Rector"
+      },
+    
+      "text": "Salymbekov University and Lincoln University of Malaysia invite applicants to the International College of IT and Business to acquire knowledge in programming.",
+  
+  
+      "text2": "The International College of IT and Business 'Salymbekov University' is a new college with modern facilities, aimed at providing training in the latest curriculum in both Russian and English languages.",
+    
+  
+      "text3": "The best specialists from the International College of IT and Business 'Salymbekov University' and 'Lincoln University' will teach students.",
+    
+    
+      "text4": "Upon completion of the course, students will receive internationally recognized knowledge, two diplomas (Kyrgyz and international standards), and will have English proficiency at the TOEFL/IELTS level.",
+    
+    
+      "text5": "We accept applicants based on grades from 9th and 11th classes."
+  },
+
+ 
   "header": {
     "itcollege": "International College of IT and Business",
     "students": "For students",

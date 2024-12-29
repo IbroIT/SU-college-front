@@ -108,7 +108,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
     {t('header.itcollege')}
     </h1>
   <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
-  <Link to="/mission"><p>{t('header.missionGoals')}</p></Link>
   <Link to="/director"><p>{t('header.letterFromDirector')}</p></Link>
   <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
   <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
@@ -274,7 +273,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
                 {t('header.college')}
                 <div className={`${style.dropdownContent} ${isMenuOpen ? style.show : ''}`}>
                     <Link to="/college" onClick={closeMenu}><p>{t('header.aboutCollege')}</p></Link>
-  <Link to="/mission"onClick={closeMenu}><p>{t('header.missionGoals')}</p></Link>
   <Link to="/director"onClick={closeMenu}><p>{t('header.letterFromDirector')}</p></Link>
   <Link to="/teachers"onClick={closeMenu}><p>{t('header.teachers')}</p></Link>
   <Link to="/contacts"onClick={closeMenu}><p>{t('header.contacts')}</p></Link>
