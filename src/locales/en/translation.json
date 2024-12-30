@@ -187,8 +187,8 @@
       },
       
         "slider": {
-          "title": "Salymbekov College",
-          "description": "Here you will find all the necessary resources for achieving success and developing your skills.",
+          "title": "International College of IT and Business",
+          "description": "International College of IT and Business",
           "button": "Learn more"
         }
       ,
@@ -480,68 +480,60 @@
     }
   },
   "FAQ": {
-  "Header": "Frequently asked questions",
-  "Questions": [
-        {
-            "question": "1. What specialties does the college offer?",
-            "answer": "Our college offers a variety of specialties, including information technology, business administration, engineering sciences, and humanities. We strive to provide students with the knowledge and skills needed for a successful career."
-        },
-        {
-            "question": "2. How can I go through the registration process?",
-            "answer": "The registration process includes filling out an online application, providing the necessary documents, and going through an interview. You can find all the details on our official website in the 'Admission' section."
-        },
-        {
-            "question": "3. Are there opportunities for scholarships?",
-            "answer": "Yes, our college offers various scholarships for students who demonstrate high academic achievement or participate in the college's social life. Additional information can be obtained from the financial department."
-        },
-        {
-            "question": "4. What are the living conditions in the dormitory?",
-            "answer": "We have comfortable dormitories where students can live in single or double rooms. The dormitory provides all necessary amenities, including kitchens, laundry facilities, and recreation areas. We strive to create a safe and friendly atmosphere."
-        },
-        {
-            "question": "5. What employment opportunities does the college provide?",
-            "answer": "We actively cooperate with local businesses and organizations, offering students internships and employment opportunities. We also have a career center that helps students find jobs after graduation."
-        },
-        {
-            "question": "6. What is the cost of tuition at the college?",
-            "answer": "Tuition costs depend on the chosen specialty and format. We recommend checking the latest information on our website in the 'Payments' section."
-        },
-        {
-            "question": "7. What additional services does the college offer?",
-            "answer": "Our college offers various additional services, including career counseling, psychological support, and medical care. We strive to take care of our students' well-being."
-        },
-        {
-            "question": "8. How does the college support the educational process?",
-            "answer": "We use modern technologies and teaching methods, allowing our students to receive a quality education. Regular seminars and practical classes help deepen knowledge."
-        },
-        {
-            "question": "9. Is it possible to study abroad?",
-            "answer": "Yes, our college has partnerships with international educational institutions, allowing students to participate in exchange programs and internships abroad."
-        },
-        {
-            "question": "10. How are students evaluated?",
-            "answer": "Students are evaluated based on exams, tests, and practical assignments. We apply various assessment methods for an objective analysis of knowledge."
-        },
-        {
-            "question": "11. What languages can be studied at the college?",
-            "answer": "Our college offers courses in English, German, and French. We also organize language clubs for communication practice."
-        },
-        {
-            "question": "12. What is the college's policy on inclusion?",
-            "answer": "We strive to create an inclusive environment for all students, regardless of their individual needs. We have special programs and resources to support students with disabilities."
-        },
-        {
-            "question": "13. How can students participate in college life?",
-            "answer": "Students can join various clubs and organizations, as well as participate in events and volunteer projects taking place at the college."
-        },
-        {
-            "question": "14. How does the college help students develop leadership skills?",
-            "answer": "We conduct training and workshops on leadership and provide students with opportunities to participate in college governance and event organization."
-        },
-        {
-            "question": "15. What are the core values of the college?",
-            "answer": "Our college is focused on the quality of education, inclusivity, and student support. We strive to create conditions for the personal and professional growth of every student."
-        }
+    "Header": "Frequently Asked Questions",
+    "Questions": [
+      {
+        "question": "1. What programs does the college offer?",
+        "answer": "The college offers three main IT training programs: software development, mobile application development (iOS, Android, Flutter), and multimedia application development (VFX design, Adobe Premiere Pro, etc.)."
+      },
+      {
+        "question": "2. How to apply for admission?",
+        "answer": "To apply, you need to contact the admissions office by phone: +996 778 99 88 89 or +996 706 99 88 89, or send a request to info@salymbekov.com. Admission is available for students after 9th and 11th grades."
+      },
+      {
+        "question": "3. Are there scholarship opportunities?",
+        "answer": "Yes, the college periodically holds contests offering free education under the dual diploma program. For example, in April 2024, a competition was held for 9th-11th grade students to study for free in Malaysia."
+      },
+      {
+        "question": "4. What employment opportunities does the college provide?",
+        "answer": "The college collaborates with leading IT companies, and its instructors are practicing developers, ensuring practical training and increased employment opportunities for graduates."
+      },
+      {
+        "question": "5. What is the tuition fee?",
+        "answer": "Tuition fees depend on the selected program and conditions. For current information, it is recommended to contact the admissions office."
+      },
+      {
+        "question": "6. What additional services does the college provide?",
+        "answer": "The college offers English-language instruction, opening up opportunities for international cooperation and employment. Competitions and events are also organized to enhance students' professional skills."
+      },
+      {
+        "question": "7. How does the college support the learning process?",
+        "answer": "The education is conducted using modern programs and advanced technical facilities. The instructors are practicing professionals, ensuring the relevance and practical focus of the training."
+      },
+      {
+        "question": "8. Can students study abroad?",
+        "answer": "Yes, the dual diploma program includes studying in Kyrgyzstan and Malaysia. Students who finish 11th grade study for 1 year in Kyrgyzstan and 1.5 years in Malaysia; those who finish 9th grade study for 2 years in Kyrgyzstan and 1.5 years in Malaysia."
+      },
+      {
+        "question": "9. How are students assessed?",
+        "answer": "Information about the student assessment system is not provided on the official website. It is recommended to clarify the details with the admissions office or faculty."
+      },
+      {
+        "question": "10. What languages can students learn at the college?",
+        "answer": "The main languages of instruction are Russian and English. Special attention is paid to English language studies to achieve TOEFL/IELTS levels."
+      },
+      {
+        "question": "11. What is the college's inclusion policy?",
+        "answer": "Information about the inclusion policy is not provided on the official website. It is recommended to contact the college administration for details."
+      },
+      {
+        "question": "12. How can students participate in the college's social life?",
+        "answer": "The college organizes various contests and events aimed at developing students' professional and personal skills."
+      },
+      {
+        "question": "13. How does the college help students develop leadership skills?",
+        "answer": "The college conducts training and workshops focused on developing leadership qualities and personal growth."
+      }
     ]
   },
   "Contacts": {

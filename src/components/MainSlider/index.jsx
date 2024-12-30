@@ -56,22 +56,6 @@ export const MainSlider = () => {
                         >
                             {t('slider.description')}
                         </Typography>
-                        <Button
-                            variant="contained"
-                            sx={{
-                                backgroundColor: '#007bff',
-                                color: '#fff',
-                                padding: '12px 24px',
-                                borderRadius: '30px',
-                                fontSize: '1rem',
-                                '&:hover': {
-                                    backgroundColor: '#0056b3',
-                                },
-                                width: '100%',
-                            }}
-                        >
-                            {t('slider.button')}
-                        </Button>
                     </Box>
                 </Box>
             ),

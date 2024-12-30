@@ -24,6 +24,7 @@ export const Main = () => {
 
   return (
     <AnimatedScrollComponent>
+      <>
       <MainSlider/>
             <Container maxWidth="md" sx={{ mt: 4 }}>
                 <Grid container spacing={4}>
@@ -42,6 +43,7 @@ export const Main = () => {
                             }}
                         />
                     </Grid>
+                    
                     <Grid item xs={12} sm={6}>
                         <Typography variant="body1" sx={{ lineHeight: 1.6, color: "#555" }}>
                           {t('rector.text')}
@@ -64,37 +66,8 @@ export const Main = () => {
             
                 </Grid>
             </Container>
-       {/* New section after MainSlider */}
-       <Box sx={{ padding: 4, backgroundColor: '#f4f4f4' }}>
-                    <Grid container spacing={4}>
-                        {/* Best Teachers Section */}
-                        <Grid item xs={12} sm={6}>
-                            <Paper sx={{ padding: 3, textAlign: 'center' }}>
-                                <Icon sx={{ fontSize: 50, color: 'primary.main' }} />
-                                <Typography variant="h5" sx={{ marginTop: 2 }}>
-                                {t('best_teachers')}
-                                                                </Typography>
-                                <Typography sx={{ marginTop: 1 }}>
-                              {t('best_teachers_description')}
-                                </Typography>
-                            </Paper>
-                        </Grid>
 
-                        {/* Modern University Section */}
-                        <Grid item xs={12} sm={6}>
-                            <Paper sx={{ padding: 3, textAlign: 'center' }}>
-                                <Icon sx={{ fontSize: 50, color: 'primary.main' }} />
-                                <Typography variant="h5" sx={{ marginTop: 2 }}>
-                                {t('modern_university')}                            </Typography>
-                                <Typography sx={{ marginTop: 1 }}>
-                              {t('modern_university_description')}                             </Typography>
-                            </Paper>
-                        </Grid>
-                    </Grid>
-                </Box>
-
-                {/* Welcome Message */}
-                <Box sx={{ padding: 4, backgroundColor: '#fff' }}>
+                <Box sx={{ padding: 4, backgroundColor: '#fff', marginTop: "15px" }}>
       <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: 2 }}>
        {t('welcome_message')}
       </Typography>
@@ -136,6 +109,7 @@ export const Main = () => {
 
         <ImageSection />
       </div>
+      </>
     </AnimatedScrollComponent>
   );
 };
