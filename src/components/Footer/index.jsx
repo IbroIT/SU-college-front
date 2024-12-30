@@ -22,8 +22,8 @@ export const Footer = () => {
                     <Link to='/contacts' className={styles.linkCustom}>
                     <div className={styles.contactInfo}>
                         <h4 className={styles.sectionTitle}>{t('footer.contactUs')}</h4>
-                        <p className={styles.contactItem}>{t('footer.phone')}</p>
-                        <p className={styles.contactItem}>{t('footer.email')}</p>
+                        <p className={styles.contactItem}>+996 (701) 71-71-99</p>
+                        <p className={styles.contactItem}>salymbekov.kg@gmail.com</p>
                     </div>
                     </Link>
                     <Link to='/college' className={styles.linkCustom}>
