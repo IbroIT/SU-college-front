@@ -1,5 +1,5 @@
 {
-  "welcome_message": "Welcome, Applicant-2023!",
+  "welcome_message": "Welcome, Applicant-2025!",
   "choose_best_education": "By choosing us, you are choosing the best quality of education!",
   "applicant_online": "Applicant online",
   "best_teachers": "Best Teachers",
@@ -14,13 +14,13 @@
         "alt": "Rector"
       },
     
-      "text": "Salymbekov University and Lincoln University of Malaysia invite applicants to the International College of IT and Business to acquire knowledge in programming.",
+      "text": "Salymbekov University, Lincoln University and INTI University of Malaysia invite applicants to the International College of IT and Business to acquire knowledge in programming.",
   
   
       "text2": "The International College of IT and Business 'Salymbekov University' is a new college with modern facilities, aimed at providing training in the latest curriculum in both Russian and English languages.",
     
   
-      "text3": "The best specialists from the International College of IT and Business 'Salymbekov University' and 'Lincoln University' will teach students.",
+      "text3": "The best specialists from the International College of IT and Business 'Salymbekov University', 'Lincoln University' and 'INTI University' teach students.",
     
     
       "text4": "Upon completion of the course, students will receive internationally recognized knowledge, two diplomas (Kyrgyz and international standards), and will have English proficiency at the TOEFL/IELTS level.",
@@ -904,6 +904,11 @@
       "linkText": "Adaptation Program 2023-2024",
       "linkUrl": "https://salymbekov.com/wp-content/uploads/2024/06/adobe-scan-12-ijunja-2024-g.-1.html"
     }
+  },
+  "modal": {
+    "whatisyourclass": "What grade are you from?",
+    "ninthgrade": "9th grade",
+    "eleventhgrade": "11th grade",
+    "close": "Close"
   }
-
 }

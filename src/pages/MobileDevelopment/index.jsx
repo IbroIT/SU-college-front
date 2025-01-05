@@ -81,7 +81,6 @@ export const MobileDevelopment = () => {
         </div>
       </AnimatedScrollComponent>
       <Choices />
-      <ITteachers />
       <ImageSection />
 
       {isModalOpen && <ClassModal onClose={handleCloseModal} />}

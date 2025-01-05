@@ -75,7 +75,6 @@ export const ComputerScience = () => {
         </div>
       </AnimatedScrollComponent>
       <Choices />
-      <ITteachers />
       <ImageSection />
 
       {isModalOpen && <ClassModal onClose={handleCloseModal} />}
