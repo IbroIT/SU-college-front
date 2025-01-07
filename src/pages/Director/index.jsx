@@ -86,6 +86,9 @@ export const Director = () => {
                         <Typography variant="body1" sx={{ mt: 2, lineHeight: 1.6, color: "#555" }}>
                         {t('director.bio10')}
                         </Typography>
+                        <Typography variant="body1" sx={{ mt: 2, lineHeight: 1.6, color: "#555" }}>
+                        nurzat255@gmail.com
+                        </Typography>
                     </Grid>
             
                 </Grid>
