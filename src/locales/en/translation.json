@@ -33,7 +33,10 @@
   "header": {
     "itcollege": "International College of IT and Business",
     "students": "For students",
+    "ourpartners": "Our partners",
     "malaysia": "Malaysia",
+    "korea": "Korea",
+
     "owner": "Askar Salymbekov",
     "parents": "Parents",
     "map": "News",
@@ -47,7 +50,7 @@
     "teachers": "Teachers",
     "board": "Advisory Board",
     "letterFromDirector": "Letter from the Director",
-    "professions": "Professions",
+    "professions": "Our specialities",
     "computerScience": "Computer Science",
     "multimediaPrograms": "Multimedia Programs",
     "mobileApps": "Mobile Apps",
@@ -56,6 +59,7 @@
     "afterEleventhGrade": "After 11th Grade",
     "faqs": "Questions-Answers",
     "contacts": "Contacts",
+    "university": "Salymbekov University",
     "phone": "Phone",
     "applicants": "Admission",
     "history": "History",
@@ -133,17 +137,13 @@
         "collegeSchedule": "College Schedule"
       }
     },
-    "conditionsOpportunities": {
-      "title": "Conditions and Opportunities",
+    "studentsProjects": {
+      "title": "Student Projects",
       "links": {
-        "medicalCenter": "Medical Center",
-        "dormitory": "Dormitory",
-        "socialSupport": "Social Support for Students",
-        "optionalCourses": "Optional Courses",
-        "academicMobility": "Academic Mobility",
-        "psychologicalSupport": "Psychological Support",
-        "studentServiceCenter": "Student Service Center",
-        "adaptationPrograms": "Adaptation Programs"
+        "firstGrade": "1st grade",
+        "secondGrade": "2nd grade",
+        "thirdGrade": "3rd grade",
+        "fourthGrade": "4th grade"
       }
     }
   },
@@ -158,7 +158,7 @@
     }
 }, 
   "footer": {
-    "title": "Salymbekov College",
+    "title": "International College of IT and Business",
     "contactUs": "Contact Us",
     "phone": "Phone: +996 (312) 658538",
     "email": "Email: info@salymbekov.com",
@@ -652,7 +652,7 @@
 "admissioncommittee": {
     "title": "Admission Committee",
     "contactTitle": "Admission Committee Contacts",
-    "address": "Address: Maldybaev St., 24b / Akhunbaev St., 125 (International College of IT and Business) / American Institute of Technology 'AIT'",
+    "address": "Address: Maldybaev St., 24b / Akhunbaev St., 125 (International College of IT and Business)",
     "phones": [
       "+996 778 99 88 89 (International College of IT and Business)",
       "+996 706 99 88 89 (International College of IT and Business)"
@@ -728,16 +728,16 @@
   "courses": {
     "title": "International College of IT and Business",
     "software_development": {
-      "title": "Software Development",
-      "price": "302,000 KGS (3,500 USD)"
+      "title": "Computer Science",
+      "price": "308,000 KGS"
     },
     "mobile_app_development": {
       "title": "Mobile App Development",
-      "price": "302,000 KGS (3,500 USD)"
+      "price": "308,000 KGS"
     },
     "multimedia_app_development": {
       "title": "Multimedia Application Development",
-      "price": "302,000 KGS (3,500 USD)"
+      "price": "308,000 KGS"
     }
   }
 },

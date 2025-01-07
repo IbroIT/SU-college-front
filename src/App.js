@@ -32,6 +32,15 @@ import fourthPdf from '../src/pdfs/Кураторы 2024-2025.docx'
 import fifthPdf from '../src/pdfs/Лицензия колледжа (новая).pdf'
 import sixthPdf from '../src/pdfs/СВИДЕТЕЛЬСТВО (1).jpg'
 import seventhPdf from '../src/pdfs/График учебного процесса.pdf'
+import eigthPdf from '../src/pdfs/Правила приема_2024-2025.pdf'
+import tenthPdf from '../src/pdfs/План приема_2024-2025.pdf'
+import eleventhPdf from '../src/pdfs/1. Institutional accreditation.pdf'
+import twelthPdf from '../src/pdfs/2. International Institutional accreditation.pdf'
+import thirteenthPdf from '../src/pdfs/3 CERTIFICATE with Appendix (Int. Program Accreditation).pdf'
+import fourteenthPdf from '../src/pdfs/УП_СПО_КН_20224.PDF'
+import fifteenthPdf from '../src/pdfs/УП_СПО_МВ_20224.PDF'
+import sixteenthPdf from '../src/pdfs/УП_СПО_МП_20224.PDF'
+
 import { InformationSystem } from './pages/InformationSystem';
 import { Resources } from './pages/Resources';
 import { SocialSupport } from './pages/SocialSupport';
@@ -54,14 +63,23 @@ const pdfFiles = [
     { title: 'План УВР-2024', url: thirdPdf },
     { title: 'Кураторы', url: fourthPdf },
     { title: 'Лицензия колледжа', url: fifthPdf },
-    { title: 'Свидетельство', url: sixthPdf}
+    { title: 'Свидетельство', url: sixthPdf},
+    { title: 'Правила и план приема', url: eigthPdf},
+    { title: 'Первый сертификат аккредитаций', url: eleventhPdf},
+    { title: 'Второй сертификат аккредитаций', url: twelthPdf},
+    { title: 'Третий сертификат аккредитаций', url: thirteenthPdf},
+    { title: 'Учебный план №1', url: fourteenthPdf},
+    { title: 'Учебный план №2', url: fifteenthPdf},
+    { title: 'Учебный план №3', url: sixteenthPdf},
+
 ];
 
 const pdfFilesForStudents = [
       { title: 'График учебнего процесса', url: seventhPdf}
 ]
 
-
+const pdfFileForApplicants = [
+]
 function App() {
    
   return (
@@ -87,6 +105,8 @@ function App() {
        <Route path='/selectionSchedule' element={<SelectionSchedule/>}></Route>
 
 
+       <Route path="/documents/:documentId" element={<DocumentViewer pdfFiles={pdfFiles} />} />
+       <Route path="/documentsApplicants/:documentId" element={<DocumentViewer pdfFiles={pdfFileForApplicants} />} />
        <Route path="/documents/:documentId" element={<DocumentViewer pdfFiles={pdfFiles} />} />
 
         <Route path='/mission' element={<Mission/>}></Route>

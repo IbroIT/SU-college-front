@@ -23,8 +23,8 @@ export const Main = () => {
   const { t } = useTranslation();
 
   return (
-    <AnimatedScrollComponent>
       <>
+          <AnimatedScrollComponent>
       <MainSlider/>
             <Container maxWidth="md" sx={{ mt: 4 }}>
                 <Grid container spacing={4}>
@@ -109,7 +109,8 @@ export const Main = () => {
 
         <ImageSection />
       </div>
+      </AnimatedScrollComponent>
+
       </>
-    </AnimatedScrollComponent>
   );
 };

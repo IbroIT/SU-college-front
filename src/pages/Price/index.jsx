@@ -37,7 +37,151 @@ export const Price = () => {
                     </motion.div>
                 </Box>
             </AppBar>
+ <Container sx={{ padding: "40px 20px", maxWidth: "lg" }}>
+        <Typography
+          variant="h4"
+          sx={{
+            marginBottom: "20px",
+            fontWeight: "bold",
+            color: "#333",
+            fontSize: { xs: "1.6rem", sm: "2rem" },
+          }}
+        >
+          {t('scholarships.benefits_policy')}
+        </Typography>
 
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            lineHeight: 1.8,
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            color: "#333",
+          }}
+        >
+          {t('scholarships.social_support_description')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            lineHeight: 1.8,
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            color: "#333",
+          }}
+        >
+          {t('scholarships.social_support_condition')}
+        </Typography>
+
+        <Typography
+          variant="h5"
+          sx={{
+            marginBottom: "20px",
+            fontWeight: "bold",
+            color: "#5a738f",
+            fontSize: { xs: "1.2rem", sm: "1.5rem" },
+          }}
+        >
+          {t('scholarships.student_categories_for_benefits')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            lineHeight: 1.8,
+            color: "#333",
+          }}
+        >
+          <strong>{t('scholarships.category_i')}:</strong> {t('scholarships.category_i_description')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            lineHeight: 1.8,
+            color: "#333",
+          }}
+        >
+          <strong>{t('scholarships.category_ii')}:</strong> {t('scholarships.category_ii_description')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            lineHeight: 1.8,
+            color: "#333",
+          }}
+        >
+          <strong>{t('scholarships.category_iii')}:</strong> {t('scholarships.category_iii_description')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            lineHeight: 1.8,
+            color: "#333",
+          }}
+        >
+          <strong>{t('scholarships.category_iv')}:</strong> {t('scholarships.category_iv_description')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            lineHeight: 1.8,
+            color: "#333",
+          }}
+        >
+          <strong>{t('scholarships.category_v')}:</strong> {t('scholarships.category_v_description')}
+        </Typography>
+
+        <Typography
+          variant="h5"
+          sx={{
+            marginBottom: "20px",
+            fontWeight: "bold",
+            color: "#5a738f",
+            fontSize: { xs: "1.2rem", sm: "1.5rem" },
+          }}
+        >
+          {t('scholarships.commission_composition')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "20px",
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            lineHeight: 1.8,
+            color: "#333",
+          }}
+        >
+          {t('scholarships.commission_members')}
+        </Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            marginBottom: "40px",
+            fontSize: { xs: "1rem", sm: "1.1rem" },
+            lineHeight: 1.8,
+            color: "#333",
+          }}
+        >
+          {t('scholarships.basis_resolution')}
+        </Typography>
+      </Container>
             <Container sx={{ padding: { xs: "20px", sm: "40px" }, marginTop: "40px" }}>
                 <Paper sx={{ padding: "20px", borderRadius: "8px", boxShadow: 3 }}>
                     <Typography variant="h5" component="h2" sx={{ marginBottom: "20px", fontWeight: "bold" }}>

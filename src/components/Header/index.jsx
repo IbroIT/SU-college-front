@@ -9,22 +9,30 @@ import { Menu as MenuIcon, School as SchoolIcon, Group as GroupIcon, Article as 
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import axios from 'axios';
 import { Typography } from '@mui/material';
-export const Header = ({pdfFiles, pdfFilesForStudents}) => {
+export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { t } = useTranslation();
     const navigate = useNavigate();
     const [searchQuery, setSearchQuery] = useState('');
-    const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
     const [pdfUrl, setPdfUrl] = useState(null);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleDropdown2 = () => {
-      setIsDropdownOpen2(!isDropdownOpen2);
-    };
-    const toggleDropdown = () => {
+
+ const toggleDropdown = () => {
         setIsOpen((prev) => !prev);
-    };
-
+        if (isDropdownOpen2) {
+          setIsDropdownOpen2(false); 
+        }
+      };
+          const toggleDropdown2 = () => {
+        setIsDropdownOpen2((prev) => !prev);
+        if (isOpen) {
+          setIsOpen(false); 
+        }
+      };
+      
+  
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -104,6 +112,11 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
     {t('header.college')}
     <div className={style.dropdownContent}>
     <div>
+      <h1>
+      <a href='https://salymbekov.com/en/' target="_blank" rel="noopener noreferrer">
+        {t('header.university')}
+        </a>
+      </h1>
   <h1>
     {t('header.itcollege')}
     </h1>
@@ -111,24 +124,72 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
   <Link to="/director"><p>{t('header.letterFromDirector')}</p></Link>
   <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
   <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
-  <p>
-  <a href='https://salymbekov.com/en/' target="_blank" rel="noopener noreferrer">
-    {t('header.mainsite')}
-  </a>
-  </p>
 </div>
-    <div>
-    <h1>{t('header.malaysia')}</h1>
-    <p>
-    <a href="https://www.lincoln.edu.my" target="_blank" rel="noopener noreferrer">
-        Lincoln University
-    </a>
-</p>
-<p>
-    <a href="https://newinti.edu.my" target="_blank" rel="noopener noreferrer">
-        INTI University
-    </a>
-</p>
+<div>
+  <h1>{t('header.ourpartners')}</h1>
+  <div className={style.dropdown}>
+  <p
+    className={`${style.dropdownTitle} ${isOpen ? style.open : ''}`}
+    onClick={toggleDropdown}
+  >
+    {t('header.malaysia')}
+  </p>
+  {isOpen && (
+    <div className={style.dropdownMenu}>
+      <p>
+        <a
+          href="https://www.lincoln.edu.my"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lincoln University
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://newinti.edu.my"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          INTI University
+        </a>
+      </p>
+    </div>
+  )}
+</div>
+
+<div className={style.dropdown}>
+  <p
+    className={`${style.dropdownTitle} ${isDropdownOpen2 ? style.open : ''}`}
+    onClick={toggleDropdown2}
+  >
+    {t('header.korea')}
+  </p>
+  {isDropdownOpen2 && (
+    <div className={style.dropdownMenu}>
+      <p>
+        <a
+          href="https://www.lincoln.edu.my"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lincoln University
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://newinti.edu.my"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          INTI University
+        </a>
+      </p>
+    </div>
+  )}
+</div>
+
+
 
 </div>
 
@@ -140,22 +201,21 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
 
     <div>    
     <Link to="/admissionCommittee"><h1 className={style.applicantsText}>{t('header.admissionCommittee')}</h1></Link>
-    <Link to="/napravlenija-podgotovki"><h1 className={style.applicantsText}>{t('header.areasoftraining')}</h1></Link>
     <h1 className={style.applicantsText}>{t('header.professions')}</h1>
     <Link to="/computerscience"><p>{t('header.computerScience')}</p></Link>
     <Link to="/multimediaprograms"><p>{t('header.multimediaPrograms')}</p></Link>
     <Link to="/mobile"><p>{t('header.mobileApps')}</p></Link>
-    <Link to="/stipendii-i-lgoty"><h1>{t('header.scholarships')}</h1></Link>
 </div>
 
 <div>
     <Link to="/price"><h1>{t('header.price')}</h1></Link>
-    <Link to="/pravila-i-plan-priema"><h1>{t('header.admissionRulesAndPlan')}</h1></Link>
+    <Link to={`/documents/6`}>
+    <h1>{t('header.admissionRulesAndPlan')}</h1>
+            </Link>  
     <h1>{t('header.admissionProcedure')}</h1>
     <Link to="/requiredDocuments"><p>{t('header.requiredDocuments')}</p></Link>
     <Link to="/admissionRegulations"><p>{t('header.admissionRegulations')}</p></Link>
     <Link to="/selectionSchedule"><p>{t('header.selectionSchedule')}</p></Link>
-    <Link to="/adaptacionnaja-programma"><h1>{t('header.adaptationProgram')}</h1></Link>
 </div>
 
 <div>
@@ -175,11 +235,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
     {t('header.students')}
     <div className={style.dropdownContent}>
         <div>
-        <h1>{t('forstudents.ebilim.title')}</h1>
-        <p>
-        <a href='https://ebilim.salymbekov.com/Account/Login?ReturnUrl=%2F' target="_blank" rel="noopener noreferrer">
-    {t('forstudents.ebilim.title')}
-  </a>        </p>
+        <h1>{t('forstudents.resourceBase.links.informationSystem')}</h1>
+        <Link to="/information-system"><p>{t('forstudents.resourceBase.links.informationSystem')}</p></Link>
         </div>
     <div>
         <h1>{t('forstudents.studentCommunities.title')}</h1>
@@ -193,7 +250,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
       <div>
         <h1>{t('forstudents.resourceBase.title')}</h1>
         <Link to="/instructions"><p>{t('forstudents.resourceBase.links.instructions')}</p></Link>
-        <Link to="/information-system"><p>{t('forstudents.resourceBase.links.informationSystem')}</p></Link>
         <Link to="https://lib.salymbekov.com"><p>{t('forstudents.resourceBase.links.library')}</p></Link>
         <Link to="/resources"><p>{t('forstudents.resourceBase.links.resources')}</p></Link>
       </div>
@@ -218,25 +274,62 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
       </div>
 
       <div>
-        <h1>{t('forstudents.conditionsOpportunities.title')}</h1>
-        <Link to="/social-support"><p>{t('forstudents.conditionsOpportunities.links.socialSupport')}</p></Link>
-        <Link to="/psychological-support"><p>{t('forstudents.conditionsOpportunities.links.psychologicalSupport')}</p></Link>
-        <Link to="/student-service-center"><p>{t('forstudents.conditionsOpportunities.links.studentServiceCenter')}</p></Link>
-        <Link to="/adaptation-programs"><p>{t('forstudents.conditionsOpportunities.links.adaptationPrograms')}</p></Link>
+        <h1>{t('forstudents.studentsProjects.title')}</h1>
+        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
+        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
+        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
+
       </div>
     </div>
 </li>
 
-<li className={style.navLi}>
-{t('header.documents')}
-<div className={style.dropdownContent}>
-                    {pdfFiles.map((file, index) => (
-                        <Link key={index} to={`/documents/${index}`}>
-                            <p>{file.title}</p>
-                        </Link>
-                    ))}
-                </div>
-            </li>
+            <li className={style.navLi} style={{columnGap: "150px"}}>
+    {t('header.documents')}
+    <div className={style.dropdownContent}>
+        <div>
+            <h1>Основное</h1>
+            <Link to={`/documents/6`}>
+                <p>Свидетельство</p>
+            </Link>
+            <Link to={`/documents/5`}>
+                <p>Лицензия</p>
+            </Link>
+            <h1>Сертификаты аккредитаций</h1>
+            <Link to={`/documents/7`}>
+                <p>Первый сертификат аккредитаций</p>
+            </Link>
+            <Link to={`/documents/8`}>
+                <p>Первый сертификат аккредитаций</p>
+            </Link>
+            <Link to={`/documents/9`}>
+                <p>Первый сертификат аккредитаций</p>
+            </Link>
+            <h1>Учебные планы</h1>
+            <Link to={`/documents/10`}>
+                <p>Учебный план №1</p>
+            </Link>
+            <Link to={`/documents/11`}>
+                <p>Учебный план №2</p>
+            </Link>
+            <Link to={`/documents/12`}>
+                <p>Учебный план №3</p>
+            </Link>
+        </div>
+        <div>
+          <h1>Положение</h1>
+        </div>
+        <div>
+            <h1>Планы</h1>
+  
+        </div>
+
+        <div>
+            <h1>Отчеты</h1>
+
+        </div>
+    </div>
+</li>
 
 <Link to="/faq">
                             <li className={style.navLi}>{t('header.faqs')}</li>
@@ -318,71 +411,122 @@ export const Header = ({pdfFiles, pdfFilesForStudents}) => {
                 </div>
             </li>
             <li className={style.navLi}>
-            {t('header.students')}
-            <div className={style.dropdownContent}>
-        <div>
-        <h1>{t('forstudents.ebilim.title')}</h1>
-        <p>
-        <a href='https://ebilim.salymbekov.com/Account/Login?ReturnUrl=%2F' target="_blank" rel="noopener noreferrer">
-    {t('forstudents.ebilim.title')}
-  </a>        </p>
-        </div>
+
+{t('header.students')}
+<div className={style.dropdownContent}>
     <div>
-        <h1>{t('forstudents.studentCommunities.title')}</h1>
-        <Link to="/student-council"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.studentCouncil')}</p></Link>
-        <Link to="/debate-club"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.debateClub')}</p></Link>
-        <Link to="/tutors-movement"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.tutorsMovement')}</p></Link>
-        <Link to="/creative-groups"onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.creativeGroups')}</p></Link>
-      </div>
-
-      {/* Ресурсная база */}
-      <div>
-        <h1>{t('forstudents.resourceBase.title')}</h1>
-        <Link to="/instructions"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.instructions')}</p></Link>
-        <Link to="/information-system"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.informationSystem')}</p></Link>
-        <Link to="https://lib.salymbekov.com"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.library')}</p></Link>
-        <Link to="/resources"onClick={closeMenu}><p>{t('forstudents.resourceBase.links.resources')}</p></Link>
-      </div>
-
-      <div>
-        <h1>{t('forstudents.studySchedules.title')}</h1>
-        <Link to="/modules-exams"onClick={closeMenu}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
-        <p>
-  <a 
-    href="https://docs.google.com/spreadsheets/d/1SZxYMnyEgPgMIyFvcisNarYN0pZjZxQ4/edit?hl=ru&pli=1&gid=331563060#gid=331563060" 
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    {t('forstudents.studySchedules.links.collegeSchedule')}
-  </a>
-</p>
-        {pdfFilesForStudents.map((file, index) => (
-            <Link key={index} to={`/documents/${index}`}>
-            <p>{file.title}</p>
-        </Link>
-        ))}
-      </div>
-
-      <div>
-        <h1>{t('forstudents.conditionsOpportunities.title')}</h1>
-        <Link to="/social-support"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.socialSupport')}</p></Link>
-        <Link to="/psychological-support"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.psychologicalSupport')}</p></Link>
-        <Link to="/student-service-center"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.studentServiceCenter')}</p></Link>
-        <Link to="/adaptation-programs"onClick={closeMenu}><p>{t('forstudents.conditionsOpportunities.links.adaptationPrograms')}</p></Link>
-      </div>
+    <h1>{t('forstudents.resourceBase.links.informationSystem')}</h1>
+    <Link to="/information-system" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.informationSystem')}</p></Link>
     </div>
-            </li>
-            <li className={style.navLi}>
+<div>
+    <h1>{t('forstudents.studentCommunities.title')}</h1>
+    <Link to="/student-council" onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.studentCouncil')}</p></Link>
+    <Link to="/debate-club" onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.debateClub')}</p></Link>
+    <Link to="/tutors-movement" onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.tutorsMovement')}</p></Link>
+    <Link to="/creative-groups" onClick={closeMenu}><p>{t('forstudents.studentCommunities.links.creativeGroups')}</p></Link>
+  </div>
 
-                {t('header.documents')}
-                <div className={style.dropdownContent}>
-                    {pdfFiles.map((file, index) => (
-                        <Link key={index} to={`/documents/${index}`}>
-                            <p>{file.title}</p>
-                        </Link>
-                    ))}
-                </div>
-            </li>
+  {/* Ресурсная база */}
+  <div>
+    <h1>{t('forstudents.resourceBase.title')}</h1>
+    <Link to="/instructions" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.instructions')}</p></Link>
+    <Link to="https://lib.salymbekov.com" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.library')}</p></Link>
+    <Link to="/resources" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.resources')}</p></Link>
+  </div>
+
+  <div>
+    <h1>{t('forstudents.studySchedules.title')}</h1>
+    <Link to="/modules-exams" onClick={closeMenu}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
+    <p>
+<a 
+href="https://docs.google.com/spreadsheets/d/1SZxYMnyEgPgMIyFvcisNarYN0pZjZxQ4/edit?hl=ru&pli=1&gid=331563060#gid=331563060" 
+target="_blank" 
+rel="noopener noreferrer"
+>
+{t('forstudents.studySchedules.links.collegeSchedule')}
+</a>
+</p>
+    {pdfFilesForStudents.map((file, index) => (
+        <Link key={index} to={`/documents/${index}`}>
+        <p>{file.title}</p>
+    </Link>
+    ))}
+  </div>
+
+  <div>
+    <h1>{t('forstudents.studentsProjects.title')}</h1>
+    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
+    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
+    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
+
+  </div>
+</div>
+</li>
+            <li className={style.navLi} style={{columnGap: "150px"}}>
+    {t('header.documents')}
+    <div className={style.dropdownContent}>
+        <div>
+            <h1>Основное</h1>
+            <Link to={`/documents/6`}>
+                <p>Свидетельство</p>
+            </Link>
+            <Link to={`/documents/5`}>
+                <p>Лицензия</p>
+            </Link>
+            <Link to={`/documents/2`}>
+                <p>План УВР-2024</p>
+            </Link>
+        </div>
+        <div>
+          <h1>Положение</h1>
+        </div>
+        <div>
+            <h1>Планы</h1>
+  
+        </div>
+
+        <div>
+            <h1>Отчеты</h1>
+
+        </div>
+    </div>
+</li>
+            {/* <li className={style.navLi}>
+    {t('header.documents')}
+    <div className={style.dropdownContent}>
+        <div className={style.section}>
+            <h3>Основное положение</h3>
+            <Link to={`/documents/0`}>
+                <p>План</p>
+            </Link>
+            <Link to={`/documents/1`}>
+                <p>Настольный Теннис 2024</p>
+            </Link>
+            <Link to={`/documents/2`}>
+                <p>План УВР-2024</p>
+            </Link>
+        </div>
+
+        <div className={style.section}>
+            <h3>Планы</h3>
+            <Link to={`/documents/3`}>
+                <p>Кураторы</p>
+            </Link>
+        </div>
+
+        <div className={style.section}>
+            <h3>Отчеты</h3>
+            <Link to={`/documents/4`}>
+                <p>Лицензия колледжа</p>
+            </Link>
+            <Link to={`/documents/5`}>
+                <p>Свидетельство</p>
+            </Link>
+        </div>
+    </div>
+</li> */}
+
             <Link to="/faq"onClick={closeMenu}>
                             <li className={style.navLi}>{t('header.faqs')}</li>
                         </Link>

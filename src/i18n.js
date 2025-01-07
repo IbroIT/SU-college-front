@@ -15,7 +15,7 @@ i18next
         translation: require('./locales/kg/translation.json')
       }
     },
-    lng: 'kg',
+    lng: 'en',
     fallbackLng: 'kg',
     interpolation: {
       escapeValue: false 

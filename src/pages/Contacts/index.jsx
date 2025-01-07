@@ -110,9 +110,7 @@ export const Contacts = () => {
                                         />
                                         {t("Contacts.AddressTitle")}
                                     </Typography>
-                                    <Typography variant="body1" sx={{ mb: 1 }}>
-                                        {t("Contacts.LegalAddress")}
-                                    </Typography>
+
                                     <Typography variant="body1" sx={{ mb: 1 }}>
                                         {t("Contacts.FactualAddress")}
                                     </Typography>
@@ -135,7 +133,7 @@ export const Contacts = () => {
                                         {t("Contacts.PhoneTitle")}
                                     </Typography>
                                     <Typography variant="body1" sx={{ mb: 1 }}>
-                                        {t("Contacts.PhoneNumber")}
+                                    +996 706 99 88 89
                                     </Typography>
                                     <Typography variant="h6" sx={{ mt: 3, mb: 2 }}>
                                         <EmailIcon
@@ -157,19 +155,20 @@ export const Contacts = () => {
                 </Grid>
 
                 <MapContainer
-                    initial={{ scale: 0.9, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <iframe
-                        title="location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.148593118557!2d74.56556557642047!3d42.87511111904552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec84e013eb6d1%3A0x7d080ff79995b23f!2z0KDRi9C30YHQutC-0LPQviDRg9GB0LjQvdC10YHRjNC60L7Qs9C-LCDQmtC-0LvQvtC80LXQutGB0LrQsNGPINGD0LsuINCh0LDRgNCw0L0g0JzQsNCz0YDQsA!5e0!3m2!1sru!2skg!4v1700000000000!5m2!1sru!2skg"
-                        width="100%"
-                        height="100%"
-                        allowFullScreen=""
-                        loading="lazy"
-                    ></iframe>
-                </MapContainer>
+    initial={{ scale: 0.9, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 0.8 }}
+>
+    <iframe
+        title="location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d731.3393070805881!2d74.6000781418017!3d42.84418970298898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec987f324329b%3A0x2cd99bcd0df5fc1f!2z0KHQsNC70YvQvNCx0LXQutC-0LIg0KPQvdC40LLQtdGA0YHQuNGC0LXRgg!5e0!3m2!1sru!2skg!4v1736154683428!5m2!1sru!2skg"
+        width="100%"
+        height="100%"
+        allowFullScreen=""
+        loading="lazy"
+    ></iframe>
+</MapContainer>
+
             </Container>
             </AnimatedScrollComponent>
         </>
