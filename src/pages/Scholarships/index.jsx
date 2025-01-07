@@ -146,42 +146,6 @@ export const Scholarships = () => {
         >
           <strong>{t('scholarships.category_v')}:</strong> {t('scholarships.category_v_description')}
         </Typography>
-
-        <Typography
-          variant="h5"
-          sx={{
-            marginBottom: "20px",
-            fontWeight: "bold",
-            color: "#5a738f",
-            fontSize: { xs: "1.2rem", sm: "1.5rem" },
-          }}
-        >
-          {t('scholarships.commission_composition')}
-        </Typography>
-
-        <Typography
-          variant="body1"
-          sx={{
-            marginBottom: "20px",
-            fontSize: { xs: "1rem", sm: "1.1rem" },
-            lineHeight: 1.8,
-            color: "#333",
-          }}
-        >
-          {t('scholarships.commission_members')}
-        </Typography>
-
-        <Typography
-          variant="body1"
-          sx={{
-            marginBottom: "40px",
-            fontSize: { xs: "1rem", sm: "1.1rem" },
-            lineHeight: 1.8,
-            color: "#333",
-          }}
-        >
-          {t('scholarships.basis_resolution')}
-        </Typography>
       </Container>
     </>
   );

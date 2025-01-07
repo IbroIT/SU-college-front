@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, Container, Typography, Grid, Card, CardContent, CardMedia } from "@mui/material";
+import { AppBar, Box, Container, Typography, Grid, Card, CardContent, CardMedia, CardActionArea  } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -60,29 +60,37 @@ export const Resources = () => {
         </Typography>
       </Container>
       <Container sx={{ padding: "20px" }}>
-        <Grid container spacing={4}>
-          {t('educationalResources.resources', { returnObjects: true }).map((resource, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card sx={{ height: "100%" }}>
-                <CardMedia
-                  component="img"
-                  height="200"
-                  image={resource.image}
-                  alt={resource.title}
-                />
-                <CardContent>
-                  <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
-                    {resource.title} {/* Direct access of title */}
-                  </Typography>
-                  <Typography variant="body2" sx={{ mt: 2 }}>
-                    {resource.description} {/* Direct access of description */}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
+  <Grid container spacing={4}>
+    {t('educationalResources.resources', { returnObjects: true }).map((resource, index) => (
+      <Grid item xs={12} sm={6} md={4} key={index}>
+        <Card sx={{ height: "100%" }}>
+          <CardActionArea
+            component="a"
+            href={resource.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <CardMedia
+              component="img"
+              height="200"
+              image={resource.image}
+              alt={resource.title}
+            />
+            <CardContent>
+              <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+                {resource.title} {/* Direct access of title */}
+              </Typography>
+              <Typography variant="body2" sx={{ mt: 2 }}>
+                {resource.description} {/* Direct access of description */}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+    ))}
+  </Grid>
+</Container>
+
     </>
   );
 };

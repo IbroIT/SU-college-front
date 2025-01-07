@@ -17,10 +17,10 @@
       "text": "Salymbekov University, Lincoln University and INTI University of Malaysia invite applicants to the International College of IT and Business to acquire knowledge in programming.",
   
   
-      "text2": "The International College of IT and Business 'Salymbekov University' is a new college with modern facilities, aimed at providing training in the latest curriculum in both Russian and English languages.",
+      "text2": "The International College of IT and Business \"Salymbekov University\" is a new college with modern facilities, aimed at providing training in the latest curriculum in both Russian and English languages.",
     
   
-      "text3": "The best specialists from the International College of IT and Business 'Salymbekov University', 'Lincoln University' and 'INTI University' teach students.",
+      "text3": "The best specialists from the International College of IT and Business \"Salymbekov University\", \"Lincoln University\" and \"INTI International University\" teach students.",
     
     
       "text4": "Upon completion of the course, students will receive internationally recognized knowledge, two diplomas (Kyrgyz and international standards), and will have English proficiency at the TOEFL/IELTS level.",
@@ -54,6 +54,7 @@
     "computerScience": "Computer Science",
     "multimediaPrograms": "Multimedia Programs",
     "mobileApps": "Mobile Apps",
+    "multimediaComputing": "Multimedia Computing",
     "admissions": "Admissions",
     "afterNinthGrade": "After 9th Grade",
     "afterEleventhGrade": "After 11th Grade",
@@ -104,6 +105,19 @@
     "admissionsDetails": "Our college accepts applicants from the 9th and 11th grades. Based on the 9th grade, you will study in Kyrgyzstan for 2 years and 1.5 years in Malaysia. Based on the 11th grade, you will study in Kyrgyzstan for 1 year and 1.5 years in Malaysia.",
     "professionsInfo": "Our college offers a total of 3 IT specialties! In each of them, you will be taught by professional teachers and mentors. You will already be studying in your 1st year!"
   },
+  "documents2": {
+    "main": "Main",
+    "certificate": "Certificate",
+    "license": "License",
+    "AccreditationCertificates": "Accreditation Certificates",
+    "InstitutionalAccreditation": "Institutional Accreditation",
+    "InternationalInstitutionalAccreditation": "International Institutional Accreditation",
+    "InternationalProgramAccreditation": "International Program Accreditation",
+    "curricula": "Curricula",
+    "regulations": "Regulations",
+    "plans": "Plans",
+    "reports": "Reports"
+  },
   "forstudents": {
     "ebilim": {
       "title": "Ebilim"
@@ -134,7 +148,8 @@
         "modulesExams": "Modules and Exams Schedule",
         "practiceSchedule": "Practical Training Schedule",
         "mfmSchedule": "MFM Schedule",
-        "collegeSchedule": "College Schedule"
+        "collegeSchedule": "College Schedule",
+        "ScheduleEducationalProcess": "Schedule of the educational process"
       }
     },
     "studentsProjects": {
@@ -368,18 +383,22 @@
       "title": "Courses",
       "list": [
         {
+          "image": "https://248006.selcdn.ru/main/iblock/bb9/bb9001a7e2f6757361ad9a936927ff94/b8ccc0b5bc577c907c4badaccfe7edf7.png",
           "name": "Design and Animation",
           "description": "Master the basics of graphic design and animation. Learn to create amazing 2D and 3D animations that capture attention."
         },
         {
+          "image": "https://kinosklad.ru/upload/cssinliner_webp/resize_cache/iblock/de4/550_500_1/de49bec1ac645668a63557876ad33d88.webp",
           "name": "Video Editing and Post-production",
           "description": "Learn how to edit videos, add visual effects, and work with editing software. Become a professional in creating videos for film and television."
         },
         {
+          "image": "https://obrazovanie.by/wp-content/uploads/2021/04/vr0.jpg",
           "name": "Virtual Reality",
           "description": "Discover how to create content for virtual reality. Work with technologies that create a fully immersive experience."
         },
         {
+          "image": "https://www.marketresearchintellect.com/images/blogs/augmented-reality-mobile-games-revolutionizing-the-future-of-interactive-entertainment.webp",
           "name": "Augmented Reality",
           "description": "Learn the principles of augmented reality and how to embed digital objects into the real world using modern tools."
         }
@@ -541,7 +560,7 @@
     "WelcomeMessage": "Welcome to our university's website. Below are the contact details; we look forward to answering your questions.",
     "AddressTitle": "Address",
     "LegalAddress": "Legal address: Bishkek, Ibraimova St., 115A",
-    "FactualAddress": "Factual address: Bishkek, Maldybaeva St., 24b",
+    "FactualAddress": "Address: 24b, Maldybaev Street, Bishkek",
     "PhoneTitle": "Phone",
     "PhoneNumber": "+996 (701) 71-71-99",
     "EmailTitle": "Email",
@@ -652,10 +671,10 @@
 "admissioncommittee": {
     "title": "Admission Committee",
     "contactTitle": "Admission Committee Contacts",
-    "address": "Address: Maldybaev St., 24b / Akhunbaev St., 125 (International College of IT and Business)",
+    "address": "Address: Maldybaev St., 24b / Akhunbaev St., 125",
     "phones": [
-      "+996 778 99 88 89 (International College of IT and Business)",
-      "+996 706 99 88 89 (International College of IT and Business)"
+      "Phone: +996 778 99 88 89",
+      "Phone: +996 706 99 88 89"
     ],
     "email": "Email: info@salymbekov.com",
     "welcomeTitle": "Dear Applicants!",
@@ -669,12 +688,12 @@
     "contacts": "Admission Office Contacts",
     "address": {
       "label": "Address:",
-      "value": "24b Maldybaeva St. / 125 Akhunbaeva St. (International College of IT and Business)"
+      "value": "24b Maldybaev St. / 125 Akhunbaev St."
     },
     "phones": {
       "label": "Phones:",
-      "value1": "+996 778 99 88 89 (International College of IT and Business)",
-      "value2": "+996 706 99 88 89 (International College of IT and Business)"
+      "value1": "Phone: +996 778 99 88 89",
+      "value2": "Phone: +996 706 99 88 89"
     },
     "email": {
       "label": "Email:",
@@ -833,32 +852,44 @@
       {
         "title": "KNOX",
         "description": "Students also have access to the KNOX educational portal, which offers a wide range of educational and research resources in the fields of medicine, IT, and business.",
-        "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-047-300x172.png"
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-047-300x172.png",
+        "url": "https://knox.example.com"
+
       },
       {
         "title": "Research4Life Portal",
         "description": "The Research4Life portal from the World Health Organization provides full access to electronic publications, journals, and libraries in medicine, IT, architecture, and agriculture for training well-rounded specialists.",
-        "image": "https://salymbekov.com/wp-content/uploads/2021/02/snimok-300x108.jpg"
+        "image": "https://salymbekov.com/wp-content/uploads/2021/02/snimok-300x108.jpg",
+        "url": "https://research4life.example.com"
+
       },
       {
         "title": "SAGE Publishing Portal",
         "description": "The SAGE Publishing portal is one of the world's largest publishers, releasing over 1,000 journals and books monthly on medical, humanitarian, and natural science topics.",
-        "image": "https://salymbekov.com/wp-content/uploads/2023/02/sage-publishing.png"
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/sage-publishing.png",
+        "url": "https://sagepublishing.example.com"
+
       },
       {
         "title": "DeGruyter Portal",
         "description": "The DeGruyter portal, one of the largest European publishers, includes a database of 210 journals on academic and humanities topics.",
-        "image": "https://salymbekov.com/wp-content/uploads/2023/02/de-gruyter-300x168.png"
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/de-gruyter-300x168.png",
+        "url": "https://degruyter.example.com"
+
       },
       {
         "title": "Lincoln University College Portal",
         "description": "The Lincoln University College portal, one of the top universities in Malaysia and a partner of our university, provides access to its databases (books, journals, monographs) in key areas such as medicine, business, IT, and healthcare.",
-        "image": "https://salymbekov.com/wp-content/uploads/2022/07/lincoln.jpg"
+        "image": "https://salymbekov.com/wp-content/uploads/2022/07/lincoln.jpg",
+        "url": "https://lincolnuc.example.com"
+
       },
       {
         "title": "EBSCO Publishing Portal",
         "description": "The EBSCO Publishing portal is the largest provider of scientific resources from leading global publishers, offering access to 15 thematic databases in medicine, IT, business, and management.",
-        "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-046.png"
+        "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-046.png",
+        "url": "https://ebsco.example.com"
+
       }
     ]
   },

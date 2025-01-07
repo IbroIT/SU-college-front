@@ -3,7 +3,7 @@ import { Box, Typography, Container, Grid } from "@mui/material";
 import AnimatedScrollComponent from "../../components/AnimatedComponents";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-
+import NurzatManasovna from '../../../src/components/images/nurzat manasovna.jpg'
 export const Director = () => {
     const { t } = useTranslation();
 
@@ -41,7 +41,7 @@ export const Director = () => {
                     <Grid item xs={12} sm={6}>
                         <Box
                             component="img"
-                            src="https://salymbekov.com/wp-content/uploads/2023/02/zhunushalieva-nurzat-manasovna-e1676031324273.jpg"
+                            src={NurzatManasovna}
                             alt="Жунушалиева Нурзат Манасовна"
                             sx={{
                                 width: "100%",

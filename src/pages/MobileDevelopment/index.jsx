@@ -54,7 +54,7 @@ export const MobileDevelopment = () => {
           </section>
 
           {/* Projects Section */}
-          <section className={styles.projectsSection}>
+          {/* <section className={styles.projectsSection}>
             <div className={styles.container}>
               <h2>{t('mobileDevelopment.projects.title')}</h2>
               <div className={styles.projectsList}>
@@ -66,7 +66,7 @@ export const MobileDevelopment = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Admission Section */}
           <section className={styles.admissionSection}>

@@ -38,13 +38,14 @@ export const MultimediaPrograms = () => {
                   <div className={styles.courseItem} key={index}>
                     <h3>{course.name}</h3>
                     <p>{course.description}</p>
+                    <img src={course.image} className={styles.courseImage} alt={course.name} />
                   </div>
                 ))}
               </div>
             </div>
           </section>
 
-          <section className={styles.projectsSection}>
+          {/* <section className={styles.projectsSection}>
             <div className={styles.container}>
               <h2>{t('multimediaprograms.projects.title')}</h2>
               <div className={styles.projectsList}>
@@ -57,7 +58,7 @@ export const MultimediaPrograms = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className={styles.admissionSection}>
             <div className={styles.container}>

@@ -50,7 +50,7 @@ export const ComputerScience = () => {
             </div>
           </section>
 
-          <section className={styles.projectsSection}>
+          {/* <section className={styles.projectsSection}>
             <div className={styles.container}>
               <h2>{t('computerscience.projects.title')}</h2>
               <div className={styles.projectsList}>
@@ -62,7 +62,7 @@ export const ComputerScience = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className={styles.admissionSection}>
             <div className={styles.container}>

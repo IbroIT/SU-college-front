@@ -40,7 +40,7 @@ import thirteenthPdf from '../src/pdfs/3 CERTIFICATE with Appendix (Int. Program
 import fourteenthPdf from '../src/pdfs/УП_СПО_КН_20224.PDF'
 import fifteenthPdf from '../src/pdfs/УП_СПО_МВ_20224.PDF'
 import sixteenthPdf from '../src/pdfs/УП_СПО_МП_20224.PDF'
-
+import seventeenthPdf from '../src/pdfs/КҮБѲЛҮК.jpg'
 import { InformationSystem } from './pages/InformationSystem';
 import { Resources } from './pages/Resources';
 import { SocialSupport } from './pages/SocialSupport';
@@ -55,8 +55,10 @@ import { Price } from './pages/Price';
 import { AdmissionsRegulations } from './pages/AdmissionsRegulations';
 import { Documents } from './pages/Documents';
 import { SelectionSchedule } from './pages/SelectionSchedule';
-
-
+import SecondYear from './pages/SecondYear';
+import FirstYear from './pages/FirstYear';
+import ThirdYear from './pages/Third';
+import FourthYear from './pages/Fourth';
 const pdfFiles = [
     { title: 'План ', url: firstPdf },
     { title: 'Настольный Теннис 2024', url: secondPdf },
@@ -71,11 +73,11 @@ const pdfFiles = [
     { title: 'Учебный план №1', url: fourteenthPdf},
     { title: 'Учебный план №2', url: fifteenthPdf},
     { title: 'Учебный план №3', url: sixteenthPdf},
-
-];
+    { title: 'Куболук', url: seventeenthPdf},
+    { title: 'График учебнего процесса', url: seventhPdf}
+  ];
 
 const pdfFilesForStudents = [
-      { title: 'График учебнего процесса', url: seventhPdf}
 ]
 
 const pdfFileForApplicants = [
@@ -122,7 +124,10 @@ function App() {
         <Route path='/mobile' element={<MobileDevelopment/>}></Route>
         <Route path='/computerscience' element={<ComputerScience/>}></Route>
          
-
+         <Route path='/firstyearprojects' element={<FirstYear/>}></Route>
+         <Route path='/secondyearprojects' element={<SecondYear/>}></Route>
+         <Route path='/thirdyearprojects' element={<ThirdYear/>}></Route>
+         <Route path='/fourthyearprojects' element={<FourthYear/>}></Route>
 
         <Route path='/student-council' element={<StudentCouncil/>}></Route>
         <Route path='/debate-club' element={<DebateClub/>}></Route>

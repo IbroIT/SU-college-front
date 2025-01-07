@@ -208,14 +208,14 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 </div>
 
 <div>
-    <Link to="/price"><h1>{t('header.price')}</h1></Link>
-    <Link to={`/documents/6`}>
+<Link to={`/documents/6`}>
     <h1>{t('header.admissionRulesAndPlan')}</h1>
-            </Link>  
-    <h1>{t('header.admissionProcedure')}</h1>
+            </Link> 
+            <h1>{t('header.admissionProcedure')}</h1>
     <Link to="/requiredDocuments"><p>{t('header.requiredDocuments')}</p></Link>
     <Link to="/admissionRegulations"><p>{t('header.admissionRegulations')}</p></Link>
     <Link to="/selectionSchedule"><p>{t('header.selectionSchedule')}</p></Link>
+    <Link to="/price"><h1>{t('header.price')}</h1></Link>
 </div>
 
 <div>
@@ -235,8 +235,27 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     {t('header.students')}
     <div className={style.dropdownContent}>
         <div>
-        <h1>{t('forstudents.resourceBase.links.informationSystem')}</h1>
-        <Link to="/information-system"><p>{t('forstudents.resourceBase.links.informationSystem')}</p></Link>
+        <h1>{t('forstudents.resourceBase.links.informationSystem')}</h1>  
+      <p>
+        <a 
+         href='https://eBilim.salymbekov.com'
+         target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ebilim
+
+        </a>
+      </p>
+      <p>
+        <a 
+         href='https://online.collaborative.lincoln.edu.my'
+         target="_blank"
+          rel="noopener noreferrer"
+        > 
+          Lincoln
+
+        </a>
+      </p>
         </div>
     <div>
         <h1>{t('forstudents.studentCommunities.title')}</h1>
@@ -266,71 +285,65 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     {t('forstudents.studySchedules.links.collegeSchedule')}
   </a>
 </p>
-        {pdfFilesForStudents.map((file, index) => (
-            <Link key={index} to={`/documents/${index}`}>
-            <p>{file.title}</p>
+        <Link to={`/documents/14`}>
+        <p>{t('forstudents.studySchedules.links.ScheduleEducationalProcess')}</p>
         </Link>
-        ))}
       </div>
 
       <div>
         <h1>{t('forstudents.studentsProjects.title')}</h1>
-        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
-        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
-        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
-        <Link to="/social-support"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
+        <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+        <Link to="/secondyearprojects"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
+        <Link to="/thirdyearprojects"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
+        <Link to="/fourthyearprojects"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
 
       </div>
     </div>
 </li>
 
-            <li className={style.navLi} style={{columnGap: "150px"}}>
+<li className={style.navLi} style={{columnGap: "150px"}}>
     {t('header.documents')}
     <div className={style.dropdownContent}>
         <div>
-            <h1>Основное</h1>
+            <h1>{t('documents2.main')}</h1>
             <Link to={`/documents/6`}>
-                <p>Свидетельство</p>
+                <p>{t('documents2.certificate')}</p>
             </Link>
-            <Link to={`/documents/5`}>
-                <p>Лицензия</p>
+            <Link to={`/documents/4`}>
+                <p>{t('documents2.license')}</p>
             </Link>
-            <h1>Сертификаты аккредитаций</h1>
+            <h1>{t('documents2.AccreditationCertificates')}</h1>
             <Link to={`/documents/7`}>
-                <p>Первый сертификат аккредитаций</p>
+                <p>{t('documents2.InstitutionalAccreditation')}</p>
             </Link>
             <Link to={`/documents/8`}>
-                <p>Первый сертификат аккредитаций</p>
+                <p>{t('documents2.InternationalInstitutionalAccreditation')}</p>
             </Link>
             <Link to={`/documents/9`}>
-                <p>Первый сертификат аккредитаций</p>
+                <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>
-            <h1>Учебные планы</h1>
+            <h1>{t('documents2.curricula')}</h1>
             <Link to={`/documents/10`}>
-                <p>Учебный план №1</p>
+                <p>{t('header.computerScience')}</p>
             </Link>
             <Link to={`/documents/11`}>
-                <p>Учебный план №2</p>
+                <p>{t('header.multimediaComputing')}</p>
             </Link>
             <Link to={`/documents/12`}>
-                <p>Учебный план №3</p>
+                <p>{t('header.multimediaPrograms')}</p>
             </Link>
         </div>
         <div>
-          <h1>Положение</h1>
+            <h1>{t('documents2.regulations')}</h1>
         </div>
         <div>
-            <h1>Планы</h1>
-  
+            <h1>{t('documents2.plans')}</h1>
         </div>
-
         <div>
-            <h1>Отчеты</h1>
-
+            <h1>{t('documents2.reports')}</h1>
         </div>
     </div>
 </li>
-
 <Link to="/faq">
                             <li className={style.navLi}>{t('header.faqs')}</li>
                         </Link>
@@ -446,36 +459,54 @@ rel="noopener noreferrer"
 {t('forstudents.studySchedules.links.collegeSchedule')}
 </a>
 </p>
-    {pdfFilesForStudents.map((file, index) => (
-        <Link key={index} to={`/documents/${index}`}>
-        <p>{file.title}</p>
-    </Link>
-    ))}
+<Link to={`/documents/14`}>
+        <p>{t('forstudents.studySchedules.links.ScheduleEducationalProcess')}</p>
+        </Link>
   </div>
 
   <div>
-    <h1>{t('forstudents.studentsProjects.title')}</h1>
-    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
-    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
-    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
-    <Link to="/social-support" onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
+        <h1>{t('forstudents.studentsProjects.title')}</h1>
+        <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+        <Link to="/secondyearprojects"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
+        <Link to="/thirdyearprojects"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
+        <Link to="/fourthyearprojects"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
 
-  </div>
+      </div>
 </div>
 </li>
-            <li className={style.navLi} style={{columnGap: "150px"}}>
+<li className={style.navLi} style={{columnGap: "150px"}}>
     {t('header.documents')}
     <div className={style.dropdownContent}>
         <div>
             <h1>Основное</h1>
-            <Link to={`/documents/6`}>
+            <Link to={`/documents/6`}onClick={closeMenu}>
                 <p>Свидетельство</p>
             </Link>
-            <Link to={`/documents/5`}>
+            <Link to={`/documents/4`}onClick={closeMenu}>
                 <p>Лицензия</p>
             </Link>
-            <Link to={`/documents/2`}>
-                <p>План УВР-2024</p>
+            <Link to={`/documents/14`}onClick={closeMenu}>
+                <p>КҮБѲЛҮК</p>
+            </Link>
+            <h1>Сертификаты аккредитаций</h1>
+            <Link to={`/documents/7`}onClick={closeMenu}>
+                <p>Institutional accreditation</p>
+            </Link>
+            <Link to={`/documents/8`}onClick={closeMenu}>
+                <p>International Institutional accreditation</p>
+            </Link>
+            <Link to={`/documents/9`}onClick={closeMenu}>
+                <p>International Program Accreditation</p>
+            </Link>
+            <h1>Учебные планы</h1>
+            <Link to={`/documents/10`}onClick={closeMenu}>
+                <p>{t('header.computerScience')}</p>
+            </Link>
+            <Link to={`/documents/11`}onClick={closeMenu}>
+                <p>{t('header.multimediaComputing')}</p>
+            </Link>
+            <Link to={`/documents/12`}onClick={closeMenu}>
+                <p>{t('header.multimediaPrograms')}</p>
             </Link>
         </div>
         <div>
