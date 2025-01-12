@@ -941,5 +941,32 @@
     "ninthgrade": "9th grade",
     "eleventhgrade": "11th grade",
     "close": "Close"
-  }
+  },
+    "selectionSchedule": {
+      "title": "Selection and Enrollment Schedule",
+      "description": "Salymbekov University follows a policy of selecting and enrolling applicants in strict accordance with the norms and rules of the Ministry of Education and Science of the Kyrgyz Republic, which annually forms and publishes the schedule of selection rounds.",
+      "subtitle": "Schedule of selection and enrollment rounds for applicants for the 2024-2025 academic year",
+      "rounds": {
+        "round1": "First Round",
+        "round2": "Second Round",
+        "round3": "Third Round",
+        "round4": "Fourth Round"
+      },
+      "tableHeaders": {
+        "action": "Action",
+        "date": "Date"
+      },
+      "dates": {
+        "registrationStart": "Registration of applicants for the competition",
+        "registrationEnd": "Completion of registration for the competition",
+        "firstRound": "July 17, 8:00",
+        "firstRoundEnd": "July 24, 17:00",
+        "secondRoundStart": "July 30, 08:00",
+        "secondRoundEnd": "August 7, 17:00",
+        "thirdRoundStart": "August 13, 08:00",
+        "thirdRoundEnd": "August 20, 17:00",
+        "fourthRoundStart": "August 26, 08:00",
+        "fourthRoundEnd": "August 28, 17:00"
+      }
+    }
 }

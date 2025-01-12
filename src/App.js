@@ -59,6 +59,7 @@ import SecondYear from './pages/SecondYear';
 import FirstYear from './pages/FirstYear';
 import ThirdYear from './pages/Third';
 import FourthYear from './pages/Fourth';
+import { CollegeInfrastructure } from './pages/CollegeInfrastructure';
 const pdfFiles = [
     { title: 'План ', url: firstPdf },
     { title: 'Настольный Теннис 2024', url: secondPdf },
@@ -98,6 +99,7 @@ function App() {
 
 
 
+       <Route path='/collegeInfrastructure' element={<CollegeInfrastructure/>}></Route>
        <Route path='/admissionCommittee' element={<AdmissionCommittee/>}></Route>
        <Route path='/napravlenija-podgotovki' element={<Direction/>}></Route>
        <Route path='/stipendii-i-lgoty' element={<Scholarships/>}></Route>

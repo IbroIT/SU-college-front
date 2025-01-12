@@ -34,8 +34,8 @@ const SearchResults = () => {
                             if (value.toLowerCase().includes(query.toLowerCase())) {
                                 results.push({
                                     text: value,
-                                    link: routeMap[key],
-                                    id: `${key}-result` // Добавляем идентификатор
+                                    link: routeMap[key] || '#', // Если ссылка не найдена, ставим по умолчанию #
+                                    id: `${key}-result`
                                 });
                             }
                         } else if (typeof value === 'object') {
@@ -63,7 +63,17 @@ const SearchResults = () => {
                 <ul className={styles['results-list']}>
                     {results.map((result, index) => (
                         <li key={index}>
-                            <Link to={result.link} onClick={() => scrollToElement(result.id)}>{result.text}</Link>
+                            <Link
+                                to={result.link}
+                                onClick={() => {
+                                    // Прокручиваем до элемента, если он существует на целевой странице
+                                    setTimeout(() => {
+                                        scrollToElement(result.id);
+                                    }, 500); // Добавляем задержку, чтобы страница успела загрузиться
+                                }}
+                            >
+                                {result.text}
+                            </Link>
                         </li>
                     ))}
                 </ul>

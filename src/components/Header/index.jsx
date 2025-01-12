@@ -158,7 +158,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
   )}
 </div>
 
-<div className={style.dropdown}>
+{/* <div className={style.dropdown}>
   <p
     className={`${style.dropdownTitle} ${isDropdownOpen2 ? style.open : ''}`}
     onClick={toggleDropdown2}
@@ -187,7 +187,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       </p>
     </div>
   )}
-</div>
+</div> */}
 
 
 
@@ -213,19 +213,13 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             </Link> 
             <h1>{t('header.admissionProcedure')}</h1>
     <Link to="/requiredDocuments"><p>{t('header.requiredDocuments')}</p></Link>
-    <Link to="/admissionRegulations"><p>{t('header.admissionRegulations')}</p></Link>
+    <Link to="/admissionRegulation"><p>{t('header.admissionRegulations')}</p></Link>
     <Link to="/selectionSchedule"><p>{t('header.selectionSchedule')}</p></Link>
     <Link to="/price"><h1>{t('header.price')}</h1></Link>
 </div>
 
 <div>
-    <h1>{t('header.careerOrientation')}</h1>
-    <h1>{t('header.officialDealers')}</h1>
-    <h1>{t('header.transferProcedure')}</h1>
-    <Link to="/requiredDocuments"><p>{t('header.requiredDocuments')}</p></Link>
-    <Link to="/transferRegulations"><p>{t('header.transferRegulations')}</p></Link>
-    <Link to="/transferSchedule"><p>{t('header.transferSchedule')}</p></Link>
-    <h1>{t('header.collegeInfrastructure')}</h1>
+<Link to="/collegeInfrastructure"><h1>{t('header.collegeInfrastructure')}</h1></Link>
 </div>
 
     </div>
@@ -292,9 +286,9 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 
       <div>
         <h1>{t('forstudents.studentsProjects.title')}</h1>
-        <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+        {/* <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
         <Link to="/secondyearprojects"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
-        <Link to="/thirdyearprojects"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
+        <Link to="/thirdyearprojects"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link> */}
         <Link to="/fourthyearprojects"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
 
       </div>
@@ -413,13 +407,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 </div>
 
 <div>
-    <h1>{t('header.careerOrientation')}</h1>
-    <h1>{t('header.officialDealers')}</h1>
-    <h1>{t('header.transferProcedure')}</h1>
-    <Link to="/requiredDocuments"onClick={closeMenu}><p>{t('header.requiredDocuments')}</p></Link>
-    <Link to="/transferRegulations"onClick={closeMenu}><p>{t('header.transferRegulations')}</p></Link>
-    <Link to="/transferSchedule"onClick={closeMenu}><p>{t('header.transferSchedule')}</p></Link>
-    <h1>{t('header.collegeInfrastructure')}</h1>
+<Link to="/collegeInfrastructure"onClick={closeMenu}><h1>{t('header.collegeInfrastructure')}</h1></Link>
 </div>
                 </div>
             </li>
@@ -466,10 +454,10 @@ rel="noopener noreferrer"
 
   <div>
         <h1>{t('forstudents.studentsProjects.title')}</h1>
-        <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
-        <Link to="/secondyearprojects"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
-        <Link to="/thirdyearprojects"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
-        <Link to="/fourthyearprojects"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
+        <Link to="/firstyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+        <Link to="/secondyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
+        <Link to="/thirdyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
+        <Link to="/fourthyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
 
       </div>
 </div>
@@ -478,27 +466,24 @@ rel="noopener noreferrer"
     {t('header.documents')}
     <div className={style.dropdownContent}>
         <div>
-            <h1>Основное</h1>
-            <Link to={`/documents/6`}onClick={closeMenu}>
-                <p>Свидетельство</p>
+            <h1>{t('documents2.main')}</h1>
+            <Link to={`/documents/6`} onClick={closeMenu}>
+                <p>{t('documents2.certificate')}</p>
             </Link>
             <Link to={`/documents/4`}onClick={closeMenu}>
-                <p>Лицензия</p>
+                <p>{t('documents2.license')}</p>
             </Link>
-            <Link to={`/documents/14`}onClick={closeMenu}>
-                <p>КҮБѲЛҮК</p>
-            </Link>
-            <h1>Сертификаты аккредитаций</h1>
+            <h1>{t('documents2.AccreditationCertificates')}</h1>
             <Link to={`/documents/7`}onClick={closeMenu}>
-                <p>Institutional accreditation</p>
+                <p>{t('documents2.InstitutionalAccreditation')}</p>
             </Link>
             <Link to={`/documents/8`}onClick={closeMenu}>
-                <p>International Institutional accreditation</p>
+                <p>{t('documents2.InternationalInstitutionalAccreditation')}</p>
             </Link>
             <Link to={`/documents/9`}onClick={closeMenu}>
-                <p>International Program Accreditation</p>
+                <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>
-            <h1>Учебные планы</h1>
+            <h1>{t('documents2.curricula')}</h1>
             <Link to={`/documents/10`}onClick={closeMenu}>
                 <p>{t('header.computerScience')}</p>
             </Link>
@@ -510,16 +495,13 @@ rel="noopener noreferrer"
             </Link>
         </div>
         <div>
-          <h1>Положение</h1>
+            <h1>{t('documents2.regulations')}</h1>
         </div>
         <div>
-            <h1>Планы</h1>
-  
+            <h1>{t('documents2.plans')}</h1>
         </div>
-
         <div>
-            <h1>Отчеты</h1>
-
+            <h1>{t('documents2.reports')}</h1>
         </div>
     </div>
 </li>

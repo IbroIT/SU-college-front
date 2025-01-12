@@ -1,38 +1,65 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { AppBar, Box, Typography, Container, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@mui/material";
 import { motion } from "framer-motion";
 
 export const SelectionSchedule = () => {
+  const { t } = useTranslation();
   const scheduleData = [
     {
-      round: "Первый тур",
+      round: t("selectionSchedule.rounds.round1"),
       dates: [
-        { activity: "Регистрация абитуриентов для участия в конкурсе", date: "17 июля, 08:00" },
-        { activity: "Завершение регистрации для участия в конкурсе", date: "24 июля, 17:00" },
+        {
+          activity: t("selectionSchedule.dates.registrationStart"),
+          date: t("selectionSchedule.dates.firstRound"),
+        },
+        {
+          activity: t("selectionSchedule.dates.registrationEnd"),
+          date: t("selectionSchedule.dates.firstRoundEnd"),
+        },
       ],
     },
     {
-      round: "Второй тур",
+      round: t("selectionSchedule.rounds.round2"),
       dates: [
-        { activity: "Регистрация абитуриентов для участия в конкурсе", date: "30 июля, 08:00" },
-        { activity: "Завершение регистрации для участия в конкурсе", date: "07 августа, 17:00" },
+        {
+          activity: t("selectionSchedule.dates.registrationStart"),
+          date: t("selectionSchedule.dates.secondRoundStart"),
+        },
+        {
+          activity: t("selectionSchedule.dates.registrationEnd"),
+          date: t("selectionSchedule.dates.secondRoundEnd"),
+        },
       ],
     },
     {
-      round: "Третий тур",
+      round: t("selectionSchedule.rounds.round3"),
       dates: [
-        { activity: "Регистрация абитуриентов для участия в конкурсе", date: "13 августа, 08:00" },
-        { activity: "Завершение регистрации для участия в конкурсе", date: "20 августа, 17:00" },
+        {
+          activity: t("selectionSchedule.dates.registrationStart"),
+          date: t("selectionSchedule.dates.thirdRoundStart"),
+        },
+        {
+          activity: t("selectionSchedule.dates.registrationEnd"),
+          date: t("selectionSchedule.dates.thirdRoundEnd"),
+        },
       ],
     },
     {
-      round: "Четвертый тур",
+      round: t("selectionSchedule.rounds.round4"),
       dates: [
-        { activity: "Регистрация абитуриентов для участия в конкурсе", date: "26 августа, 08:00" },
-        { activity: "Завершение регистрации для участия в конкурсе", date: "28 августа, 17:00" },
+        {
+          activity: t("selectionSchedule.dates.registrationStart"),
+          date: t("selectionSchedule.dates.fourthRoundStart"),
+        },
+        {
+          activity: t("selectionSchedule.dates.registrationEnd"),
+          date: t("selectionSchedule.dates.fourthRoundEnd"),
+        },
       ],
     },
   ];
+  
 
   return (
     <>
@@ -42,7 +69,7 @@ export const SelectionSchedule = () => {
             backgroundColor: "#5a738f",
             padding: { xs: "60px 20px", sm: "90px" },
             textAlign: "center",
-            boxShadow: "none",
+            boxShadow: "none"
           }}
         >
           <motion.div
@@ -57,20 +84,20 @@ export const SelectionSchedule = () => {
                 color: "#fff",
                 fontWeight: "bold",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-                fontSize: { xs: "2.5rem", sm: "3rem" },
+                fontSize: { xs: "2.5rem", sm: "3rem" }
               }}
             >
-              График отбора и зачисления
+              {t("selectionSchedule.title")}
             </Typography>
           </motion.div>
         </Box>
       </AppBar>
       <Container sx={{ marginTop: 4 }}>
         <Typography variant="h6" gutterBottom>
-          Салымбеков университет проводит политику отбора и зачисления абитуриентов в строгом соответствии с нормами и правилами Министерства образования и науки КР, который ежегодно формирует и публикует график проведения туров отбора.
+          {t("selectionSchedule.description")}
         </Typography>
         <Typography variant="h5" sx={{ marginTop: 4, marginBottom: 2 }}>
-          График проведения туров отбора и зачисления абитуриентов 2024-2025 учебный год
+          {t("selectionSchedule.subtitle")}
         </Typography>
         {scheduleData.map((round, index) => (
           <Box key={index} sx={{ marginBottom: 4 }}>
@@ -81,8 +108,8 @@ export const SelectionSchedule = () => {
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Действие</TableCell>
-                    <TableCell>Дата</TableCell>
+                    <TableCell>{t("selectionSchedule.tableHeaders.action")}</TableCell>
+                    <TableCell>{t("selectionSchedule.tableHeaders.date")}</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
