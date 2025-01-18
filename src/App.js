@@ -33,6 +33,7 @@ import fifthPdf from '../src/pdfs/Лицензия колледжа (новая)
 import sixthPdf from '../src/pdfs/СВИДЕТЕЛЬСТВО (1).jpg'
 import seventhPdf from '../src/pdfs/График учебного процесса.pdf'
 import eigthPdf from '../src/pdfs/Правила приема_2024-2025.pdf'
+import Schedule from './pages/CollegeSchedule';
 import tenthPdf from '../src/pdfs/План приема_2024-2025.pdf'
 import eleventhPdf from '../src/pdfs/1. Institutional accreditation.pdf'
 import twelthPdf from '../src/pdfs/2. International Institutional accreditation.pdf'
@@ -41,6 +42,7 @@ import fourteenthPdf from '../src/pdfs/УП_СПО_КН_20224.PDF'
 import fifteenthPdf from '../src/pdfs/УП_СПО_МВ_20224.PDF'
 import sixteenthPdf from '../src/pdfs/УП_СПО_МП_20224.PDF'
 import seventeenthPdf from '../src/pdfs/КҮБѲЛҮК.jpg'
+import eighteenthPdf from '../src/pdfs/График экзаменов зимней сессии 2024-2025.pdf'
 import { InformationSystem } from './pages/InformationSystem';
 import { Resources } from './pages/Resources';
 import { SocialSupport } from './pages/SocialSupport';
@@ -75,7 +77,8 @@ const pdfFiles = [
     { title: 'Учебный план №2', url: fifteenthPdf},
     { title: 'Учебный план №3', url: sixteenthPdf},
     { title: 'Куболук', url: seventeenthPdf},
-    { title: 'График учебнего процесса', url: seventhPdf}
+    { title: 'График учебнего процесса', url: seventhPdf},
+    { title: 'График экзаменов', url: eighteenthPdf}
   ];
 
 const pdfFilesForStudents = [
@@ -97,7 +100,7 @@ function App() {
         <Route path='/owner' element={<Owner/>}></Route>
        <Route path='/students' element={<CollegeStudentsPage/>}></Route>
 
-
+       <Route path='/schedule' element={<Schedule/>}></Route>
 
        <Route path='/collegeInfrastructure' element={<CollegeInfrastructure/>}></Route>
        <Route path='/admissionCommittee' element={<AdmissionCommittee/>}></Route>

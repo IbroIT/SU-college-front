@@ -10,14 +10,15 @@ import {
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import Mirlan from "../../components/images/WhatsApp Image 2024-10-18 at 16.19.20.jpeg";
-import Gulina from "../../components/images/gulina.jpg";
+import Gulina from "../../components/images/Изображение WhatsApp 2025-01-16 в 18.14.15_b0b41791.jpg";
 import Aliya from "../../components/images/aliya.jpg";
 import Nurzat from "../../components/images/nurzat.enc";
 import { Choices } from "../../components/Choices";
 import { ImageSection } from "../../components/ImageSection";
 import AnimatedScrollComponent from "../../components/AnimatedComponents";
 import { motion } from "framer-motion";
-
+import History from '../../components/images/history.jpg'
+import Physics from '../../components/images/physych.jpg'
 export const Teachers = () => {
   const { t } = useTranslation();
 
@@ -28,9 +29,9 @@ export const Teachers = () => {
     { name: t("teachers.aidai"), subject: t("teachers.web_development"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.zubov"), subject: t("teachers.web_development_react"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.nurgul"), subject: t("teachers.russian_language"), image: "https://via.placeholder.com/150" },
-    { name: t("teachers.moloshev"), subject: t("teachers.history"), image: "https://via.placeholder.com/150" },
+    { name: t("teachers.moloshev"), subject: t("teachers.history"), image: History },
     { name: t("teachers.gulina"), subject: t("teachers.chemistry"), image: Gulina },
-    { name: t("teachers.kuzubakova"), subject: t("teachers.physics"), image: "https://via.placeholder.com/150" },
+    { name: t("teachers.kuzubakova"), subject: t("teachers.physics"), image: Physics },
     { name: t("teachers.eldiyar"), subject: t("teachers.training"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.ulukbek"), subject: t("teachers.english"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.chynara"), subject: t("teachers.algebra"), image: "https://via.placeholder.com/150" },

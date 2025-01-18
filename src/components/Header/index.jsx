@@ -263,22 +263,14 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <div>
         <h1>{t('forstudents.resourceBase.title')}</h1>
         <Link to="/instructions"><p>{t('forstudents.resourceBase.links.instructions')}</p></Link>
-        <Link to="https://lib.salymbekov.com"><p>{t('forstudents.resourceBase.links.library')}</p></Link>
+        <Link to="http://icsjlibrary.inti.edu.my/library/custom/home.jsp"><p>{t('forstudents.resourceBase.links.library')}</p></Link>
         <Link to="/resources"><p>{t('forstudents.resourceBase.links.resources')}</p></Link>
       </div>
 
       <div>
         <h1>{t('forstudents.studySchedules.title')}</h1>
-        <Link to="/modules-exams"><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
-        <p>
-  <a 
-    href="https://docs.google.com/spreadsheets/d/1SZxYMnyEgPgMIyFvcisNarYN0pZjZxQ4/edit?hl=ru&pli=1&gid=331563060#gid=331563060" 
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    {t('forstudents.studySchedules.links.collegeSchedule')}
-  </a>
-</p>
+        <Link to={`/documents/15`}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
+        <Link to="/schedule"><p>{t('forstudents.studySchedules.links.collegeSchedule')}</p></Link>
         <Link to={`/documents/14`}>
         <p>{t('forstudents.studySchedules.links.ScheduleEducationalProcess')}</p>
         </Link>
@@ -298,43 +290,38 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 <li className={style.navLi} style={{columnGap: "150px"}}>
     {t('header.documents')}
     <div className={style.dropdownContent}>
-        <div>
+    <div>
             <h1>{t('documents2.main')}</h1>
-            <Link to={`/documents/6`}>
+            <Link to={`/documents/6`} onClick={closeMenu}>
                 <p>{t('documents2.certificate')}</p>
             </Link>
-            <Link to={`/documents/4`}>
+            <Link to={`/documents/4`}onClick={closeMenu}>
                 <p>{t('documents2.license')}</p>
-            </Link>
-            <h1>{t('documents2.AccreditationCertificates')}</h1>
-            <Link to={`/documents/7`}>
+            </Link>            
+        </div>
+        <div>
+        <h1>{t('documents2.AccreditationCertificates')}</h1>
+            <Link to={`/documents/7`}onClick={closeMenu}>
                 <p>{t('documents2.InstitutionalAccreditation')}</p>
             </Link>
-            <Link to={`/documents/8`}>
+            <Link to={`/documents/8`}onClick={closeMenu}>
                 <p>{t('documents2.InternationalInstitutionalAccreditation')}</p>
             </Link>
-            <Link to={`/documents/9`}>
+            <Link to={`/documents/9`}onClick={closeMenu}>
                 <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>
-            <h1>{t('documents2.curricula')}</h1>
-            <Link to={`/documents/10`}>
+        </div>
+        <div>
+        <h1>{t('documents2.curricula')}</h1>
+            <Link to={`/documents/10`}onClick={closeMenu}>
                 <p>{t('header.computerScience')}</p>
             </Link>
-            <Link to={`/documents/11`}>
+            <Link to={`/documents/11`}onClick={closeMenu}>
                 <p>{t('header.multimediaComputing')}</p>
             </Link>
-            <Link to={`/documents/12`}>
+            <Link to={`/documents/12`}onClick={closeMenu}>
                 <p>{t('header.multimediaPrograms')}</p>
             </Link>
-        </div>
-        <div>
-            <h1>{t('documents2.regulations')}</h1>
-        </div>
-        <div>
-            <h1>{t('documents2.plans')}</h1>
-        </div>
-        <div>
-            <h1>{t('documents2.reports')}</h1>
         </div>
     </div>
 </li>
@@ -431,34 +418,23 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
   <div>
     <h1>{t('forstudents.resourceBase.title')}</h1>
     <Link to="/instructions" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.instructions')}</p></Link>
-    <Link to="https://lib.salymbekov.com" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.library')}</p></Link>
+    <Link to="http://icsjlibrary.inti.edu.my/library/custom/home.jsp" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.library')}</p></Link>
+    
     <Link to="/resources" onClick={closeMenu}><p>{t('forstudents.resourceBase.links.resources')}</p></Link>
   </div>
 
   <div>
-    <h1>{t('forstudents.studySchedules.title')}</h1>
-    <Link to="/modules-exams" onClick={closeMenu}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
-    <p>
-<a 
-href="https://docs.google.com/spreadsheets/d/1SZxYMnyEgPgMIyFvcisNarYN0pZjZxQ4/edit?hl=ru&pli=1&gid=331563060#gid=331563060" 
-target="_blank" 
-rel="noopener noreferrer"
->
-{t('forstudents.studySchedules.links.collegeSchedule')}
-</a>
-</p>
-<Link to={`/documents/14`}>
+  <h1>{t('forstudents.studySchedules.title')}</h1>
+        <Link to={`/documents/15`} onClick={closeMenu}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
+        <Link to="/schedule" onClick={closeMenu}><p>{t('forstudents.studySchedules.links.collegeSchedule')}</p></Link>
+        <Link to={`/documents/14`} onClick={closeMenu}>
         <p>{t('forstudents.studySchedules.links.ScheduleEducationalProcess')}</p>
         </Link>
   </div>
 
   <div>
         <h1>{t('forstudents.studentsProjects.title')}</h1>
-        <Link to="/firstyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
-        <Link to="/secondyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
-        <Link to="/thirdyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link>
         <Link to="/fourthyearprojects"onClick={closeMenu}><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
-
       </div>
 </div>
 </li>
@@ -472,8 +448,10 @@ rel="noopener noreferrer"
             </Link>
             <Link to={`/documents/4`}onClick={closeMenu}>
                 <p>{t('documents2.license')}</p>
-            </Link>
-            <h1>{t('documents2.AccreditationCertificates')}</h1>
+            </Link>            
+        </div>
+        <div>
+        <h1>{t('documents2.AccreditationCertificates')}</h1>
             <Link to={`/documents/7`}onClick={closeMenu}>
                 <p>{t('documents2.InstitutionalAccreditation')}</p>
             </Link>
@@ -483,7 +461,9 @@ rel="noopener noreferrer"
             <Link to={`/documents/9`}onClick={closeMenu}>
                 <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>
-            <h1>{t('documents2.curricula')}</h1>
+        </div>
+        <div>
+        <h1>{t('documents2.curricula')}</h1>
             <Link to={`/documents/10`}onClick={closeMenu}>
                 <p>{t('header.computerScience')}</p>
             </Link>
@@ -493,15 +473,6 @@ rel="noopener noreferrer"
             <Link to={`/documents/12`}onClick={closeMenu}>
                 <p>{t('header.multimediaPrograms')}</p>
             </Link>
-        </div>
-        <div>
-            <h1>{t('documents2.regulations')}</h1>
-        </div>
-        <div>
-            <h1>{t('documents2.plans')}</h1>
-        </div>
-        <div>
-            <h1>{t('documents2.reports')}</h1>
         </div>
     </div>
 </li>
