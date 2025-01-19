@@ -113,7 +113,13 @@
     "curricula": "Учебные планы",
     "regulations": "Положение",
     "plans": "Планы",
-    "reports": "Отчеты"
+    "reports": "Отчеты",
+    "councils": "Советы и комитеты",
+    "teachersCouncil": "Состав Педсовета",
+    "umsCouncil": "Состав УМС",
+    "studentParliament": "Состав СтудПарламента",
+    "admissionsCommittee": "Состав Приемной Комиссии",
+    "discountCommittee": "Состав Льготной Комиссии"
 },
   "forstudents": {
     "ebilim": {

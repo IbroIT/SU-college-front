@@ -25,17 +25,22 @@ const DocumentViewer = ({ pdfFiles }) => {
                 const page = await pdf.getPage(pageNum);
                 const viewport = page.getViewport({ scale: 1.5 });
 
+                // Увеличенная фиксированная ширина
+                const fixedWidth = 600 * 2.5; // 2.5 раза больше исходной ширины
+                const scale = fixedWidth / viewport.width;
+                const scaledViewport = page.getViewport({ scale });
+
                 // Создаем canvas для каждой страницы
                 const canvas = document.createElement('canvas');
                 canvas.style.marginBottom = '20px'; // Отступ между страницами
                 const context = canvas.getContext('2d');
 
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
+                canvas.height = scaledViewport.height;
+                canvas.width = scaledViewport.width;
 
                 const renderContext = {
                     canvasContext: context,
-                    viewport,
+                    viewport: scaledViewport,
                 };
 
                 await page.render(renderContext).promise;
@@ -65,7 +70,7 @@ const DocumentViewer = ({ pdfFiles }) => {
             <div
                 ref={viewerRef}
                 style={{
-                    maxWidth: '800px',
+                    maxWidth: '1000px', // Максимальная ширина для больших документов
                     width: '100%',
                     backgroundColor: '#fff',
                     border: '1px solid #ccc',

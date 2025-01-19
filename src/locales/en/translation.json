@@ -116,7 +116,13 @@
     "curricula": "Curricula",
     "regulations": "Regulations",
     "plans": "Plans",
-    "reports": "Reports"
+    "reports": "Reports",
+    "councils": "Councils and Committees",
+    "teachersCouncil": "Teachers' Council",
+    "umsCouncil": "UMS Council",
+    "studentParliament": "Student Parliament",
+    "admissionsCommittee": "Admissions Committee",
+    "discountCommittee": "Discount Committee"
   },
   "forstudents": {
     "ebilim": {
@@ -158,7 +164,7 @@
         "firstGrade": "1st grade",
         "secondGrade": "2nd grade",
         "thirdGrade": "3rd grade",
-        "fourthGrade": "4th grade"
+        "fourthGrade": "4th year"
       }
     }
   },

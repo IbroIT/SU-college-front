@@ -292,35 +292,53 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     <div className={style.dropdownContent}>
     <div>
             <h1>{t('documents2.main')}</h1>
-            <Link to={`/documents/6`} onClick={closeMenu}>
+            <Link to={`/documents/6`} >
                 <p>{t('documents2.certificate')}</p>
             </Link>
-            <Link to={`/documents/4`}onClick={closeMenu}>
+            <Link to={`/documents/4`}>
                 <p>{t('documents2.license')}</p>
             </Link>            
         </div>
         <div>
         <h1>{t('documents2.AccreditationCertificates')}</h1>
-            <Link to={`/documents/7`}onClick={closeMenu}>
+            <Link to={`/documents/7`}>
                 <p>{t('documents2.InstitutionalAccreditation')}</p>
             </Link>
-            <Link to={`/documents/8`}onClick={closeMenu}>
+            <Link to={`/documents/8`}>
                 <p>{t('documents2.InternationalInstitutionalAccreditation')}</p>
             </Link>
-            <Link to={`/documents/9`}onClick={closeMenu}>
+            <Link to={`/documents/9`}>
                 <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>
         </div>
         <div>
         <h1>{t('documents2.curricula')}</h1>
-            <Link to={`/documents/10`}onClick={closeMenu}>
+            <Link to={`/documents/10`}>
                 <p>{t('header.computerScience')}</p>
             </Link>
-            <Link to={`/documents/11`}onClick={closeMenu}>
+            <Link to={`/documents/11`}>
                 <p>{t('header.multimediaComputing')}</p>
             </Link>
-            <Link to={`/documents/12`}onClick={closeMenu}>
+            <Link to={`/documents/12`}>
                 <p>{t('header.multimediaPrograms')}</p>
+            </Link>
+        </div>
+        <div>
+            <h1>{t('documents2.councils')}</h1>
+            <Link to={`/documents/16`}>
+                <p>{t('documents2.teachersCouncil')}</p>
+            </Link>
+            <Link to={`/documents/17`}>
+                <p>{t('documents2.umsCouncil')}</p>
+            </Link>
+            <Link to={`/documents/18`}>
+                <p>{t('documents2.studentParliament')}</p>
+            </Link>
+            <Link to={`/documents/19`}>
+                <p>{t('documents2.admissionsCommittee')}</p>
+            </Link>
+            <Link to={`/documents/20`}>
+                <p>{t('documents2.discountCommittee')}</p>
             </Link>
         </div>
     </div>

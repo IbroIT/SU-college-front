@@ -37,7 +37,13 @@
   "curricula": "Окуу планнары",
   "regulations": "Жоболор",
   "plans": "Пландары",
-  "reports": "Отчёту"
+  "reports": "Отчёту",
+  "councils": "Кеңештер жана комитеттер",
+  "teachersCouncil": "Мугалимдер кеңеши",
+  "umsCouncil": "УМС кеңеши",
+  "studentParliament": "Студенттик парламент",
+  "admissionsCommittee": "Кабыл алуу комиссиясы",
+  "discountCommittee": "Жеңилдик комиссиясы"
 },
   "header": {
     "itcollege": "Эл аралык IT жана Бизнес колледжи",

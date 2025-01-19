@@ -4,11 +4,7 @@ import { Container, Typography, Grid, Box } from '@mui/material';
 const FourthYear = () => {
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>
-        Проекты студентов 4 курса
-      </Typography>
 
-      {/* Сетка для видео */}
       <Grid container spacing={4} justifyContent="center">
         <Grid item xs={12} sm={6} md={4}>
           <Box
