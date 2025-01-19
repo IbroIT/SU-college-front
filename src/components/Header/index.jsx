@@ -492,6 +492,24 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
                 <p>{t('header.multimediaPrograms')}</p>
             </Link>
         </div>
+        <div>
+            <h1>{t('documents2.councils')}</h1>
+            <Link to={`/documents/16`}onClick={closeMenu}>
+                <p>{t('documents2.teachersCouncil')}</p>
+            </Link>
+            <Link to={`/documents/17`}onClick={closeMenu}>
+                <p>{t('documents2.umsCouncil')}</p>
+            </Link>
+            <Link to={`/documents/18`}onClick={closeMenu}>
+                <p>{t('documents2.studentParliament')}</p>
+            </Link>
+            <Link to={`/documents/19`}onClick={closeMenu}>
+                <p>{t('documents2.admissionsCommittee')}</p>
+            </Link>
+            <Link to={`/documents/20`}onClick={closeMenu}>
+                <p>{t('documents2.discountCommittee')}</p>
+            </Link>
+        </div>
     </div>
 </li>
             {/* <li className={style.navLi}>
