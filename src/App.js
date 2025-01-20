@@ -106,6 +106,14 @@ import fourtiethEigth from '../src/pdfs/Приказ 31 об утверж пре
 import fourtiethNineth from '../src/pdfs/Протокол 1 УМС от 25_08_2022.pdf'
 import fifth from '../src/pdfs/Выписка из решения УМС 2 от 12_10_2022.pdf'
 import fifthFirst from '../src/pdfs/Положение об Учебно-методическом совете 2022-23.pdf'
+import fifthSecond from '../src/pdfs/План_парламента_2022.PDF'
+import fifthThird from '../src/pdfs/План Работы УМС 2022-2023гг.PDF';
+import fifthFourth from '../src/pdfs/План работы методиста 2022-2023.PDF'
+import fifthSixth from '../src/pdfs/план_ПС_2023-2-24.pdf'
+import fifthSeventh from '../src/pdfs/План УР0001.PDF'
+import fifthEighth from '../src/pdfs/План УР.PDF'
+import fifthNineth from '../src/pdfs/План ОД.PDF'
+import sixth from '../src/pdfs/План приема_2024-2025.pdf'
 
 const pdfFiles = [
   { title: 'План', url: firstPdf },
@@ -156,8 +164,16 @@ const pdfFiles = [
   { title: 'Отчет ГАК Междисц гос экз', url: fourtiethSeventh},
   { title: 'Протокол 1 УМС', url: fourtiethEigth},
   { title: 'Выписка из решения УМС', url: fourtiethNineth},
-  { title: 'Положение об Учебно-методическом совете', url: fifth},
-
+  { title: 'Выписка из решения УМС 2', url: fifth},
+  { title: 'Положение об Учебно-методическом совете', url:fifthFirst},
+  { title: 'План_парламента', url: fifthSecond},
+  { title: 'План УМС', url: fifthThird},
+  { title: 'план Работы методиста', url: fifthFourth},
+  { title: 'План ПС', url: fifthSixth},
+  { title: 'План УР001', url: fifthSeventh},
+  { title: 'План УР', url: fifthEighth},
+  { title: 'План ОД', url: fifthNineth},
+  { title: 'План приема', url: sixth},
 
 ];
 

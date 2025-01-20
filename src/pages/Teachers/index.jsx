@@ -19,13 +19,14 @@ import AnimatedScrollComponent from "../../components/AnimatedComponents";
 import { motion } from "framer-motion";
 import History from '../../components/images/history.jpg'
 import Physics from '../../components/images/physych.jpg'
+import Kunduz from '../../components/images/kunduz.jpg'
 export const Teachers = () => {
   const { t } = useTranslation();
 
   const teachers = [
     { name: t("teachers.alya"), subject: t("teachers.intro_cs_ai_ml"), image: Aliya },
     { name: t("teachers.mirlan"), subject: t("teachers.oop_database"), image: Mirlan },
-    { name: t("teachers.kunduz"), subject: t("teachers.web_development"), image: "https://via.placeholder.com/150" },
+    { name: t("teachers.kunduz"), subject: t("teachers.web_development"), image: Kunduz },
     { name: t("teachers.aidai"), subject: t("teachers.web_development"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.zubov"), subject: t("teachers.web_development_react"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.nurgul"), subject: t("teachers.russian_language"), image: "https://via.placeholder.com/150" },
@@ -39,13 +40,16 @@ export const Teachers = () => {
     { name: t("teachers.rima"), subject: t("teachers.english"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.komarzhova"), subject: t("teachers.algebra"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.nurzat"), subject: t("teachers.highmath"), image: Nurzat },
-  ];
 
+  ];
   const sortedTeachers = teachers.sort((a, b) => {
-    const lastNameA = a.name.split(" ").pop();
-    const lastNameB = b.name.split(" ").pop();
+    const lastNameA = a.name?.split(" ").pop()?.toLowerCase() || "";
+    const lastNameB = b.name?.split(" ").pop()?.toLowerCase() || "";
     return lastNameA.localeCompare(lastNameB, "ru");
   });
+  
+  
+  
 
   return (
     <>

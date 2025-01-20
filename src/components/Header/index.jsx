@@ -199,12 +199,11 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 </div>
 
 <div>
-<Link to={`/documents/6`}>
+<Link to={`/documents/8`}>
     <h1>{t('header.admissionRulesAndPlan')}</h1>
             </Link> 
             <h1>{t('header.admissionProcedure')}</h1>
     <Link to="/requiredDocuments"><p>{t('header.requiredDocuments')}</p></Link>
-    <Link to="/admissionRegulation"><p>{t('header.admissionRegulations')}</p></Link>
     <Link to="/selectionSchedule"><p>{t('header.selectionSchedule')}</p></Link>
     <Link to="/price"><h1>{t('header.price')}</h1></Link>
 </div>
@@ -260,9 +259,9 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 
       <div>
         <h1>{t('forstudents.studySchedules.title')}</h1>
-        <Link to={`/documents/15`}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
+        <Link to={`/documents/16`}><p>{t('forstudents.studySchedules.links.modulesExams')}</p></Link>
         <Link to="/schedule"><p>{t('forstudents.studySchedules.links.collegeSchedule')}</p></Link>
-        <Link to={`/documents/14`}>
+        <Link to={`/documents/6`}>
         <p>{t('forstudents.studySchedules.links.ScheduleEducationalProcess')}</p>
         </Link>
       </div>
@@ -283,7 +282,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     <div className={style.dropdownContent}>
     <div>
             <h1>{t('documents2.main')}</h1>
-            <Link to={`/documents/6`} >
+            <Link to={`/documents/5`} >
                 <p>{t('documents2.certificate')}</p>
             </Link>
             <Link to={`/documents/4`}>
@@ -292,25 +291,25 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         </div>
         <div>
         <h1>{t('documents2.AccreditationCertificates')}</h1>
-            <Link to={`/documents/7`}>
+            <Link to={`/documents/9`}>
                 <p>{t('documents2.InstitutionalAccreditation')}</p>
             </Link>
-            <Link to={`/documents/8`}>
+            <Link to={`/documents/10`}>
                 <p>{t('documents2.InternationalInstitutionalAccreditation')}</p>
             </Link>
-            <Link to={`/documents/9`}>
+            <Link to={`/documents/11`}>
                 <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>
         </div>
         <div>
         <h1>{t('documents2.curricula')}</h1>
-            <Link to={`/documents/10`}>
+            <Link to={`/documents/12`}>
                 <p>{t('header.computerScience')}</p>
             </Link>
-            <Link to={`/documents/11`}>
+            <Link to={`/documents/13`}>
                 <p>{t('header.multimediaComputing')}</p>
             </Link>
-            <Link to={`/documents/12`}>
+            <Link to={`/documents/14`}>
                 <p>{t('header.multimediaPrograms')}</p>
             </Link>
         </div>
@@ -330,7 +329,19 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         </Link>
       </div>
       <div>
-        <h1>{t('documents2.mentoringRegulations')}</h1>
+        <h1>Планы</h1>
+        <Link to={`/documents/50`}><p>План парламента</p></Link>
+        <Link to={`/documents/51`}><p>План УМС</p></Link>
+        <Link to={`/documents/52`}><p>План работы методиста</p></Link>
+        <Link to={`/documents/53`}><p>План ПС</p></Link>
+        <Link to={`/documents/54`}><p>План УР001</p></Link>
+        <Link to={`/documents/55`}><p>План УР</p></Link>
+        <Link to={`/documents/56`}><p>План ОД</p></Link>
+        <Link to={`/documents/57`}><p>План приема</p></Link>
+
+      </div>
+      <div>
+        <h1>{t('documents2.position')}</h1>
         <Link to={`/documents/22`}>
           <p>{t('documents2.mentoringRegulations')}</p>
         </Link>
@@ -379,6 +390,9 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         <Link to={`/documents/37`}>
           <p>{t('documents2.eDocFlowRegulations')}</p>
         </Link>
+      </div>
+      <div>
+        <h1>Отчеты</h1>
       </div>
     </div>
 </li>
