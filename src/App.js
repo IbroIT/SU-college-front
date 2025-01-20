@@ -76,15 +76,47 @@ import twentieth from '../src/pdfs/Состав учебно-методичес�
 import twentiethFirst from '../src/pdfs/Состав студпарламента 2024-2025.pdf'
 import twentiethSecond from'../src/pdfs/Состав приемной комиссии 2024-2025.pdf'
 import twentiethThird from'../src/pdfs/Состав льготной комиссии 2024-2025.pdf'
+import twentiethFourth from '../src/pdfs/Положение о кураторстве.pdf';
+import twentiethFifth from '../src/pdfs/Этический кодекс студента.pdf';
+import twentiethSixth from '../src/pdfs/Этический_кодекс_преподавателей,_сотрудников_и_обучающихся.pdf';
+import twentiethSeventh from '../src/pdfs/Положение о рейтинге ППС.pdf';
+import twentiethEighth from '../src/pdfs/Положение о Ящике доверия СУ.pdf';
+import twentiethNineth from '../src/pdfs/Положение об МРСО.pdf';
+import thirtieth from '../src/pdfs/Положение ООП.pdf';
+import thirtiethFirst from '../src/pdfs/Положение СМК СУ.pdf';
+import thirtiethSecond from '../src/pdfs/Положение_о_департаменте_HR_и_делопроизводства.pdf';
+import thirtiethThird from '../src/pdfs/Положение_о_дисциплинарных_и_финансовых_взысканиях_сотрудников.pdf';
+import thirtiethFourth from '../src/pdfs/Положение_о_мотивационном_фонде_СУ.pdf';
+import thirtiethFifth from '../src/pdfs/Положение_о_повышение_квалификации_профессорско_преподавательского.pdf';
+import thirtiethSixth from '../src/pdfs/Положение_о_рейтинге_студентов_СУ1.pdf';
+import thirtiethSeventh from '../src/pdfs/Положение_о_совете_по_качеству_образования.pdf';
+import thirtiethEigth from '../src/pdfs/Положение_о_социальной_поддержке_студентов_СУ.pdf';
+import thirtiethNineth from '../src/pdfs/Положение_об_электронном_документообороте.pdf';
+import fourtieth from '../src/pdfs/5. Almazbek uulu Alymbek_Study Plan.pdf'
+import fourtiethFirst from '../src/pdfs/2. Abdimutalipov Asan_Study Plan.pdf'
+
+import fourtiethSecond from '../src/pdfs/Приказ 14 ГАК МГЭ 2023.pdf'
+import fourtiethThird from '../src/pdfs/Отчет председателя ГАК МГЭ 2023-24.pdf'
+import fourtiethFourth from '../src/pdfs/Экзамен. ведомость 1 ГАК МГЭ 08_06_2023.pdf'
+import fourtiethFifth from '../src/pdfs/Протоколы 1-9 ГАК МГЭ 2022-23 уч год.pdf'
+import fourtiethSixth from '../src/pdfs/Приказ МОН КР об утверж. председателей ГАК 2023.pdf'
+import fourtiethSeventh from '../src/pdfs/Отчет ГАК Междисц гос экз 2023-24.pdf'
+import fourtiethEigth from '../src/pdfs/Приказ 31 об утверж пред комис ГАК 2024 г.pdf'
+
+import fourtiethNineth from '../src/pdfs/Протокол 1 УМС от 25_08_2022.pdf'
+import fifth from '../src/pdfs/Выписка из решения УМС 2 от 12_10_2022.pdf'
+import fifthFirst from '../src/pdfs/Положение об Учебно-методическом совете 2022-23.pdf'
 
 const pdfFiles = [
-  { title: 'План ', url: firstPdf },
+  { title: 'План', url: firstPdf },
   { title: 'Настольный Теннис 2024', url: secondPdf },
   { title: 'План УВР-2024', url: thirdPdf },
   { title: 'Кураторы', url: fourthPdf },
   { title: 'Лицензия колледжа', url: fifthPdf },
   { title: 'Свидетельство', url: sixthPdf },
-  { title: 'Правила и план приема', url: eigthPdf },
+  { title: 'График учебного процесса', url: seventhPdf },
+  { title: 'Правила приема', url: eigthPdf },
+  { title: 'План приема', url: tenthPdf },
   { title: 'Первый сертификат аккредитаций', url: eleventhPdf },
   { title: 'Второй сертификат аккредитаций', url: twelthPdf },
   { title: 'Третий сертификат аккредитаций', url: thirteenthPdf },
@@ -92,13 +124,41 @@ const pdfFiles = [
   { title: 'Учебный план №2', url: fifteenthPdf },
   { title: 'Учебный план №3', url: sixteenthPdf },
   { title: 'Куболук', url: seventeenthPdf },
-  { title: 'График учебнего процесса', url: seventhPdf },
   { title: 'График экзаменов', url: eighteenthPdf },
-  { title: 'Состав педсовета', url: nineteenthPdf},
-  { title: 'Состав УМС', url: twentieth},
-  { title: 'Состав СтудПарламента', url: twentiethFirst},
-  { title: 'Состав Приемной Комиссии ', url: twentiethSecond},
-  { title: 'Состав Льготной Комиссии', url: twentiethThird},
+  { title: 'Состав педсовета', url: nineteenthPdf },
+  { title: 'Состав УМС', url: twentieth },
+  { title: 'Состав СтудПарламента', url: twentiethFirst },
+  { title: 'Состав Приемной Комиссии', url: twentiethSecond },
+  { title: 'Состав Льготной Комиссии', url: twentiethThird },
+  { title: 'Положение о кураторстве', url: twentiethFourth },
+  { title: 'Этический кодекс студента', url: twentiethFifth },
+  { title: 'Этический кодекс преподавателей', url: twentiethSixth },
+  { title: 'Положение о рейтинге ППС', url: twentiethSeventh },
+  { title: 'Положение о Ящике доверия', url: twentiethEighth },
+  { title: 'Положение об МРСО', url: twentiethNineth },
+  { title: 'Положение ООП', url: thirtieth },
+  { title: 'Положение СМК СУ', url: thirtiethFirst },
+  { title: 'Положение о департаменте HR', url: thirtiethSecond },
+  { title: 'Положение о дисциплинарных взысканиях', url: thirtiethThird },
+  { title: 'Положение о мотивационном фонде', url: thirtiethFourth },
+  { title: 'Положение о повышении квалификации', url: thirtiethFifth },
+  { title: 'Положение о рейтинге студентов', url: thirtiethSixth },
+  { title: 'Положение о совете по качеству', url: thirtiethSeventh },
+  { title: 'Положение о соцподдержке студентов', url: thirtiethEigth },
+  { title: 'Положение об электронном документообороте', url: thirtiethNineth },
+  { title: 'Учебный план', url: fourtieth},
+  { title: 'Учебный план 2', url: fourtiethFirst},
+  { title: 'Приказ ГАК', url: fourtiethSecond},
+  { title: 'Отчет председателя ГАК', url: fourtiethThird},
+  { title: 'Экзамен. ведомость 1 ГАК МГЭ', url: fourtiethFourth},
+  { title: 'Протоколы 1-9 ГАК МГЭ', url: fourtiethFifth},
+  { title: 'Приказ МОН КР об утверж. председателей ГАК', url: fourtiethSixth},
+  { title: 'Отчет ГАК Междисц гос экз', url: fourtiethSeventh},
+  { title: 'Протокол 1 УМС', url: fourtiethEigth},
+  { title: 'Выписка из решения УМС', url: fourtiethNineth},
+  { title: 'Положение об Учебно-методическом совете', url: fifth},
+
+
 ];
 
 function App() {

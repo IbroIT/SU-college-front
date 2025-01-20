@@ -126,6 +126,30 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
   <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
 </div>
 <div>
+      <h1>{t('documents2.gak')}</h1>
+      <Link to={`/documents/40`}>
+        <p>{t('documents2.gakOrder')}</p>
+      </Link>
+      <Link to={`/documents/41`}>
+        <p>{t('documents2.gakChairReport')}</p>
+      </Link>
+      <Link to={`/documents/42`}>
+        <p>{t('documents2.examSheet1GakMge')}</p>
+      </Link>
+      <Link to={`/documents/43`}>
+        <p>{t('documents2.protocols1To9GakMge')}</p>
+      </Link>
+      <Link to={`/documents/44`}>
+        <p>{t('documents2.monKrOrderOnGakChairApproval')}</p>
+      </Link>
+      <Link to={`/documents/45`}>
+        <p>{t('documents2.gakInterdisciplinaryStateExamReport')}</p>
+      </Link>
+      <Link to={`/documents/46`}>
+        <p>{t('documents2.order31OnGak2024')}</p>
+      </Link>
+    </div>
+<div>
   <h1>{t('header.ourpartners')}</h1>
   <div className={style.dropdown}>
   <p
@@ -157,39 +181,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     </div>
   )}
 </div>
-
-{/* <div className={style.dropdown}>
-  <p
-    className={`${style.dropdownTitle} ${isDropdownOpen2 ? style.open : ''}`}
-    onClick={toggleDropdown2}
-  >
-    {t('header.korea')}
-  </p>
-  {isDropdownOpen2 && (
-    <div className={style.dropdownMenu}>
-      <p>
-        <a
-          href="https://www.lincoln.edu.my"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lincoln University
-        </a>
-      </p>
-      <p>
-        <a
-          href="https://newinti.edu.my"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          INTI University
-        </a>
-      </p>
-    </div>
-  )}
-</div> */}
-
-
 
 </div>
 
@@ -324,23 +315,71 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             </Link>
         </div>
         <div>
-            <h1>{t('documents2.councils')}</h1>
-            <Link to={`/documents/16`}>
-                <p>{t('documents2.teachersCouncil')}</p>
-            </Link>
-            <Link to={`/documents/17`}>
-                <p>{t('documents2.umsCouncil')}</p>
-            </Link>
-            <Link to={`/documents/18`}>
-                <p>{t('documents2.studentParliament')}</p>
-            </Link>
-            <Link to={`/documents/19`}>
-                <p>{t('documents2.admissionsCommittee')}</p>
-            </Link>
-            <Link to={`/documents/20`}>
-                <p>{t('documents2.discountCommittee')}</p>
-            </Link>
-        </div>
+        <h1>{t('documents2.umsCouncil')}</h1>
+        <Link to={`/documents/17`}>
+          <p>{t('documents2.umsCouncil')}</p>
+        </Link>
+        <Link to={`/documents/47`}>
+          <p>{t('documents2.umsProtocols')}</p>
+        </Link>
+        <Link to={`/documents/48`}>
+          <p>{t('documents2.umsDecisionExcerpt')}</p>
+        </Link>
+        <Link to={`/documents/49`}>
+          <p>{t('documents2.umsRegulations')}</p>
+        </Link>
+      </div>
+      <div>
+        <h1>{t('documents2.mentoringRegulations')}</h1>
+        <Link to={`/documents/22`}>
+          <p>{t('documents2.mentoringRegulations')}</p>
+        </Link>
+        <Link to={`/documents/23`}>
+          <p>{t('documents2.studentEthicsCode')}</p>
+        </Link>
+        <Link to={`/documents/24`}>
+          <p>{t('documents2.teachersEthicsCode')}</p>
+        </Link>
+        <Link to={`/documents/25`}>
+          <p>{t('documents2.ppsRatingRegulations')}</p>
+        </Link>
+        <Link to={`/documents/26`}>
+          <p>{t('documents2.trustBoxRegulations')}</p>
+        </Link>
+        <Link to={`/documents/27`}>
+          <p>{t('documents2.mrsoRegulations')}</p>
+        </Link>
+        <Link to={`/documents/28`}>
+          <p>{t('documents2.oopRegulations')}</p>
+        </Link>
+        <Link to={`/documents/29`}>
+          <p>{t('documents2.smkRegulations')}</p>
+        </Link>
+        <Link to={`/documents/30`}>
+          <p>{t('documents2.hrDepartmentRegulations')}</p>
+        </Link>
+        <Link to={`/documents/31`}>
+          <p>{t('documents2.disciplinaryRegulations')}</p>
+        </Link>
+        <Link to={`/documents/32`}>
+          <p>{t('documents2.motivationFundRegulations')}</p>
+        </Link>
+        <Link to={`/documents/33`}>
+          <p>{t('documents2.qualificationUpgradeRegulations')}</p>
+        </Link>
+        <Link to={`/documents/34`}>
+          <p>{t('documents2.studentsRatingRegulations')}</p>
+        </Link>
+        <Link to={`/documents/35`}>
+          <p>{t('documents2.qualityCouncilRegulations')}</p>
+        </Link>
+        <Link to={`/documents/36`}>
+          <p>{t('documents2.studentsSocialSupportRegulations')}</p>
+        </Link>
+        <Link to={`/documents/37`}>
+          <p>{t('documents2.eDocFlowRegulations')}</p>
+        </Link>
+      </div>
     </div>
 </li>
 <Link to="/faq">
@@ -509,6 +548,25 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             <Link to={`/documents/20`}onClick={closeMenu}>
                 <p>{t('documents2.discountCommittee')}</p>
             </Link>
+        </div>
+        <div>
+            <h1>Положение</h1>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
+            <Link to={`/documents/21`}></Link>
         </div>
     </div>
 </li>
