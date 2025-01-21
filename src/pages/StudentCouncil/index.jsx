@@ -12,9 +12,70 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-
+import { Grid, Card, CardMedia, CardContent } from "@mui/material";
+import Adulov from '../../components/images/IMG_5148.jpg'
+import Ailin from '../../components/images/ailon.jpg'
+import Beka from '../../components/images/beka.jpg'
+import Daniel from '../../components/images/daniel.jpg'
+import Kazak from '../../components/images/kazak.jpg'
+import Sancho from '../../components/images/sancho.jpg'
+import Vlad from '../../components/images/IMG_5023.jpg'
+import Aziret from '../../components/images/aziret.jpg'
+import Kamila from '../../components/images/IMG_4348.jpg'
 export const StudentCouncil = () => {
   const { t } = useTranslation();
+  const students = [
+    {
+      name: 'Vlad Zubov',
+      position: 'Curator',
+      photo: Vlad
+    },
+    {
+      name: "Ailin Omurakunova",
+      position: "President",
+      photo: Ailin,
+    },
+    {
+      name: "Kamila Baikeeva",
+      position: "Vice President",
+      photo: Kamila,
+    },
+    {
+      name: "Daniel Sattarzhanov",
+      position: "Parlament's Adviser",
+      photo: Daniel,
+    },
+    {
+      name: "Raiana",
+      position: "Secretary",
+      photo: "https://via.placeholder.com/150",
+    },
+    {
+      name: 'Aziret Dzhumabekov',
+      position: 'Minister of Technology and IT',
+      photo: Aziret,
+    },
+    {
+      name: "Arsen Adulov",
+      position: "Minister of Finance and Volunteering",
+      photo: Adulov,
+    },
+    {
+      name: "Bekmurza Shamilov ",
+      position: "Minister of Sport",
+      photo: Beka,
+    },
+    {
+      name: "Sanzhar Kazubekov",
+      position: "Minister of Turism",
+      photo: Sancho,
+    },
+    {
+      name: "Nurzhigit Nurlanbek Uulu",
+      position: "Minister of Culture",
+      photo: Kazak,
+    },
+  ];
   return (
     <>
            <AppBar position="static">
@@ -45,7 +106,60 @@ export const StudentCouncil = () => {
           </motion.div>
         </Box>
       </AppBar>
-
+          <Container sx={{ marginTop: '35px'}}>
+               <Grid container spacing={4} justifyContent="center">
+                 {students.map((student, index) => (
+                   <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                     <motion.div
+                       whileHover={{ scale: 1.05 }}
+                       whileTap={{ scale: 0.95 }}
+                       initial={{ opacity: 0, y: 50 }}
+                       animate={{ opacity: 1, y: 0 }}
+                       transition={{ duration: 0.5, delay: index * 0.1 }}
+                     >
+                       <Card
+                         sx={{
+                           maxWidth: 345,
+                           textAlign: "center",
+                           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                           transition: "box-shadow 0.3s ease",
+                           '&:hover': {
+                             boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.2)",
+                           },
+                         }}
+                       >
+                         <CardMedia
+                           component="img"
+                           height="140"
+                           image={student.photo}
+                           alt={student.name}
+                           sx={{
+                             borderRadius: "50%",
+                             width: "180px",
+                             height: "180px",
+                             margin: "16px auto",
+                             filter: "grayscale(100%)",
+                             transition: "filter 0.3s ease, transform 0.3s ease",
+                             '&:hover': {
+                               filter: "grayscale(0%)",
+                               transform: "scale(1.1)",
+                             },
+                           }}
+                         />
+                         <CardContent>
+                           <Typography variant="h6" component="div">
+                             {student.name}
+                           </Typography>
+                           <Typography variant="body2" color="text.secondary">
+                             {student.position}
+                           </Typography>
+                         </CardContent>
+                       </Card>
+                     </motion.div>
+                   </Grid>
+                 ))}
+               </Grid>
+             </Container>
       <Container sx={{ mt: 4 }}>
         <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', fontWeight: '700' }}>
           {t("student_council.about_title")}
