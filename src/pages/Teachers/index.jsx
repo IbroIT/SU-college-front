@@ -19,7 +19,10 @@ import AnimatedScrollComponent from "../../components/AnimatedComponents";
 import { motion } from "framer-motion";
 import History from '../../components/images/history.jpg'
 import Physics from '../../components/images/physych.jpg'
+import Elvira from '../../components/images/elvira.jpg'
 import Kunduz from '../../components/images/kunduz.jpg'
+import Beishegul from '../../components/images/beishegul.jpg'
+import Chynara from '../../components/images/chynara.jpg'
 export const Teachers = () => {
   const { t } = useTranslation();
 
@@ -35,11 +38,12 @@ export const Teachers = () => {
     { name: t("teachers.kuzubakova"), subject: t("teachers.physics"), image: Physics },
     { name: t("teachers.eldiyar"), subject: t("teachers.training"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.ulukbek"), subject: t("teachers.english"), image: "https://via.placeholder.com/150" },
-    { name: t("teachers.chynara"), subject: t("teachers.algebra"), image: "https://via.placeholder.com/150" },
-    { name: t("teachers.seitbekova"), subject: t("teachers.english"), image: "https://via.placeholder.com/150" },
+    { name: t("teachers.chynara"), subject: t("teachers.algebra"), image: Chynara },
+    { name: t("teachers.seitbekova"), subject: t("teachers.english"), image: Beishegul },
     { name: t("teachers.rima"), subject: t("teachers.english"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.komarzhova"), subject: t("teachers.algebra"), image: "https://via.placeholder.com/150" },
     { name: t("teachers.nurzat"), subject: t("teachers.highmath"), image: Nurzat },
+    { name: t("teachers.elvira"), subject: t("teachers.english"), image: Elvira },
 
   ];
   const sortedTeachers = teachers.sort((a, b) => {

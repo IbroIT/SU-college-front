@@ -9,76 +9,115 @@ import {
   AccordionDetails,
   Box,
 } from "@mui/material";
+import AnimatedScrollComponent from "../../components/AnimatedComponents";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Grid, Card, CardMedia, CardContent } from "@mui/material";
-import Adulov from '../../components/images/IMG_5148.jpg'
-import Ailin from '../../components/images/ailon.jpg'
-import Beka from '../../components/images/beka.jpg'
-import Daniel from '../../components/images/daniel.jpg'
-import Kazak from '../../components/images/kazak.jpg'
-import Sancho from '../../components/images/sancho.jpg'
-import Vlad from '../../components/images/IMG_5023.jpg'
-import Aziret from '../../components/images/aziret.jpg'
-import Kamila from '../../components/images/IMG_4348.jpg'
+import Adulov from '../../components/images/IMG_5148.jpg';
+import Ailin from '../../components/images/ailon.jpg';
+import Beka from '../../components/images/beka.jpg';
+import Daniel from '../../components/images/daniel.jpg';
+import Kazak from '../../components/images/kazak.jpg';
+import Sancho from '../../components/images/sancho.jpg';
+import Vlad from '../../components/images/IMG_5023.jpg';
+import Aziret from '../../components/images/aziret.jpg';
+import Kamila from '../../components/images/IMG_4348.jpg';
+import Raiana from '../../components/images/photo_2025-01-21_12-37-03.jpg';
+import { useRef } from 'react';
+import styles from './Carousel.module.scss';
 export const StudentCouncil = () => {
   const { t } = useTranslation();
   const students = [
     {
       name: 'Vlad Zubov',
       position: 'Curator',
-      photo: Vlad
+      photo: Vlad,
+      description: 'Vlad is responsible for overseeing the entire council, ensuring smooth operations and coordinating activities.'
     },
     {
       name: "Ailin Omurakunova",
       position: "President",
       photo: Ailin,
+      description: 'Ailin leads the council, representing the students and ensuring the implementation of their needs and requests.'
     },
     {
       name: "Kamila Baikeeva",
       position: "Vice President",
       photo: Kamila,
+      description: 'Kamila assists the President and takes over leadership in their absence.'
     },
     {
       name: "Daniel Sattarzhanov",
-      position: "Parlament's Adviser",
+      position: "Parliament\'s Adviser",
       photo: Daniel,
+      description: 'Daniel provides strategic advice to the parliament members and ensures effective governance.'
     },
     {
       name: "Raiana",
       position: "Secretary",
-      photo: "https://via.placeholder.com/150",
+      photo: Raiana,
+      description: 'Raiana manages all administrative tasks and ensures proper documentation for the council.'
     },
     {
       name: 'Aziret Dzhumabekov',
       position: 'Minister of Technology and IT',
       photo: Aziret,
+      description: 'Aziret manages all technological needs of the council and oversees IT infrastructure.'
     },
     {
       name: "Arsen Adulov",
       position: "Minister of Finance and Volunteering",
       photo: Adulov,
+      description: 'Arsen handles financial matters and coordinates volunteering activities for the council.'
     },
     {
-      name: "Bekmurza Shamilov ",
+      name: "Bekmurza Shamilov",
       position: "Minister of Sport",
       photo: Beka,
+      description: 'Bekmurza is in charge of promoting sports and organizing events for students.'
     },
     {
       name: "Sanzhar Kazubekov",
-      position: "Minister of Turism",
+      position: "Minister of Tourism",
       photo: Sancho,
+      description: 'Sanzhar develops programs related to student tourism and ensures their successful implementation.'
     },
     {
       name: "Nurzhigit Nurlanbek Uulu",
       position: "Minister of Culture",
       photo: Kazak,
+      description: 'Nurzhigit fosters cultural events and ensures cultural exchange opportunities for students.'
     },
   ];
+
+  const photos = [
+  { src: 'https://static.studyusa.com/article/aws_2-N4gXJxyDwsgc3cJ5rJ9O6B-ffvlE9y_sm_2x.png?format=webp', alt: 'Photo 1', size: 'large' },
+  { src: 'https://cdnn21.img.ria.ru/images/07e4/0b/1a/1586410812_0:93:3067:1818_1920x0_80_0_0_2ce0c839726e4cacefaaa3ddf7c19288.jpg', alt: 'Photo 2', size: 'small' },
+  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsa16Y1Z8E75zZIDUxsYsFYwvIL0IXQHktg&s', alt: 'Photo 3', size: 'small' },
+  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5fqnvdLXQpMNam5N2cr4hgRRRdQqcEyGXA&s', alt: 'Photo 4', size: 'large' },
+  { src: 'https://talantum.ru/wp-content/uploads/2023/02/studenty-vyshli-vo-dvor-universiteta.jpg', alt: 'Photo 5', size: 'small' },
+  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwdEM3T7kvc4bAHfouRW38a1xvCXwxKxivg&s', alt: 'Photo 6', size: 'large' },
+];
+const carouselRef = useRef(null);
+
+    const scrollLeft = () => {
+        const carousel = carouselRef.current;
+        const scrollAmount = 300; 
+        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    };
+
+    const scrollRight = () => {
+        const carousel = carouselRef.current;
+        const scrollAmount = 300;
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    };
+
+
   return (
     <>
-           <AppBar position="static">
+    <>
+      <AppBar position="static">
         <Box
           sx={{
             backgroundColor: "#5a738f",
@@ -106,60 +145,107 @@ export const StudentCouncil = () => {
           </motion.div>
         </Box>
       </AppBar>
-          <Container sx={{ marginTop: '35px'}}>
-               <Grid container spacing={4} justifyContent="center">
-                 {students.map((student, index) => (
-                   <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                     <motion.div
-                       whileHover={{ scale: 1.05 }}
-                       whileTap={{ scale: 0.95 }}
-                       initial={{ opacity: 0, y: 50 }}
-                       animate={{ opacity: 1, y: 0 }}
-                       transition={{ duration: 0.5, delay: index * 0.1 }}
-                     >
-                       <Card
-                         sx={{
-                           maxWidth: 345,
-                           textAlign: "center",
-                           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                           transition: "box-shadow 0.3s ease",
-                           '&:hover': {
-                             boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.2)",
-                           },
-                         }}
-                       >
-                         <CardMedia
-                           component="img"
-                           height="140"
-                           image={student.photo}
-                           alt={student.name}
-                           sx={{
-                             borderRadius: "50%",
-                             width: "180px",
-                             height: "180px",
-                             margin: "16px auto",
-                             filter: "grayscale(100%)",
-                             transition: "filter 0.3s ease, transform 0.3s ease",
-                             '&:hover': {
-                               filter: "grayscale(0%)",
-                               transform: "scale(1.1)",
-                             },
-                           }}
-                         />
-                         <CardContent>
-                           <Typography variant="h6" component="div">
-                             {student.name}
-                           </Typography>
-                           <Typography variant="body2" color="text.secondary">
-                             {student.position}
-                           </Typography>
-                         </CardContent>
-                       </Card>
-                     </motion.div>
-                   </Grid>
-                 ))}
-               </Grid>
-             </Container>
+
+      <Box sx={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
+      <Grid container spacing={2}>
+        {photos.map((photo, index) => (
+          <Grid
+            item
+            xs={12} sm={6} md={photo.size === 'large' ? 10 : 6} lg={photo.size === 'large' ? 6 : 4}
+            key={index}
+            component={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: index * 0.2, duration: 0.5 }}
+          >
+            <Box
+              sx={{
+                position: 'relative',
+                width: '100%',
+                paddingTop: '100%',
+                backgroundImage: `url(${photo.src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                borderRadius: '8px',
+                boxShadow: 3,
+              }}
+            />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+      {/* Council Members Section */}
+      <Container sx={{ marginTop: '35px' }}>
+        <Grid container spacing={4} justifyContent="center">
+          {students.map((student, index) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card
+                  sx={{
+                    maxWidth: 345,
+                    textAlign: "center",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                    transition: "box-shadow 0.3s ease",
+                    '&:hover': {
+                      boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.2)",
+                    },
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={student.photo}
+                    alt={student.name}
+                    sx={{
+                      borderRadius: "50%",
+                      width: "180px",
+                      height: "180px",
+                      margin: "16px auto",
+                      // filter: "grayscale(100%)",
+                      transition: "filter 0.3s ease, transform 0.3s ease",
+                      '&:hover': {
+                        // filter: "grayscale(0%)",
+                        transform: "scale(1.1)",
+                      },
+                    }}
+                  />
+                  <CardContent>
+                    <Typography variant="h6" component="div">
+                      {student.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {student.position}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
+                      {student.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+      <div className={styles.carouselContainer}>
+            <button className={styles.scrollButton} onClick={scrollLeft}>←</button>
+            <div className={styles.imagesSection} ref={carouselRef}>
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2745-1024x683.jpg" alt="Example 1" />
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2562-1024x683.jpg" alt="Example 3" />
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2487-1024x683.jpg"></img>               
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2741-1024x683.jpg"></img>  
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2727-300x200.jpg"></img>  
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2694-300x200.jpg"></img>  
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2476-300x200.jpg"></img>  
+                <img src="https://salymbekov.com/wp-content/uploads/2022/07/photo_2022-07-18_15-21-07-1024x682.jpg" alt="Example 4" />
+            </div>
+            <button className={styles.scrollButton} onClick={scrollRight}>→</button>
+        </div>
       <Container sx={{ mt: 4 }}>
         <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', fontWeight: '700' }}>
           {t("student_council.about_title")}
@@ -351,8 +437,8 @@ export const StudentCouncil = () => {
     </Accordion>
   ))}
 </Box>
-
       </Container>
+      </>
     </>
   );
 };

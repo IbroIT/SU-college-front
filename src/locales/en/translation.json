@@ -269,10 +269,12 @@
             "chynara": "Kalbaeva Chynara",
             "seitbekova": "Seitbekova Beishegul",
             "komarzhova": "Komarzhova Elena",
-            "algebra": "Algebra",
+            "algebra": "Maths",
             "rima": "Kaiupbekova Rima",
             "nurzat": "Manasovna Nurzat",
-            "highmath": "High Math"
+            "highmath": "High Math",
+            "elvira": "Abakirova Elvira"
+
         },
         "notFound": {
         "title": "Sorry, this page does not exist",
