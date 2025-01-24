@@ -1,4 +1,4 @@
-{
+  {
   "welcome_message": "Welcome, Applicant-2025!",
   "choose_best_education": "By choosing us, you are choosing the best quality of education!",
   "applicant_online": "Applicant online",
@@ -205,6 +205,18 @@
     "collegeAthletes": {
         "title": "College Athletes",
         "description": "Our athletes won medals at the regional competitions."
+    },
+    "1": {
+      "title": "Innovation and Partnership: AUC Guest Visit",
+      "description": "Innovation and partnership: The American University of Central Asia visited Salymbekov University today, led by President Dr. Timothy Edward O'Connor. During the visit, our guests got acquainted with the university’s clinics, laboratories, and educational processes. Prospects for joint educational and scientific projects were discussed, and a memorandum of cooperation was signed. This visit marks an important step in strengthening the ties between our universities and opens new opportunities for students and faculty."
+    },
+    "2": {
+      "title": "New Year's Concert",
+      "description": "🎄 New Year's concert at Salymbekov University 🎶 Salymbekov University hosted a festive New Year's concert that gave all guests and participants a dose of joy and inspiration! ✨ Our talented students showed their best creative abilities: 🎤 Energetic songs 💃 Dynamic dances 🎭 Bright theatrical performances Each performance was filled with the atmosphere of celebration, friendship, and New Year's magic."
+    },
+    "3": {
+      "title": "Immersion in Korean Culture",
+      "description": "Salymbekov University organized an exciting event “Immersion in Korean Culture,” where students and faculty had the opportunity to get acquainted with the unique traditions, cuisine, and customs of Korea. 🌟 How it went: • Participants took part in a master class on making Kimbap — traditional Korean rice rolls. 🍙 • Everyone enjoyed their culinary masterpieces, the atmosphere of mutual understanding, and discovered a new world of Korean culture and culinary traditions."
     }
 }, 
   "footer": {

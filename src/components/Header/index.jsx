@@ -9,6 +9,7 @@ import { Menu as MenuIcon, School as SchoolIcon, Group as GroupIcon, Article as 
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import axios from 'axios';
 import { Typography } from '@mui/material';
+
 export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { t } = useTranslation();
@@ -124,6 +125,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
   <Link to="/director"><p>{t('header.letterFromDirector')}</p></Link>
   <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
   <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
+  <Link to="/news"><p>Новости</p></Link>
 </div>
 <div>
       <h1>{t('documents2.gak')}</h1>

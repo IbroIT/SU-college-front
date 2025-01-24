@@ -26,6 +26,13 @@ import Kamila from '../../components/images/IMG_4348.jpg';
 import Raiana from '../../components/images/photo_2025-01-21_12-37-03.jpg';
 import { useRef } from 'react';
 import styles from './Carousel.module.scss';
+import photo1 from '../../components/images/photo1.jpg'
+import photo2 from '../../components/images/photo2.jpg'
+import photo3 from '../../components/images/photo3.jpg'
+import photo4 from '../../components/images/photo4.jpg'
+import photo5 from '../../components/images/photo5.jpg'
+import photo6 from '../../components/images/photo6.jpg'
+
 export const StudentCouncil = () => {
   const { t } = useTranslation();
   const students = [
@@ -92,12 +99,12 @@ export const StudentCouncil = () => {
   ];
 
   const photos = [
-  { src: 'https://static.studyusa.com/article/aws_2-N4gXJxyDwsgc3cJ5rJ9O6B-ffvlE9y_sm_2x.png?format=webp', alt: 'Photo 1', size: 'large' },
-  { src: 'https://cdnn21.img.ria.ru/images/07e4/0b/1a/1586410812_0:93:3067:1818_1920x0_80_0_0_2ce0c839726e4cacefaaa3ddf7c19288.jpg', alt: 'Photo 2', size: 'small' },
-  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsa16Y1Z8E75zZIDUxsYsFYwvIL0IXQHktg&s', alt: 'Photo 3', size: 'small' },
-  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5fqnvdLXQpMNam5N2cr4hgRRRdQqcEyGXA&s', alt: 'Photo 4', size: 'large' },
-  { src: 'https://talantum.ru/wp-content/uploads/2023/02/studenty-vyshli-vo-dvor-universiteta.jpg', alt: 'Photo 5', size: 'small' },
-  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwdEM3T7kvc4bAHfouRW38a1xvCXwxKxivg&s', alt: 'Photo 6', size: 'large' },
+  { src: photo1, alt: 'Photo 1', size: 'large' },
+  { src: photo2, alt: 'Photo 2', size: 'small' },
+  { src: photo3, alt: 'Photo 3', size: 'small' },
+  { src: photo4, alt: 'Photo 4', size: 'large' },
+  { src: photo5, alt: 'Photo 5', size: 'small' },
+  { src: photo6, alt: 'Photo 6', size: 'large' },
 ];
 const carouselRef = useRef(null);
 
