@@ -114,6 +114,23 @@ import fifthSeventh from '../src/pdfs/План УР0001.PDF'
 import fifthEighth from '../src/pdfs/План УР.PDF'
 import fifthNineth from '../src/pdfs/План ОД.PDF'
 import sixth from '../src/pdfs/План приема_2024-2025.pdf'
+import sixthFirst from '../src/pdfs/ДИ главного бухглатера.pdf';
+import sixthSecond from '../src/pdfs/ДИ коменданта хозяйственной службы учебных корпусов.pdf';
+import sixthThird from '../src/pdfs/ДИ проректора по гос.языку и науки.pdf';
+import sixthFourth from '../src/pdfs/ДИ проректора по учебно-воспитательной работе.pdf';
+import sixthFifth from '../src/pdfs/ДИ ректора.pdf';
+import sixthSixth from '../src/pdfs/ДИ руководителя HR и делопроизводства.pdf';
+import sixthSeventh from '../src/pdfs/ДИ руководителя департамента развития и качества образования.pdf';
+import sixthEighth from '../src/pdfs/ДИ руководителя управления делами.pdf';
+import sixthNineth from '../src/pdfs/ДИ специалиста по МСК департамента развития и качества образования.pdf';
+import seventh from '../src/pdfs/ДИ ученого секретаря Ученого совета(1).pdf';
+import seventhFirst from '../src/pdfs/Должностная инструкция главного бухгалтера СУ(1).pdf';
+import seventhSecond from '../src/pdfs/Должностная инструкция директора колледжа.pdf';
+
+import seventhThird from '../src/pdfs/Положение «О системе менеджмента качества образования Учреждения «Салымбеков Университет»».pdf';
+import seventhFourth from '../src/pdfs/Положение IT (1).pdf';
+import seventhFifth from '../src/pdfs/Положение о взаимодействии структурных подразделений со стейкхолдерами СУ.pdf';
+import seventhSixth from '../src/pdfs/Положение о правах, обязанностях и ответственности обучающихся СУ.pdf';
 
 const pdfFiles = [
   { title: 'План', url: firstPdf },
@@ -174,6 +191,22 @@ const pdfFiles = [
   { title: 'План УР', url: fifthEighth},
   { title: 'План ОД', url: fifthNineth},
   { title: 'План приема', url: sixth},
+  { title: 'ДИ главного бухглатера', url: sixthFirst},
+  { title: 'ДИ коменданта хозяйственной службы учебных корпусов', url: sixthSecond},
+  { title: 'ДИ проректора по гос.языку и науки', url: sixthThird},
+  { title: 'ДИ проректора по учебно-воспитательной работе', url: sixthFourth},
+  { title: 'ДИ ректора', url: sixthFifth},
+  { title: 'ДИ руководителя HR и делопроизводства', url: sixthSixth},
+  { title: 'ДИ руководителя департамента развития и качества образования', url: sixthSeventh},
+  { title: 'ДИ руководителя управления делами', url: sixthEighth},
+  { title: 'ДИ специалиста по МСК департамента развития и качества образования', url: sixthNineth},
+  { title: 'ДИ ученого секретаря Ученого совета', url: seventh},
+  { title: 'Должностная инструкция главного бухгалтера СУ', url: seventhFirst},
+  { title: 'Должностная инструкция директора колледжа', url: seventhSecond},
+  { title: 'Положение «О системе менеджмента качества образования Учреждения «Салымбеков Университет»', url: seventhThird},
+  { title: 'Положение IT', url: seventhFourth},
+  { title: 'Положение о взаимодействии структурных подразделений со стейкхолдерами СУ', url: seventhFifth},
+  { title: 'Положение о правах, обязанностях и ответственности обучающихся СУ', url: seventhSixth}
 
 ];
 
