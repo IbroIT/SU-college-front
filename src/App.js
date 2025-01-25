@@ -132,6 +132,26 @@ import seventhFourth from '../src/pdfs/Положение IT (1).pdf';
 import seventhFifth from '../src/pdfs/Положение о взаимодействии структурных подразделений со стейкхолдерами СУ.pdf';
 import seventhSixth from '../src/pdfs/Положение о правах, обязанностях и ответственности обучающихся СУ.pdf';
 
+import seventhEighth from '../src/pdfs/Inha Technical College.pdf'
+import seventhNineth from '../src/pdfs/INНA UNIVERSITY.pdf'
+import eighth from '../src/pdfs/ITM MOU.pdf'
+import eighthFirst from '../src/pdfs/lstinye University.pdf'
+import eighthSecond from '../src/pdfs/LUC.pdf'
+import eighthThird from '../src/pdfs/Salymbekov University.pdf'
+import eighthFourth from '../src/pdfs/Договор «Мелон про» 24.04.2021.pdf'
+import eighthFifth from '../src/pdfs/Договор IT сообщество «Чойро».pdf'
+import eighthSixth from '../src/pdfs/Договор о сотрудничестве Адам.pdf'
+import eighthSeventh from '../src/pdfs/Договор с КФУ.pdf'
+import eighthEighth from '../src/pdfs/Договор Салымбеков Eotvos Lorand.pdf'
+import eighthNineth from '../src/pdfs/Договор Салымбеков Kodolanyi Uni.pdf'
+import nineth from '../src/pdfs/Договор Салымбеков METU.pdf'
+import ninethFirst from '../src/pdfs/Договора с филиалами СБС (1).pdf'
+import ninethSecond from '../src/pdfs/Меморандум Политех.pdf'
+import ninethThird from '../src/pdfs/Трехсторнний меморандум с МОиН КР.pdf'
+import ninethFourth from '../src/pdfs/Положение об организации научной работы.pdf'
+import ninethFifth from '../src/pdfs/Положение об учебно-методическом комплексе дисциплины СУ.pdf'
+import ninethSixth from '../src/pdfs/Регламент премирования 2024г.(обновленная версия).pdf'
+
 const pdfFiles = [
   { title: 'План', url: firstPdf },
   { title: 'Настольный Теннис 2024', url: secondPdf },
@@ -206,7 +226,26 @@ const pdfFiles = [
   { title: 'Положение «О системе менеджмента качества образования Учреждения «Салымбеков Университет»', url: seventhThird},
   { title: 'Положение IT', url: seventhFourth},
   { title: 'Положение о взаимодействии структурных подразделений со стейкхолдерами СУ', url: seventhFifth},
-  { title: 'Положение о правах, обязанностях и ответственности обучающихся СУ', url: seventhSixth}
+  { title: 'Положение о правах, обязанностях и ответственности обучающихся СУ', url: seventhSixth},
+  { title: 'Inha Technical College', url: seventhEighth},
+  { title: 'Inha University', url: seventhNineth},
+  { title: 'ITM Univeristy', url: eighth},
+  { title: 'Istinye University', url: eighthFirst},
+  { title: 'Lincoln University', url: eighthSecond},
+  { title: 'Salymbekov University', url: eighthThird},
+  { title: 'Договор "Мелон про"', url: eighthFourth},
+  { title: 'Договор IT сообщество "Чойро"', url: eighthFifth},
+  { title: 'Договор о сотрудничестве Адам', url: eighthSixth},
+  { title: 'Договор с КФУ', url: eighthSeventh},
+  { title: 'Договор Салымбеков Eotvos Lorand', url: eighthEighth},
+  { title: 'Договор Салымбеков Kodolanyi Uni', url: eighthNineth},
+  { title: 'Договор Салымбеков METU', url: nineth},
+  { title: 'Договора с филиалами СБС', url: ninethFirst},
+  { title: 'Меморандум Политех', url: ninethSecond},
+  { title: 'Трехсторнний меморандум с МОиН КР', url: ninethThird},
+  { title: 'Положение об организации научной работы', url: ninethFourth},
+  { title: 'Положение об учебно-методическом комплексе дисциплины', url: ninethFifth},
+  { title: 'Регламент премирования', url: ninethSixth},
 
 ];
 

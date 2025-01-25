@@ -393,7 +393,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
           <p>{t('documents2.eDocFlowRegulations')}</p>
         </Link>
         <Link to={`/documents/70`}>
-          <p>Положение О системе менеджмента качества образования</p>
+          <p>Cистема менеджмента качества образования</p>
         </Link>
         <Link to={`/documents/71`}>
           <p>Положение IT</p>
@@ -403,6 +403,13 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         </Link>
         <Link to={`/documents/73`}>
           <p>Положение об обучающихся</p>
+        </Link>
+        <Link to={`/documents/90`}>
+          <p>Положение об организации научной работы</p>
+        </Link> <Link to={`/documents/91`}>
+          <p>Положение об учебно-методическом комплексе дисциплины</p>
+        </Link> <Link to={`/documents/92`}>
+          <p>Регламент премирования</p>
         </Link>
       </div>
       <div>
@@ -445,7 +452,41 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         </Link>
       </div>
       <div>
-        <h1>Отчеты</h1>
+        <h1>Договоры</h1>
+        <Link to={`/documents/74`}>
+          <p>Inha Technical College</p>
+        </Link><Link to={`/documents/75`}>
+          <p>Inha University</p>
+        </Link><Link to={`/documents/76`}>
+          <p>ITM Univeristy</p>
+        </Link><Link to={`/documents/77`}>
+          <p>Istinye University</p>
+        </Link><Link to={`/documents/78`}>
+          <p>Lincoln University</p>
+        </Link><Link to={`/documents/79`}>
+          <p>Salymbekov University</p>
+        </Link><Link to={`/documents/80`}>
+          <p>Договор "Мелон про"</p>
+        </Link><Link to={`/documents/81`}>
+          <p>Договор IT сообщество "Чойро"</p>
+        </Link><Link to={`/documents/82`}>
+          <p>Договор о сотрудничестве Адам</p>
+        </Link><Link to={`/documents/83`}>
+          <p>Договор с КФУ</p>
+        </Link><Link to={`/documents/84`}>
+          <p>Договор Салымбеков Eotvos Lorand</p>
+        </Link><Link to={`/documents/85`}>
+          <p>Договор Салымбеков Kodolanyi Uni</p>
+        </Link><Link to={`/documents/86`}>
+          <p>Договор Салымбеков METU</p>
+        </Link><Link to={`/documents/87`}>
+          <p>Договора с филиалами СБС</p>
+        </Link><Link to={`/documents/88`}>
+          <p>Меморандум Политех</p>
+        </Link><Link to={`/documents/89`}>
+          <p>Трехсторнний меморандум с МОиН КР</p>
+        </Link>
+
       </div>
     </div>
 </li>
