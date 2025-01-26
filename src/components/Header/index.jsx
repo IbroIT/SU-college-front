@@ -331,16 +331,31 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         </Link>
       </div>
       <div>
-        <h1>Планы</h1>
-        <Link to={`/documents/50`}><p>План парламента</p></Link>
-        <Link to={`/documents/51`}><p>План УМС</p></Link>
-        <Link to={`/documents/52`}><p>План работы методиста</p></Link>
-        <Link to={`/documents/53`}><p>План ПС</p></Link>
-        <Link to={`/documents/54`}><p>План УР001</p></Link>
-        <Link to={`/documents/55`}><p>План УР</p></Link>
-        <Link to={`/documents/56`}><p>План ОД</p></Link>
-        <Link to={`/documents/57`}><p>План приема</p></Link>
-
+        <h1>{t("documents2.plansDoc")}</h1>
+        <Link to="/documents/50">
+        <p>{t("documents2.parliament_plan")}</p>
+      </Link>
+      <Link to="/documents/51">
+        <p>{t("documents2.ums_plan")}</p>
+      </Link>
+      <Link to="/documents/52">
+        <p>{t("documents2.methodist_plan")}</p>
+      </Link>
+      <Link to="/documents/53">
+        <p>{t("documents2.ps_plan")}</p>
+      </Link>
+      <Link to="/documents/54">
+        <p>{t("documents2.ur001_plan")}</p>
+      </Link>
+      <Link to="/documents/55">
+        <p>{t("documents2.ur_plan")}</p>
+      </Link>
+      <Link to="/documents/56">
+        <p>{t("documents2.od_plan")}</p>
+      </Link>
+      <Link to="/documents/57">
+        <p>{t("documents2.admission_plan")}</p>
+      </Link>
       </div>
       <div>
         <h1>{t('documents2.position')}</h1>
@@ -393,99 +408,116 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
           <p>{t('documents2.eDocFlowRegulations')}</p>
         </Link>
         <Link to={`/documents/70`}>
-          <p>Cистема менеджмента качества образования</p>
-        </Link>
-        <Link to={`/documents/71`}>
-          <p>Положение IT</p>
-        </Link>
-        <Link to={`/documents/72`}>
-          <p>Положение о взаимодействии со стейкхолдерами</p>
-        </Link>
-        <Link to={`/documents/73`}>
-          <p>Положение об обучающихся</p>
-        </Link>
-        <Link to={`/documents/90`}>
-          <p>Положение об организации научной работы</p>
-        </Link> <Link to={`/documents/91`}>
-          <p>Положение об учебно-методическом комплексе дисциплины</p>
-        </Link> <Link to={`/documents/92`}>
-          <p>Регламент премирования</p>
-        </Link>
+        <p>{t('documents2.quality_management_system')}</p>
+      </Link>
+      <Link to={`/documents/71`}>
+        <p>{t('documents2.it_regulation')}</p>
+      </Link>
+      <Link to={`/documents/72`}>
+        <p>{t('documents2.stakeholder_interaction_regulation')}</p>
+      </Link>
+      <Link to={`/documents/73`}>
+        <p>{t('documents2.student_regulation')}</p>
+      </Link>
+      <Link to={`/documents/90`}>
+        <p>{t('documents2.scientific_work_organization')}</p>
+      </Link>
+      <Link to={`/documents/91`}>
+        <p>{t('documents2.educational_methodological_complex')}</p>
+      </Link>
+      <Link to={`/documents/92`}>
+        <p>{t('documents2.rewarding_regulation')}</p>
+      </Link>
       </div>
       <div>
-        <h1>Должностные инструкции</h1>
-        <Link to={`/documents/58`}>
-          <p>ДИ главного бухглатера</p>
-        </Link>
-        <Link to={`/documents/59`}>
-          <p>ДИ коменданта</p>
-        </Link>
-        <Link to={`/documents/60`}>
-          <p>ДИ проректора по гос языку</p>
-        </Link>
-        <Link to={`/documents/61`}>
-          <p>ДИ проректора по УВР</p>
-        </Link>
-        <Link to={`/documents/62`}>
-          <p>ДИ ректора</p>
-        </Link>
-        <Link to={`/documents/63`}>
-          <p>ДИ руководителя HR</p>
-        </Link>
-        <Link to={`/documents/64`}>
-          <p>ДИ руководителя ДРиКО</p>
-        </Link>
-        <Link to={`/documents/65`}>
-          <p>ДИ руководителя управления делами</p>
-        </Link>
-        <Link to={`/documents/66`}>
-          <p>ДИ специалиста по МСК</p>
-        </Link>
-        <Link to={`/documents/67`}>
-          <p>ДИ ученого секретаря</p>
-        </Link>
-        <Link to={`/documents/68`}>
-          <p>ДИ главного директора</p>
-        </Link>
-        <Link to={`/documents/69`}>
-          <p>ДИ директора колледжа</p>
-        </Link>
-      </div>
+      <h1>{t('documents2.job_instructions')}</h1>
+      <Link to={`/documents/58`}>
+        <p>{t('documents2.chief_accountant')}</p>
+      </Link>
+      <Link to={`/documents/59`}>
+        <p>{t('documents2.commander')}</p>
+      </Link>
+      <Link to={`/documents/60`}>
+        <p>{t('documents2.vice_reector_language')}</p>
+      </Link>
+      <Link to={`/documents/61`}>
+        <p>{t('documents2.vice_reector_education')}</p>
+      </Link>
+      <Link to={`/documents/62`}>
+        <p>{t('documents2.rector')}</p>
+      </Link>
+      <Link to={`/documents/63`}>
+        <p>{t('documents2.hr_leader')}</p>
+      </Link>
+      <Link to={`/documents/64`}>
+        <p>{t('documents2.driko_leader')}</p>
+      </Link>
+      <Link to={`/documents/65`}>
+        <p>{t('documents2.administration_manager')}</p>
+      </Link>
+      <Link to={`/documents/66`}>
+        <p>{t('documents2.msc_specialist')}</p>
+      </Link>
+      <Link to={`/documents/67`}>
+        <p>{t('documents2.scientific_secretary')}</p>
+      </Link>
+      <Link to={`/documents/68`}>
+        <p>{t('documents2.chief_director')}</p>
+      </Link>
+      <Link to={`/documents/69`}>
+        <p>{t('documents2.college_director')}</p>
+      </Link>
+    </div>
       <div>
-        <h1>Договоры</h1>
-        <Link to={`/documents/74`}>
-          <p>Inha Technical College</p>
-        </Link><Link to={`/documents/75`}>
-          <p>Inha University</p>
-        </Link><Link to={`/documents/76`}>
-          <p>ITM Univeristy</p>
-        </Link><Link to={`/documents/77`}>
-          <p>Istinye University</p>
-        </Link><Link to={`/documents/78`}>
-          <p>Lincoln University</p>
-        </Link><Link to={`/documents/79`}>
-          <p>Salymbekov University</p>
-        </Link><Link to={`/documents/80`}>
-          <p>Договор "Мелон про"</p>
-        </Link><Link to={`/documents/81`}>
-          <p>Договор IT сообщество "Чойро"</p>
-        </Link><Link to={`/documents/82`}>
-          <p>Договор о сотрудничестве Адам</p>
-        </Link><Link to={`/documents/83`}>
-          <p>Договор с КФУ</p>
-        </Link><Link to={`/documents/84`}>
-          <p>Договор Салымбеков Eotvos Lorand</p>
-        </Link><Link to={`/documents/85`}>
-          <p>Договор Салымбеков Kodolanyi Uni</p>
-        </Link><Link to={`/documents/86`}>
-          <p>Договор Салымбеков METU</p>
-        </Link><Link to={`/documents/87`}>
-          <p>Договора с филиалами СБС</p>
-        </Link><Link to={`/documents/88`}>
-          <p>Меморандум Политех</p>
-        </Link><Link to={`/documents/89`}>
-          <p>Трехсторнний меморандум с МОиН КР</p>
-        </Link>
+      <h1>{t('documents2.contracts')}</h1>
+      <Link to={`/documents/74`}>
+        <p>{t('documents2.inha_technical_college')}</p>
+      </Link>
+      <Link to={`/documents/75`}>
+        <p>{t('documents2.inha_university')}</p>
+      </Link>
+      <Link to={`/documents/76`}>
+        <p>{t('documents2.itm_university')}</p>
+      </Link>
+      <Link to={`/documents/77`}>
+        <p>{t('documents2.istinye_university')}</p>
+      </Link>
+      <Link to={`/documents/78`}>
+        <p>{t('documents2.lincoln_university')}</p>
+      </Link>
+      <Link to={`/documents/79`}>
+        <p>{t('documents2.salymbekov_university')}</p>
+      </Link>
+      <Link to={`/documents/80`}>
+        <p>{t('documents2.melon_pro_contract')}</p>
+      </Link>
+      <Link to={`/documents/81`}>
+        <p>{t('documents2.choiro_it_community_contract')}</p>
+      </Link>
+      <Link to={`/documents/82`}>
+        <p>{t('documents2.adam_cooperation_contract')}</p>
+      </Link>
+      <Link to={`/documents/83`}>
+        <p>{t('documents2.kfu_contract')}</p>
+      </Link>
+      <Link to={`/documents/84`}>
+        <p>{t('documents2.salymbekov_eotvos_lorand_contract')}</p>
+      </Link>
+      <Link to={`/documents/85`}>
+        <p>{t('documents2.salymbekov_kodolanyi_uni_contract')}</p>
+      </Link>
+      <Link to={`/documents/86`}>
+        <p>{t('documents2.salymbekov_metu_contract')}</p>
+      </Link>
+      <Link to={`/documents/87`}>
+        <p>{t('documents2.sbs_branch_contracts')}</p>
+      </Link>
+      <Link to={`/documents/88`}>
+        <p>{t('documents2.polytech_memorandum')}</p>
+      </Link>
+      <Link to={`/documents/89`}>
+        <p>{t('documents2.three_party_memorandum_moin_kr')}</p>
+      </Link>
 
       </div>
     </div>

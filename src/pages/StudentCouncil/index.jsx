@@ -101,7 +101,6 @@ export const StudentCouncil = () => {
   const photos = [
   { src: photo1, alt: 'Photo 1', size: 'large' },
   { src: photo2, alt: 'Photo 2', size: 'small' },
-  { src: photo3, alt: 'Photo 3', size: 'small' },
   { src: photo4, alt: 'Photo 4', size: 'large' },
   { src: photo5, alt: 'Photo 5', size: 'small' },
   { src: photo6, alt: 'Photo 6', size: 'large' },
