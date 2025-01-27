@@ -23,6 +23,11 @@ import Elvira from '../../components/images/elvira.jpg'
 import Kunduz from '../../components/images/kunduz.jpg'
 import Beishegul from '../../components/images/beishegul.jpg'
 import Chynara from '../../components/images/chynara.jpg'
+import Ulukbek from '../../components/images/ulukbek.jpg'
+import Hikmatilo from '../../components/images/hikmatilo.jpg'
+import Elena from '../../components/images/elena.jpg'
+import Vlad from '../../components/images/IMG_5023.jpg'
+import Toktoshevna from '../../components/images/toktoshevna.jpg'
 export const Teachers = () => {
   const { t } = useTranslation();
 
@@ -31,19 +36,20 @@ export const Teachers = () => {
     { name: t("teachers.mirlan"), subject: t("teachers.oop_database"), image: Mirlan },
     { name: t("teachers.kunduz"), subject: t("teachers.web_development"), image: Kunduz },
     { name: t("teachers.aidai"), subject: t("teachers.web_development"), image: "https://via.placeholder.com/150" },
-    { name: t("teachers.zubov"), subject: t("teachers.web_development_react"), image: "https://via.placeholder.com/150" },
-    { name: t("teachers.nurgul"), subject: t("teachers.russian_language"), image: "https://via.placeholder.com/150" },
+    { name: t("teachers.zubov"), subject: t("teachers.web_development_react"), image: Vlad },
+    { name: t("teachers.nurgul"), subject: t("teachers.russian_language"), image: Toktoshevna },
     { name: t("teachers.moloshev"), subject: t("teachers.history"), image: History },
     { name: t("teachers.gulina"), subject: t("teachers.chemistry"), image: Gulina },
     { name: t("teachers.kuzubakova"), subject: t("teachers.physics"), image: Physics },
     { name: t("teachers.eldiyar"), subject: t("teachers.training"), image: "https://via.placeholder.com/150" },
-    { name: t("teachers.ulukbek"), subject: t("teachers.english"), image: "https://via.placeholder.com/150" },
+    { name: t("teachers.ulukbek"), subject: t("teachers.english"), image: Ulukbek },
     { name: t("teachers.chynara"), subject: t("teachers.algebra"), image: Chynara },
     { name: t("teachers.seitbekova"), subject: t("teachers.english"), image: Beishegul },
     { name: t("teachers.rima"), subject: t("teachers.english"), image: "https://via.placeholder.com/150" },
-    { name: t("teachers.komarzhova"), subject: t("teachers.algebra"), image: "https://via.placeholder.com/150" },
+    { name: t("teachers.komarzhova"), subject: t("teachers.algebra"), image: Elena },
     { name: t("teachers.nurzat"), subject: t("teachers.highmath"), image: Nurzat },
     { name: t("teachers.elvira"), subject: t("teachers.english"), image: Elvira },
+    { name: "Аскаров Хикматилло", subject: t("teachers.english"), image: Hikmatilo}
 
   ];
   const sortedTeachers = teachers.sort((a, b) => {
