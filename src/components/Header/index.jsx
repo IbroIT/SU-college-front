@@ -125,7 +125,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
   <Link to="/director"><p>{t('header.letterFromDirector')}</p></Link>
   <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
   <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
-  <Link to="/news"><p>Новости</p></Link>
+  <Link to="/news"><p>{t('header.news')}</p></Link>
 </div>
 <div>
       <h1>{t('documents2.gak')}</h1>
@@ -255,7 +255,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <div>
         <h1>{t('forstudents.resourceBase.title')}</h1>
         <Link to="/instructions"><p>{t('forstudents.resourceBase.links.instructions')}</p></Link>
-        <Link to="http://icsjlibrary.inti.edu.my/library/custom/home.jsp"><p>{t('forstudents.resourceBase.links.library')}</p></Link>
         <Link to="/resources"><p>{t('forstudents.resourceBase.links.resources')}</p></Link>
       </div>
 
