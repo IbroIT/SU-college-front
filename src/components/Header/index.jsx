@@ -51,27 +51,6 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 
     return (
         <>
-            {/* <nav className={style.mainNav}>
-            <div className={style.mainContainer}>
-                <ul className={style.leftSide}>
-                    <Link className={style.linkNav}  to="/students">
-                    <li>{t('header.students')}</li>
-                    </Link>
-                    <Link className={style.linkNav} to="/owner">
-                    <li>{t('header.owner')}</li>
-
-                    </Link>
-                </ul>
-                <ul className={style.rightSide}>
-                    <Link className={style.linkNav} to="/news">
-                    <li>{t('header.map')}</li>
-                    </Link>
-                    <Link className={style.linkNav} to="/director">
-                    <li>{t('header.director')}</li>
-                    </Link>
-                </ul>
-            </div>
-        </nav> */}
         <div className={style.startOfLine}>
             </div>
         <header className={style.header}>

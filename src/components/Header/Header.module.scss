@@ -105,6 +105,11 @@ input[type="text"]::placeholder {
   }
   
   
+@media (max-width: 768px) {
+    .searchMenu {
+        display: none; /* Скрываем поисковик на мобильных устройствах */
+    }
+}
 .headerContainer {
     display: flex;
     justify-content: space-between;
