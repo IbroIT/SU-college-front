@@ -248,9 +248,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 
       <div>
         <h1>{t('forstudents.studentsProjects.title')}</h1>
-        {/* <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+        <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
         <Link to="/secondyearprojects"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
-        <Link to="/thirdyearprojects"><p>{t('forstudents.studentsProjects.links.thirdGrade')}</p></Link> */}
         <Link to="/fourthyearprojects"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
 
       </div>

@@ -33,6 +33,22 @@ import photo4 from '../../components/images/photo4.jpg'
 import photo5 from '../../components/images/photo5.jpg'
 import photo6 from '../../components/images/photo6.jpg'
 
+import stud1 from '../../components/images/stud1.jpg'
+import stud2 from '../../components/images/stud2.jpg'
+import stud3 from '../../components/images/stud3.jpg'
+import stud4 from '../../components/images/stud4.jpg'
+import stud5 from '../../components/images/stud5.jpg'
+import stud6 from '../../components/images/stud6.jpg'
+import stud7 from '../../components/images/stud7.jpg'
+import stud8 from '../../components/images/stud8.jpg'
+import stud9 from '../../components/images/stud9.jpg'
+import stud10 from '../../components/images/stud10.jpg'
+import stud11 from '../../components/images/stud11.jpg'
+import stud12 from '../../components/images/stud12.jpg'
+import stud13 from '../../components/images/stud13.jpg'
+import stud14 from '../../components/images/stud14.jpg'
+import stud15 from '../../components/images/stud15.JPG'
+
 export const StudentCouncil = () => {
   const { t } = useTranslation();
   const students = [
@@ -104,6 +120,8 @@ export const StudentCouncil = () => {
   { src: photo4, alt: 'Photo 4', size: 'large' },
   { src: photo5, alt: 'Photo 5', size: 'small' },
   { src: photo6, alt: 'Photo 6', size: 'large' },
+  { src: stud1, alt: 'Photo 6', size: 'small' },
+
 ];
 const carouselRef = useRef(null);
 
@@ -151,35 +169,6 @@ const carouselRef = useRef(null);
           </motion.div>
         </Box>
       </AppBar>
-
-      <Box sx={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
-      <Grid container spacing={2}>
-        {photos.map((photo, index) => (
-          <Grid
-            item
-            xs={12} sm={6} md={photo.size === 'large' ? 10 : 6} lg={photo.size === 'large' ? 6 : 4}
-            key={index}
-            component={motion.div}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: index * 0.2, duration: 0.5 }}
-          >
-            <Box
-              sx={{
-                position: 'relative',
-                width: '100%',
-                paddingTop: '100%',
-                backgroundImage: `url(${photo.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                borderRadius: '8px',
-                boxShadow: 3,
-              }}
-            />
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
       {/* Council Members Section */}
       <Container sx={{ marginTop: '35px' }}>
         <Grid container spacing={4} justifyContent="center">
@@ -241,14 +230,21 @@ const carouselRef = useRef(null);
       <div className={styles.carouselContainer}>
             <button className={styles.scrollButton} onClick={scrollLeft}>←</button>
             <div className={styles.imagesSection} ref={carouselRef}>
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2745-1024x683.jpg" alt="Example 1" />
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2562-1024x683.jpg" alt="Example 3" />
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2487-1024x683.jpg"></img>               
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2741-1024x683.jpg"></img>  
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2727-300x200.jpg"></img>  
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2694-300x200.jpg"></img>  
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b2476-300x200.jpg"></img>  
-                <img src="https://salymbekov.com/wp-content/uploads/2022/07/photo_2022-07-18_15-21-07-1024x682.jpg" alt="Example 4" />
+                <img src={stud2} alt="Example 1" />
+                <img src={stud3} alt="Example 3" />
+                <img src={stud4}></img>               
+                <img src={stud5}></img>  
+                <img src={stud6}></img>  
+                <img src={stud7}></img>  
+                <img src={stud8}></img>  
+                <img src={stud9}/>
+                <img src={stud10}></img>  
+                <img src={stud11}></img>  
+                <img src={stud12}></img>  
+                <img src={stud13}></img>  
+                <img src={stud14}></img>  
+                <img src={stud15}></img>  
+
             </div>
             <button className={styles.scrollButton} onClick={scrollRight}>→</button>
         </div>
