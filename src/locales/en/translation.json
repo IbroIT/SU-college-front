@@ -108,6 +108,7 @@
   "documents2": {
     "main": "Main",
     "certificate": "Certificate",
+    "certificate2": "Student projects",
     "license": "License",
     "AccreditationCertificates": "Accreditation Certificates",
     "InstitutionalAccreditation": "Institutional Accreditation",
@@ -239,7 +240,8 @@
         "firstGrade": "1st grade",
         "secondGrade": "2nd grade",
         "thirdGrade": "3rd grade",
-        "fourthGrade": "4th year"
+        "fourthGrade": "4th year",
+        "projects": "Student projects"
       }
     }
   },

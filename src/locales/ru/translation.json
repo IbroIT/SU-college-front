@@ -105,6 +105,7 @@
  "documents2": {
     "main": "Основное",
     "certificate": "Свидетельство",
+    "certificate2": "Проекты студентов",
     "license": "Лицензия",
     "AccreditationCertificates": "Сертификаты аккредитаций",
     "InstitutionalAccreditation": "Институциональная аккредитация",
@@ -193,7 +194,8 @@
     "salymbekov_metu_contract": "Договор Салымбеков METU",
     "sbs_branch_contracts": "Договора с филиалами СБС",
     "polytech_memorandum": "Меморандум Политех",
-    "three_party_memorandum_moin_kr": "Трехсторонний меморандум с МОиН КР"
+    "three_party_memorandum_moin_kr": "Трехсторонний меморандум с МОиН КР",
+    "projects": "Студенттердин проектлери"
   },
   "forstudents": {
     "ebilim": {
@@ -236,7 +238,8 @@
       "firstGrade": "1 курс",
       "secondGrade": "2 курс",
       "thirdGrade": "3 курс",
-      "fourthGrade": "4 курс"
+      "fourthGrade": "4 курс",
+      "projects": "Проекты Студентов"
     }
   }
 },

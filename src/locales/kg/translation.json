@@ -29,6 +29,7 @@
 "documents2": {
   "main": "Негизги",
   "certificate": "Сертификат",
+  "certificate2": "Студенттердин проектлери",
   "license": "Лицензия",
   "AccreditationCertificates": "Аккредитация сертификаттары",
   "InstitutionalAccreditation": "Институционалдык аккредитация",
@@ -235,13 +236,8 @@
     }
   },
   "studentsProjects": {
-    "title": "Студенттердин проектлери",
-    "links": {
-      "firstGrade": "1 курс",
-      "secondGrade": "2 курс",
-      "thirdGrade": "3 курс",
-      "fourthGrade": "4 курс"
-    }
+    "title": "Студенттердин проектлери"
+
   }
 },
   "news": {
