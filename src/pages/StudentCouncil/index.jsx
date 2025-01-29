@@ -22,8 +22,9 @@ import Kazak from '../../components/images/kazak.jpg';
 import Sancho from '../../components/images/sancho.jpg';
 import Vlad from '../../components/images/IMG_5023.jpg';
 import Aziret from '../../components/images/aziret.jpg';
-import Kamila from '../../components/images/IMG_4348.jpg';
+import Kamila from '../../components/images/kamilaphoto.jpg';
 import Raiana from '../../components/images/photo_2025-01-21_12-37-03.jpg';
+import Nurda from '../../components/images/nurda.jpg'
 import { useRef } from 'react';
 import styles from './Carousel.module.scss';
 import photo1 from '../../components/images/photo1.jpg'
@@ -65,7 +66,7 @@ export const StudentCouncil = () => {
       description: 'Ailin leads the council, representing the students and ensuring the implementation of their needs and requests.'
     },
     {
-      name: "Kamila Baikeeva",
+      name: "Kamila Baekeeva",
       position: "Vice President",
       photo: Kamila,
       description: 'Kamila assists the President and takes over leadership in their absence.'
@@ -89,7 +90,7 @@ export const StudentCouncil = () => {
       description: 'Aziret manages all technological needs of the council and oversees IT infrastructure.'
     },
     {
-      name: "Arsen Adulov",
+      name: "Arsen Adylov",
       position: "Minister of Finance and Volunteering",
       photo: Adulov,
       description: 'Arsen handles financial matters and coordinates volunteering activities for the council.'
@@ -102,16 +103,16 @@ export const StudentCouncil = () => {
     },
     {
       name: "Sanzhar Kazubekov",
-      position: "Minister of Tourism",
+      position: "Minister of Culture",
       photo: Sancho,
-      description: 'Sanzhar develops programs related to student tourism and ensures their successful implementation.'
+      description: 'Sanzhar develops programs related to student culture and ensures their successful implementation.'
     },
     {
-      name: "Nurzhigit Nurlanbek Uulu",
-      position: "Minister of Culture",
-      photo: Kazak,
-      description: 'Nurzhigit fosters cultural events and ensures cultural exchange opportunities for students.'
-    },
+      name: "Nurdaylet Kyzdarbekov",
+      position: "Minister of Education",
+      photo: Nurda,
+      description: "Minister of Education"
+    }
   ];
 
   const photos = [

@@ -248,10 +248,10 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 
       <div>
         <h1>{t('forstudents.studentsProjects.title')}</h1>
-        <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
+        {/* <Link to="/firstyearprojects"><p>{t('forstudents.studentsProjects.links.firstGrade')}</p></Link>
         <Link to="/secondyearprojects"><p>{t('forstudents.studentsProjects.links.secondGrade')}</p></Link>
-        <Link to="/fourthyearprojects"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link>
-
+        <Link to="/fourthyearprojects"><p>{t('forstudents.studentsProjects.links.fourthGrade')}</p></Link> */}
+        <Link to="/studentProjects"><p>{t('forStudents.studentsProjects.links.fourthGrade')}</p></Link>
       </div>
     </div>
 </li>
@@ -266,10 +266,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             </Link>
             <Link to={`/documents/4`}>
                 <p>{t('documents2.license')}</p>
-            </Link>            
-        </div>
-        <div>
-        <h1>{t('documents2.AccreditationCertificates')}</h1>
+            </Link>          
             <Link to={`/documents/9`}>
                 <p>{t('documents2.InstitutionalAccreditation')}</p>
             </Link>
@@ -278,8 +275,12 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             </Link>
             <Link to={`/documents/11`}>
                 <p>{t('documents2.InternationalProgramAccreditation')}</p>
-            </Link>
+            </Link>  
         </div>
+        {/* <div>
+        <h1>{t('documents2.AccreditationCertificates')}</h1>
+
+        </div> */}
         <div>
         <h1>{t('documents2.curricula')}</h1>
             <Link to={`/documents/12`}>
@@ -291,6 +292,9 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             <Link to={`/documents/14`}>
                 <p>{t('header.multimediaPrograms')}</p>
             </Link>
+        </div>
+        <div>
+          <h1>Пед Совет</h1>
         </div>
         <div>
         <h1>{t('documents2.umsCouncil')}</h1>

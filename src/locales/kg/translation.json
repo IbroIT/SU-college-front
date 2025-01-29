@@ -950,19 +950,19 @@
       "title": "KNOX",
       "description": "Студенттер ошондой эле медицина, IT жана бизнес багыттарында билим берүү жана изилдөө ресурстарынын кеңири спектрин камтыган KNOX билим берүү порталына кире алышат.",
       "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-047-300x172.png",
-      "url": "https://knox.com"
+      "url": "https://krena.kg"
     },
     {
       "title": "Research4Life порталы",
       "description": "Дүйнөлүк саламаттыкты сактоо уюмунун Research4Life порталы медицина, IT, архитектура жана айыл чарба багыттарында электрондук басылмаларга, журналдарга жана китепканаларга толук кирүү мүмкүнчүлүгүн берет.",
       "image": "https://salymbekov.com/wp-content/uploads/2021/02/snimok-300x108.jpg",
-      "url": "https://www.research4life.org"
+      "url": "https://portal.research4life.org"
     },
     {
       "title": "SAGE Publishing порталы",
       "description": "SAGE Publishing порталы дүйнөдөгү эң ири басмаканалардын бири болуп саналат, ай сайын 1000ден ашуун журналдарды жана китептерди чыгарып турат.",
       "image": "https://salymbekov.com/wp-content/uploads/2023/02/sage-publishing.png",
-      "url": "https://www.sagepub.com"
+      "url": "https://learningresources.sagepub.com/business/cases?utm_source=selligent&utm_medium=email&utm_campaign=lib_awa_trialoffer_sagebusinesscases_23L0029&utm_content=23L0029&utm_term=&m_i=Mf25Gslnu%2BXuNNbuwcMhFHW%2BWs02aTLyXH2Uw7vKBLGm6Z3yzYSMMzgbluk62nZES9mIAMTrRrEqaaqFZUKosg8e6fETwpLMMz&M_BT=897256241562402"
     },
     {
       "title": "DeGruyter порталы",
@@ -974,7 +974,7 @@
       "title": "Lincoln University College порталы",
       "description": "Lincoln University College порталы – биздин университеттин өнөктөшү болгон Малайзиянын алдыңкы университеттеринин бири. Ал медицина, бизнес, IT жана саламаттыкты сактоо боюнча өзүнүн маалымат базаларына кирүү мүмкүнчүлүгүн берет.",
       "image": "https://salymbekov.com/wp-content/uploads/2022/07/lincoln.jpg",
-      "url": "https://www.lincoln.edu.my"
+      "url": "https://online.collaborative.lincoln.edu.my"
     },
     {
       "title": "EBSCO Publishing порталы",
@@ -984,9 +984,15 @@
     },
     {
       "title": "JetiHub",
-      "description": "YouTube-канал JetiHub, созданный по инициативе колледжа, служит дополнительным образовательным ресурсом, дополняя основную учебу. Он предоставляет студентам возможность обсуждать идеи и задавать вопросы в комментариях, создавая активное сообщество для обмена опытом. Видеоуроки основаны на программах обучения, таких как Computer Science, Multimedia Application и Mobile Computing. Они помогают студентам повторять и закреплять изученные темы в удобном формате — в любое время и в любом месте",
+      "description": "Колледждин демилгеси менен түзүлгөн JetiHub YouTube каналы негизги курсту толуктап, кошумча билим берүү булагы катары кызмат кылат. Бул студенттерге идеяларды талкуулоого жана комментарийлерде суроолорду берүүгө мүмкүнчүлүк түзүп, тажрыйба алмашуу үчүн активдүү коомчулукту түзөт. Видеосабактар ​​Информатика, Мультимедиа Колдонмо жана Мобилдик Эсептөө сыяктуу окуу программаларына негизделген. Алар студенттерге үйрөнгөн темаларын ыңгайлуу форматта - каалаган убакта, каалаган жерде кайталоого жана бекемдөөгө жардам берет",
       "image": "https://cdn-icons-png.flaticon.com/512/6819/6819196.png",
       "url": "https://www.youtube.com/@jetihub"
+    },
+    {
+      "title": "INTI University",
+      "description": "INTI Эл аралык университети - Малайзияда жайгашкан жеке университет. Негизги кампус 2010-жылдын 31-майына чейин INTI университеттик колледжи деп аталып, Жогорку билим берүү министрлиги университеттин статусуна жаңыртылганын жарыялаган.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+      "url": "http://iicplibrary.newinti.edu.my/webopac"
     }
   ]
 },

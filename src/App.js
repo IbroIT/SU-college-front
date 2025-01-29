@@ -52,7 +52,7 @@ import ThirdYear from './pages/Third';
 import { TutorMovement } from './pages/Tutors';
 import { ComputerScience } from './pages/ComputerScience';
 import { Documents } from './pages/Documents';
-
+import StudentProjects from './pages/StudentProjects';
 // **Импорты PDF-файлов**
 import firstPdf from '../src/pdfs/планпс.pdf';
 import secondPdf from '../src/pdfs/Настольный теннис 26 ноября 2024.pdf';
@@ -297,6 +297,7 @@ function App() {
           <Route path="/mission" element={<Mission />} />
           <Route path="/students" element={<CollegeStudentsPage />} />
           <Route path="/search" element={<SearchResults />} />
+          <Route path='/studentProjects' element={<StudentProjects/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -947,43 +947,49 @@
     "title": "KNOX",
     "description": "Студенты имеют также доступ к образовательному порталу KNOX, имеющему широкий спектр образовательных и исследовательских баз в области медицины, IT и бизнеса.",
     "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-047-300x172.png",
-    "url": "https://knox.example.com"
+    "url": "https://krena.kg"
   },
   {
     "title": "Портал Research4Life",
     "description": "Портал Research4Life Всемирной организации здравоохранения предоставляет полный доступ к электронным изданиям, журналам и библиотекам по направлениям медицина, IT, архитектура и сельское хозяйство.",
     "image": "https://salymbekov.com/wp-content/uploads/2021/02/snimok-300x108.jpg",
-    "url": "https://research4life.example.com"
+    "url": "https://portal.research4life.org"
   },
   {
     "title": "Портал SAGE Publishing",
     "description": "Портал SAGE Publishing является одним из крупнейших мировых издательств, ежемесячно выпускающим более 1000 журналов и книг по медицинской, гуманитарной и естественно-научной тематике.",
     "image": "https://salymbekov.com/wp-content/uploads/2023/02/sage-publishing.png",
-    "url": "https://sagepublishing.example.com"
+    "url": "https://learningresources.sagepub.com/business/cases?utm_source=selligent&utm_medium=email&utm_campaign=lib_awa_trialoffer_sagebusinesscases_23L0029&utm_content=23L0029&utm_term=&m_i=Mf25Gslnu%2BXuNNbuwcMhFHW%2BWs02aTLyXH2Uw7vKBLGm6Z3yzYSMMzgbluk62nZES9mIAMTrRrEqaaqFZUKosg8e6fETwpLMMz&M_BT=897256241562402"
   },
   {
     "title": "Портал DeGruyter",
     "description": "Портал DeGruyter — одно из крупнейших европейских издательств, включающее базу данных из 210 журналов по академическим и гуманитарным наукам.",
     "image": "https://salymbekov.com/wp-content/uploads/2023/02/de-gruyter-300x168.png",
-    "url": "https://degruyter.example.com"
+    "url": "https://www.degruyter.com"
   },
   {
     "title": "Портал Lincoln University College",
     "description": "Портал Lincoln University College — одного из лучших университетов Малайзии, партнерский вуз нашего университета, предоставляет доступ к своим базам данных (книги, журналы, монографии) по ключевым направлениям, таким как медицина, бизнес, IT, здравоохранение.",
     "image": "https://salymbekov.com/wp-content/uploads/2022/07/lincoln.jpg",
-    "url": "https://lincolnuc.example.com"
+    "url": "https://online.collaborative.lincoln.edu.my"
   },
   {
     "title": "Портал EBSCO Publishing",
     "description": "Портал «EBSCO Publishing», который является крупнейшим поставщиком научных ресурсов ведущих издательств мира, предоставляющий доступ к 15 тематическим базам данных по медицине, IT, бизнесу и менеджменту.",
     "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-046.png",
-    "url": "https://ebsco.example.com"
+    "url": "https://www.ebsco.com"
   },
   {
     "title": "JetiHub",
     "description": "YouTube-канал JetiHub, созданный по инициативе колледжа, служит дополнительным образовательным ресурсом, дополняя основную учебу. Он предоставляет студентам возможность обсуждать идеи и задавать вопросы в комментариях, создавая активное сообщество для обмена опытом. Видеоуроки основаны на программах обучения, таких как Computer Science, Multimedia Application и Mobile Computing. Они помогают студентам повторять и закреплять изученные темы в удобном формате — в любое время и в любом месте",
     "image": "https://cdn-icons-png.flaticon.com/512/6819/6819196.png",
     "url": "https://www.youtube.com/@jetihub"
+  },
+  {
+    "title": "INTI University",
+    "description": "Международный университет INTI — частный университет, расположенный в Малайзии. Главный кампус первоначально назывался Университетским колледжем INTI до 31 мая 2010 года, когда Министерство высшего образования объявило о повышении статуса университета.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+    "url": "http://iicplibrary.newinti.edu.my/webopac"
   }
 ]
 

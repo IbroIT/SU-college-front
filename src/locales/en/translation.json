@@ -944,49 +944,55 @@
         "title": "KNOX",
         "description": "Students also have access to the KNOX educational portal, which offers a wide range of educational and research resources in the fields of medicine, IT, and business.",
         "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-047-300x172.png",
-        "url": "https://knox.example.com"
+        "url": "https://krena.kg"
 
       },
       {
         "title": "Research4Life Portal",
         "description": "The Research4Life portal from the World Health Organization provides full access to electronic publications, journals, and libraries in medicine, IT, architecture, and agriculture for training well-rounded specialists.",
         "image": "https://salymbekov.com/wp-content/uploads/2021/02/snimok-300x108.jpg",
-        "url": "https://research4life.example.com"
+        "url": "https://portal.research4life.org"
 
       },
       {
         "title": "SAGE Publishing Portal",
         "description": "The SAGE Publishing portal is one of the world's largest publishers, releasing over 1,000 journals and books monthly on medical, humanitarian, and natural science topics.",
         "image": "https://salymbekov.com/wp-content/uploads/2023/02/sage-publishing.png",
-        "url": "https://sagepublishing.example.com"
+        "url": "https://learningresources.sagepub.com/business/cases?utm_source=selligent&utm_medium=email&utm_campaign=lib_awa_trialoffer_sagebusinesscases_23L0029&utm_content=23L0029&utm_term=&m_i=Mf25Gslnu%2BXuNNbuwcMhFHW%2BWs02aTLyXH2Uw7vKBLGm6Z3yzYSMMzgbluk62nZES9mIAMTrRrEqaaqFZUKosg8e6fETwpLMMz&M_BT=897256241562402"
 
       },
       {
         "title": "DeGruyter Portal",
         "description": "The DeGruyter portal, one of the largest European publishers, includes a database of 210 journals on academic and humanities topics.",
         "image": "https://salymbekov.com/wp-content/uploads/2023/02/de-gruyter-300x168.png",
-        "url": "https://degruyter.example.com"
+        "url": "https://www.degruyter.com"
 
       },
       {
         "title": "Lincoln University College Portal",
         "description": "The Lincoln University College portal, one of the top universities in Malaysia and a partner of our university, provides access to its databases (books, journals, monographs) in key areas such as medicine, business, IT, and healthcare.",
         "image": "https://salymbekov.com/wp-content/uploads/2022/07/lincoln.jpg",
-        "url": "https://lincolnuc.example.com"
+        "url": "https://online.collaborative.lincoln.edu.my"
 
       },
       {
         "title": "EBSCO Publishing Portal",
         "description": "The EBSCO Publishing portal is the largest provider of scientific resources from leading global publishers, offering access to 15 thematic databases in medicine, IT, business, and management.",
         "image": "https://salymbekov.com/wp-content/uploads/2023/02/qip-shot-screen-046.png",
-        "url": "https://ebsco.example.com"
+        "url": "https://www.ebsco.com"
 
       },
       {
         "title": "JetiHub",
-        "description": "YouTube-канал JetiHub, созданный по инициативе колледжа, служит дополнительным образовательным ресурсом, дополняя основную учебу. Он предоставляет студентам возможность обсуждать идеи и задавать вопросы в комментариях, создавая активное сообщество для обмена опытом. Видеоуроки основаны на программах обучения, таких как Computer Science, Multimedia Application и Mobile Computing. Они помогают студентам повторять и закреплять изученные темы в удобном формате — в любое время и в любом месте",
+        "description": "JetiHub, a college initiative, serves as an additional educational resource to complement core learning. It provides students with the opportunity to discuss ideas and ask questions in the comments, creating an active community for sharing experiences. The video tutorials are based on curricula such as Computer Science, Multimedia Application, and Mobile Computing. They help students review and reinforce the topics they have learned in a convenient format — anytime, anywhere",
         "image": "https://cdn-icons-png.flaticon.com/512/6819/6819196.png",
         "url": "https://www.youtube.com/@jetihub"
+      },
+      {
+        "title": "INTI University",
+        "description": "INTI International University is a private university located in Malaysia. The main campus was originally named INTI University College until 31 May 2010, when the Ministry of Higher Education announced the upgrade of the university's status.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+        "url": "http://iicplibrary.newinti.edu.my/webopac"
       }
     ]
   },
