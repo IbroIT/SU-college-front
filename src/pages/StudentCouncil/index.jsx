@@ -112,7 +112,13 @@ export const StudentCouncil = () => {
       position: "Minister of Education",
       photo: Nurda,
       description: "Minister of Education"
-    }
+    },
+    // {
+    //   name: 'Abdraimov Ibrahim',
+    //   position: 'Minister of Organization',
+    //   photo: Ibro,
+    //   description: ''
+    // },
   ];
 
   const photos = [

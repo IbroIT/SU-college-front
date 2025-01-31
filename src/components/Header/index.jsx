@@ -250,6 +250,18 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         <h1>{t('forstudents.studentsProjects.title')}</h1>
         <Link to="/studentProjects"><p>{t('documents2.certificate2')}</p></Link>
       </div>
+
+      <div>
+        <h1>Анкетирование</h1>
+        <Link to="/documents/105">
+        <p>
+          Отчет с диаграммами 2024
+        </p>
+        </Link>
+        <Link to="/documents/107">
+        <p>Анкетирование студентов колледжа</p>
+        </Link>
+      </div>
     </div>
 </li>
 
@@ -289,9 +301,30 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             <Link to={`/documents/14`}>
                 <p>{t('header.multimediaPrograms')}</p>
             </Link>
+            <Link to={`/documents/93`}>
+                <p>Diploma Multimedia Programs</p>
+            </Link>
+            <Link to={`/documents/94`}>
+                <p>Diploma Mobile Computing</p>
+            </Link>
+            <Link to={`/documents/95`}>
+                <p>Diploma Computer Science</p>
+            </Link>
         </div>
         <div>
           <h1>Пед Совет</h1>
+          <Link to={`/documents/97`}>
+                <p>2022-2023</p>
+            </Link>
+            <Link to={`/documents/54`}>
+                <p>2023-2024</p>
+            </Link>
+            <Link to={`/documents/96`}>
+                <p>2024-2025</p>
+            </Link>
+            <Link to={`/documents/102`}>
+                <p>Шкала оценивания</p>
+            </Link>
         </div>
         <div>
         <h1>{t('documents2.umsCouncil')}</h1>
@@ -333,6 +366,9 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       </Link>
       <Link to="/documents/57">
         <p>{t("documents2.admission_plan")}</p>
+      </Link>
+      <Link to="/documents/104">
+      <p>МТБ</p>
       </Link>
       </div>
       <div>
@@ -405,6 +441,21 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       </Link>
       <Link to={`/documents/92`}>
         <p>{t('documents2.rewarding_regulation')}</p>
+      </Link>
+      <Link to={`/documents/98`}>
+        <p>Об анкетировании</p>
+      </Link>
+      <Link to={`/documents/99`}>
+        <p>О подборе кадров колледжа</p>
+      </Link>
+      <Link to={`/documents/100`}>
+        <p>МРС</p>
+      </Link>
+      <Link to={`/documents/101`}>
+        <p>Памятка кураторов</p>
+      </Link>
+      <Link to={`/documents/102`}>
+        <p>Кадровая политики колледжа</p>
       </Link>
       </div>
       <div>
@@ -496,7 +547,12 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <Link to={`/documents/89`}>
         <p>{t('documents2.three_party_memorandum_moin_kr')}</p>
       </Link>
-
+      <Link to={`/documents/106`}>
+      <p>Меморандум MISO</p>
+      </Link>
+      <Link to={`/documents/108`}>
+      <p>Research4life</p>
+      </Link>
       </div>
     </div>
 </li>

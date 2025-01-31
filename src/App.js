@@ -109,7 +109,7 @@ import fifthFirst from '../src/pdfs/Положение об Учебно-мет�
 import fifthSecond from '../src/pdfs/План_парламента_2022.PDF'
 import fifthThird from '../src/pdfs/План Работы УМС 2022-2023гг.PDF';
 import fifthFourth from '../src/pdfs/План работы методиста 2022-2023.PDF'
-import fifthSixth from '../src/pdfs/план_ПС_2023-2-24.pdf'
+import fifthSixth from '../src/pdfs/План_ПС_2023-2-24.PDF'
 import fifthSeventh from '../src/pdfs/План УР0001.PDF'
 import fifthEighth from '../src/pdfs/План УР.PDF'
 import fifthNineth from '../src/pdfs/План ОД.PDF'
@@ -151,6 +151,22 @@ import ninethThird from '../src/pdfs/Трехсторнний меморанду
 import ninethFourth from '../src/pdfs/Положение об организации научной работы.pdf'
 import ninethFifth from '../src/pdfs/Положение об учебно-методическом комплексе дисциплины СУ.pdf'
 import ninethSixth from '../src/pdfs/Регламент премирования 2024г.(обновленная версия).pdf'
+import ninethSeventh from '../src/pdfs/CURRICULUM_Diploma in Multimedia Applications Area2_LINCOLN UNIVERSITY COLLEGE.pdf'
+import ninethEighth from '../src/pdfs/LAST Diploma in Mobile Computing PA 4733.pdf'
+import ninethNineth from '../src/pdfs/LAST Diploma in COMPUTER SCIENCE Area2_LUK.pdf'
+import oneHundred from '../src/pdfs/План ПС-2024-25.PDF'
+import oneHundredOne from '../src/pdfs/план_ПС_2022.PDF'
+import oneHundredThree from '../src/pdfs/Положение об анкетирование 2024 (1).pdf'
+import oneHundredFour from '../src/pdfs/Положение о подборе кадров колледжа 2024 (1).pdf'
+import oneHundredFive from '../src/pdfs/Положение о МРС колледжа 2024 (1).pdf'
+import oneHundredSix from '../src/pdfs/Памятка кураторов 2024 (1).pdf'
+import oneHundredSeven from '../src/pdfs/Кадровая политика колледжа 2024 (1).pdf'
+import oneHundredEight from '../src/pdfs/Шкала оценивания (1).pdf'
+import oneHundredNine from '../src/pdfs/План развития МТБ на 2024-2025 (1).pdf'
+import twoHundred from '../src/pdfs/Отчет с диаграммами 2024 (1).pdf'
+import twoHundredOne from '../src/pdfs/Меморандум MISO (1).pdf'
+import twoHundredTwo from '../src/pdfs/Анкетирование студентов колледжа 2023 (1).pdf'
+import twoHundredThree from '../src/pdfs/Research4life (until 31.12.2025) (1).pdf'
 
 const pdfFiles = [
   { title: 'План', url: firstPdf },
@@ -246,6 +262,22 @@ const pdfFiles = [
   { title: 'Положение об организации научной работы', url: ninethFourth},
   { title: 'Положение об учебно-методическом комплексе дисциплины', url: ninethFifth},
   { title: 'Регламент премирования', url: ninethSixth},
+  { title: 'Курикулым мултимедиа программы', url: ninethSeventh},
+  { title: 'Диплома мобильные вычисления', url: ninethEighth},
+  { title: 'Диплома комьютерная наука', url: ninethNineth},
+  { title: '24 pc', url: oneHundred},
+  { title: '22 pc', url: oneHundredOne},
+  { title: 'Положение об анкетировании', url: oneHundredThree},
+  { title: 'О подборе кадров колледжа', url: oneHundredFour},
+  { title: 'МРС', url: oneHundredFive},
+  { title: 'Кураторов Памятка', url: oneHundredSix},
+  { title: 'Кадровая политика колледжа', url: oneHundredSeven},
+  { title: 'Шкала оценивания', url: oneHundredEight},
+  { title: 'План развития МТБ 2024-2025', url: oneHundredNine},
+  { title: 'Отчет с диаграммами 2024', url: twoHundred},
+  { title: 'Меморандум MISO', url: twoHundredOne},
+  { title: 'Анкетирование студентов колледжа 2023', url: twoHundredTwo},
+  { title: 'Research4life', url: twoHundredThree},
 
 ];
 
