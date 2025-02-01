@@ -195,7 +195,11 @@
     "sbs_branch_contracts": "Договора с филиалами СБС",
     "polytech_memorandum": "Меморандум Политех",
     "three_party_memorandum_moin_kr": "Трехсторонний меморандум с МОиН КР",
-    "projects": "Студенттердин проектлери"
+    "projects": "Студенттердин проектлери",
+    "strategyPlan": "Стратегический план",
+    "mission": "Миссия",
+    "missionText": "Подготовка современных кадров, способных реализовывать творческие инициативы и инновационные идеи на благо общества."
+
   },
   "forstudents": {
     "ebilim": {
@@ -989,10 +993,22 @@
     "url": "https://www.youtube.com/@jetihub"
   },
   {
-    "title": "INTI University",
+    "title": "1) INTI University",
     "description": "Международный университет INTI — частный университет, расположенный в Малайзии. Главный кампус первоначально назывался Университетским колледжем INTI до 31 мая 2010 года, когда Министерство высшего образования объявило о повышении статуса университета.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
     "url": "http://iicplibrary.newinti.edu.my/webopac"
+  },
+  {
+    "title": "2) INTI University",
+    "description": "Международный университет INTI — частный университет, расположенный в Малайзии. Главный кампус первоначально назывался Университетским колледжем INTI до 31 мая 2010 года, когда Министерство высшего образования объявило о повышении статуса университета.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+    "url": "http://icsjlibrary.inti.edu.my/library/custom/home.jsp"
+  },
+  {
+    "title": "3) INTI University",
+    "description": "Международный университет INTI — частный университет, расположенный в Малайзии. Главный кампус первоначально назывался Университетским колледжем INTI до 31 мая 2010 года, когда Министерство высшего образования объявило о повышении статуса университета.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+    "url": "http://iicplibrary.newinti.edu.my/home;jsessionid=4B3C0E0A1CBD82281AD13808B237BBB8"
   }
 ]
 

@@ -285,6 +285,16 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             <Link to={`/documents/11`}>
                 <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>  
+            <h1>{t('documents2.mission')}</h1>
+            <p>Подготовка современных кадров,<br></br> 
+            способных реализовывать творческие<br>
+            </br> инициативы и инновационные
+            <br></br> 
+            идеи на благо общества.</p>
+            <h1>{t('documents2.strategyPlan')}</h1>
+            <Link to={`/documents/109`}>
+            <p>{t('documents2.strategyPlan')}</p>
+            </Link>
         </div>
         {/* <div>
         <h1>{t('documents2.AccreditationCertificates')}</h1>

@@ -118,7 +118,11 @@
     "salymbekov_metu_contract": "Салымбеков METU Договору",
     "sbs_branch_contracts": "СБС филиалдары менен Договорлор",
     "polytech_memorandum": "Политех Меморандуму",
-    "three_party_memorandum_moin_kr": "Үч тараптуу Меморандум МОиН КР менен"
+    "three_party_memorandum_moin_kr": "Үч тараптуу Меморандум МОиН КР менен",
+    "strategyPlan": "Стратегиялык план",
+    "mission": "Миссия",
+    "missionText": "Коомдун жыргалчылыгы үчүн чыгармачыл демилгелерди жана инновациялык идеяларды ишке ашырууга жөндөмдүү заманбап кадрларды даярдоо."
+
 
 },
   "header": {
@@ -985,10 +989,24 @@
       "url": "https://www.youtube.com/@jetihub"
     },
     {
-      "title": "INTI University",
+      "title": "1) INTI University",
       "description": "INTI Эл аралык университети - Малайзияда жайгашкан жеке университет. Негизги кампус 2010-жылдын 31-майына чейин INTI университеттик колледжи деп аталып, Жогорку билим берүү министрлиги университеттин статусуна жаңыртылганын жарыялаган.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
       "url": "http://iicplibrary.newinti.edu.my/webopac"
+    }
+    ,
+    {
+      "title": "2) INTI University",
+      "description": "INTI Эл аралык университети - Малайзияда жайгашкан жеке университет. Негизги кампус 2010-жылдын 31-майына чейин INTI университеттик колледжи деп аталып, Жогорку билим берүү министрлиги университеттин статусуна жаңыртылганын жарыялаган.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+      "url": "http://icsjlibrary.inti.edu.my/library/custom/home.jsp"
+    }
+    ,
+    {
+      "title": "3) INTI University",
+      "description": "INTI Эл аралык университети - Малайзияда жайгашкан жеке университет. Негизги кампус 2010-жылдын 31-майына чейин INTI университеттик колледжи деп аталып, Жогорку билим берүү министрлиги университеттин статусуна жаңыртылганын жарыялаган.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+      "url": "http://iicplibrary.newinti.edu.my/home;jsessionid=4B3C0E0A1CBD82281AD13808B237BBB8"
     }
   ]
 },

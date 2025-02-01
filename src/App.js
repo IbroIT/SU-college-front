@@ -59,7 +59,7 @@ import secondPdf from '../src/pdfs/Настольный теннис 26 нояб
 import thirdPdf from '../src/pdfs/План УВР-2024-25.PDF';
 import fourthPdf from '../src/pdfs/Кураторы 2024-2025.docx';
 import fifthPdf from '../src/pdfs/Лицензия колледжа (новая).pdf';
-import sixthPdf from '../src/pdfs/СВИДЕТЕЛЬСТВО (1).jpg';
+import sixthPdf from '../src/pdfs/СВИДЕТЕЛЬСТВО (1).pdf';
 import seventhPdf from '../src/pdfs/График учебного процесса.pdf';
 import eigthPdf from '../src/pdfs/Правила приема_2024-2025.pdf';
 import tenthPdf from '../src/pdfs/План приема_2024-2025.pdf';
@@ -167,7 +167,7 @@ import twoHundred from '../src/pdfs/Отчет с диаграммами 2024 (1
 import twoHundredOne from '../src/pdfs/Меморандум MISO (1).pdf'
 import twoHundredTwo from '../src/pdfs/Анкетирование студентов колледжа 2023 (1).pdf'
 import twoHundredThree from '../src/pdfs/Research4life (until 31.12.2025) (1).pdf'
-
+import twoHundredFour from '../src/pdfs/Стратегический план СУ 2024-2029_compressed.pdf'
 const pdfFiles = [
   { title: 'План', url: firstPdf },
   { title: 'Настольный Теннис 2024', url: secondPdf },
@@ -278,6 +278,7 @@ const pdfFiles = [
   { title: 'Меморандум MISO', url: twoHundredOne},
   { title: 'Анкетирование студентов колледжа 2023', url: twoHundredTwo},
   { title: 'Research4life', url: twoHundredThree},
+  { title: 'Стратегический план СУ', url: twoHundredFour}
 
 ];
 

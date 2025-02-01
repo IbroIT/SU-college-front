@@ -198,7 +198,10 @@
     "salymbekov_metu_contract": "Salymbekov METU Contract",
     "sbs_branch_contracts": "SBS Branch Contracts",
     "polytech_memorandum": "Polytech Memorandum",
-    "three_party_memorandum_moin_kr": "Memorandum with Ministry of Education"
+    "three_party_memorandum_moin_kr": "Memorandum with Ministry of Education",
+    "strategyPlan": "Strategic plan",
+    "mission": "Mission",
+    "missionText": "Training modern personnel capable of implementing creative initiatives and innovative ideas for the benefit of society."
   },
   "forstudents": {
     "ebilim": {
@@ -991,10 +994,24 @@
         "url": "https://www.youtube.com/@jetihub"
       },
       {
-        "title": "INTI University",
+        "title": "1) INTI University",
         "description": "INTI International University is a private university located in Malaysia. The main campus was originally named INTI University College until 31 May 2010, when the Ministry of Higher Education announced the upgrade of the university's status.",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
         "url": "http://iicplibrary.newinti.edu.my/webopac"
+      }
+      ,
+      {
+        "title": "2) INTI University",
+        "description": "INTI International University is a private university located in Malaysia. The main campus was originally named INTI University College until 31 May 2010, when the Ministry of Higher Education announced the upgrade of the university's status.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+        "url": "http://icsjlibrary.inti.edu.my/library/custom/home.jsp"
+      }
+      ,
+      {
+        "title": "3) INTI University",
+        "description": "INTI International University is a private university located in Malaysia. The main campus was originally named INTI University College until 31 May 2010, when the Ministry of Higher Education announced the upgrade of the university's status.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfBsFolbPqK8wDtnOg9LKR5WEQLBWSKi38Q&s",
+        "url": "http://iicplibrary.newinti.edu.my/home;jsessionid=4B3C0E0A1CBD82281AD13808B237BBB8"
       }
     ]
   },
