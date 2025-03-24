@@ -28,6 +28,9 @@ import Hikmatilo from '../../components/images/hikmatilo.jpg'
 import Elena from '../../components/images/elena.jpg'
 import Vlad from '../../components/images/IMG_5023.jpg'
 import Toktoshevna from '../../components/images/toktoshevna.jpg'
+import Talha from '../../components/images/Talha.pdf'
+import Park from '../../components/images/Park.jpg'
+
 export const Teachers = () => {
   const { t } = useTranslation();
 
@@ -46,7 +49,10 @@ export const Teachers = () => {
     { name: t("teachers.komarzhova"), subject: t("teachers.algebra"), image: Elena },
     { name: t("teachers.nurzat"), subject: t("teachers.highmath"), image: Nurzat },
     { name: t("teachers.elvira"), subject: t("teachers.english"), image: Elvira },
-    { name: "Аскаров Хикматилло", subject: t("teachers.english"), image: Hikmatilo}
+    { name: t("teachers.hiko"), subject: t("teachers.oop_database"), image: Hikmatilo},
+
+    { name: t("teachers.talha"), subject: 'Introduction to Python', image: Talha},
+    { name: t("teachers.park"), subject: 'Advanced Python', image: Park},
 
   ];
   const sortedTeachers = teachers.sort((a, b) => {

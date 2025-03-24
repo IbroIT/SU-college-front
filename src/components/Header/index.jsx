@@ -252,14 +252,14 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       </div>
 
       <div>
-        <h1>Анкетирование</h1>
+        <h1>{t('forstudents.anketa.title')}</h1>
         <Link to="/documents/105">
         <p>
-          Отчет с диаграммами 2024
+          {t('forstudents.anketa.otchet')}
         </p>
         </Link>
         <Link to="/documents/107">
-        <p>Анкетирование студентов колледжа</p>
+        <p>{t('forstudents.anketa.anketaotcher')}</p>
         </Link>
       </div>
     </div>
@@ -286,11 +286,14 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
                 <p>{t('documents2.InternationalProgramAccreditation')}</p>
             </Link>  
             <h1>{t('documents2.mission')}</h1>
-            <p>Подготовка современных кадров,<br></br> 
-            способных реализовывать творческие<br>
-            </br> инициативы и инновационные
-            <br></br> 
-            идеи на благо общества.</p>
+            <p>
+  {t(`documents2.missionText`).split('\n').map((line, index) => (
+    <span key={index}>
+      {line}
+      <br />
+    </span>
+  ))}
+</p>
             <h1>{t('documents2.strategyPlan')}</h1>
             <Link to={`/documents/109`}>
             <p>{t('documents2.strategyPlan')}</p>
@@ -333,7 +336,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
                 <p>2024-2025</p>
             </Link>
             <Link to={`/documents/102`}>
-                <p>Шкала оценивания</p>
+                <p>{t('documents2.schala')}</p>
             </Link>
         </div>
         <div>

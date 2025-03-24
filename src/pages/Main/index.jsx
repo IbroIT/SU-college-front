@@ -17,7 +17,7 @@ import Icon from '@mui/icons-material/AccessAlarm'; // Placeholder icon, replace
 import { Box, Grid, Typography, Paper, Button, Card, CardContent, CardMedia  } from '@mui/material';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
-
+import students from '../../components/images/students.jpg'
 
 export const Main = () => {
   const { t } = useTranslation();
@@ -31,7 +31,7 @@ export const Main = () => {
                     <Grid item xs={12} sm={6}>
                         <Box
                             component="img"
-                            src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b3839-768x512.jpg"
+                            src={students}
                             alt="Ректор"
                             sx={{
                                 width: "100%",

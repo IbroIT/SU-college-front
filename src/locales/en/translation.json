@@ -157,10 +157,10 @@
     "parliament_plan": "Parliament Plan",
     "ums_plan": "UMS Plan",
     "methodist_plan": "Methodist Work Plan",
-    "ps_plan": "PS Plan",
-    "ur001_plan": "UR001",
-    "ur_plan": "UR",
-    "od_plan": "OD",
+    "ps_plan": "Pedagogical Council plan",
+    "ur001_plan": "Study Plan001",
+    "ur_plan": "Study Plan",
+    "od_plan": "General education subjects",
     "admission_plan": "Admission Plan",
     "quality_management_system": "Quality Management System",
     "it_regulation": "IT Regulation",
@@ -201,7 +201,8 @@
     "three_party_memorandum_moin_kr": "Memorandum with Ministry of Education",
     "strategyPlan": "Strategic plan",
     "mission": "Mission",
-    "missionText": "Training modern personnel capable of implementing creative initiatives and innovative ideas for the benefit of society."
+    "missionText": "Training modern specialists,\ncapable of implementing creative\ninitiatives and innovative ideas\nfor the benefit of society.",
+      "schala": "Grading scale"
   },
   "forstudents": {
     "ebilim": {
@@ -246,7 +247,14 @@
         "fourthGrade": "4th year",
         "projects": "Student projects"
       }
-    }
+    },
+"anketa": {
+    "title": "Survey",
+    "otchet": "Report with Charts 2024",
+    "anketaotcher": "College Student Survey"
+}
+
+
   },
   "news": {
     "newLibrary": {
@@ -336,7 +344,11 @@
             "rima": "Kaiupbekova Rima",
             "nurzat": "Manasovna Nurzat",
             "highmath": "High Math",
-            "elvira": "Abakirova Elvira"
+            "elvira": "Abakirova Elvira",
+            "talha": "Muhammad Talha",
+            "park": "Dr.Park",
+            "hiko": "Askarov Hikmatillo"
+
 
         },
         "notFound": {
