@@ -28,7 +28,7 @@ import Hikmatilo from '../../components/images/hikmatilo.jpg'
 import Elena from '../../components/images/elena.jpg'
 import Vlad from '../../components/images/IMG_5023.jpg'
 import Toktoshevna from '../../components/images/toktoshevna.jpg'
-import Talha from '../../components/images/Talha.pdf'
+import Talha from '../../components/images/Talha_page-0001.jpg'
 import Park from '../../components/images/Park.jpg'
 
 export const Teachers = () => {
