@@ -16,7 +16,7 @@ export const MainSlider = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        width: '100%',
+                        width: '92%',
                         height: '100%',
                         backdropFilter: 'blur(5px)',
                         backgroundImage: 'url("https://data.kaktus.media/image/big/2023-08-02_16-11-54_204758.jpg")',
