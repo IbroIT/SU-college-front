@@ -66,6 +66,7 @@ import tenthPdf from '../src/pdfs/План приема_2024-2025.pdf';
 import eleventhPdf from '../src/pdfs/1. Institutional accreditation.pdf';
 import twelthPdf from '../src/pdfs/2. International Institutional accreditation.pdf';
 import thirteenthPdf from '../src/pdfs/3 CERTIFICATE with Appendix (Int. Program Accreditation).pdf';
+import lastpdf from '../src/pdfs/Сертификат_колледж.PDF';
 import fourteenthPdf from '../src/pdfs/УП_СПО_КН_20224.PDF';
 import fifteenthPdf from '../src/pdfs/УП_СПО_МВ_20224.PDF';
 import sixteenthPdf from '../src/pdfs/УП_СПО_МП_20224.PDF';
@@ -180,7 +181,7 @@ const pdfFiles = [
   { title: 'План приема', url: tenthPdf },
   { title: 'Первый сертификат аккредитаций', url: eleventhPdf },
   { title: 'Второй сертификат аккредитаций', url: twelthPdf },
-  { title: 'Третий сертификат аккредитаций', url: thirteenthPdf },
+  { title: 'Третий сертификат аккредитаций', url:  lastpdf, thirteenthPdf },
   { title: 'Учебный план №1', url: fourteenthPdf },
   { title: 'Учебный план №2', url: fifteenthPdf },
   { title: 'Учебный план №3', url: sixteenthPdf },
