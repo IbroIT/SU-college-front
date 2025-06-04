@@ -325,7 +325,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             </Link>
         </div>
         <div>
-          <h1>Пед Совет</h1>
+          <h1>{t("documents2.ps")}</h1>
           <Link to={`/documents/97`}>
                 <p>2022-2023</p>
             </Link>
