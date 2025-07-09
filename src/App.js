@@ -169,6 +169,8 @@ import twoHundredOne from '../src/pdfs/Меморандум MISO (1).pdf'
 import twoHundredTwo from '../src/pdfs/Анкетирование студентов колледжа 2023 (1).pdf'
 import twoHundredThree from '../src/pdfs/Research4life (until 31.12.2025) (1).pdf'
 import twoHundredFour from '../src/pdfs/Стратегический план СУ 2024-2029_compressed.pdf'
+import twoHundredFive from '../src/pdfs/обьявление о вакансиях.pdf'
+
 const pdfFiles = [
   { title: 'План', url: firstPdf },
   { title: 'Настольный Теннис 2024', url: secondPdf },
@@ -279,7 +281,8 @@ const pdfFiles = [
   { title: 'Меморандум MISO', url: twoHundredOne},
   { title: 'Анкетирование студентов колледжа 2023', url: twoHundredTwo},
   { title: 'Research4life', url: twoHundredThree},
-  { title: 'Стратегический план СУ', url: twoHundredFour}
+  { title: 'Стратегический план СУ', url: twoHundredFour},
+  { title: 'Вакансии', url: twoHundredFive}
 
 ];
 
