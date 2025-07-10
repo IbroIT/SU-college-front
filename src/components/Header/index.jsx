@@ -270,7 +270,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     <div className={style.dropdownContent}>
     <div>
             <h1>{t('documents2.main')}</h1>
-             <Link to={`/documents/109`} >
+             <Link to={`/documents/110`} >
                 <p>{t('header.job')}</p>
             </Link>
             <Link to={`/documents/5`} >
