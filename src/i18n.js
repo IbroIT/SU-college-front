@@ -1,0 +1,102 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+const resources = {
+  ru: {
+    translation: {
+      university: 'Салымбеков Университет',
+      about: 'О нас',
+      founders: 'Учредители',
+      history_mission: 'История и миссии',
+      management: 'Руководство',
+      structure: 'Структура',
+      status: 'Статус',
+      npa: 'НПА',
+      councils: 'Советы',
+      college: 'Международный колледж IT и бизнеса',
+      about_college: 'О колледже',
+      college_management: 'Руководство',
+      programs: 'Программы',
+      pps: 'ППС',
+      partners: 'Партнеры',
+      resources: 'Ресурсы',
+      qms: 'СМК',
+      for_student: 'Студенту',
+      instructions: 'Инструкция и положения',
+      student_unions: 'Студенческие объединения',
+      schedule: 'Учебный график',
+      e_resources: 'Электронные ресурсы',
+      academic_opportunities: 'Академические возможности',
+      social_opportunities: 'Социальные возможности',
+      for_applicant: 'Абитуриенту',
+      admissions_office: 'Приемная комиссия',
+      training_areas: 'Направления подготовки',
+      admission_procedure: 'Порядок приема',
+      payment: 'Оплата',
+      infrastructure: 'Инфраструктура',
+      classrooms: 'Учебные аудитории',
+      labs: 'Лаборатории',
+      startups: 'Стартапы',
+      contacts_jobs: 'Контакты и вакансии',
+  welcome: 'Добро пожаловать!',
+  lang_en: 'Английский',
+  lang_ru: 'Русский',
+  lang_kg: 'Кыргызский'
+    },
+  },
+  en: {
+    translation: {
+      university: 'Salymbekov University',
+      about: 'About',
+      founders: 'Founders',
+      history_mission: 'History & Mission',
+      management: 'Management',
+      structure: 'Structure',
+      status: 'Status',
+      npa: 'NPA',
+      councils: 'Councils',
+      college: 'International College of IT & Business',
+      about_college: 'About College',
+      college_management: 'Management',
+      programs: 'Programs',
+      pps: 'Faculty',
+      partners: 'Partners',
+      resources: 'Resources',
+      qms: 'QMS',
+      for_student: 'For Student',
+      instructions: 'Instructions & Regulations',
+      student_unions: 'Student Unions',
+      schedule: 'Schedule',
+      e_resources: 'E-Resources',
+      academic_opportunities: 'Academic Opportunities',
+      social_opportunities: 'Social Opportunities',
+      for_applicant: 'For Applicant',
+      admissions_office: 'Admissions Office',
+      training_areas: 'Training Areas',
+      admission_procedure: 'Admission Procedure',
+      payment: 'Payment',
+      infrastructure: 'Infrastructure',
+      classrooms: 'Classrooms',
+      labs: 'Labs',
+      startups: 'Startups',
+      contacts_jobs: 'Contacts & Jobs',
+  welcome: 'Welcome!',
+  lang_en: 'English',
+  lang_ru: 'Russian',
+  lang_kg: 'Kyrgyz'
+    },
+  },
+};
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources,
+    lng: 'ru',
+    fallbackLng: 'ru',
+    interpolation: {
+      escapeValue: false,
+    },
+  });
+
+export default i18n;

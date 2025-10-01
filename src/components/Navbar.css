@@ -1,0 +1,332 @@
+/* Кнопки меню и выпадающих списков */
+.menuButton {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 0;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: color 0.22s, background 0.22s, box-shadow 0.22s, transform 0.22s;
+  position: relative;
+  z-index: 1;
+}
+.menuButton:hover, .menuButton:focus {
+  color: #fff;
+  background: rgba(25, 118, 210, 0.18);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+  transform: scale(1.06) translateY(-1px);
+}
+.dropdownBtn {
+  background: none;
+  border: none;
+  color: #1a237e;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background 0.22s, color 0.22s, opacity 0.28s, transform 0.28s;
+}
+.dropdownBtn:hover, .dropdownBtn:focus {
+  background: linear-gradient(90deg, #e3edff 0%, #dbeafe 100%);
+  color: #1976d2;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+/* Стили для Navbar без Tailwind, максимально похоже на su-medical-school.com */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90deg, #1a237e 0%, #1976d2 100%);
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 0 40px;
+  transition: background 0.4s cubic-bezier(.4,0,.2,1);
+}
+/* Красивая кнопка-логотип */
+
+/* Стиль логотипа как на su-medical-school.com */
+
+.header-logo {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  background: none;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  box-shadow: none;
+  transition: background 0.22s, color 0.22s, box-shadow 0.22s, transform 0.22s;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  user-select: none;
+}
+.header-logo:hover, .header-logo:focus {
+  background: rgba(25, 118, 210, 0.18);
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.18);
+  transform: scale(1.07) translateY(-2px) rotate(-1deg);
+  text-decoration: none;
+}
+.header-logo:active {
+  background: rgba(25, 118, 210, 0.28);
+  color: #fff;
+  transform: scale(0.98);
+}
+.navbar {
+  display: flex;
+  gap: 32px;
+}
+.navbar > .dropdown {
+  position: relative;
+}
+.navbar > .dropdown > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 0;
+  border-radius: 7px;
+  transition: color 0.22s, background 0.22s, box-shadow 0.22s, transform 0.22s;
+  position: relative;
+  z-index: 1;
+}
+.navbar > .dropdown > a:hover, .navbar > .dropdown > a:focus {
+  color: #fff;
+  background: rgba(25, 118, 210, 0.18);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+  transform: scale(1.06) translateY(-1px);
+}
+/* Анимация для выпадающего меню */
+.dropdown-content {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  background: linear-gradient(90deg, #e3edff 0%, #f5f8ff 100%);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.13);
+  border-radius: 12px;
+  padding: 10px 0;
+  z-index: 1001;
+  transform: translateY(10px) scale(0.98);
+  transition: opacity 0.28s cubic-bezier(.4,0,.2,1), transform 0.28s cubic-bezier(.4,0,.2,1);
+  border: 1px solid #dbeafe;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+/* Плавное появление пунктов меню */
+.dropdown-content a {
+  display: block;
+  color: #1a237e;
+  text-decoration: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(8px);
+  border-radius: 0;
+  transition: background 0.22s, color 0.22s, opacity 0.28s, transform 0.28s;
+  position: relative;
+}
+.dropdown:hover .dropdown-content a,
+.dropdown:focus-within .dropdown-content a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.08s;
+}
+.dropdown-content a:hover, .dropdown-content a:focus {
+  background: linear-gradient(90deg, #e3edff 0%, #dbeafe 100%);
+  color: #1976d2;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+/* Маленькие SVG-иконки языков */
+img[src$="En_icon.svg"],
+img[src$="Kg_icon.svg"],
+img[src$="Ru_icon.svg"] {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.header-button {
+  background: linear-gradient(90deg, #1976d2 0%, #1565c0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.13);
+  transition: background 0.22s, transform 0.22s, box-shadow 0.22s;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.header-button:hover, .header-button:focus {
+  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+  transform: translateY(-2px) scale(1.06);
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(25, 118, 210, 0.18);
+}
+.header-button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, #90caf9 0%, #1976d2 100%);
+  opacity: 0;
+  transition: opacity 0.22s;
+  z-index: 0;
+  border-radius: 8px;
+}
+.header-button:hover::after, .header-button:focus::after {
+  opacity: 0.10;
+}
+
+/* LanguageSwitcher button стиль */
+.lang-switcher-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(90deg, #e3edff 0%, #f5f8ff 100%);
+  color: #1976d2;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  padding: 7px 16px 7px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.18s, border 0.18s, background 0.18s, color 0.18s;
+  box-shadow: 0 1px 8px rgba(25, 118, 210, 0.10);
+}
+.lang-switcher-btn:hover, .lang-switcher-btn:focus {
+  background: linear-gradient(90deg, #dbeafe 0%, #e3edff 100%);
+  border-color: #90caf9;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.18);
+  color: #1565c0;
+}
+
+/* Выпадающий список языков */
+.lang-switcher-dropdown {
+  min-width: 140px;
+  background: linear-gradient(90deg, #e3edff 0%, #f5f8ff 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.13);
+  border: 1px solid #e3eafc;
+  margin-top: 7px;
+  padding: 6px 0;
+  z-index: 1002;
+  position: absolute;
+  right: 0;
+  animation: fadeInLang 0.28s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+@keyframes fadeInLang {
+  from { opacity: 0; transform: translateY(10px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.lang-switcher-dropdown-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #1a237e;
+  font-size: 1rem;
+  padding: 10px 22px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.18s, color 0.18s, font-weight 0.18s;
+}
+.lang-switcher-dropdown-btn:hover, .lang-switcher-dropdown-btn:focus {
+  background: linear-gradient(90deg, #e3edff 0%, #dbeafe 100%);
+  color: #1976d2;
+  font-weight: 600;
+}
+
+/* --- Адаптивность --- */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0 8px;
+  }
+  .header-logo {
+    font-size: 1.2rem;
+    padding: 8px 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    display: none;
+    background: linear-gradient(90deg, #1a237e 0%, #1976d2 100%);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1002;
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+  }
+  .navbar.open {
+    display: flex;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown-content {
+    position: static;
+    min-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    background: linear-gradient(90deg, #e3edff 0%, #f5f8ff 100%);
+    border: none;
+    padding: 0;
+  }
+  .dropdownBtn, .dropdown-content a {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+  .header-button {
+    margin: 12px 0 0 0;
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+  .lang-switcher-btn {
+    margin: 12px 0 0 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
