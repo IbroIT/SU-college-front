@@ -245,6 +245,7 @@ input[type="text"]::placeholder {
     transition: color 0.3s ease-in-out;
     font-size: 18px;
     font-weight: bold;
+    position: relative; /* Для позиционирования dropdown строго под разделом */
 
     &:hover .dropdownContent {
         display: block;
@@ -355,7 +356,10 @@ input[type="text"]::placeholder {
     top: 100%;
     left: 0;
     background-color: #ffffff;
-    width: 107%; 
+    min-width: 220px;
+    max-width: 90vw;
+    width: max-content;
+    left: 0;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 15px; /* Внутренние отступы */
     z-index: 1;
@@ -367,10 +371,38 @@ input[type="text"]::placeholder {
     max-height: 750px; /* Ограничение высоты */
     overflow-y: auto; /* Прокрутка при превышении высоты */
     display: flex;
-    flex-wrap: wrap; /* Перенос строк */
-    gap: 15px; /* Расстояние между элементами */
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
     box-sizing: border-box; /* Учет padding в размерах блока */
     transition: opacity 0.3s ease, transform 0.3s ease;
+    word-break: break-word;
+    white-space: normal;
+@media (max-width: 900px) {
+            .dropdownContent {
+                min-width: 140px;
+                max-width: 98vw;
+                width: max-content;
+                left: 0;
+                right: auto;
+                padding: 10px;
+            }
+}
+
+@media (max-width: 600px) {
+            .dropdownContent {
+                min-width: 100px;
+                max-width: 98vw;
+                width: max-content;
+                left: 0;
+                right: auto;
+                padding: 8px;
+                font-size: 15px;
+            }
+        .dropdownContent h1 {
+            font-size: 16px;
+        }
+}
 }
 .dropdown {
     margin-bottom: 16px;

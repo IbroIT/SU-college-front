@@ -87,6 +87,17 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
                 <nav className={`${style.headerNav} ${isMenuOpen ? style.mobileMenuOpen : ''}`}>
                 <div className={style.navContainer}>
                     <ul className={style.headerUl}>
+          <li className={style.navLi}>
+            {t('header.contacts')}
+            <div className={style.dropdownContent}>
+              <div>
+                <h1>Телефон</h1>
+                <p>+996 (___) ___-____</p>
+                <h1>Email (Gmail)</h1>
+                <p>example@gmail.com</p>
+              </div>
+            </div>
+          </li>
                     <li className={style.navLi}>
                     {/* <SchoolIcon className={style.icon} /> */}
     {t('header.college')}
@@ -580,6 +591,15 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <p>Research4life</p>
       </Link>
       </div> */}
+
+
+
+
+
+
+
+
+
     </div>
 </li>
 <Link to="/faq">
@@ -613,6 +633,17 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         </Button>
         </div>
         <ul className={style.mobileMenuNav}>
+      <li className={style.navLi}>
+        {t('header.contacts')}
+        <div className={style.dropdownContent}>
+          <div>
+            <h1>Телефон</h1>
+            <p>+996 (___) ___-____</p>
+            <h1>Email (Gmail)</h1>
+            <p>example@gmail.com</p>
+          </div>
+        </div>
+      </li>
             <li className={style.navLi}>
                 {t('header.college')}
                 <div className={`${style.dropdownContent} ${isMenuOpen ? style.show : ''}`}>
