@@ -106,7 +106,12 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
   <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
   <Link to="/news"><p>{t('header.news')}</p></Link>
 </div>
-<div>
+
+
+
+
+
+{/* <div>
       <h1>{t('documents2.gak')}</h1>
       <Link to={`/documents/40`}>
         <p>{t('documents2.gakOrder')}</p>
@@ -129,7 +134,12 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <Link to={`/documents/46`}>
         <p>{t('documents2.order31OnGak2024')}</p>
       </Link>
-    </div>
+    </div> */}
+
+
+
+
+
 <div>
   <h1>{t('header.ourpartners')}</h1>
   <div className={style.dropdown}>
@@ -270,18 +280,18 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     <div className={style.dropdownContent}>
     <div>
             <h1>{t('documents2.main')}</h1>
-             <Link to={`/documents/110`} >
+             {/* <Link to={`/documents/110`} >
                 <p>{t('header.job')}</p>
             </Link>
             <Link to={`/documents/5`} >
                 <p>{t('documents2.certificate')}</p>
-            </Link>
+            </Link> */}
             <Link to={`/documents/4`}>
                 <p>{t('documents2.license')}</p>
             </Link>          
-            <Link to={`/documents/9`}>
+            {/* <Link to={`/documents/9`}>
                 <p>{t('documents2.InstitutionalAccreditation')}</p>
-            </Link>
+            </Link> */}
             <Link to={`/documents/10`}>
                 <p>{t('documents2.InternationalInstitutionalAccreditation')}</p>
             </Link>
@@ -297,10 +307,10 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     </span>
   ))}
 </p>
-            <h1>{t('documents2.strategyPlan')}</h1>
+            {/* <h1>{t('documents2.strategyPlan')}</h1>
             <Link to={`/documents/109`}>
             <p>{t('documents2.strategyPlan')}</p>
-            </Link>
+            </Link> */}
         </div>
         {/* <div>
         <h1>{t('documents2.AccreditationCertificates')}</h1>
@@ -327,7 +337,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
                 <p>Diploma Computer Science</p>
             </Link>
         </div>
-        <div>
+        {/* <div>
           <h1>{t("documents2.ps")}</h1>
           <Link to={`/documents/97`}>
                 <p>2022-2023</p>
@@ -341,8 +351,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
             <Link to={`/documents/102`}>
                 <p>{t('documents2.schala')}</p>
             </Link>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
         <h1>{t('documents2.umsCouncil')}</h1>
         <Link to={`/documents/17`}>
           <p>{t('documents2.umsCouncil')}</p>
@@ -356,8 +366,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         <Link to={`/documents/49`}>
           <p>{t('documents2.umsRegulations')}</p>
         </Link>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <h1>{t("documents2.plansDoc")}</h1>
         <Link to="/documents/50">
         <p>{t("documents2.parliament_plan")}</p>
@@ -386,8 +396,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <Link to="/documents/104">
       <p>МТБ</p>
       </Link>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <h1>{t('documents2.position')}</h1>
         <Link to={`/documents/22`}>
           <p>{t('documents2.mentoringRegulations')}</p>
@@ -473,8 +483,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <Link to={`/documents/102`}>
         <p>Кадровая политики колледжа</p>
       </Link>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
       <h1>{t('documents2.job_instructions')}</h1>
       <Link to={`/documents/58`}>
         <p>{t('documents2.chief_accountant')}</p>
@@ -569,7 +579,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
       <Link to={`/documents/108`}>
       <p>Research4life</p>
       </Link>
-      </div>
+      </div> */}
     </div>
 </li>
 <Link to="/faq">
