@@ -87,17 +87,8 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
                 <nav className={`${style.headerNav} ${isMenuOpen ? style.mobileMenuOpen : ''}`}>
                 <div className={style.navContainer}>
                     <ul className={style.headerUl}>
-          <li className={style.navLi}>
-            {t('header.contacts')}
-            <div className={style.dropdownContent}>
-              <div>
-                <h1>Телефон</h1>
-                <p>+996 (___) ___-____</p>
-                <h1>Email (Gmail)</h1>
-                <p>example@gmail.com</p>
-              </div>
-            </div>
-          </li>
+
+          
                     <li className={style.navLi}>
                     {/* <SchoolIcon className={style.icon} /> */}
     {t('header.college')}
@@ -114,7 +105,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
   <Link to="/college"><p>{t('header.aboutCollege')}</p></Link>
   <Link to="/director"><p>{t('header.letterFromDirector')}</p></Link>
   <Link to="/teachers"><p>{t('header.teachers')}</p></Link>
-  <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
+  {/*  */}
   <Link to="/news"><p>{t('header.news')}</p></Link>
 </div>
 
@@ -210,9 +201,9 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     <Link to="/price"><h1>{t('header.price')}</h1></Link>
 </div>
 
-<div>
+{/* <div>
 <Link to="/collegeInfrastructure"><h1>{t('header.collegeInfrastructure')}</h1></Link>
-</div>
+</div> */}
 
     </div>
 </li>
@@ -247,7 +238,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         <h1>{t('forstudents.studentCommunities.title')}</h1>
         <Link to="/student-council"><p>{t('forstudents.studentCommunities.links.studentCouncil')}</p></Link>
         <Link to="/debate-club"><p>{t('forstudents.studentCommunities.links.debateClub')}</p></Link>
-        <Link to="/tutors-movement"><p>{t('forstudents.studentCommunities.links.tutorsMovement')}</p></Link>
+        {/* <Link to="/tutors-movement"><p>{t('forstudents.studentCommunities.links.tutorsMovement')}</p></Link> */}
         <Link to="/creative-groups"><p>{t('forstudents.studentCommunities.links.creativeGroups')}</p></Link>
       </div>
 
@@ -602,9 +593,18 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
 
     </div>
 </li>
-<Link to="/faq">
-                            <li className={style.navLi}>{t('header.faqs')}</li>
-                        </Link>
+<li className={style.navLi}>
+            {t('header.contacts')}
+            <div className={style.dropdownContent}>
+              <div>
+                <Link to="/contacts"><p>{t('header.contacts')}</p></Link>
+                            <Link to="/faq"onClick={closeMenu}>
+                            <p>{t('header.faqs')}</p> </Link>
+                <Link to='/documents/110'><p>{t('vacancies_button_text')}</p></Link>            
+                       
+              </div>
+            </div>
+          </li>
                     </ul>
                     </div>
                 </nav>
@@ -633,17 +633,11 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
         </Button>
         </div>
         <ul className={style.mobileMenuNav}>
-      <li className={style.navLi}>
-        {t('header.contacts')}
-        <div className={style.dropdownContent}>
-          <div>
-            <h1>Телефон</h1>
-            <p>+996 (___) ___-____</p>
-            <h1>Email (Gmail)</h1>
-            <p>example@gmail.com</p>
-          </div>
-        </div>
-      </li>
+
+
+
+
+      
             <li className={style.navLi}>
                 {t('header.college')}
                 <div className={`${style.dropdownContent} ${isMenuOpen ? style.show : ''}`}>
@@ -836,9 +830,7 @@ export const Header = ({pdfFiles, pdfFilesForStudents, pdfFilesForApplicants}) =
     </div>
 </li> */}
 
-            <Link to="/faq"onClick={closeMenu}>
-                            <li className={style.navLi}>{t('header.faqs')}</li>
-                        </Link>
+
             <div className={style.mobileActions}>
                 <LanguageSwitcher />
             </div>

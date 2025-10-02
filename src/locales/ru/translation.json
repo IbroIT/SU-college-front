@@ -3,7 +3,7 @@
   "choose_best_education": "Выбирая нас, вы выбираете лучшее качество образования!",
   "applicant_online": "Абитуриент онлайн",
   "best_teachers": "Лучшие преподаватели",
-    "vacancies_button_text": "Вакансии",
+  "vacancies_button_text": "Вакансии",
   "best_teachers_description": "В университете трудятся самые квалифицированные преподаватели.",
   "modern_university": "Современный университет",
   "modern_university_description": "Университет оснащен самыми передовыми оборудованием для закрепления учебных материалов.",
@@ -219,7 +219,7 @@
     }
   },
   "resourceBase": {
-    "title": "Ресурсная база",
+    "title": "Электронные ресурсы",
     "links": {
       "instructions": "Инструкция и положения",
       "informationSystem": "Информационная система",
